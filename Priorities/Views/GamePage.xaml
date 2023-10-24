@@ -3,10 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GamePage"
              Title="GamePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    <!-- DIRECTIONS: Do the section under your name. It will be very helpful to reference back to our FACADE apps for this assignment.
+    If you need a clearer reference of the general layout for the GamePage, use our GamePage JIRA XAML and UI Design Cards -->
+    
+    <!-- Grid wrapper for the entire game page -->
+    
+    <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*"> <!-- Four Rows / One Column -->
+        
+        <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Three Columns -->
+        <Grid>
+            
+        </Grid>
+
+        <!-- TODO [Guesser / Prioritize Label: Luke Noles] --> <!-- One Row / One Column -->
+        <Grid>
+
+        </Grid>
+        
+        <!-- TODO [Priority Cards Section: Priscilla Harris] --> <!-- Six Rows / Two Columns -->
+        <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*">
+            
+            <!-- Priority Rank Numbers -->
+            <Label
+            Grid.Column="0"
+            Grid.Row="0"
+            Text="1"
+            FontSize="20"
+            />
+            <Label
+            Grid.Column="0"
+            Grid.Row="0"
+            Text="2"
+            FontSize="20"
+            />
+            <Label
+            Grid.Column="0"
+            Grid.Row="0"
+            Text="3"
+            FontSize="20"
+            />
+            <Label
+            Grid.Column="0"
+            Grid.Row="0"
+            Text="4"
+            FontSize="20"
+            />
+            <Label
+            Grid.Column="0"
+            Grid.Row="0"
+            Text="5"
+            FontSize="20"
+            />
+
+        </Grid>
+        
+        <!-- TODO [Footer: Gavin Boler] --> <!-- One Row / Three Columns -->
+        <Grid>
+
+        </Grid>
+    </Grid>
 </ContentPage>
