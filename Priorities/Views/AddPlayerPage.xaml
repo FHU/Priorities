@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.AddPlayerPage"
-             Title="AddPlayerPage"
+             Title="Add Player"
              Shell.FlyoutBehavior="Flyout">
     
     
@@ -47,14 +47,19 @@
                 
                 <!--Label Name-->
                 <Label Grid.Row="0"
-                       Text="Name"/>
+                       Text="Name"
+                       HorizontalOptions="Center"
+                       FontSize="28"/>
                 <!--Text box to input name-->
-                <Label Grid.Row="1"
-                       Text="Where we will add a text-box to input names" />
+                <RoundRectangle Grid.Row="1"
+                                MaximumHeightRequest="40"
+                                MaximumWidthRequest="300"
+                                Fill="#D3D3D3"
+                                CornerRadius="15"/>
             </Grid>
             
             <!--Avatar-->
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="1" RowSpacing="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -62,12 +67,16 @@
                 </Grid.RowDefinitions>
 
                 <Label Grid.Row="0"
-                       Text="Avatar Pic" />
+                       Text="Avatar Pic"
+                       HorizontalOptions="Center"
+                       FontSize="28"/>
 
                 <RoundRectangle Grid.Row="1"
-                                Fill="#facade"
-                                CornerRadius="48"
-                                MaximumHeightRequest="150"/>
+                                Fill="#D3D3D3"
+                                
+                                CornerRadius="125"
+                                MaximumHeightRequest="250"
+                                MaximumWidthRequest="250"/>
                 <!--<Label Grid.Row="1"
                        Text="Where we will put the camera" />-->
 
