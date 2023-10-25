@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.AddPlayerPage"
-             Title="AddPlayerPage">
+             Title="AddPlayerPage"
+             Shell.FlyoutBehavior="Flyout">
     
     
     <ScrollView>
@@ -28,11 +29,11 @@
 
                 <Label Grid.Row="0"
                        Grid.Column="1"
-                       Text="Label" />
+                       Text="Add Player" />
 
                 <Button Grid.Row="0"
                         Grid.Column="2"
-                        Text="Exit" />
+                        Text="X" />
             </Grid>
             
             <!--Main Section-->
@@ -63,8 +64,12 @@
                 <Label Grid.Row="0"
                        Text="Avatar Pic" />
 
-                <Label Grid.Row="1"
-                       Text="Where we will put the camera" />
+                <RoundRectangle Grid.Row="1"
+                                Fill="#facade"
+                                CornerRadius="48"
+                                MaximumHeightRequest="150"/>
+                <!--<Label Grid.Row="1"
+                       Text="Where we will put the camera" />-->
 
                 <Button Grid.Row="2"
                         Text="Retake" />
