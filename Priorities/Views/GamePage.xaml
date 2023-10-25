@@ -11,7 +11,7 @@
     
     <Grid RowDefinitions="0.14*,0.10*,0.60*,0.16*" ColumnDefinitions="*"> <!-- Four Rows / One Column -->
         
-        <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Two Columns -->
+        <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Three Columns -->
         <Grid Row="0">
 
             <Grid.RowDefinitions>
@@ -69,7 +69,7 @@
 
         </Grid>
 
-        <!-- TODO [Guesser / Prioritize Label: Luke Noles] --> <!-- Two Rows / Two Columns -->
+        <!-- TODO [Guesser / Prioritize Label: Luke Noles] --> <!-- Two Rows / One Column -->
         <Grid Row="1">
 
         </Grid>
