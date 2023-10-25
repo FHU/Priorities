@@ -5,8 +5,18 @@
              Title="GameResultsPage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="Results"
+            HorizonralOptions="Center" />
+        <Label
+            Text ="Total"/>
+        <Label
+          Text="28,000"/>
+      <Label
+         Text="Rounds Played"/>
+      <Label
+         Text="05"/>
+      <button Text="Next">
+      </button>
+      
     </VerticalStackLayout>
 </ContentPage>
