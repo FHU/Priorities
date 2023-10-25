@@ -9,57 +9,107 @@
     
     <!-- Grid wrapper for the entire game page -->
     
-    <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*"> <!-- Four Rows / One Column -->
+    <Grid RowDefinitions="0.14*,0.10*,0.60*,0.16*" ColumnDefinitions="*"> <!-- Four Rows / One Column -->
         
         <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Three Columns -->
-        <Grid>
+        <Grid Row="0">
             
         </Grid>
 
         <!-- TODO [Guesser / Prioritize Label: Luke Noles] --> <!-- One Row / One Column -->
-        <Grid>
+        <Grid Row="1">
 
         </Grid>
         
         <!-- TODO [Priority Cards Section: Priscilla Harris] --> <!-- Six Rows / Two Columns -->
-        <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*">
-            
+        <Grid Row="2" RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="0.10*,0.90*" Margin="50, 0" RowSpacing="10">
+
             <!-- Priority Rank Numbers -->
             <Label
             Grid.Column="0"
             Grid.Row="0"
             Text="1"
-            FontSize="20"
+            VerticalOptions="Center"
             />
+            
             <Label
             Grid.Column="0"
-            Grid.Row="0"
+            Grid.Row="1"
             Text="2"
-            FontSize="20"
+            VerticalOptions="Center"
             />
+            
             <Label
             Grid.Column="0"
-            Grid.Row="0"
+            Grid.Row="2"
             Text="3"
-            FontSize="20"
+            VerticalOptions="Center"
             />
+            
             <Label
             Grid.Column="0"
-            Grid.Row="0"
+            Grid.Row="3"
             Text="4"
-            FontSize="20"
+            VerticalOptions="Center"
             />
+            
             <Label
             Grid.Column="0"
-            Grid.Row="0"
+            Grid.Row="4"
             Text="5"
-            FontSize="20"
+            VerticalOptions="Center"
+            />
+            
+            <!-- Priority Cards -->
+            <Button
+            Grid.Column="1"
+            Grid.Row="0"
+            Text="Turtles"   
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="1"
+            Text="Evan Kahan"        
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="2"
+            Text="Microwaves"        
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="3"
+            Text="Musicals"        
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="4"
+            Text="Calculus"
+           
+            />
+
+            <Button
+            Grid.ColumnSpan="2"
+            Grid.Column="0"
+            Grid.Row="5"
+            Text="Submit"
+            WidthRequest="90"
+            Margin="0, 20, 0, 0"
+           
             />
 
         </Grid>
         
         <!-- TODO [Footer: Gavin Boler] --> <!-- One Row / Three Columns -->
-        <Grid>
+        <Grid Row="3">
 
         </Grid>
     </Grid>
