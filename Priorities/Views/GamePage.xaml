@@ -5,13 +5,13 @@
              Title="GamePage">
     
     <!-- DIRECTIONS: Do the section under your name. It will be very helpful to reference back to our FACADE apps for this assignment.
-    If you need a clearer reference of the general layout for the GamePage, use our GamePage JIRA XAML and UI Design Cards -->
+    PLEASE reference our GamePage XAML Planning JIRA card and both ours and Casey's UI Design Cards -->
     
     <!-- Grid wrapper for the entire game page -->
     
     <Grid RowDefinitions="0.14*,0.10*,0.60*,0.16*" ColumnDefinitions="*"> <!-- Four Rows / One Column -->
         
-        <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Three Columns -->
+        <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Two Columns -->
         <Grid Row="0">
 
             <Grid.RowDefinitions>
@@ -69,7 +69,7 @@
 
         </Grid>
 
-        <!-- TODO [Guesser / Prioritize Label: Luke Noles] --> <!-- One Row / One Column -->
+        <!-- TODO [Guesser / Prioritize Label: Luke Noles] --> <!-- One Row / Two Columns -->
         <Grid Row="1">
 
         </Grid>
@@ -161,7 +161,7 @@
 
         </Grid>
         
-        <!-- TODO [Footer: Gavin Boler] --> <!-- One Row / Three Columns -->
+        <!-- TODO [Footer: Gavin Boler] --> <!-- One Row -->
         <Grid Row="3">
 
         </Grid>
