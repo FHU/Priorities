@@ -4,17 +4,22 @@
              x:Class="Priorities.Views.GameResultsPage"
              Title="GameResultsPage">
     <VerticalStackLayout>
+      
         <Label 
             Text="Results"
             HorizonralOptions="Center" />
+      
         <Label
             Text ="Total"/>
         <Label
           Text="28,000"/>
+      
       <Label
          Text="Rounds Played"/>
+      
       <Label
          Text="05"/>
+      
       <button Text="Next">
       </button>
       
