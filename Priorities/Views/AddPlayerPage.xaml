@@ -76,7 +76,7 @@
             </Grid>
             
             <!--Submit-->
-            <StackLayout Grid.Row="2">
+            <StackLayout Grid.Row="2" VerticalOptions="End" Padding="6">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
