@@ -17,7 +17,7 @@
             <Label 
                 Grid.Row="0"
                 Grid.Column="1"
-        Text="Revealing Results"
+        Text="Revealing Results..."
         VerticalOptions="Center" 
         HorizontalOptions="Start" />
             <Label 
@@ -44,11 +44,14 @@ HorizontalOptions="Start" />
             <Label 
                 Grid.Row="0"
         Text="Round"
+                Margin="0,10,0,0"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
             <Label 
                 Grid.Row="1"
+           
 Text="1/5"
+                Margin="0,0,0,10"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
         </Grid>
@@ -62,15 +65,223 @@ HorizontalOptions="Center" />
                 <Label 
                 Grid.Row="0"
         Text="Score"
+                    Margin="0,10,0,0"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
             <Label 
                 Grid.Row="1"
 Text="50"
+                Margin="0,0,0,10"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
         </Grid>
+            
         </Grid>
+
+        <Grid MinimumHeightRequest="400">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Padding="10" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+
+                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <Label 
+            Grid.Column="0"
+            Text="5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <Label 
+        Grid.Column="1"
+        Text="Chocolate"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+                <Image Grid.Column="2"></Image>
+                <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="3"
+Text="4"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="4"
+Text="="
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+
+            </Grid>
+
+            <Grid Padding="10" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+
+                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <Label 
+            Grid.Column="0"
+            Text="5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <Label 
+        Grid.Column="1"
+        Text="Chocolate"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+                <Image Grid.Column="2"></Image>
+                <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="3"
+Text="4"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="4"
+Text="="
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+
+            </Grid>
+
+            <Grid Padding="10" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+
+                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <Label 
+            Grid.Column="0"
+            Text="5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <Label 
+        Grid.Column="1"
+        Text="Chocolate"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+                <Image Grid.Column="2"></Image>
+                <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="3"
+Text="4"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="4"
+Text="="
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+
+            </Grid>
+            <Grid Padding="10" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+
+                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <Label 
+            Grid.Column="0"
+            Text="5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <Label 
+        Grid.Column="1"
+        Text="Chocolate"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+                <Image Grid.Column="2"></Image>
+                <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="3"
+Text="4"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
+                <Label 
+Grid.Column="4"
+Text="="
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+
+            </Grid>
+
+            <Grid Padding="10" Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+
+                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <Label 
+                Grid.Column="0"
+                Text="5"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <Label 
+            Grid.Column="1"
+            Text="Chocolate"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+                <Image Grid.Column="2"></Image>
+                <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <Label 
+    Grid.Column="3"
+    Text="4"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" />
+                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
+                <Label 
+    Grid.Column="4"
+    Text="="
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" />
+
+
+            </Grid>
+        </Grid>
+
 
         <Button
     Text="Next"
