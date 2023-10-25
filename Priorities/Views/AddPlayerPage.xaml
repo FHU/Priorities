@@ -35,6 +35,45 @@
                         Text="Exit" />
             </Grid>
             
+            <!--Main Section-->
+            
+            <!--Name Section-->
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                
+                <!--Label Name-->
+                <Label Grid.Row="0"
+                       Text="Name:"/>
+                <!--Text box to input name-->
+                <Label Grid.Row="1"
+                       Text="Where we will add a text-box to input names" />
+            </Grid>
+            
+            <!--Avatar-->
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Text="Avatar Pic" />
+
+                <Label Grid.Row="1"
+                       Text="Where we will put the camera" />
+
+                <Button Grid.Row="2"
+                        Text="Retake" />
+            </Grid>
+            
+            <!--Submit-->
+            <Grid Grid.Row="4">
+                <Button Text="AddPlayerButton" />
+            </Grid>
             
             
         </Grid>
