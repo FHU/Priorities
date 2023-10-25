@@ -7,7 +7,7 @@
       
         <Label 
             Text="Results"
-            HorizonralOptions="Center" />
+            HorizonrtalOptions="Center" />
       
         <Label
             Text ="Total"/>
