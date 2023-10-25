@@ -73,14 +73,13 @@
                        FontSize="28"
                        FontAttributes="Bold"/>
 
+                <!--<Label Grid.Row="1"-->
                 <RoundRectangle Grid.Row="1"
                                 Fill="#D3D3D3"
                                 
                                 CornerRadius="150"
                                 MaximumHeightRequest="300"
                                 MaximumWidthRequest="300"/>
-                <!--<Label Grid.Row="1"
-                       Text="Where we will put the camera" />-->
 
                 <Button Grid.Row="2"
                         Text="Retake"
