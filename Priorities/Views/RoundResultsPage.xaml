@@ -40,7 +40,14 @@ HorizontalOptions="Start" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
-                <RoundRectangle Grid.RowSpan="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.RowSpan="2" Fill="Gray" CornerRadius="30">
+                    <RoundRectangle.Shadow>
+                    <Shadow Brush="Black"
+Radius="10"
+Opacity="0.9"></Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
+                
             <Label 
                 Grid.Row="0"
         Text="Round"
@@ -61,7 +68,13 @@ HorizontalOptions="Center" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
-                <RoundRectangle Grid.RowSpan="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.RowSpan="2" Fill="Gray" CornerRadius="30">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Black"
+Radius="10"
+Opacity="0.9"></Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle> 
                 <Label 
                 Grid.Row="0"
         Text="Score"
@@ -96,30 +109,31 @@ HorizontalOptions="Center" />
                     <ColumnDefinition Width="0.5*" />
                 </Grid.ColumnDefinitions>
 
-                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="0" Fill="Blue" CornerRadius="30" />
                 <Label 
             Grid.Column="0"
-            Text="5"
+            Text="1"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Black"
+Radius="10"
+Opacity="0.9"></Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
                 <Label 
         Grid.Column="1"
-        Text="Chocolate"
+        Text="Giraffe"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
                 <Image Grid.Column="2"></Image>
                 <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
-                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
                 <Label 
 Grid.Column="3"
-Text="4"
-VerticalOptions="Center" 
-HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
-                <Label 
-Grid.Column="4"
-Text="="
+                    Grid.ColumnSpan="2" 
+Text="+ 25"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
 
@@ -135,13 +149,19 @@ HorizontalOptions="Center" />
                     <ColumnDefinition Width="0.5*" />
                 </Grid.ColumnDefinitions>
 
-                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="0" Fill="Red" CornerRadius="30" />
                 <Label 
             Grid.Column="0"
-            Text="5"
+            Text="2"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Black"
+Radius="10"
+Opacity="0.9"></Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
                 <Label 
         Grid.Column="1"
         Text="Chocolate"
@@ -149,16 +169,11 @@ HorizontalOptions="Center" />
         HorizontalOptions="Center" />
                 <Image Grid.Column="2"></Image>
                 <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
-                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" Fill="Gray" CornerRadius="30" />
                 <Label 
 Grid.Column="3"
-Text="4"
-VerticalOptions="Center" 
-HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
-                <Label 
-Grid.Column="4"
-Text="="
+                    Grid.ColumnSpan="2" 
+Text="+ 20"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
 
@@ -174,21 +189,27 @@ HorizontalOptions="Center" />
                     <ColumnDefinition Width="0.5*" />
                 </Grid.ColumnDefinitions>
 
-                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="0" Fill="White" CornerRadius="30" />
                 <Label 
             Grid.Column="0"
-            Text="5"
+            Text="3"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Black"
+Radius="10"
+Opacity="0.9"></Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
                 <Label 
         Grid.Column="1"
-        Text="Chocolate"
+        Text="Sleep"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
                 <Image Grid.Column="2"></Image>
                 <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
-                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Fill="Yellow" CornerRadius="30" />
                 <Label 
 Grid.Column="3"
 Text="4"
@@ -197,7 +218,7 @@ HorizontalOptions="Center" />
                 <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
                 <Label 
 Grid.Column="4"
-Text="="
+Text="->"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
 
@@ -212,30 +233,36 @@ HorizontalOptions="Center" />
                     <ColumnDefinition Width="0.5*" />
                 </Grid.ColumnDefinitions>
 
-                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="0" Fill="Yellow" CornerRadius="30" />
                 <Label 
             Grid.Column="0"
-            Text="5"
+            Text="4"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Black"
+Radius="10"
+Opacity="0.9"></Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
                 <Label 
         Grid.Column="1"
-        Text="Chocolate"
+        Text="Fruit"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
                 <Image Grid.Column="2"></Image>
                 <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
-                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Fill="White" CornerRadius="30" />
                 <Label 
 Grid.Column="3"
-Text="4"
+Text="3"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
                 <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
                 <Label 
 Grid.Column="4"
-Text="="
+Text=">-"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
 
@@ -251,30 +278,30 @@ HorizontalOptions="Center" />
                     <ColumnDefinition Width="0.5*" />
                 </Grid.ColumnDefinitions>
 
-                <RoundRectangle Grid.Column="0" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="0" Fill="Green" CornerRadius="30" />
                 <Label 
                 Grid.Column="0"
                 Text="5"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Black"
+Radius="10"
+Opacity="0.9"></Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
                 <Label 
             Grid.Column="1"
-            Text="Chocolate"
+            Text="Casey"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
                 <Image Grid.Column="2"></Image>
                 <RoundRectangle Grid.Column="2" Fill="Gray" CornerRadius="30" />
-                <RoundRectangle Grid.Column="3" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" Fill="Gray" CornerRadius="30" />
                 <Label 
-    Grid.Column="3"
-    Text="4"
-    VerticalOptions="Center" 
-    HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
-                <Label 
-    Grid.Column="4"
-    Text="="
+    Grid.Column="3" Grid.ColumnSpan="2"
+    Text="+ 5"
     VerticalOptions="Center" 
     HorizontalOptions="Center" />
 
