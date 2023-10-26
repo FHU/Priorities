@@ -170,30 +170,27 @@
         </Grid>
         
         <!-- TODO [Footer: Gavin Boler] --> <!-- One Row -->
-        <Grid Row="3" RowDefinitions="*" ColumnDefinitions="*,*,*">
-            <Button
-                BackgroundColor="Gray"
-                ImageSource="home.svg"
-                Grid.Column="0"
-                Margin="5, 5, 5, 5"
+        <Grid Row="3" RowDefinitions="*, *" ColumnDefinitions="*,*,*" BackgroundColor="Gray">
+            <Button 
+                Grid.Column="1"
+                Grid.Row="0"
+                Text="Done"
+                Margin="5"
+                CornerRadius="60"
             />
             <Border
-                StrokeShape="RoundRectangle 40, 40, 0, 0"
                 Grid.Column="1"
-                
-            >
+                Grid.Row="1"
+                BackgroundColor="Gray"
+                Stroke="Gray"
+                >
                 <Label
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    Text="Points 50"
+                    Text="Round 1/8"
+                    FontSize="15"
                 />
             </Border>
-            <Button 
-                BackgroundColor="Gray"
-                Grid.Column="2"
-                Margin="5, 5, 5, 5" 
-                ImageSource="setting.svg"
-            ></Button>
         </Grid>
     </Grid>
 </ContentPage>
