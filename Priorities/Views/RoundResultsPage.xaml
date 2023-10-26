@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.RoundResultsPage"
              Title="Priorities">
-    <VerticalStackLayout>
+    <VerticalStackLayout BackgroundColor="LightBlue">
         <Grid Padding="10" RowSpacing="16" VerticalOptions="Center" HeightRequest="80">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -40,7 +40,7 @@ HorizontalOptions="Start" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-                <RoundRectangle Grid.RowSpan="2" Fill="Gray" CornerRadius="30">
+                <RoundRectangle Grid.RowSpan="2" Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                     <Shadow Brush="Black"
 Radius="10"
@@ -68,7 +68,7 @@ HorizontalOptions="Center" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
-                <RoundRectangle Grid.RowSpan="2" Fill="Gray" CornerRadius="30">
+                <RoundRectangle Grid.RowSpan="2" Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Black"
 Radius="10"
@@ -93,42 +93,46 @@ HorizontalOptions="Center" />
 
         <Grid MinimumHeightRequest="400" Padding="0,10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
             </Grid.RowDefinitions>
 
-            <Grid Padding="10" Grid.Row="0">
+            <Grid Padding="10" Grid.Row="0" ColumnSpacing="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="30" />
                 </Grid.ColumnDefinitions>
-                <Ellipse Grid.Column="0" WidthRequest="60" HeightRequest="60" Fill="Blue" />
                 
-                <Label 
-            Grid.Column="0"
-            Text="1"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
+                        
+                  
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Black"
 Radius="10"
 Opacity="0.9"></Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="Blue">
+                    <Label 
+Text="1"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                </Border>
                 <Label 
         Grid.Column="1"
         Text="Giraffe"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
                 <Image Grid.Column="2" Source="green_check.jpg"  HeightRequest="40" WidthRequest="40"></Image>
-                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
                 <Label 
 Grid.Column="3"
                     Grid.ColumnSpan="2" 
@@ -139,35 +143,37 @@ HorizontalOptions="Center" />
 
             </Grid>
 
-            <Grid Padding="10" Grid.Row="1">
+            <Grid Padding="10" Grid.Row="1" ColumnSpacing="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="30" />
                 </Grid.ColumnDefinitions>
 
-                <Ellipse Grid.Column="0" WidthRequest="60" HeightRequest="60" Fill="Red" />
-                <Label 
-            Grid.Column="0"
-            Text="2"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+               
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Black"
 Radius="10"
 Opacity="0.9"></Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="Red">
+                    <Label 
+Text="2"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                </Border>
                 <Label 
         Grid.Column="1"
         Text="Chocolate"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
                 <Image Grid.Column="2" Source="green_check.jpg" HeightRequest="40" WidthRequest="40"></Image>
-                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
                 <Label 
 Grid.Column="3"
                     Grid.ColumnSpan="2" 
@@ -178,41 +184,43 @@ HorizontalOptions="Center" />
 
             </Grid>
 
-            <Grid Padding="10" Grid.Row="2">
+            <Grid Padding="10" Grid.Row="2" ColumnSpacing="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="30" />
                 </Grid.ColumnDefinitions>
+                
 
-                <Ellipse Grid.Column="0" WidthRequest="60" HeightRequest="60" Fill="White" />
-                <Label 
-            Grid.Column="0"
-            Text="3"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Black"
 Radius="10"
 Opacity="0.9"></Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="White">
+                    <Label 
+Text="3"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                </Border>
                 <Label 
         Grid.Column="1"
         Text="Sleep"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
                 <Image Grid.Column="2" Source="red_x" HeightRequest="40" WidthRequest="40"></Image>
-                <Ellipse Grid.Column="3" WidthRequest="60" HeightRequest="60" Fill="Yellow" />
-                <Label 
-Grid.Column="3"
+                <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="Yellow">
+                    <Label 
 Text="4"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
+                </Border>
+                <RoundRectangle Grid.Column="4"  CornerRadius="30" />
                 <Label 
 Grid.Column="4"
 Text="->"
@@ -221,41 +229,43 @@ HorizontalOptions="Center" />
 
 
             </Grid>
-            <Grid Padding="10" Grid.Row="3">
+            <Grid Padding="10" Grid.Row="3" ColumnSpacing="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="30" />
                 </Grid.ColumnDefinitions>
 
-                <Ellipse Grid.Column="0" WidthRequest="60" HeightRequest="60" Fill="Yellow" />
-                <Label 
-            Grid.Column="0"
-            Text="4"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Black"
 Radius="10"
 Opacity="0.9"></Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="Yellow">
+                    <Label 
+Text="4"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                </Border>
                 <Label 
         Grid.Column="1"
         Text="Fruit"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
                 <Image Grid.Column="2" Source="red_x" HeightRequest="40" WidthRequest="40"></Image>
-                <Ellipse Grid.Column="3" WidthRequest="60" HeightRequest="60" Fill="White" />
-                <Label 
-Grid.Column="3"
+                <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="White">
+                    <Label 
 Text="3"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="4" Fill="Gray" CornerRadius="30" />
+                </Border>
+                <RoundRectangle Grid.Column="4" CornerRadius="30" />
                 <Label 
 Grid.Column="4"
 Text=">-"
@@ -265,35 +275,39 @@ HorizontalOptions="Center" />
 
             </Grid>
 
-            <Grid Padding="10" Grid.Row="4">
+            <Grid Padding="10" Grid.Row="4" ColumnSpacing="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="30" />
                 </Grid.ColumnDefinitions>
 
-                <Ellipse Grid.Column="0" WidthRequest="60" HeightRequest="60" Fill="Green" />
-                <Label 
-                Grid.Column="0"
-                Text="5"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="Gray" CornerRadius="30">
+                
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Black"
 Radius="10"
 Opacity="0.9"></Shadow>
                     </RoundRectangle.Shadow>
+                    
                 </RoundRectangle>
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="Green">
+                    <Label 
+Text="5"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                </Border>
+
                 <Label 
             Grid.Column="1"
             Text="Casey"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
                 <Image Grid.Column="2" Source="green_check" HeightRequest="40" WidthRequest="40"></Image>
-                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" Fill="Gray" CornerRadius="30" />
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" CornerRadius="30" />
                 <Label 
     Grid.Column="3" Grid.ColumnSpan="2"
     Text="+ 5"
