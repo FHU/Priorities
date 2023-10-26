@@ -9,7 +9,7 @@
     
     <!-- Grid wrapper for the entire game page -->
     
-    <Grid RowDefinitions="0.14*,0.10*,0.60*,0.16*" ColumnDefinitions="*"> <!-- Four Rows / One Column -->
+    <Grid RowDefinitions="0.15*,0.15*,0.60*,0.10*" ColumnDefinitions="*" RowSpacing="10"> <!-- Four Rows / One Column -->
         
         <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Three Columns -->
         <Grid Row="0">
@@ -77,19 +77,34 @@
 
         </Grid>
 
-        <!-- TODO [Guesser / Prioritize Label: Luke Noles] --> <!-- Two Rows / One Column -->
-        <Grid Row="1">
+        <!-- TODO [Guesser / Prioritize Label: Priscilla Harris] --> <!-- Two Rows / One Column -->
+        <Grid Row="1" RowDefinitions="*,*" Margin="0,10">
+            <Label
+            Grid.Row="0"
+            Text="Guess Gavin Boler's Priorities"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="20"
+            />
 
+            <Label
+            Grid.Row="1"
+            Text="0:59"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="30"
+            />
         </Grid>
         
         <!-- TODO [Priority Cards Section: Priscilla Harris] --> <!-- Six Rows / Two Columns -->
-        <Grid Row="2" RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="0.10*,0.90*" Margin="50, 0" RowSpacing="10">
+        <Grid Row="2" RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="0.10*,0.90*" Margin="50, 0" RowSpacing="10" ColumnSpacing="20">
 
             <!-- Priority Rank Numbers -->
             <Label
             Grid.Column="0"
             Grid.Row="0"
             Text="1"
+            FontSize="30"
             VerticalOptions="Center"
             />
             
@@ -97,6 +112,7 @@
             Grid.Column="0"
             Grid.Row="1"
             Text="2"
+            FontSize="30"
             VerticalOptions="Center"
             />
             
@@ -104,6 +120,7 @@
             Grid.Column="0"
             Grid.Row="2"
             Text="3"
+            FontSize="30"
             VerticalOptions="Center"
             />
             
@@ -111,6 +128,7 @@
             Grid.Column="0"
             Grid.Row="3"
             Text="4"
+            FontSize="30"
             VerticalOptions="Center"
             />
             
@@ -118,6 +136,7 @@
             Grid.Column="0"
             Grid.Row="4"
             Text="5"
+            FontSize="30"
             VerticalOptions="Center"
             />
             
@@ -163,6 +182,7 @@
             Grid.Row="5"
             Text="Submit"
             WidthRequest="90"
+            HeightRequest="55"
             Margin="0, 20, 0, 0"
            
             />
@@ -171,7 +191,7 @@
         
         <!-- TODO [Footer: Gavin Boler] --> <!-- One Row -->
         <Grid Row="3" RowDefinitions="*" ColumnDefinitions="*,*,*">
-            <Button
+            <!--<Button
                 BackgroundColor="Gray"
                 ImageSource="home.svg"
                 Grid.Column="0"
@@ -193,7 +213,7 @@
                 Grid.Column="2"
                 Margin="5, 5, 5, 5" 
                 ImageSource="setting.svg"
-            ></Button>
+            ></Button>-->
         </Grid>
     </Grid>
 </ContentPage>
