@@ -1,12 +1,144 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.HighScorePage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="HighScorePage"
              >
-<VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        
+        <Grid RowSpacing="20" WidthRequest="300">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <toolkit:Expander Grid.Row="0">
+                <toolkit:Expander.Header>
+                    <HorizontalStackLayout BackgroundColor="Purple" Grid.Row="0" Padding="20">
+                        <Grid ColumnSpacing="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="TeamPictures" TextColor="White"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                        </Grid>
+                    </HorizontalStackLayout>
+                    
+                </toolkit:Expander.Header>
+
+                <VerticalStackLayout BackgroundColor="White" >
+                    <Label Text="test" TextColor="black"/>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+            <toolkit:Expander Grid.Row="1">
+                <toolkit:Expander.Header>
+                    <HorizontalStackLayout BackgroundColor="Blue" Grid.Row="1" Padding="20">
+                        <Grid ColumnSpacing="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="TeamPictures" TextColor="White"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                        </Grid>
+                    </HorizontalStackLayout>
+
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Label Text="test" BackgroundColor="white" TextColor="black"/>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+            <toolkit:Expander Grid.Row="2">
+                <toolkit:Expander.Header>
+                    <HorizontalStackLayout BackgroundColor="Green" Grid.Row="2" Padding="20">
+                        <Grid ColumnSpacing="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="TeamPictures" TextColor="White"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                        </Grid>
+                    </HorizontalStackLayout>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Label Text="test" Background="white" TextColor="Black"></Label>
+                </VerticalStackLayout>
+
+            </toolkit:Expander>
+            
+            <toolkit:Expander Grid.Row="3">
+                <toolkit:Expander.Header>
+                    <HorizontalStackLayout BackgroundColor="Magenta" Grid.Row="3" Padding="20">
+                        <Grid ColumnSpacing="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="TeamPictures" TextColor="White"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                        </Grid>
+                    </HorizontalStackLayout>
+                </toolkit:Expander.Header>
+
+                <VerticalStackLayout>
+                    <Label Text="test" Background="white" TextColor="Black"></Label>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+            <toolkit:Expander Grid.Row="4">
+                <toolkit:Expander.Header>
+                    <HorizontalStackLayout BackgroundColor="Indigo" Grid.Row="4" Padding="20">
+                        <Grid ColumnSpacing="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="TeamPictures" TextColor="White"/>
+                            </VerticalStackLayout>
+                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                        </Grid>
+                    </HorizontalStackLayout>
+                </toolkit:Expander.Header>
+
+                <VerticalStackLayout>
+                    <Label Text="test" Background="white" TextColor="Black"></Label>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+        </Grid>
+    </ScrollView>
 </ContentPage>
