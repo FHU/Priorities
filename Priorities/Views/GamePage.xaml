@@ -145,27 +145,31 @@
             Grid.Column="1"
             Grid.Row="0"
             Text="Turtles"   
+            FontSize="20"
            
             />
 
             <Button
             Grid.Column="1"
             Grid.Row="1"
-            Text="Evan Kahan"        
+            Text="Evan Kahan"     
+            FontSize="20"   
            
             />
 
             <Button
             Grid.Column="1"
             Grid.Row="2"
-            Text="Microwaves"        
+            Text="Microwaves"
+            FontSize="20"
            
             />
 
             <Button
             Grid.Column="1"
             Grid.Row="3"
-            Text="Musicals"        
+            Text="Musicals" 
+            FontSize="20"       
            
             />
 
@@ -173,6 +177,7 @@
             Grid.Column="1"
             Grid.Row="4"
             Text="Calculus"
+            FontSize="20"
            
             />
 
@@ -181,7 +186,8 @@
             Grid.Column="0"
             Grid.Row="5"
             Text="Submit"
-            WidthRequest="90"
+            FontSize="20"
+            WidthRequest="100"
             HeightRequest="55"
             Margin="0, 20, 0, 0"
            
@@ -190,27 +196,15 @@
         </Grid>
         
         <!-- TODO [Footer: Gavin Boler] --> <!-- One Row -->
-        <Grid Row="3" RowDefinitions="*, *" ColumnDefinitions="*,*,*" BackgroundColor="Gray">
-            <Button 
-                Grid.Column="1"
-                Grid.Row="0"
-                Text="Done"
-                Margin="5"
-                CornerRadius="60"
-            />
-            <Border
-                Grid.Column="1"
-                Grid.Row="1"
-                BackgroundColor="Gray"
-                Stroke="Gray"
-                >
-                <Label
+        <Grid Row="3" RowDefinitions="*" ColumnDefinitions="*" BackgroundColor="#dddddd" Margin="0,15,0,0">
+
+
+            <Label
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     Text="Round 1/8"
                     FontSize="15"
                 />
-            </Border>
         </Grid>
     </Grid>
 </ContentPage>
