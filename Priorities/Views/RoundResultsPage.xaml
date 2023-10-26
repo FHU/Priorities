@@ -261,11 +261,13 @@ Opacity="0.9"></Shadow>
                     </Border.Shadow>
                 </Border>
                 <RoundRectangle Grid.Column="4"  CornerRadius="30" />
-                <Label 
-Grid.Column="4"
-Text="->"
+                <Image
+                    Grid.Column="4"
+    Source="down_arrow.png"
+                    WidthRequest="20"
+                    HeightRequest="60"
 VerticalOptions="Center" 
-HorizontalOptions="Center" />
+HorizontalOptions="Center"></Image>
 
 
             </Grid>
@@ -322,11 +324,12 @@ Opacity="0.9"></Shadow>
                     </Border.Shadow>
                 </Border>
                 <RoundRectangle Grid.Column="4" CornerRadius="30" />
-                <Label 
+                <Image
 Grid.Column="4"
-Text=">-"
+                    WidthRequest="20"
+HeightRequest="60"
 VerticalOptions="Center" 
-HorizontalOptions="Center" />
+HorizontalOptions="Center"></Image>
 
 
             </Grid>
