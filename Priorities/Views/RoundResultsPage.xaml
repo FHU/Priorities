@@ -131,7 +131,7 @@ HorizontalOptions="Center" />
         Text="Giraffe"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
-                <Image Grid.Column="2" Source="green_check.jpg"  HeightRequest="40" WidthRequest="40"></Image>
+                <Image Grid.Column="2" Source="green_check.jpg"  HeightRequest="35" WidthRequest="35"></Image>
                 <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
                 <Label 
 Grid.Column="3"
@@ -172,7 +172,7 @@ HorizontalOptions="Center" />
         Text="Chocolate"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
-                <Image Grid.Column="2" Source="green_check.jpg" HeightRequest="40" WidthRequest="40"></Image>
+                <Image Grid.Column="2" Source="green_check.jpg" HeightRequest="35" WidthRequest="35"></Image>
                 <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
                 <Label 
 Grid.Column="3"
@@ -213,7 +213,7 @@ HorizontalOptions="Center" />
         Text="Sleep"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
-                <Image Grid.Column="2" Source="red_x" HeightRequest="40" WidthRequest="40"></Image>
+                <Image Grid.Column="2" Source="red_x" HeightRequest="35" WidthRequest="35"></Image>
                 <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="Yellow">
                     <Label 
 Text="4"
@@ -258,7 +258,7 @@ HorizontalOptions="Center" />
         Text="Fruit"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
-                <Image Grid.Column="2" Source="red_x" HeightRequest="40" WidthRequest="40"></Image>
+                <Image Grid.Column="2" Source="red_x" HeightRequest="35" WidthRequest="35"></Image>
                 <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="White">
                     <Label 
 Text="3"
@@ -306,7 +306,7 @@ HorizontalOptions="Center" />
             Text="Casey"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-                <Image Grid.Column="2" Source="green_check" HeightRequest="40" WidthRequest="40"></Image>
+                <Image Grid.Column="2" Source="green_check" HeightRequest="35" WidthRequest="35"></Image>
                 <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" CornerRadius="30" />
                 <Label 
     Grid.Column="3" Grid.ColumnSpan="2"
