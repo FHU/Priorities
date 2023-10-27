@@ -26,7 +26,7 @@
 
 
 
-                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
                 <Frame
                    HeightRequest="70"
                    WidthRequest="70"
@@ -36,7 +36,7 @@
                    IsClippedToBounds="True"
                    Padding="0"
                    BorderColor="Gray"
-                   Margin="0,0,0,0">
+                   Margin="20,0,20,0">
                         <Image
                         Aspect="AspectFit"
                         Source="dotnet_bot.png"
@@ -48,10 +48,11 @@
                 </Frame>
                 <Label
                     Text="Gavin Boler"
+                    FontSize="24"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     ></Label>
-            </VerticalStackLayout>
+            </HorizontalStackLayout>
 
             
 
@@ -69,6 +70,7 @@
                 VerticalOptions="Center"
                     HorizontalOptions="End"
                 Text="0"
+                FontSize="30"
                 ></Label>
             </VerticalStackLayout>
 
@@ -81,7 +83,7 @@
         <Grid Row="1" RowDefinitions="*,*" Margin="0,10">
             <Label
             Grid.Row="0"
-            Text="Guess Gavin Boler's Priorities"
+            Text="Guess the Priorities"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             FontSize="20"
@@ -187,7 +189,6 @@
             Grid.Row="5"
             Text="Submit"
             FontSize="20"
-            WidthRequest="100"
             HeightRequest="55"
             Margin="0, 20, 0, 0"
            
