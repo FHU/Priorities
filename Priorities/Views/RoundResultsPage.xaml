@@ -4,30 +4,33 @@
              x:Class="Priorities.Views.RoundResultsPage"
              Title="Priorities">
     <VerticalStackLayout BackgroundColor="LightBlue">
-        <Grid Padding="10" RowSpacing="16" VerticalOptions="Center" HeightRequest="80">
+        <Grid Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="80" BackgroundColor="DarkBlue">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.3*" />
                 <ColumnDefinition Width="0.7*" />
             </Grid.ColumnDefinitions>
-            <Image Grid.RowSpan="2" Grid.Column="0" Source="green_check" HeightRequest="60"></Image>
+            <Image Grid.RowSpan="2" Grid.Column="0" Source="default_profile" HeightRequest="60"></Image>
             <Label 
                 Grid.Row="0"
                 Grid.Column="1"
-        Text="Revealing Results..."
+                Text="Revealing Results..."
+                TextColor="White"
                 FontAttributes="Bold"
-        VerticalOptions="Center" 
-        HorizontalOptions="Start" />
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
             <Label 
                 Grid.Row="1"
                 Grid.Column="1"
-Text="Name"
+                Text="John"
+                TextColor="White"
                 FontAttributes="Bold"
-VerticalOptions="Center" 
-HorizontalOptions="Start" />
+                FontSize="24"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
         </Grid>
 
         <Grid  Padding="0" ColumnSpacing="16" VerticalOptions="Center" HeightRequest="100">
@@ -45,9 +48,10 @@ HorizontalOptions="Start" />
                 <RoundRectangle Grid.RowSpan="2" Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Gray"
-Radius="10"
-                            Offset="5,5"
-Opacity="0.9"></Shadow>
+                                Radius="10"
+                                Offset="5,5"
+                                Opacity="0.9">
+                        </Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
 
