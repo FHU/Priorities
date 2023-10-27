@@ -93,26 +93,26 @@
                                     
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                                    Grid.Column="0"
-                                    Text="Snail's Pace"
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
-                                <Ellipse 
-                                    Grid.Column="1"  Fill="LightBlue"
-         WidthRequest="25"
-         HeightRequest="25"
-             HorizontalOptions="End"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
 
                             </Grid>
 
                         </Border>
                         <Border Grid.Row="1"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand"
+                           >
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -123,26 +123,25 @@
 
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"  
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
 
                             </Grid>
 
                         </Border>
                         <Border Grid.Row="2"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -153,19 +152,17 @@ HeightRequest="25"
 
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
                     </Grid>
 
@@ -182,139 +179,138 @@ HeightRequest="25"
                         </Grid.ColumnDefinitions>
 
                         <Border Grid.Row="0"
-                                    Grid.Column="0"
-                                    Stroke="#000000"
-                                    StrokeThickness="0.5"
-                                    Padding="5">
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="20" />
-                                </Border.StrokeShape>
-                                <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
-                                    <toolkit:AvatarView
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                                <toolkit:AvatarView
                                         HorizontalOptions="Center"
                                         VerticalOptions="Center"
                                         ImageSource="kenan.jpeg"
                                         HeightRequest="20"
                                         WidthRequest="20"/>
-                                    <Label Text="Kenan"
+                                <Label Text="Kenan"
                                            TextColor="Black"
                                            FontSize="12" />
 
-                                </HorizontalStackLayout>
-
-                            </Border>
-
-
-                        <Border Grid.Row="0"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="20" />
-                            </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
-                                <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
-                                <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
                             </HorizontalStackLayout>
 
                         </Border>
 
                         <Border Grid.Row="0"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
+                                       TextColor="Black"
+                                       FontSize="12" />
+
+                            </HorizontalStackLayout>
+
+                        </Border>
+
+                        <Border Grid.Row="0"
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                                <toolkit:AvatarView
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
+                                <Label Text="Kenan"
+                                       TextColor="Black"
+                                       FontSize="12" />
 
                             </HorizontalStackLayout>
 
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="0"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                ImageSource="kenan.jpeg"
+                                HeightRequest="20"
+                                WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
+                                       TextColor="Black"
+                                       FontSize="12" />
 
                             </HorizontalStackLayout>
 
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                ImageSource="kenan.jpeg"
+                                HeightRequest="20"
+                                WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
+                                       TextColor="Black"
+                                       FontSize="12" />
 
                             </HorizontalStackLayout>
 
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                ImageSource="kenan.jpeg"
+                                HeightRequest="20"
+                                WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
+                                       TextColor="Black"
+                                       FontSize="12" />
 
                             </HorizontalStackLayout>
 
@@ -366,7 +362,9 @@ HeightRequest="25"
                                     WidthRequest="20"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                            <Label Grid.Column="2"
+                                   Text="score"
+                                   TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
 
@@ -390,8 +388,7 @@ HeightRequest="25"
                                 Stroke="#000000"
                                 StrokeThickness="1"
                                 Padding="10"
-                                HorizontalOptions="FillAndExpand"
-                                >
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -399,29 +396,27 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                                    Grid.Column="0"
-                                    Text="Snail's Pace"
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
-                                <Ellipse 
-                                    Grid.Column="1"  Fill="LightBlue"
-         WidthRequest="25"
-         HeightRequest="25"
-             HorizontalOptions="End"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
 
                             </Grid>
 
                         </Border>
                         <Border Grid.Row="1"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -429,29 +424,25 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
                         <Border Grid.Row="2"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -459,22 +450,19 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
                     </Grid>
 
@@ -491,148 +479,136 @@ HeightRequest="25"
                         </Grid.ColumnDefinitions>
 
                         <Border Grid.Row="0"
-                                    Grid.Column="0"
-                                    Stroke="#000000"
-                                    StrokeThickness="0.5"
-                                    Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"
-                                        ImageSource="kenan.jpeg"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                                           TextColor="Black"
-                                           FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
-                        </Border>
-
-
-                        <Border Grid.Row="0"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="20" />
-                            </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
-                                <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
-                                <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
-                            </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="0"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
+                                       TextColor="Black"
+                                       FontSize="12" />
+                            </HorizontalStackLayout>
+                        </Border>
 
+                        <Border Grid.Row="0"
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                                <toolkit:AvatarView
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
+                                <Label Text="Kenan"
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
 
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="0"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
-
-
                     </Grid>
 
-                    <Label Grid.Row="2" Text="Played: October 26, 8:15PM" TextColor="Black"/>
+                    <Label Grid.Row="2"
+                           Text="Played: October 26, 8:15PM"
+                           TextColor="Black"/>
                 </Grid>
             </toolkit:Expander>
 
@@ -650,32 +626,34 @@ HeightRequest="25"
                                 <Label Text="The Casey Squad" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
-    HorizontalOptions="Center"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="Center"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="CenterAndExpand"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="CenterAndExpand"
-    VerticalOptions="CenterAndExpand"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="CenterAndExpand"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                            <Label Grid.Column="2"
+                                   Text="score"
+                                   TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
                 </toolkit:Expander.Header>
@@ -698,8 +676,7 @@ HeightRequest="25"
                                 Stroke="#000000"
                                 StrokeThickness="1"
                                 Padding="10"
-                                HorizontalOptions="FillAndExpand"
-                                >
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -707,29 +684,26 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                                    Grid.Column="0"
-                                    Text="Snail's Pace"
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
-                                <Ellipse 
-                                    Grid.Column="1"  Fill="LightBlue"
-         WidthRequest="25"
-         HeightRequest="25"
-             HorizontalOptions="End"/>
-
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
+
                         <Border Grid.Row="1"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -737,29 +711,26 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
+                        
                         <Border Grid.Row="2"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -767,22 +738,19 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
                     </Grid>
 
@@ -799,148 +767,135 @@ HeightRequest="25"
                         </Grid.ColumnDefinitions>
 
                         <Border Grid.Row="0"
-                                    Grid.Column="0"
-                                    Stroke="#000000"
-                                    StrokeThickness="0.5"
-                                    Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"
-                                        ImageSource="kenan.jpeg"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                                           TextColor="Black"
-                                           FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
-                        </Border>
-
-
-                        <Border Grid.Row="0"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="20" />
-                            </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
-                                <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
-                                <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
-                            </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="0"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
+                        </Border>
 
+                        <Border Grid.Row="0"
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                                <toolkit:AvatarView
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
+                                <Label Text="Kenan"
+                                       TextColor="Black"
+                                       FontSize="12" />
+                            </HorizontalStackLayout>
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="0"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
-
-
                     </Grid>
 
-                    <Label Grid.Row="2" Text="Played: October 26, 8:15PM" TextColor="Black"/>
+                    <Label Grid.Row="2"
+                           Text="Played: October 26, 8:15PM"
+                           TextColor="Black"/>
                 </Grid>
 
             </toolkit:Expander>
@@ -954,37 +909,41 @@ HeightRequest="25"
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="4." TextColor="White"/>
+                            <Label Grid.Column="0"
+                                   Text="4."
+                                   TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text=" The pretty PRETTY Princesses" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
-    HorizontalOptions="Center"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="Center"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="CenterAndExpand"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="CenterAndExpand"
-    VerticalOptions="CenterAndExpand"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="CenterAndExpand"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                            <Label Grid.Column="2"
+                                   Text="score"
+                                   TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
                 </toolkit:Expander.Header>
@@ -1007,8 +966,7 @@ HeightRequest="25"
                                 Stroke="#000000"
                                 StrokeThickness="1"
                                 Padding="10"
-                                HorizontalOptions="FillAndExpand"
-                                >
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -1016,29 +974,26 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                                    Grid.Column="0"
-                                    Text="Snail's Pace"
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
-                                <Ellipse 
-                                    Grid.Column="1"  Fill="LightBlue"
-         WidthRequest="25"
-         HeightRequest="25"
-             HorizontalOptions="End"/>
-
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
+                        
                         <Border Grid.Row="1"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -1046,29 +1001,26 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
+
                         <Border Grid.Row="2"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -1076,22 +1028,19 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
                     </Grid>
 
@@ -1108,145 +1057,130 @@ HeightRequest="25"
                         </Grid.ColumnDefinitions>
 
                         <Border Grid.Row="0"
-                                    Grid.Column="0"
-                                    Stroke="#000000"
-                                    StrokeThickness="0.5"
-                                    Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"
-                                        ImageSource="kenan.jpeg"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                                           TextColor="Black"
-                                           FontSize="12" />
-
+                                       TextColor="Black"
+                                        FontSize="12" />
                             </HorizontalStackLayout>
-
-                        </Border>
-
-
-                        <Border Grid.Row="0"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="20" />
-                            </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
-                                <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
-                                <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
-                            </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="0"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
+                        </Border>
 
+                        <Border Grid.Row="0"
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                                <toolkit:AvatarView
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
+                                <Label Text="Kenan"
+                                       TextColor="Black"
+                                       FontSize="12" />
+                            </HorizontalStackLayout>
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="0"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
-
-
                     </Grid>
 
                     <Label Grid.Row="2" Text="Played: October 26, 8:15PM" TextColor="Black"/>
@@ -1262,37 +1196,41 @@ HeightRequest="25"
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="5." TextColor="White"/>
+                            <Label Grid.Column="0"
+                                   Text="5."
+                                   TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="Inigo Mantoyas" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
-    HorizontalOptions="Center"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="Center"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="CenterAndExpand"
-    VerticalOptions="Center"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="Center"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
-    HorizontalOptions="CenterAndExpand"
-    VerticalOptions="CenterAndExpand"
-    ImageSource="kenan.jpeg"
-    HeightRequest="20"
-    WidthRequest="20"/>
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="CenterAndExpand"
+                                     ImageSource="kenan.jpeg"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                            <Label Grid.Column="2"
+                                   Text="score"
+                                   TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
                 </toolkit:Expander.Header>
@@ -1315,8 +1253,7 @@ HeightRequest="25"
                                 Stroke="#000000"
                                 StrokeThickness="1"
                                 Padding="10"
-                                HorizontalOptions="FillAndExpand"
-                                >
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -1324,29 +1261,26 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                                    Grid.Column="0"
-                                    Text="Snail's Pace"
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
-                                <Ellipse 
-                                    Grid.Column="1"  Fill="LightBlue"
-         WidthRequest="25"
-         HeightRequest="25"
-             HorizontalOptions="End"/>
-
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
+                        
                         <Border Grid.Row="1"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -1354,29 +1288,26 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
+
                         <Border Grid.Row="2"
-                       Stroke="#000000"
-                       StrokeThickness="1"
-                       Padding="10"
-                       HorizontalOptions="FillAndExpand"
-                       >
+                                Stroke="#000000"
+                                StrokeThickness="1"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
@@ -1384,22 +1315,19 @@ HeightRequest="25"
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
-                           Grid.Column="0"
-                           Text="Snail's Pace"
-                              TextColor="Black"
-                              FontSize="16" 
-                              VerticalOptions="Center"/>
-                                <Ellipse 
-                           Grid.Column="1"  Fill="LightBlue"
-WidthRequest="25"
-HeightRequest="25"
-    HorizontalOptions="End"/>
-
+                                       Grid.Column="0"
+                                       Text="Snail's Pace"
+                                       TextColor="Black"
+                                       FontSize="16" 
+                                       VerticalOptions="Center"/>
+                                <Ellipse Grid.Column="1"
+                                         Fill="LightBlue"
+                                         WidthRequest="25"
+                                         HeightRequest="25"
+                                         HorizontalOptions="End"/>
                             </Grid>
-
                         </Border>
                     </Grid>
 
@@ -1416,148 +1344,135 @@ HeightRequest="25"
                         </Grid.ColumnDefinitions>
 
                         <Border Grid.Row="0"
-                                    Grid.Column="0"
-                                    Stroke="#000000"
-                                    StrokeThickness="0.5"
-                                    Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"
-                                        ImageSource="kenan.jpeg"
-                                        HeightRequest="20"
-                                        WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                                           TextColor="Black"
-                                           FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
-                        </Border>
-
-
-                        <Border Grid.Row="0"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="20" />
-                            </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
-                                <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
-                                <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
-                            </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="0"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
+                        </Border>
 
+                        <Border Grid.Row="0"
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                                <toolkit:AvatarView
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
+                                <Label Text="Kenan"
+                                       TextColor="Black"
+                                       FontSize="12" />
+                            </HorizontalStackLayout>
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="0"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="0"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="1"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="1"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
 
                         <Border Grid.Row="1"
-            Grid.Column="2"
-            Stroke="#000000"
-            StrokeThickness="0.5"
-            Padding="5">
+                                Grid.Column="2"
+                                Stroke="#000000"
+                                StrokeThickness="0.5"
+                                Padding="5">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
                             <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ImageSource="kenan.jpeg"
-                HeightRequest="20"
-                WidthRequest="20"/>
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 ImageSource="kenan.jpeg"
+                                 HeightRequest="20"
+                                 WidthRequest="20"/>
                                 <Label Text="Kenan"
-                   TextColor="Black"
-                   FontSize="12" />
-
+                                       TextColor="Black"
+                                       FontSize="12" />
                             </HorizontalStackLayout>
-
                         </Border>
-
-
                     </Grid>
 
-                    <Label Grid.Row="2" Text="Played: October 26, 8:15PM" TextColor="Black"/>
+                    <Label Grid.Row="2"
+                           Text="Played: October 26, 8:15PM"
+                           TextColor="Black"/>
                 </Grid>
             </toolkit:Expander>
             
