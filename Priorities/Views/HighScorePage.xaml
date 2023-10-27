@@ -57,7 +57,7 @@
                                     WidthRequest="20"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            <Label Grid.Column="2" Text="score" TextColor="White"/>
+                            <Label Grid.Column="2" Text="4999" TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
                     
@@ -90,7 +90,6 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
-                                    
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
@@ -124,7 +123,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Great Start"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -153,7 +152,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Open Books"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -193,7 +192,7 @@
                                         ImageSource="kenan.jpeg"
                                         HeightRequest="20"
                                         WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Ken0n"
                                            TextColor="Black"
                                            FontSize="12" />
 
@@ -216,7 +215,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Cenan"
                                        TextColor="Black"
                                        FontSize="12" />
 
@@ -239,7 +238,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Kanen"
                                        TextColor="Black"
                                        FontSize="12" />
 
@@ -262,7 +261,7 @@
                                 ImageSource="kenan.jpeg"
                                 HeightRequest="20"
                                 WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Kacey"
                                        TextColor="Black"
                                        FontSize="12" />
 
@@ -285,7 +284,7 @@
                                 ImageSource="kenan.jpeg"
                                 HeightRequest="20"
                                 WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Cacey"
                                        TextColor="Black"
                                        FontSize="12" />
 
@@ -308,7 +307,7 @@
                                 ImageSource="kenan.jpeg"
                                 HeightRequest="20"
                                 WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Casey"
                                        TextColor="Black"
                                        FontSize="12" />
 
@@ -319,7 +318,7 @@
 
                     </Grid>
 
-                    <Label Grid.Row="2" Text="Played: October 26, 8:15PM" TextColor="Black"/>
+                    <Label Grid.Row="2" Text="Played: October 2nd, 8:15AM" TextColor="Black"/>
                 </Grid>
             </toolkit:Expander>
 
@@ -363,7 +362,7 @@
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2"
-                                   Text="score"
+                                   Text="4875"
                                    TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
@@ -427,7 +426,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Fastest Man Alive"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -453,7 +452,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Open Books"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -514,7 +513,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Kacy"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -535,7 +534,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Xenan"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -557,7 +556,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Kas3y"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -578,7 +577,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Canen"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -599,7 +598,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Kenen"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -607,7 +606,7 @@
                     </Grid>
 
                     <Label Grid.Row="2"
-                           Text="Played: October 26, 8:15PM"
+                           Text="Played: October 15th, 2:15PM"
                            TextColor="Black"/>
                 </Grid>
             </toolkit:Expander>
@@ -652,7 +651,7 @@
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2"
-                                   Text="score"
+                                   Text="4777"
                                    TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
@@ -714,7 +713,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Twinsies"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -741,7 +740,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Fastest Man Alive"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -894,7 +893,7 @@
                     </Grid>
 
                     <Label Grid.Row="2"
-                           Text="Played: October 26, 8:15PM"
+                           Text="Played: October 19th, 9:30PM"
                            TextColor="Black"/>
                 </Grid>
 
@@ -942,7 +941,7 @@
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2"
-                                   Text="score"
+                                   Text="2500"
                                    TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
@@ -977,7 +976,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Living on a Prayer"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -1031,7 +1030,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Twinsies"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -1071,7 +1070,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Queenan"
                                        TextColor="Black"
                                         FontSize="12" />
                             </HorizontalStackLayout>
@@ -1092,7 +1091,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Kenran"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1113,7 +1112,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Ken"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1134,7 +1133,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Kernan"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1155,7 +1154,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Casen"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1176,21 +1175,21 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Queenan"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
                         </Border>
                     </Grid>
 
-                    <Label Grid.Row="2" Text="Played: October 26, 8:15PM" TextColor="Black"/>
+                    <Label Grid.Row="2" Text="Played: October 25th, 12:00PM" TextColor="Black"/>
                 </Grid>
             </toolkit:Expander>
 
             <toolkit:Expander Grid.Row="4">
                 <toolkit:Expander.Header>
                     <HorizontalStackLayout BackgroundColor="Indigo" Grid.Row="4" Padding="20">
-                        <Grid ColumnSpacing="50">
+                        <Grid ColumnSpacing="60">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
@@ -1229,7 +1228,7 @@
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2"
-                                   Text="score"
+                                   Text="0"
                                    TextColor="White"/>
                         </Grid>
                     </HorizontalStackLayout>
@@ -1264,7 +1263,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Fastest Man Alive"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -1318,7 +1317,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Padding="5"
                                        Grid.Column="0"
-                                       Text="Snail's Pace"
+                                       Text="Ragnarok"
                                        TextColor="Black"
                                        FontSize="16" 
                                        VerticalOptions="Center"/>
@@ -1358,7 +1357,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="CASEY"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1379,7 +1378,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Cracy"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1400,7 +1399,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Krenan"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1421,7 +1420,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="KAsEY"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1442,7 +1441,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Xas3Y"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
@@ -1463,7 +1462,7 @@
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
-                                <Label Text="Kenan"
+                                <Label Text="Ke_nSY"
                                        TextColor="Black"
                                        FontSize="12" />
                             </HorizontalStackLayout>
