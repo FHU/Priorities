@@ -21,7 +21,7 @@
             <toolkit:Expander Grid.Row="0">
                 <toolkit:Expander.Header>
                     <HorizontalStackLayout BackgroundColor="Purple" Grid.Row="0" Padding="20">
-                        <Grid ColumnSpacing="50">
+                        <Grid ColumnSpacing="10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
@@ -29,7 +29,7 @@
                             </Grid.ColumnDefinitions>
                             <Label Grid.Column="0" Text="1." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="Fire-Breathing Rubber Duckies" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
                                     HorizontalOptions="Center"
@@ -330,15 +330,15 @@ HeightRequest="25"
             <toolkit:Expander Grid.Row="1">
                 <toolkit:Expander.Header>
                     <HorizontalStackLayout BackgroundColor="Blue" Grid.Row="1" Padding="20">
-                        <Grid ColumnSpacing="50">
+                        <Grid ColumnSpacing="35">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <Label Grid.Column="0" Text="2." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="Frozen Drama Queens" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
                                     HorizontalOptions="Center"
@@ -645,9 +645,9 @@ HeightRequest="25"
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <Label Grid.Column="0" Text="3." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="The Casey Squad" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
     HorizontalOptions="Center"
@@ -948,15 +948,15 @@ HeightRequest="25"
             <toolkit:Expander Grid.Row="3">
                 <toolkit:Expander.Header>
                     <HorizontalStackLayout BackgroundColor="Magenta" Grid.Row="3" Padding="20">
-                        <Grid ColumnSpacing="50">
+                        <Grid ColumnSpacing="8">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <Label Grid.Column="0" Text="4." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text=" The pretty PRETTY Princesses" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
     HorizontalOptions="Center"
@@ -1262,9 +1262,9 @@ HeightRequest="25"
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <Label Grid.Column="0" Text="5." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="Inigo Mantoyas" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
     HorizontalOptions="Center"
