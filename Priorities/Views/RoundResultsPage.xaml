@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.RoundResultsPage"
              Title="Priorities">
+    
+    <!-- main section -->
     <VerticalStackLayout BackgroundColor="LightBlue">
+        
+        <!-- header -->
         <Grid Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="80" BackgroundColor="DarkBlue">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
@@ -13,38 +17,51 @@
                 <ColumnDefinition Width="0.3*" />
                 <ColumnDefinition Width="0.7*" />
             </Grid.ColumnDefinitions>
-            <Image Grid.RowSpan="2" Grid.Column="0" Source="default_profile" HeightRequest="60"></Image>
-            <Label 
-                Grid.Row="0"
-                Grid.Column="1"
-                Text="Revealing Results..."
-                TextColor="White"
-                FontAttributes="Bold"
-                VerticalOptions="Center" 
-                HorizontalOptions="Start" />
-            <Label 
-                Grid.Row="1"
-                Grid.Column="1"
-                Text="John"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontSize="24"
-                VerticalOptions="Center" 
-                HorizontalOptions="Start" />
+            
+            <!-- profile picture -->
+            <Image Grid.RowSpan="2"
+                   Grid.Column="0"
+                   Source="default_profile"
+                   HeightRequest="60">
+            </Image>
+            
+            <!-- revealing results -->
+            <Label Grid.Row="0"
+                   Grid.Column="1"
+                   Text="Revealing Results..."
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   />
+            
+            <!-- player name -->
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   Text="John"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   />
         </Grid>
 
+        <!-- content -->
         <Grid  Padding="0" ColumnSpacing="16" VerticalOptions="Center" HeightRequest="100">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-
+            <!-- round status -->
             <Grid Grid.Column="0" Padding="30" RowSpacing="16" VerticalOptions="Center" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
+                
+                <!-- round background -->
                 <RoundRectangle Grid.RowSpan="2" Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Gray"
@@ -55,52 +72,62 @@
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
 
-                <Label 
-                Grid.Row="0"
-        Text="Round"
-                FontAttributes="Bold"
-                Margin="0,10,0,0"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" />
-                <Label 
-                Grid.Row="1"
-           
-Text="1/5"
-                Margin="0,0,0,10"
-VerticalOptions="Center" 
-HorizontalOptions="Center" />
+                <!-- round label -->
+                <Label Grid.Row="0"
+                       Text="Round"
+                       FontAttributes="Bold"
+                       Margin="0,10,0,0"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
+                
+                <!-- round number -->
+                <Label Grid.Row="1"
+                       Text="1/5"
+                       Margin="0,0,0,10"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
             </Grid>
 
+            <!-- score status -->
             <Grid Grid.Column="1" Padding="30" RowSpacing="16" VerticalOptions="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
+
+                <!-- score background -->
                 <RoundRectangle Grid.RowSpan="2" Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Gray"
-Radius="10"
+                                Radius="10"
                                 Offset="5,5"
-Opacity="0.9"></Shadow>
+                                Opacity="0.9">
+                        </Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
-                <Label 
-                Grid.Row="0"
-        Text="Score"
-                    FontAttributes="Bold"
-                    Margin="0,10,0,0"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" />
-                <Label 
-                Grid.Row="1"
-Text="50"
-                Margin="0,0,0,10"
-VerticalOptions="Center" 
-HorizontalOptions="Center" />
-            </Grid>
 
+                <!-- score label -->
+                <Label Grid.Row="0"
+                       Text="Score"
+                       FontAttributes="Bold"
+                       Margin="0,10,0,0"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
+
+                <!-- score number -->
+                <Label Grid.Row="1"
+                       Text="50"
+                       Margin="0,0,0,10"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
+            </Grid>
         </Grid>
 
+        <!-- guess list -->
         <Grid MinimumHeightRequest="400" Padding="0,10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="80" />
@@ -110,6 +137,7 @@ HorizontalOptions="Center" />
                 <RowDefinition Height="80" />
             </Grid.RowDefinitions>
 
+            <!-- guess 1 -->
             <Grid Padding="10" Grid.Row="0" ColumnSpacing="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40" />
@@ -119,50 +147,66 @@ HorizontalOptions="Center" />
                     <ColumnDefinition Width="30" />
                 </Grid.ColumnDefinitions>
 
-
-                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
-
-
+                <!-- guess 1 bg -->
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">]
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Gray"
-Radius="10"
+                                Radius="10"
                                 Offset="5,5"
-Opacity="0.9"></Shadow>
+                                Opacity="0.9">
+                        </Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
+                
+                <!-- guess 1 circle -->
                 <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
                         StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#567BFF">
-                    <Label 
-                        Text="1"
-                        FontAttributes="Bold"
-                        VerticalOptions="Center" 
-                        HorizontalOptions="Center"/>
+                    
+                    <!-- guess 1 number -->
+                    <Label Text="1"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+                    
+                    <!-- shadow -->
                     <Border.Shadow>
                         <Shadow Brush="Gray"
                                 Offset="2,2"
-Radius="5"
-Opacity="0.9"></Shadow>
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
                     </Border.Shadow>
                 </Border>
-                <Label 
-        Grid.Column="1"
-        Text="Giraffe"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" />
-                <Image Grid.Column="2" Source="green_check.jpg"  HeightRequest="35" WidthRequest="35">
+                
+                <!-- guess 1 text -->
+                <Label Grid.Column="1"
+                       Text="Giraffe"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
+                
+                <!-- check -->
+                <Image Grid.Column="2"
+                       Source="green_check.jpg"
+                       HeightRequest="35"
+                       WidthRequest="35">
                 </Image>
-                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
-                <Label 
-Grid.Column="3"
-                    Grid.ColumnSpan="2" 
-Text="+ 25"
-                    FontAttributes="Bold"
-VerticalOptions="Center" 
-HorizontalOptions="Center" />
-
-
+                
+                <!-- guess 1 pts bg -->
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30"/>
+                
+                <!-- guess 1 pts -->
+                <Label Grid.Column="3"
+                       Grid.ColumnSpan="2" 
+                       Text="+ 25"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
             </Grid>
 
+            <!-- guess 2 -->
             <Grid Padding="10" Grid.Row="1" ColumnSpacing="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40" />
@@ -172,45 +216,63 @@ HorizontalOptions="Center" />
                     <ColumnDefinition Width="30" />
                 </Grid.ColumnDefinitions>
 
-
+                <!-- guess 2 bg -->
                 <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
                     <RoundRectangle.Shadow>
                         <Shadow Brush="Gray"
-Radius="10"
+                                Radius="10"
                                 Offset="5,5"
-Opacity="0.9"></Shadow>
+                                Opacity="0.9">
+                        </Shadow>
                     </RoundRectangle.Shadow>
                 </RoundRectangle>
+                
+                <!-- guess 2 circle -->
                 <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
                         StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#F40F0F">
-                    <Label 
-Text="2"
-                        FontAttributes="Bold"
-VerticalOptions="Center" 
-HorizontalOptions="Center" />
+                    
+                    <!-- guess 2 number -->
+                    <Label Text="2"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+                    
+                    <!-- shadow -->
                     <Border.Shadow>
                         <Shadow Brush="Gray"
                                 Offset="2,2"
-Radius="5"
-Opacity="0.9"></Shadow>
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
                     </Border.Shadow>
                 </Border>
-                <Label 
-        Grid.Column="1"
-        Text="Chocolate"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" />
-                <Image Grid.Column="2" Source="green_check.jpg" HeightRequest="35" WidthRequest="35"></Image>
+                
+                <!-- guess 2 text -->
+                <Label Grid.Column="1"
+                       Text="Chocolate"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
+                
+                <!-- check -->
+                <Image Grid.Column="2"
+                       Source="green_check.jpg"
+                       HeightRequest="35"
+                       WidthRequest="35">
+                </Image>
+                
+                <!-- guess 2 pts bg -->
                 <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
-                <Label 
-Grid.Column="3"
-                    Grid.ColumnSpan="2" 
-Text="+ 20"
-                    FontAttributes="Bold"
-VerticalOptions="Center" 
-HorizontalOptions="Center" />
-
-
+                
+                <!-- guess 2 pts -->
+                <Label Grid.Column="3"
+                       Grid.ColumnSpan="2" 
+                       Text="+ 20"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
             </Grid>
 
             <Grid Padding="10" Grid.Row="2" ColumnSpacing="5">
@@ -267,8 +329,8 @@ Opacity="0.9"></Shadow>
                 <RoundRectangle Grid.Column="4"  CornerRadius="30" />
                 <Image
                     Grid.Column="4"
-    Source="down_arrow.png"
-                    WidthRequest="20"
+    Source="down_arrow"
+                    WidthRequest="25"
                     HeightRequest="60"
 VerticalOptions="Center" 
 HorizontalOptions="Center"></Image>
@@ -329,8 +391,9 @@ Opacity="0.9"></Shadow>
                 </Border>
                 <RoundRectangle Grid.Column="4" CornerRadius="30" />
                 <Image
+                    Source="up_arrow"
 Grid.Column="4"
-                    WidthRequest="20"
+                    WidthRequest="25"
 HeightRequest="60"
 VerticalOptions="Center" 
 HorizontalOptions="Center"></Image>

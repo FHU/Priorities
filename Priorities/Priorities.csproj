@@ -59,6 +59,8 @@
 	<ItemGroup>
 	  <None Remove="Models\" />
 	  <None Remove="Resources\Images\default_profile.svg" />
+	  <None Remove="Resources\Images\down_arrow.svg" />
+	  <None Remove="Resources\Images\up_arrow.svg" />
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
 	</ItemGroup>
