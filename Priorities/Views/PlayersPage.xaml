@@ -4,27 +4,30 @@
              x:Class="Priorities.Views.PlayersPage"
              Title="PlayersPage"
              xmlns:vm="clr-namespace:Priorities.ViewModels"
+             Background="White"
              >
-    <ScrollView>
+
+    <ContentPage.Content>
         <VerticalStackLayout>
 
             <Label
             Text="Priorities"
-            TextColor="Black"
+            TextColor="White"
             HorizontalTextAlignment="Center"
-            FontSize="32"
-            BackgroundColor="white"
-            HorizontalOptions="Fill"/>
+            FontSize="48"
+            BackgroundColor="Black"
+            HorizontalOptions="Fill"
+                Padding="15"/>
 
             <Label
-            Margin="15"
-            TextColor="White"
+            Margin="20"
+            TextColor="Black"
             Text="Players"
-            FontSize="18"
+            FontSize="32"
             HorizontalOptions="Center" />
 
 
-            <Grid BackgroundColor="White" Padding="10">
+            <!--<Grid BackgroundColor="White" Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -36,26 +39,150 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Row="0" Grid.Column="1" Text=" Player Image "  TextColor="Black" FontSize="18"/>
-                <Label Grid.Row="0" Grid.Column="3" Text=" Player Name "   TextColor="Black" FontSize="18"/>
-                <Label Grid.Row="0" Grid.Column="2" Text=" Remove Button " TextColor="Black" FontSize="18"/>
+                <Label Grid.Row="0" Grid.Column="1" Text=" PlayerImage "  TextColor="Black" FontSize="18"/>
+                <Label Grid.Row="0" Grid.Column="3" Text=" PlayerName "   TextColor="Black" FontSize="18"/>
+                <Label Grid.Row="0" Grid.Column="2" Text=" RemoveButton " TextColor="Black" FontSize="18"/>
 
-            </Grid>
+            </Grid>-->
 
+            <ScrollView>
+
+                <FlexLayout AlignItems="Center" Direction="Column" Margin="5">
+                    <Frame Margin="5" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
+
+                        <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="340" HeightRequest="65"  >
+
+
+                            <Frame
+                                BorderColor="Black"
+                                CornerRadius="100"
+                                
+                                IsClippedToBounds="True"
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                Margin="10">
+
+                                <Image Source="rando1.jpg"
+                                    Aspect="AspectFill"
+                                    Margin="-20" />
+                            </Frame>
+
+                            <Label Text="Joe" FontSize="25" TextColor="White"/>
+                            <Label Text="x" FontSize="25" TextColor="White" Margin="10" />
+
+                        </FlexLayout>
+                    </Frame>
+
+                    <Frame Margin="5" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
+
+                        <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="340" HeightRequest="65"  >
+
+
+                            <Frame
+                                BorderColor="Black"
+                                CornerRadius="100"
+                                
+                                IsClippedToBounds="True"
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                Margin="10">
+
+                                <Image Source="rando2.jpg"
+                                    Aspect="AspectFill"
+                                    Margin="-20" />
+                            </Frame>
+
+                            <Label Text="Yo" FontSize="25" TextColor="White"/>
+                            <Label Text="x" FontSize="25" TextColor="White" Margin="10" />
+
+                        </FlexLayout>
+                    </Frame>
+
+                    <Frame Margin="5" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
+
+                        <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="340" HeightRequest="65"  >
+
+
+                            <Frame
+                                BorderColor="Black"
+                                CornerRadius="100"
+                                
+                                IsClippedToBounds="True"
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                Margin="10">
+
+                                <Image Source="rando3.jpg"
+                                    Aspect="AspectFill"
+                                    Margin="-20" />
+                            </Frame>
+
+                            <Label Text="John Deere" FontSize="25" TextColor="White"/>
+                            <Label Text="x" FontSize="25" TextColor="White" Margin="10" />
+
+                        </FlexLayout>
+                    </Frame>
+
+                    <Frame Margin="5" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
+
+                        <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="340" HeightRequest="65"  >
+
+
+                            <Frame
+                                BorderColor="Black"
+                                CornerRadius="100"
+                                
+                                IsClippedToBounds="True"
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                Margin="10">
+
+                                <Image Source="rando4.jpg"
+                                    Aspect="AspectFill"
+                                    Margin="-20" />
+                            </Frame>
+
+                            <Label Text="Tractor" FontSize="25" TextColor="White"/>
+                            <Label Text="x" FontSize="25" TextColor="White" Margin="10" />
+
+                        </FlexLayout>
+
+                    </Frame>
+                </FlexLayout>
+                
+                
+                
+                
+                
+            </ScrollView>
 
 
 
             <Button
-        Margin="25"
-        TextColor="Black"
+        Margin="10"
+        TextColor="White"
         Text="Add New Player"
-        HorizontalOptions="Center" />
+        HorizontalOptions="Center" 
+                FontSize="25"
+                BackgroundColor="OrangeRed"
+                Padding="15"
+                CornerRadius="20"
+                WidthRequest="250"
+                />
 
             <Button
-            TextColor="Black"
-            Text="Play"
-            HorizontalOptions="Center" />
+        Margin="10"
+        TextColor="White"
+        Text="Play!"
+        HorizontalOptions="Center" 
+                FontSize="25"
+                BackgroundColor="Blue"
+                Padding="15"
+                CornerRadius="20"
+                WidthRequest="250"
+               
+                />
 
         </VerticalStackLayout>
-    </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

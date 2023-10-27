@@ -13,7 +13,8 @@ namespace Priorities.ViewModels
 
 		public PlayersPageViewModel()
 		{
-		}
+            Players = new ObservableCollection<Player>();
+        }
 	}
 }
 
