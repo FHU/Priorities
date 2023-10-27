@@ -30,7 +30,32 @@
                             <Label Grid.Column="0" Text="1." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="TeamName" TextColor="White"/>
-                                <Label Text="TeamPictures" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="-10">
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="Center"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2" Text="score" TextColor="White"/>
                         </Grid>
@@ -55,7 +80,32 @@
                             <Label Grid.Column="0" Text="1." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="TeamName" TextColor="White"/>
-                                <Label Text="TeamPictures" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="-10">
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="Center"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    ImageSource="kenan.jpeg"
+                                    HeightRequest="20"
+                                    WidthRequest="20"/>
+                                </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2" Text="score" TextColor="White"/>
                         </Grid>
@@ -79,7 +129,32 @@
                             <Label Grid.Column="0" Text="1." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="TeamName" TextColor="White"/>
-                                <Label Text="TeamPictures" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="-10">
+                                    <toolkit:AvatarView
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="CenterAndExpand"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2" Text="score" TextColor="White"/>
                         </Grid>
@@ -103,7 +178,32 @@
                             <Label Grid.Column="0" Text="1." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="TeamName" TextColor="White"/>
-                                <Label Text="TeamPictures" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="-10">
+                                    <toolkit:AvatarView
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="CenterAndExpand"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2" Text="score" TextColor="White"/>
                         </Grid>
@@ -127,7 +227,32 @@
                             <Label Grid.Column="0" Text="1." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
                                 <Label Text="TeamName" TextColor="White"/>
-                                <Label Text="TeamPictures" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="-10">
+                                    <toolkit:AvatarView
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="Center"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                    <toolkit:AvatarView
+    HorizontalOptions="CenterAndExpand"
+    VerticalOptions="CenterAndExpand"
+    ImageSource="kenan.jpeg"
+    HeightRequest="20"
+    WidthRequest="20"/>
+                                </HorizontalStackLayout>
                             </VerticalStackLayout>
                             <Label Grid.Column="2" Text="score" TextColor="White"/>
                         </Grid>
