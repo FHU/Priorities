@@ -224,9 +224,9 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="1." TextColor="White"/>
+                            <Label Grid.Column="0" Text="5." TextColor="White"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Label Text="TeamName" TextColor="White"/>
+                                <Label Text="Inigo Mantoyas" TextColor="White"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
     HorizontalOptions="Center"
