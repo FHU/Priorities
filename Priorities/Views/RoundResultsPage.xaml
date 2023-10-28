@@ -4,41 +4,39 @@
              x:Class="Priorities.Views.RoundResultsPage"
              Title="Priorities">
 
-    <VerticalStackLayout BackgroundColor="LightBlue">
+    <!-- main -->
+    <Grid RowSpacing="0" BackgroundColor="LightBlue" Padding="0,0,0,12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
 
-        <!-- everything -->
-        <Grid RowSpacing="0">
+        <!-- header -->
+        <Grid Grid.Row="0" Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="80" BackgroundColor="DarkBlue">
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
 
-            <!-- header -->
-            <Grid Grid.Row="0" Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="80" BackgroundColor="DarkBlue">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="auto" />
-                </Grid.ColumnDefinitions>
-
-                <!-- profile picture -->
-                <Image Grid.RowSpan="2"
+            <!-- profile picture -->
+            <Image Grid.RowSpan="2"
                    Grid.Column="0"
                    Source="default_profile"
                    HeightRequest="50"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    Margin="10,5,20,0">
-                </Image>
+            </Image>
 
-                <!-- revealing results -->
-                <Label Grid.Row="0"
+            <!-- revealing results -->
+            <Label Grid.Row="0"
                    Grid.Column="1"
                    Text="Revealing Results..."
                    TextColor="White"
@@ -47,8 +45,8 @@
                    HorizontalOptions="Start"
                    />
 
-                <!-- player name -->
-                <Label Grid.Row="1"
+            <!-- player name -->
+            <Label Grid.Row="1"
                    Grid.Column="1"
                    Text="John"
                    TextColor="White"
@@ -58,8 +56,8 @@
                    HorizontalOptions="Start"
                    />
 
-                <!-- score label -->
-                <Label Grid.Row="0"
+            <!-- score label -->
+            <Label Grid.Row="0"
                    Grid.Column="2"
                    Text="Score"
                    TextColor="White"
@@ -67,8 +65,8 @@
                    Padding="10,0"
                    />
 
-                <!-- score number -->
-                <Label Grid.Row="1"
+            <!-- score number -->
+            <Label Grid.Row="1"
                    Grid.Column="2"
                    Text="50"
                    TextColor="White"
@@ -77,402 +75,425 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    />
-            </Grid>
+        </Grid>
 
-            <!-- guess list -->
-            <Grid Grid.Row="1" Padding="0,10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
+        <!-- guess list -->
+        <Grid Grid.Row="1" Padding="0,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-                <!-- guess 1 -->
-                <Grid Padding="10" Grid.Row="0" ColumnSpacing="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <ColumnDefinition Width="160" />
-                        <ColumnDefinition Width="75" />
-                        <ColumnDefinition Width="50" />
-                        <ColumnDefinition Width="30" />
-                    </Grid.ColumnDefinitions>
+            <!-- guess 1 -->
+            <Grid Padding="10" Grid.Row="0" ColumnSpacing="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-                    <!-- guess 1 bg -->
-                    <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
-                        <RoundRectangle.Shadow>
-                            <Shadow Brush="Gray"
+                <!-- guess 1 bg -->
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30" MaximumHeightRequest="70">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Gray"
                                 Radius="10"
                                 Offset="5,5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </RoundRectangle.Shadow>
-                    </RoundRectangle>
+                                Opacity="0.9"
+                                Grid.ColumnSpan="2">
+                        </Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
 
-                    <!-- guess 1 circle -->
-                    <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                <!-- guess 1 circle -->
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
                         StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#567BFF">
 
-                        <!-- guess 1 number -->
-                        <Label Text="1"
+                    <!-- guess 1 number -->
+                    <Label Text="1"
                            FontAttributes="Bold"
+                           FontSize="24"
                            VerticalOptions="Center" 
                            HorizontalOptions="Center"
                            />
 
-                        <!-- shadow -->
-                        <Border.Shadow>
-                            <Shadow Brush="Gray"
+                    <!-- shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
                                 Offset="2,2"
                                 Radius="5"
                                 Opacity="0.9">
-                            </Shadow>
-                        </Border.Shadow>
-                    </Border>
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
 
-                    <!-- guess 1 text -->
-                    <Label Grid.Column="1"
+                <!-- guess 1 text -->
+                <Label Grid.Column="1"
                        Text="Giraffe"
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center"
-                       />
-
-                    <!-- check -->
-                    <Image Grid.Column="2"
-                       Source="green_check.jpg"
-                       HeightRequest="35"
-                       WidthRequest="35">
-                    </Image>
-
-                    <!-- guess 1 pts bg -->
-                    <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30"/>
-
-                    <!-- guess 1 pts -->
-                    <Label Grid.Column="3"
-                       Grid.ColumnSpan="2" 
-                       Text="+ 25"
                        FontAttributes="Bold"
+                       FontSize="24"
                        VerticalOptions="Center" 
-                       HorizontalOptions="Center"
-                       />
-                </Grid>
-
-                <!-- guess 2 -->
-                <Grid Padding="10" Grid.Row="1" ColumnSpacing="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <ColumnDefinition Width="160" />
-                        <ColumnDefinition Width="75" />
-                        <ColumnDefinition Width="50" />
-                        <ColumnDefinition Width="30" />
-                    </Grid.ColumnDefinitions>
-
-                    <!-- guess 2 bg -->
-                    <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
-                        <RoundRectangle.Shadow>
-                            <Shadow Brush="Gray"
-                                Radius="10"
-                                Offset="5,5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </RoundRectangle.Shadow>
-                    </RoundRectangle>
-
-                    <!-- guess 2 circle -->
-                    <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
-                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#F40F0F">
-
-                        <!-- guess 2 number -->
-                        <Label Text="2"
-                           FontAttributes="Bold"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center"
-                           />
-
-                        <!-- shadow -->
-                        <Border.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="2,2"
-                                Radius="5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </Border.Shadow>
-                    </Border>
-
-                    <!-- guess 2 text -->
-                    <Label Grid.Column="1"
-                       Text="Chocolate"
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center"
+                       HorizontalOptions="Start"
+                       Padding="32,0,0,0"
                        />
 
-                    <!-- check -->
-                    <Image Grid.Column="2"
-                       Source="green_check.jpg"
-                       HeightRequest="35"
-                       WidthRequest="35">
-                    </Image>
-
-                    <!-- guess 2 pts bg -->
-                    <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
-
-                    <!-- guess 2 pts -->
-                    <Label Grid.Column="3"
-                       Grid.ColumnSpan="2" 
-                       Text="+ 20"
-                       FontAttributes="Bold"
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center"
-                       />
-                </Grid>
-
-                <!-- guess 3 -->
-                <Grid Padding="10" Grid.Row="2" ColumnSpacing="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <ColumnDefinition Width="160" />
-                        <ColumnDefinition Width="75" />
-                        <ColumnDefinition Width="50" />
-                        <ColumnDefinition Width="30" />
-                    </Grid.ColumnDefinitions>
-
-                    <!-- guess 3 bg -->
-                    <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
-                        <RoundRectangle.Shadow>
-                            <Shadow Brush="Gray"
-                                Radius="10"
-                                Offset="5,5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </RoundRectangle.Shadow>
-                    </RoundRectangle>
-
-                    <!-- guess 3 circle -->
-                    <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
-                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="White">
-
-                        <!-- guess 3 number -->
-                        <Label Text="3"
-                           FontAttributes="Bold"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center"
-                           />
-
-                        <!-- shadow -->
-                        <Border.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="2,2"
-                                Radius="5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </Border.Shadow>
-                    </Border>
-
-                    <!-- guess 3 text -->
-                    <Label Grid.Column="1"
-                       Text="Sleep"
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center"
-                       />
-
-                    <!-- red x -->
-                    <Image Grid.Column="2"
-                       Source="red_x"
-                       HeightRequest="35"
-                       WidthRequest="35">
-                    </Image>
-
-                    <!-- guess 3 pts bg -->
-                    <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse"
-                        WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#E5F587">
-
-                        <!-- guess 3 correct answer -->
-                        <Label Text="4"
-                           FontAttributes="Bold"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center"
-                           />
-
-                        <!-- shadow -->
-                        <Border.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="2,2"
-                                Radius="5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </Border.Shadow>
-                    </Border>
-                </Grid>
-
-                <!-- guess 4 -->
-                <Grid Padding="10" Grid.Row="3" ColumnSpacing="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <ColumnDefinition Width="160" />
-                        <ColumnDefinition Width="75" />
-                        <ColumnDefinition Width="50" />
-                        <ColumnDefinition Width="30" />
-                    </Grid.ColumnDefinitions>
-
-                    <!-- guess 4 bg -->
-                    <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
-                        <RoundRectangle.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="5,5"
-                                Radius="10"
-                                Opacity="0.9">
-                            </Shadow>
-                        </RoundRectangle.Shadow>
-                    </RoundRectangle>
-
-                    <!-- guess 4 circle -->
-                    <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
-                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#E5F587">
-
-                        <!-- guess 4 number -->
-                        <Label Text="4"
-                           FontAttributes="Bold"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center"
-                           />
-
-                        <!-- shadow -->
-                        <Border.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="2,2"
-                                Radius="5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </Border.Shadow>
-                    </Border>
-
-                    <!-- guess 4 text -->
-                    <Label Grid.Column="1"
-                       Text="Fruit"
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center"
-                       />
-
-                    <!-- red x -->
-                    <Image Grid.Column="2"
-                       Source="red_x"
-                       HeightRequest="35"
-                       WidthRequest="35">
-                    </Image>
-
-                    <!-- guess 4 pts bg -->
-                    <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse"
-                        WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="White">
-
-                        <!-- guess 4 correct answer -->
-                        <Label Text="3"
-                           FontAttributes="Bold"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center"
-                           />
-
-                        <!-- shadow -->
-                        <Border.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="2,2"
-                                Radius="5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </Border.Shadow>
-                    </Border>
-                </Grid>
-
-                <!-- guess 5 -->
-                <Grid Padding="10" Grid.Row="4" ColumnSpacing="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <ColumnDefinition Width="160" />
-                        <ColumnDefinition Width="75" />
-                        <ColumnDefinition Width="50" />
-                        <ColumnDefinition Width="30" />
-                    </Grid.ColumnDefinitions>
-
-                    <!-- guess 5 bg -->
-                    <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30">
-                        <RoundRectangle.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="5,5"
-                                Radius="10"
-                                Opacity="0.9">
-                            </Shadow>
-                        </RoundRectangle.Shadow>
-                    </RoundRectangle>
-
-                    <!-- guess 5 circle -->
-                    <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
-                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#90F587">
-
-                        <!-- guess 5 number -->
-                        <Label Text="5"
-                           FontAttributes="Bold"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center"
-                           />
-
-                        <!-- shadow -->
-                        <Border.Shadow>
-                            <Shadow Brush="Gray"
-                                Offset="2,2"
-                                Radius="5"
-                                Opacity="0.9">
-                            </Shadow>
-                        </Border.Shadow>
-                    </Border>
-
-                    <!-- guess 5 text -->
-                    <Label Grid.Column="1"
-                       Text="Casey"
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center"
-                       />
-
-                    <!-- check -->
-                    <Image Grid.Column="2"
+                <!-- check -->
+                <Image Grid.Column="2"
                        Source="green_check"
                        HeightRequest="35"
                        WidthRequest="35">
-                    </Image>
+                </Image>
 
-                    <!-- guess 5 pts bg -->
-                    <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" CornerRadius="30" />
+                <!-- guess 1 pts bg -->
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30"/>
 
-                    <!-- guess 5 pts -->
-                    <Label Grid.Column="3"
-                       Grid.ColumnSpan="2"
-                       Text="+ 5"
+                <!-- guess 1 pts -->
+                <Label Grid.Column="3"
+                       Grid.ColumnSpan="2" 
+                       Text="+ 25"
                        FontAttributes="Bold"
+                       FontSize="22"
                        VerticalOptions="Center" 
                        HorizontalOptions="Center"
                        />
-                </Grid>
             </Grid>
 
-            <!-- next button -->
-            <Button Grid.Row="2"
-                Text="Next"
-                FontAttributes="Bold"
-                BackgroundColor="DarkBlue"
-                Margin="20">
-                <Button.Shadow>
-                    <Shadow Brush="Black"
+            <!-- guess 2 -->
+            <Grid Padding="10" Grid.Row="1" ColumnSpacing="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- guess 2 bg -->
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30" MaximumHeightRequest="70">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Gray"
+                                Radius="10"
+                                Offset="5,5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
+
+                <!-- guess 2 circle -->
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#F40F0F">
+
+                    <!-- guess 2 number -->
+                    <Label Text="2"
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+
+                    <!-- shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="2,2"
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+
+                <!-- guess 2 text -->
+                <Label Grid.Column="1"
+                       Text="Chocolate"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Padding="32,0,0,0"
+                       />
+
+                <!-- check -->
+                <Image Grid.Column="2"
+                       Source="green_check"
+                       HeightRequest="35"
+                       WidthRequest="35">
+                </Image>
+
+                <!-- guess 2 pts bg -->
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30" />
+
+                <!-- guess 2 pts -->
+                <Label Grid.Column="3"
+                       Grid.ColumnSpan="2" 
+                       Text="+ 20"
+                       FontAttributes="Bold"
+                       FontSize="22"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
+            </Grid>
+
+            <!-- guess 3 -->
+            <Grid Padding="10" Grid.Row="2" ColumnSpacing="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- guess 3 bg -->
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30" MaximumHeightRequest="70">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Gray"
+                                Radius="10"
+                                Offset="5,5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
+
+                <!-- guess 3 circle -->
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="White">
+
+                    <!-- guess 3 number -->
+                    <Label Text="3"
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+
+                    <!-- shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="2,2"
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+
+                <!-- guess 3 text -->
+                <Label Grid.Column="1"
+                       Text="Sleep"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Padding="32,0,0,0"
+                       />
+
+                <!-- red x -->
+                <Image Grid.Column="2"
+                       Source="red_x"
+                       HeightRequest="35"
+                       WidthRequest="35">
+                </Image>
+
+                <!-- guess 3 pts bg -->
+                <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse"
+                        WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#E5F587">
+
+                    <!-- guess 3 correct answer -->
+                    <Label Text="4"
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+
+                    <!-- shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="2,2"
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+            </Grid>
+
+            <!-- guess 4 -->
+            <Grid Padding="10" Grid.Row="3" ColumnSpacing="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- guess 4 bg -->
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30" MaximumHeightRequest="70">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="5,5"
+                                Radius="10"
+                                Opacity="0.9">
+                        </Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
+
+                <!-- guess 4 circle -->
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#E5F587">
+
+                    <!-- guess 4 number -->
+                    <Label Text="4"
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+
+                    <!-- shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="2,2"
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+
+                <!-- guess 4 text -->
+                <Label Grid.Column="1"
+                       Text="Fruit"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Padding="32,0,0,0"
+                       />
+
+                <!-- red x -->
+                <Image Grid.Column="2"
+                       Source="red_x"
+                       HeightRequest="35"
+                       WidthRequest="35">
+                </Image>
+
+                <!-- guess 4 pts bg -->
+                <Border Grid.Column="3" Stroke="Black" StrokeShape="Ellipse"
+                        WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="White">
+
+                    <!-- guess 4 correct answer -->
+                    <Label Text="3"
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+
+                    <!-- shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="2,2"
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+            </Grid>
+
+            <!-- guess 5 -->
+            <Grid Padding="10" Grid.Row="4" ColumnSpacing="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- guess 5 bg -->
+                <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30" MaximumHeightRequest="70">
+                    <RoundRectangle.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="5,5"
+                                Radius="10"
+                                Opacity="0.9">
+                        </Shadow>
+                    </RoundRectangle.Shadow>
+                </RoundRectangle>
+
+                <!-- guess 5 circle -->
+                <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#90F587">
+
+                    <!-- guess 5 number -->
+                    <Label Text="5"
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           />
+
+                    <!-- shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
+                                Offset="2,2"
+                                Radius="5"
+                                Opacity="0.9">
+                        </Shadow>
+                    </Border.Shadow>
+                </Border>
+
+                <!-- guess 5 text -->
+                <Label Grid.Column="1"
+                       Text="Casey"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Padding="32,0,0,0"
+                       />
+
+                <!-- check -->
+                <Image Grid.Column="2"
+                       Source="green_check"
+                       HeightRequest="35"
+                       WidthRequest="35">
+                </Image>
+
+                <!-- guess 5 pts bg -->
+                <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" CornerRadius="30" />
+
+                <!-- guess 5 pts -->
+                <Label Grid.Column="3"
+                       Grid.ColumnSpan="2"
+                       Text="+ 5"
+                       FontAttributes="Bold"
+                       FontSize="22"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       />
+            </Grid>
+        </Grid>
+
+        <!-- next button -->
+        <Button Grid.Row="2"
+                    Text="Next"
+                    FontAttributes="Bold"
+                    FontSize="22"
+                    BackgroundColor="DarkBlue"
+                    Margin="20,10">
+            <Button.Shadow>
+                <Shadow Brush="Black"
                         Radius="10"
                         Opacity="0.9">
-                    </Shadow>
-                </Button.Shadow>
-            </Button>
+                </Shadow>
+            </Button.Shadow>
+        </Button>
 
-            <!-- round label -->
-            <Label Grid.Row="3" Text="Round 1/5"
+        <!-- round label -->
+        <Label Grid.Row="3"
+                   Text="Round 1/5"
+                   FontSize="16"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    />
-        </Grid>
+    </Grid>
 
-    </VerticalStackLayout>
 </ContentPage>
