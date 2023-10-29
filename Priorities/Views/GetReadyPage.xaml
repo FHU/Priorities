@@ -1,0 +1,60 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Priorities.Views.GetReadyPage"
+             BackgroundColor="LightBlue">
+    
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Top Bar with Round Number -->
+        <Label Text="Round 3/10" Grid.Row="1" HorizontalOptions="Center" FontSize="40"/>
+
+        <!-- Pass the Phone Header -->
+        <Label Text="PASS THE PHONE TO..." Grid.Row="2" HorizontalOptions="Center" FontSize="28"/>
+
+        <!-- User Profile and Name -->
+        <StackLayout Grid.Row="3" HorizontalOptions="Center" Spacing="50">
+            <Frame BackgroundColor="White" 
+                   Padding="0" 
+                   CornerRadius="50" 
+                   HorizontalOptions="Center" 
+                   WidthRequest="100" 
+                   HeightRequest="100">
+                <Image Source="{Binding CurrentPlayer.ProfilePictureUrl}" 
+                       Aspect="AspectFill"/>
+            </Frame>
+            <Label Text="Austin!" FontSize="24" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <!-- Current Score and Ready Button with reduced spacing -->
+        <StackLayout Grid.Row="4" Spacing="20">
+
+            <!-- Current Score -->
+            <Label Text="Current Score" HorizontalOptions="Center" FontSize="24"/>
+            <Frame BackgroundColor="Purple" 
+                   Padding="10" 
+                   CornerRadius="50" 
+                   HorizontalOptions="Center" 
+                   WidthRequest="100" 
+                   HeightRequest="100">
+                <Label x:Name="PlayerScoreTextBlock" 
+                       Text="52"
+                       HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand" 
+                       FontSize="40" 
+                       TextColor="White"/>
+            </Frame>
+
+            <!-- Ready Button -->
+            <Button Text="Ready?" BackgroundColor="White" TextColor="Black" FontSize="40" CornerRadius="30" HorizontalOptions="Center" Padding="80,15"/>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
