@@ -53,20 +53,17 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<!-- <ItemGroup>
 	  <None Remove="Models\" />
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Models\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <MauiXaml Update="Views\AddPlayerPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	</ItemGroup>
+	</ItemGroup> -->
+
 </Project>
