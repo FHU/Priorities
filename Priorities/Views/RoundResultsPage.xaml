@@ -31,7 +31,7 @@
             <!-- profile picture -->
             <Image Grid.RowSpan="2"
                    Grid.Column="0"
-                   Source="default_profile"
+                   Source="{Binding Person.ImageName}"
                    HeightRequest="50"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
@@ -62,7 +62,7 @@
             <!-- score label -->
             <Label Grid.Row="0"
                    Grid.Column="2"
-                   Text="{Binding Score}"
+                   Text="Score"
                    TextColor="White"
                    FontAttributes="Bold"
                    Padding="10,0"
@@ -71,7 +71,7 @@
             <!-- score number -->
             <Label Grid.Row="1"
                    Grid.Column="2"
-                   Text="50"
+                   Text="{Binding Score}"
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="32"
