@@ -29,9 +29,10 @@ namespace Priorities.ViewModels
             var grank4 = "Fruit" ;
             var grank5 = "Casey" ;
             GroupRanking = new List<String> { grank1, grank2, grank3, grank4, grank5 };
+            Score = 0;
             Compare(PlayerRanking, GroupRanking);
             Round = 1;
-            Score = 0;
+            
         }
 
         [ObservableProperty]
