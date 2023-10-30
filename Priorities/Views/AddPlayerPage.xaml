@@ -75,11 +75,11 @@
 
                 <!--<Label Grid.Row="1"-->
                 <RoundRectangle Grid.Row="1"
-                                Fill="#D3D3D3"
+                                Fill="Red"
                                 
                                 CornerRadius="150"
-                                MaximumHeightRequest="300"
-                                MaximumWidthRequest="300"/>
+                                HeightRequest="300"
+                                WidthRequest="300"/>
 
                 <Button Grid.Row="2"
                         Text="Retake"
