@@ -148,7 +148,7 @@
             <Button
             Grid.Column="1"
             Grid.Row="0"
-            Text="Turtles"   
+            Text="{Binding ThingOne}"   
             FontSize="20"
            
             />
@@ -156,7 +156,7 @@
             <Button
             Grid.Column="1"
             Grid.Row="1"
-            Text="Evan Kahan"     
+            Text="{Binding ThingTwo}"     
             FontSize="20"   
            
             />
@@ -164,7 +164,7 @@
             <Button
             Grid.Column="1"
             Grid.Row="2"
-            Text="Microwaves"
+            Text="{Binding ThingThree}"
             FontSize="20"
            
             />
@@ -172,7 +172,7 @@
             <Button
             Grid.Column="1"
             Grid.Row="3"
-            Text="Musicals" 
+            Text="{Binding ThingFour}" 
             FontSize="20"       
            
             />
@@ -180,7 +180,7 @@
             <Button
             Grid.Column="1"
             Grid.Row="4"
-            Text="Calculus"
+            Text="{Binding ThingFive}"
             FontSize="20"
            
             />
