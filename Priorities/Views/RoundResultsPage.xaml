@@ -84,12 +84,14 @@
         <!--rankings-->
         <CollectionView
     Grid.Row="1"
+            Margin="0,40,0,0"
             
     
     ItemsSource="{Binding rankings}">
             <CollectionView.ItemsLayout>
                 <GridItemsLayout
             Orientation="Vertical"
+                    
             />
             </CollectionView.ItemsLayout>
 
@@ -214,6 +216,7 @@ HorizontalOptions="Start"
                    FontSize="16"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
+               Margin="0,15,0,0"
                    />
     </Grid>
 
