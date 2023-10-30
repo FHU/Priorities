@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.AddPlayerPage"
              Title="Add Player"
-             Shell.FlyoutBehavior="Flyout">
-
-
+             Shell.FlyoutBehavior="Flyout"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    
+    
     <ScrollView>
         <Grid Padding="0" RowSpacing="20" BackgroundColor="White">
             <Grid.RowDefinitions>
@@ -72,7 +73,7 @@
                        FontSize="28"
                        FontAttributes="Bold"/>
 
-                <!--<Label Grid.Row="1"-->
+                <!--Avatar Pic-->
                 <!--<RoundRectangle Grid.Row="1"
                                 Fill="#D3D3D3"
                                 
@@ -99,6 +100,7 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center" />
                 </Frame>
+                
 
                 <Button Grid.Row="2"
                         Text="Retake"
