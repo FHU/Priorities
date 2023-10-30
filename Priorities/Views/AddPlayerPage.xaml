@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Priorities.Views.AddPlayerPage"
              Title="Add Player"
-             Shell.FlyoutBehavior="Flyout"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+             Shell.FlyoutBehavior="Flyout">
     
     
     <ScrollView>
@@ -73,13 +73,17 @@
                        FontAttributes="Bold"/>
 
                 <!--Avatar Pic-->
+                <toolkit:AvatarView Grid.Row="1"
+                    ImageSource="avatar_pic.jpg"
+                    HeightRequest="300"
+                    WidthRequest="300"
+                    CornerRadius="150"/>
                 <!--<RoundRectangle Grid.Row="1"
                                 Fill="#D3D3D3"
                                 
                                 CornerRadius="150"
                                 MaximumHeightRequest="300"
                                 MaximumWidthRequest="300"/>-->
-                
 
                 <Button Grid.Row="2"
                         Text="Retake"
