@@ -58,6 +58,7 @@
 
 	<ItemGroup>
 	  <None Remove="Models\" />
+	  <None Remove="Resources\Images\avatar_pic.jpg" />
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
 	</ItemGroup>
