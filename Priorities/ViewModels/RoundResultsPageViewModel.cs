@@ -14,6 +14,7 @@ namespace Priorities.ViewModels
     {
         public RoundResultsPageViewModel()
         {
+            rankings = new ObservableCollection<Ranking>();
             Person = new Player() { Name = "John", ImageName = "dotnet_bot.svg" };
             var rank1 = "Giraffe";
             var rank2 = "Chocolate" ;
@@ -46,15 +47,19 @@ namespace Priorities.ViewModels
 
         private List<String> GroupRanking { get; set; }
 
+        public ObservableCollection<Ranking> rankings { get; set; }
+
          void Compare(List<String> pRank, List<String> gRank)
         {
-            if (pRank[0] == gRank[0])
-            {
-
-            }
-            else
-            {
-
+            for (int i = 0; i < pRank.Count; i++) {
+                if (pRank[i] == gRank[i])
+                {
+                    rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "+", Points = 25 - (5*i), ImagePath = "green_check.svg" });
+                }
+                else
+                {
+                    rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "-", Points = 25 - (5*i), ImagePath = "red_x.svg" });
+                }
             }
         }
 

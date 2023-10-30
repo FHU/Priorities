@@ -7,6 +7,8 @@ namespace Priorities.Models
         public int Number { get; set; }
         public string Name { get; set; }
 
+        public string Sign { get; set; } 
+
         public string ImagePath { get; set; }
 
         public int Points { get; set; }

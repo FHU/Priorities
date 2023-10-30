@@ -2,6 +2,7 @@
 using CommunityToolkit.Maui;
 using Priorities.Views;
 using Priorities.ViewModels;
+using Priorities.Models;
 
 namespace Priorities;
 
@@ -22,6 +23,7 @@ public static class MauiProgram
 
 		builder.Services.AddTransient<RoundResultsPage>();
         builder.Services.AddTransient<RoundResultsPageViewModel>();
+		builder.Services.AddTransient<Ranking>();
 
 #if DEBUG
         builder.Logging.AddDebug();
