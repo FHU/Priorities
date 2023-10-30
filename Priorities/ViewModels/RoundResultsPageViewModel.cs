@@ -9,11 +9,28 @@ using Priorities.Models;
 
 namespace Priorities.ViewModels
 {
-    public class RoundResultsPageViewModel : ObservableObject
+    public partial class RoundResultsPageViewModel : ObservableObject
     {
         public RoundResultsPageViewModel()
         {
+            Person = new Player() { Name = "John", ImageName = "dotnet_bot.svg" };
+            Round = 1;
+            Score = 20;
         }
+
+        [ObservableProperty]
+        private int round;
+
+        [ObservableProperty]
+        private int score;
+
+        [ObservableProperty]
+        private Player person;
+
+
+
+
+
     }
 
     

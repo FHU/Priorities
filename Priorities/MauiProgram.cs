@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using Priorities.Views;
+using Priorities.ViewModels;
 
 namespace Priorities;
 
@@ -15,10 +17,14 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+
 			});
 
+		builder.Services.AddTransient<RoundResultsPage>();
+        builder.Services.AddTransient<RoundResultsPageViewModel>();
+
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

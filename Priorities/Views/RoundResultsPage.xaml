@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.RoundResultsPage"
+              xmlns:views="clr-namespace:Priorities.Views"
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             x:DataType="viewmodels:RoundResultsPageViewModel"
              Title="Priorities">
 
     <!-- main -->
@@ -48,7 +51,7 @@
             <!-- player name -->
             <Label Grid.Row="1"
                    Grid.Column="1"
-                   Text="John"
+                   Text="{Binding Person.Name}"
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="24"
@@ -59,7 +62,7 @@
             <!-- score label -->
             <Label Grid.Row="0"
                    Grid.Column="2"
-                   Text="Score"
+                   Text="{Binding Score}"
                    TextColor="White"
                    FontAttributes="Bold"
                    Padding="10,0"

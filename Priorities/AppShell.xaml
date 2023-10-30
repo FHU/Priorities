@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Priorities"
     xmlns:views="clr-namespace:Priorities.Views"
+    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
