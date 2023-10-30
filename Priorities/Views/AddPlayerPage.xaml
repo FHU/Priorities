@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Priorities.Views.AddPlayerPage"
+             Title="Add Player"
+             Shell.FlyoutBehavior="Flyout">
+    
+    
+    <ScrollView>
+        <Grid Padding="0" RowSpacing="20" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            
+            <!--Header-->
+            <!--<Grid Grid.Row="1" ColumnSpacing="3" RowSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Hamburger" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="1"
+                       Text="Add Player" />
+
+                <Button Grid.Row="0"
+                        Grid.Column="2"
+                        Text="X" />
+            </Grid>-->
+            
+        <!--Main Section-->
+            
+            <!--Name Section-->
+            <Grid Grid.Row="0" Padding="12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                
+                <!--Label Name-->
+                <Label Grid.Row="0"
+                       Text="Name"
+                       HorizontalOptions="Center"
+                       FontSize="28"
+                       FontAttributes="Bold"/>
+                <!--Text box to input name-->
+                <RoundRectangle Grid.Row="1"
+                                MaximumHeightRequest="40"
+                                MaximumWidthRequest="300"
+                                Fill="#D3D3D3"
+                                CornerRadius="15"
+                />
+            </Grid>
+            
+            <!--Avatar-->
+            <Grid Grid.Row="1" RowSpacing="10" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Text="Avatar Pic"
+                       HorizontalOptions="Center"
+                       FontSize="28"
+                       FontAttributes="Bold"/>
+
+                <!--<Label Grid.Row="1"-->
+                <RoundRectangle Grid.Row="1"
+                                Fill="#D3D3D3"
+                                
+                                CornerRadius="150"
+                                MaximumHeightRequest="300"
+                                MaximumWidthRequest="300"/>
+
+                <Button Grid.Row="2"
+                        Text="Retake"
+                        FontSize="14"
+                        WidthRequest="85"/>
+            </Grid>
+            
+            <!--Submit-->
+            <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="6">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <Button Text="AddPlayerButton"
+                            Grid.Row="0"
+                            FontSize="20"
+                            WidthRequest="200"
+                            HeightRequest="85"
+                    />
+                </Grid>
+
+            </StackLayout>
+                      
+            
+        </Grid>
+    </ScrollView>
+    
+</ContentPage>
