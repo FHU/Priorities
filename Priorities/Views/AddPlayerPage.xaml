@@ -88,16 +88,15 @@
             </Grid>
             
             <!--Submit-->
-            <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="6">
+            <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="16">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
 
-                    <Button Text="AddPlayerButton"
+                    <Button Text="Add Player"
                             Grid.Row="0"
                             FontSize="20"
-                            WidthRequest="200"
                             HeightRequest="85"
                     />
                 </Grid>
