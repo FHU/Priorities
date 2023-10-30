@@ -211,13 +211,32 @@ HorizontalOptions="Start"
         </Button>
 
         <!-- round label -->
-        <Label Grid.Row="3"
-                   Text="Round 1/5"
+        <Grid Grid.Row="3" RowSpacing="0" HorizontalOptions="Center" Margin="0,15,0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+                   Text="Round "
                    FontSize="16"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-               Margin="0,15,0,0"
+               
                    />
+            <Label Grid.Column="1"
+       Text="{Binding Round}"
+       FontSize="16"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       />
+            <Label Grid.Column="2"
+       Text="/5"
+       FontSize="16"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       />
+        </Grid>
     </Grid>
 
 </ContentPage>

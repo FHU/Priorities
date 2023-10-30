@@ -31,7 +31,7 @@ namespace Priorities.ViewModels
             GroupRanking = new List<String> { grank1, grank2, grank3, grank4, grank5 };
             Compare(PlayerRanking, GroupRanking);
             Round = 1;
-            Score = 20;
+            Score = 0;
         }
 
         [ObservableProperty]
@@ -55,10 +55,12 @@ namespace Priorities.ViewModels
                 if (pRank[i] == gRank[i])
                 {
                     rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "+", Points = 25 - (5*i), ImagePath = "green_check.svg" });
+                    Score = Score + (25 - (5 * i));
                 }
                 else
                 {
                     rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "-", Points = 25 - (5*i), ImagePath = "red_x.svg" });
+                    Score = Score - (25 - (5 * i));
                 }
             }
         }
