@@ -9,7 +9,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate views:GetReadyPage}"
+        ContentTemplate="{DataTemplate views:HighScorePage}"
         Route="MainPage" />
 
 </Shell>
