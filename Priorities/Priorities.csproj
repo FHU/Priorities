@@ -57,17 +57,13 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<!-- <ItemGroup>
 	  <None Remove="Models\" />
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Models\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <MauiXaml Update="Views\HighScorePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	</ItemGroup>
+	</ItemGroup> -->
+
 </Project>
