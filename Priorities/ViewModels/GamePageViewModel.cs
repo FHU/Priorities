@@ -1,12 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Priorities.Models;
 
 namespace Priorities.ViewModels
 {
-    internal class GamePageViewModel
+    public partial class GamePageViewModel : ObservableObject
     {
+        [ObservableProperty]
+        public string playerName;
+
+        [ObservableProperty]
+        public string playerImage;
+        public GamePageViewModel() 
+        {
+            var playerOne = new Player
+            {
+                Name = "Gavin Boler",
+                ImageName = "dotnet_bot.png"
+            };
+
+            playerName = playerOne.Name;
+            playerImage = playerOne.ImageName;
+
+        }
     }
 }

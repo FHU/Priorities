@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GamePage"
              Shell.FlyoutBehavior="Flyout"
+             xmlns:local="clr-namespace:Priorities.ViewModels"
+             x:DataType="local:GamePageViewModel"
              Title="GamePage">
     
     <!-- DIRECTIONS: Do the section under your name. It will be very helpful to reference back to our FACADE apps for this assignment.
@@ -39,7 +41,7 @@
                    Margin="20,0,20,0">
                         <Image
                         Aspect="AspectFit"
-                        Source="dotnet_bot.png"
+                        Source="{Binding PlayerImage}"
                         SemanticProperties.Description="Cute dot net bot waving hi to you!"
                         HeightRequest="70"
                         WidthRequest="70"
@@ -47,7 +49,7 @@
                         HorizontalOptions="Center" />
                 </Frame>
                 <Label
-                    Text="Gavin Boler"
+                    Text="{Binding PlayerName}"
                     FontSize="24"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
