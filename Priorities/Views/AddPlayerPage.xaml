@@ -75,19 +75,13 @@
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
-                    ImageSource="avatar_pic.jpg"
-                    HeightRequest="300"
-                    WidthRequest="300"
-                    CornerRadius="150"/>
-                <!--<RoundRectangle Grid.Row="1"
-                                Fill="#D3D3D3"
-                                
-                                CornerRadius="150"
-                                MaximumHeightRequest="300"
-                                MaximumWidthRequest="300"/>-->
+                                    ImageSource="avatar_pic.jpg"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                                    CornerRadius="150"/>
 
 
-                <Frame Grid.Row="1"
+                <!--<Frame Grid.Row="1"
                    HeightRequest="300"
                    WidthRequest="300"
                    CornerRadius="150"
@@ -105,7 +99,7 @@
                     WidthRequest="300"
                     VerticalOptions="Center"
                     HorizontalOptions="Center" />
-                </Frame>
+                </Frame>-->
                 
 
                 <Button Grid.Row="2"
