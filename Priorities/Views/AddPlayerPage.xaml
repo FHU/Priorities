@@ -4,8 +4,8 @@
              x:Class="Priorities.Views.AddPlayerPage"
              Title="Add Player"
              Shell.FlyoutBehavior="Flyout">
-    
-    
+
+
     <ScrollView>
         <Grid Padding="0" RowSpacing="20" BackgroundColor="White">
             <Grid.RowDefinitions>
@@ -13,7 +13,7 @@
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
-            
+
             <!--Header-->
             <!--<Grid Grid.Row="1" ColumnSpacing="3" RowSpacing="10">
                 <Grid.ColumnDefinitions>
@@ -34,16 +34,16 @@
                         Grid.Column="2"
                         Text="X" />
             </Grid>-->
-            
-        <!--Main Section-->
-            
+
+            <!--Main Section-->
+
             <!--Name Section-->
             <Grid Grid.Row="0" Padding="12">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
-                
+
                 <!--Label Name-->
                 <Label Grid.Row="0"
                        Text="Name"
@@ -51,14 +51,12 @@
                        FontSize="28"
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
-                <RoundRectangle Grid.Row="1"
-                                MaximumHeightRequest="40"
-                                MaximumWidthRequest="300"
-                                Fill="#D3D3D3"
-                                CornerRadius="15"
+                <Entry Grid.Row="1"
+                       MaximumHeightRequest="40"
+                       MaximumWidthRequest="300"
                 />
             </Grid>
-            
+
             <!--Avatar-->
             <Grid Grid.Row="1" RowSpacing="10" Padding="10">
                 <Grid.RowDefinitions>
@@ -86,7 +84,7 @@
                         FontSize="14"
                         WidthRequest="85"/>
             </Grid>
-            
+
             <!--Submit-->
             <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="16">
                 <Grid>
@@ -102,9 +100,9 @@
                 </Grid>
 
             </StackLayout>
-                      
-            
+
+
         </Grid>
     </ScrollView>
-    
+
 </ContentPage>
