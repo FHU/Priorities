@@ -53,8 +53,9 @@
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       MaximumHeightRequest="40"
-                       MaximumWidthRequest="300"
+                       HeightRequest="70"
+                       WidthRequest="300"
+                       FontSize="28"
                 />
             </Grid>
 
@@ -84,6 +85,28 @@
                                 CornerRadius="150"
                                 MaximumHeightRequest="300"
                                 MaximumWidthRequest="300"/>-->
+
+
+                <Frame Grid.Row="1"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   CornerRadius="150"
+                   HorizontalOptions="Center"
+                   IsClippedToBounds="True"
+                   Padding="3"
+                   BorderColor="Gray"
+                   Margin="0,0,0,0">
+
+                <Image
+                    Aspect="AspectFit"
+                    Source="kenan.jpeg"
+                    SemanticProperties.Description="Kenan Casey Staring into your soul"
+                    HeightRequest="300"
+                    WidthRequest="300"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+                </Frame>
+                
 
                 <Button Grid.Row="2"
                         Text="Retake"
