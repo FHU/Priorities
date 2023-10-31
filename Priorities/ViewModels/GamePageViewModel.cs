@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Priorities.Models;
+using System.Collections.ObjectModel;
 
 namespace Priorities.ViewModels
 {
@@ -13,20 +14,7 @@ namespace Priorities.ViewModels
         public string playerImage;
 
         /*Priority Card Properties (Priscilla Harris)*/
-        [ObservableProperty]
-        public string thingOne;
-
-        [ObservableProperty]
-        public string thingTwo;
-
-        [ObservableProperty]
-        public string thingThree;
-
-        [ObservableProperty]
-        public string thingFour;
-
-        [ObservableProperty]
-        public string thingFive;
+        public ObservableCollection<Priority> Priorities { get; set; }
 
         /*Round and Score Properties (Gavin Boler)*/
 
@@ -45,36 +33,13 @@ namespace Priorities.ViewModels
             playerImage = playerOne.ImageName;
 
             /*Priscilla*/
-            var priorityOne = new Priority
-            {
-                PriorityOne = "Turtles"
-            };
+            Priorities = new ObservableCollection<Priority>();
 
-            var priorityTwo = new Priority
-            {
-                PriorityTwo = "Evan Kahan"
-            };
-
-            var priorityThree = new Priority
-            {
-                PriorityThree = "Microwaves"
-            };
-
-            var priorityFour = new Priority
-            {
-                PriorityFour = "Musicals"
-            };
-
-            var priorityFive = new Priority
-            {
-                PriorityFive = "Calculus"
-            };
-
-            thingOne = priorityOne.PriorityOne;
-            thingTwo = priorityTwo.PriorityTwo;
-            thingThree = priorityThree.PriorityThree;
-            thingFour = priorityFour.PriorityFour;
-            thingFive = priorityFive.PriorityFive;
+            Priorities.Add(new Priority("Turtles"));
+            Priorities.Add(new Priority("Evan Kahan"));
+            Priorities.Add(new Priority("Microwave"));
+            Priorities.Add(new Priority("Musicals"));
+            Priorities.Add(new Priority("Calculus"));
 
             /*Gavin*/
 
