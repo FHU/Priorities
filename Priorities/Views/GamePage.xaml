@@ -178,7 +178,7 @@
             <Label
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    Text="Round 1/8"
+                    Text="{Binding RoundNumber}"
                     FontSize="15"
                 />
         </Grid>

@@ -17,9 +17,12 @@ namespace Priorities.ViewModels
         public ObservableCollection<Priority> Priorities { get; set; }
 
         /*Round and Score Properties (Gavin Boler)*/
+        [ObservableProperty]
+        public string roundNumber;
 
         /*Timer (Luke Noles)*/
-
+        [ObservableProperty]
+        public string timer;
         public GamePageViewModel()
         {
             /*Abbie*/
@@ -42,6 +45,7 @@ namespace Priorities.ViewModels
             Priorities.Add(new Priority("Calculus"));
 
             /*Gavin*/
+            roundNumber = "Round 1/8";
 
             /*Luke*/
 
