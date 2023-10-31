@@ -3,9 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GamePage"
              Shell.FlyoutBehavior="Flyout"
-             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
-             xmlns:models="clr-namespace:Priorities.Models"
-             x:DataType="viewmodels:GamePageViewModel"
+             xmlns:local="clr-namespace:Priorities.ViewModels"
+             x:DataType="local:GamePageViewModel"
              Title="GamePage">
     
     <!-- DIRECTIONS: Do the section under your name. It will be very helpful to reference back to our FACADE apps for this assignment.
@@ -146,16 +145,45 @@
             />
             
             <!-- Priority Cards -->
-            <CollectionView Grid.Row="0"
-                 HeightRequest="125"
-                 ItemsSource="{Binding Priorities}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:Priority">
-                        <Button
-                        Text="{Binding Thing}"/>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+            <Button
+            Grid.Column="1"
+            Grid.Row="0"
+            Text="{Binding ThingOne}"   
+            FontSize="20"
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="1"
+            Text="{Binding ThingTwo}"     
+            FontSize="20"   
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="2"
+            Text="{Binding ThingThree}"
+            FontSize="20"
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="3"
+            Text="{Binding ThingFour}" 
+            FontSize="20"       
+           
+            />
+
+            <Button
+            Grid.Column="1"
+            Grid.Row="4"
+            Text="{Binding ThingFive}"
+            FontSize="20"
+           
+            />
 
             <Button
             Grid.ColumnSpan="2"

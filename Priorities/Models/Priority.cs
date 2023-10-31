@@ -3,11 +3,14 @@ namespace Priorities.Models
 {
 	public class Priority
 	{
-		public string Thing { get; set; }
+		public string PriorityOne { get; set; }
+		public string PriorityTwo { get; set; }
+		public string PriorityThree { get; set; }
+		public string PriorityFour { get; set; }
+		public string PriorityFive { get; set; }
 
-		public Priority(string priority)
+		public Priority()
 		{
-			Thing = priority;
 		}
 	}
 }
