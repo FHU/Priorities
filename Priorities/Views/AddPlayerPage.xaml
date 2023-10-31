@@ -50,12 +50,16 @@
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
+                       TextColor="Black"
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
                        HeightRequest="70"
                        WidthRequest="300"
                        FontSize="28"
+                       TextColor="Black"
+                       
+                       BackgroundColor="Teal"
                 />
             </Grid>
 
@@ -71,7 +75,8 @@
                        Text="Avatar Pic"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
