@@ -11,78 +11,37 @@
     <!-- Grid wrapper for the entire game page -->
 
     <Grid RowDefinitions="0.15*,0.15*,0.60*,0.10*" ColumnDefinitions="*" RowSpacing="10">
-        <!-- Four Rows / One Column -->
 
         <!-- [Header: Abbie Vance] -->
-        <!-- One Row / Three Columns -->
-        <Grid Row="0" BackgroundColor="#dddddd">
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-
-
-
-
-
-
-
-            <HorizontalStackLayout
-                Padding="50, 0, 0, 0"
-                Grid.Column="0"
-                VerticalOptions="End">
+        <!-- One Row / Two Columns -->
+        <Grid RowDefinitions="*" ColumnDefinitions="*,*" Row="0" Padding="20,0" BackgroundColor="#dddddd">
+            <HorizontalStackLayout Grid.ColumnSpan="2" VerticalOptions="Center">
                 <Label
-                    HorizontalOptions="Start"
-
-                Text="0"
-                FontSize="30"
-                ></Label>
+                    Text="0"
+                    FontSize="30"
+                    Margin="5,0"/>
                 <Label
-                    HorizontalOptions="Start"
-                    VerticalOptions="End"
-
-                Text="Points"
-                ></Label>
-
+                    Text="Points"
+                    VerticalOptions="End"/>
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout 
-                
-                Padding="0, 0, 50, 0"
-                Grid.Column="1"
-                HorizontalOptions="End"
-                VerticalOptions="End">
-                
+            <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center">
                 <Label
-                    HorizontalOptions="End"
                     VerticalOptions="End"
-
-                Text="Round"
-                ></Label>
+                    Text="Round"
+                    Margin="5,0"/>
 
                 <Label
-                    HorizontalOptions="End"
-                    VerticalOptions="Center"
+                    VerticalOptions="End"
                     Text="{Binding RoundNumber}"
                     FontSize="30"
                 />
-
             </HorizontalStackLayout>
-
-
-
-
-
         </Grid>
 
         <!-- [Guesser / Prioritize Label: Priscilla Harris] -->
-        <!-- Two Rows / One Column -->
-        <Grid Row="1" ColumnDefinitions="*,*" Margin="0,10">
+        <!-- One Row / Three Columns -->
+        <Grid Row="1" RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="0,10" VerticalOptions="Center">
             <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
                 <Frame
                    HeightRequest="70"
@@ -103,30 +62,28 @@
                         VerticalOptions="Center"
                         HorizontalOptions="Center" />
                 </Frame>
-                <VerticalStackLayout Grid.Column="1">
+                <VerticalStackLayout Grid.Column="1" VerticalOptions="End">
                     <Label
                     Text="Guessing Priorities For"
                     HorizontalOptions="Center"
-                    VerticalOptions="Center"
                     FontSize="16"
                     />
                     <Label
                     Text="{Binding PlayerName}"
                     FontSize="25"
                     HorizontalOptions="Center"
-                    VerticalOptions="Center"
                     ></Label>
                 </VerticalStackLayout>
 
             </HorizontalStackLayout>
 
             <Button
-            Margin="0, 0, 50, 0"
-            Grid.Column="1"
+            Grid.Column="2"
             Text="0:59"
-            HorizontalOptions="End"
+            HorizontalOptions="Center"
             VerticalOptions="End"
             FontSize="20"
+            IsEnabled="False"
             />
         </Grid>
 
@@ -179,13 +136,13 @@
             <CollectionView Grid.RowSpan="5" Grid.Column="1"
                 ItemsSource="{Binding Priorities}">
                 <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Priority">
-                    <Button
+                    <DataTemplate x:DataType="models:Priority">
+                        <Button
                         Text="{Binding Thing}"
                         Margin="0, 10"
                         HeightRequest="50"
                         FontSize="20"/>
-                </DataTemplate>
+                    </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
