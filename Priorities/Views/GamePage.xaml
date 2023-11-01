@@ -28,6 +28,61 @@
 
 
 
+
+
+
+
+            <HorizontalStackLayout
+                Padding="50, 0, 0, 0"
+                Grid.Column="0"
+                VerticalOptions="End">
+                <Label
+                    HorizontalOptions="Start"
+
+                Text="0"
+                FontSize="30"
+                ></Label>
+                <Label
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"
+
+                Text="Points"
+                ></Label>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout 
+                
+                Padding="0, 0, 50, 0"
+                Grid.Column="1"
+                HorizontalOptions="End"
+                VerticalOptions="End">
+                
+                <Label
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+
+                Text="Round"
+                ></Label>
+
+                <Label
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    Text="{Binding RoundNumber}"
+                    FontSize="30"
+                />
+
+            </HorizontalStackLayout>
+
+
+
+
+
+        </Grid>
+
+        <!-- [Guesser / Prioritize Label: Priscilla Harris] -->
+        <!-- Two Rows / One Column -->
+        <Grid Row="1" ColumnDefinitions="*,*" Margin="0,10">
             <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
                 <Frame
                    HeightRequest="70"
@@ -48,56 +103,30 @@
                         VerticalOptions="Center"
                         HorizontalOptions="Center" />
                 </Frame>
-                <Label
+                <VerticalStackLayout Grid.Column="1">
+                    <Label
+                    Text="Guessing Priorities For"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="16"
+                    />
+                    <Label
                     Text="{Binding PlayerName}"
-                    FontSize="24"
+                    FontSize="25"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     ></Label>
+                </VerticalStackLayout>
+
             </HorizontalStackLayout>
 
-
-
-            <VerticalStackLayout
-                Padding="0, 0, 50, 0"
-                Grid.Column="1"
-                VerticalOptions="Center">
-                <Label
-                VerticalOptions="Center"
-                    HorizontalOptions="End"
-                Text="Score"
-                ></Label>
-
-                <Label
-                VerticalOptions="Center"
-                    HorizontalOptions="End"
-                Text="0"
-                FontSize="30"
-                ></Label>
-            </VerticalStackLayout>
-
-
-
-
-        </Grid>
-
-        <!-- [Guesser / Prioritize Label: Priscilla Harris] -->
-        <!-- Two Rows / One Column -->
-        <Grid Row="1" RowDefinitions="*,*" Margin="0,10">
-            <Label
-            Grid.Row="0"
-            Text="Guess the Priorities"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            FontSize="20"
-            />
-
-            <Label
-            Grid.Row="1"
+            <Button
+            Margin="0, 0, 50, 0"
+            Grid.Column="1"
             Text="0:59"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            FontSize="30"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            FontSize="20"
             />
         </Grid>
 
@@ -172,15 +201,5 @@
 
         <!-- [Footer: Gavin Boler] -->
         <!-- One Row -->
-        <Grid Row="3" RowDefinitions="*" ColumnDefinitions="*" BackgroundColor="#dddddd" Margin="0,15,0,0">
-
-
-            <Label
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    Text="{Binding RoundNumber}"
-                    FontSize="15"
-                />
-        </Grid>
     </Grid>
 </ContentPage>

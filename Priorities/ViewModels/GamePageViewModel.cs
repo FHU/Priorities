@@ -45,7 +45,7 @@ namespace Priorities.ViewModels
             Priorities.Add(new Priority("Calculus"));
 
             /*Gavin*/
-            roundNumber = "Round 1/8";
+            roundNumber = "1 / 10";
 
             /*Luke*/
 
