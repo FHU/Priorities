@@ -6,7 +6,7 @@
              >
     <ScrollView>
         
-        <Grid RowSpacing="20" WidthRequest="300">
+        <Grid RowSpacing="10" WidthRequest="300">
             
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -20,44 +20,48 @@
             </Grid.ColumnDefinitions>
             <toolkit:Expander Grid.Row="0">
                 <toolkit:Expander.Header>
-                    <HorizontalStackLayout BackgroundColor="Purple" Grid.Row="0" Padding="20">
-                        <Grid ColumnSpacing="10">
+                    <HorizontalStackLayout BackgroundColor="White" Grid.Row="0" Padding="20">
+                        <Grid ColumnSpacing="10" BackgroundColor="Beige">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="1." TextColor="White"/>
-                            <VerticalStackLayout Grid.Column="1">
-                                <Label Text="Fire-Breathing Rubber Duckies" TextColor="White"/>
+                            <Label Grid.Column="0" Text="1." TextColor="Black" BackgroundColor="Blue"/>
+                            <VerticalStackLayout Grid.Column="1" BackgroundColor="Pink" HorizontalOptions="CenterAndExpand">
+                                <Label Text="Fire Rubber Duckies" TextColor="Black"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"
                                     ImageSource="kenan.jpeg"
                                     HeightRequest="20"
-                                    WidthRequest="20"/>
+                                    WidthRequest="20"
+                                    BorderColor="Black"/>
                                     <toolkit:AvatarView
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"
                                     ImageSource="kenan.jpeg"
                                     HeightRequest="20"
-                                    WidthRequest="20"/>
+                                    WidthRequest="20"
+                                    BorderColor="Black"/>
                                     <toolkit:AvatarView
                                     HorizontalOptions="CenterAndExpand"
                                     VerticalOptions="Center"
                                     ImageSource="kenan.jpeg"
                                     HeightRequest="20"
+                                    BorderColor="Black"
                                     WidthRequest="20"/>
                                     <toolkit:AvatarView
                                     HorizontalOptions="CenterAndExpand"
                                     VerticalOptions="CenterAndExpand"
                                     ImageSource="kenan.jpeg"
                                     HeightRequest="20"
+                                    BorderColor="Black"
                                     WidthRequest="20"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            <Label Grid.Column="2" Text="4999" TextColor="White"/>
+                            <Label Grid.Column="2" Text="4999" TextColor="Black" BackgroundColor="Green" HorizontalOptions="EndAndExpand"/>
                         </Grid>
                     </HorizontalStackLayout>
                     
@@ -89,9 +93,9 @@
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Padding="5"
+                                <Label Padding="3"
                                        Grid.Column="0"
                                        Text="Snail's Pace"
                                        TextColor="Black"
@@ -118,10 +122,10 @@
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
 
                                 </Grid.ColumnDefinitions>
-                                <Label Padding="5"
+                                <Label Padding="3"
                                        Grid.Column="0"
                                        Text="Great Start"
                                        TextColor="Black"
@@ -147,10 +151,10 @@
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
 
                                 </Grid.ColumnDefinitions>
-                                <Label Padding="5"
+                                <Label Padding="3"
                                        Grid.Column="0"
                                        Text="Open Books"
                                        TextColor="Black"
@@ -185,7 +189,7 @@
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                            <HorizontalStackLayout Spacing="5" VerticalOptions="Center">
                                 <toolkit:AvatarView
                                         HorizontalOptions="Center"
                                         VerticalOptions="Center"
@@ -208,10 +212,9 @@
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                            <HorizontalStackLayout Spacing="5"  VerticalOptions="End">
                                 <toolkit:AvatarView
-                                 HorizontalOptions="Center"
-                                 VerticalOptions="Center"
+                                 VerticalOptions="End"
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
@@ -394,9 +397,9 @@
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Padding="5"
+                                <Label Padding="3"
                                        Grid.Column="0"
                                        Text="Snail's Pace"
                                        TextColor="Black"
@@ -419,17 +422,19 @@
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius=" 20" />
                             </Border.StrokeShape>
-                            <Grid>
+                            <Grid HorizontalOptions="FillAndExpand">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Padding="5"
+                                <Label Padding="3"
                                        Grid.Column="0"
                                        Text="Fastest Man Alive"
                                        TextColor="Black"
                                        FontSize="16" 
-                                       VerticalOptions="Center"/>
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="FillAndExpand"
+                                       />
                                 <Ellipse Grid.Column="1"
                                          Fill="LightBlue"
                                          WidthRequest="25"
@@ -448,9 +453,9 @@
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Padding="5"
+                                <Label Padding="3"
                                        Grid.Column="0"
                                        Text="Open Books"
                                        TextColor="Black"
@@ -485,16 +490,15 @@
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20" />
                             </Border.StrokeShape>
-                            <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                            <HorizontalStackLayout Spacing="5" VerticalOptions="Center">
                                 <toolkit:AvatarView
-                                 HorizontalOptions="Center"
                                  VerticalOptions="Center"
                                  ImageSource="kenan.jpeg"
                                  HeightRequest="20"
                                  WidthRequest="20"/>
                                 <Label Text="Kenan"
                                        TextColor="Black"
-                                       FontSize="12" />
+                                       FontSize="12"/>
                             </HorizontalStackLayout>
                         </Border>
 
