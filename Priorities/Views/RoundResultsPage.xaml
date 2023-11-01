@@ -99,7 +99,7 @@
                 <DataTemplate x:DataType="models:Ranking">
                     <Grid Padding="10" Grid.Row="0" ColumnSpacing="5">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="60" />
                             <ColumnDefinition Width="170" />
                             <ColumnDefinition Width="1.5*" />
                             <ColumnDefinition Width="*" />
@@ -118,7 +118,7 @@
                         </RoundRectangle>
 
                         <!-- guess 1 circle -->
-                        <Border Grid.Column="0" Grid.ColumnSpan="2" Stroke="Black" HorizontalOptions="Start"
+                        <Border Grid.Column="0"  Stroke="Black" 
             StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#567BFF">
 
                             <!-- guess 1 number -->
