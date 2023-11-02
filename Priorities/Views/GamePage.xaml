@@ -17,7 +17,7 @@
         <Grid RowDefinitions="*" ColumnDefinitions="*,*" Row="0" Padding="20,0" BackgroundColor="#dddddd">
             <HorizontalStackLayout Grid.ColumnSpan="2" VerticalOptions="Center">
                 <Label
-                    Text="0"
+                    Text="{Binding Score}"
                     FontSize="30"
                     Margin="5,0"/>
                 <Label
@@ -79,7 +79,7 @@
 
             <Button
             Grid.Column="2"
-            Text="0:59"
+            Text="{Binding Timer}"
             HorizontalOptions="Center"
             VerticalOptions="End"
             FontSize="20"

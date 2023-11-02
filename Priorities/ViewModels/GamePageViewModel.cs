@@ -20,7 +20,10 @@ namespace Priorities.ViewModels
         [ObservableProperty]
         public string roundNumber;
 
-        /*Timer (Luke Noles)*/
+        /*Timer (Priscilla Harris)*/
+        [ObservableProperty]
+        public string score;
+
         [ObservableProperty]
         public string timer;
         public GamePageViewModel()
@@ -47,7 +50,9 @@ namespace Priorities.ViewModels
             /*Gavin*/
             roundNumber = "1 / 10";
 
-            /*Luke*/
+            /*Priscilla*/
+            timer = "0:59";
+            score = "0";
 
         }
     }
