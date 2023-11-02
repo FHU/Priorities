@@ -7,7 +7,7 @@
       
         <Label 
             Text="Results"
-            HorizonrtalOptions="Center" />
+            HorizontalOptions="Center" />
       
         <Label
             Text ="Total"/>
@@ -20,8 +20,8 @@
       <Label
          Text="05"/>
       
-      <button Text="Next">
-      </button>
+      <Button Text="Next">
+      </Button>
       
     </VerticalStackLayout>
 </ContentPage>
