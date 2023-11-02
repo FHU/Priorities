@@ -8,5 +8,6 @@ namespace Priorities.ViewModels
 {
     internal class AddPlayersPageViewModel
     {
+        
     }
 }

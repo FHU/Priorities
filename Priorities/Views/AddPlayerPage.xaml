@@ -8,10 +8,10 @@
     
     
     <ScrollView>
-        <Grid Padding="0" RowSpacing="20" BackgroundColor="White">
+        <Grid Padding="0" RowSpacing="6" BackgroundColor="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <!--Header-->
@@ -35,10 +35,10 @@
                         Text="X" />
             </Grid>-->
 
-            <!--Main Section-->
+        <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0" Padding="12">
+            <Grid Grid.Row="0" Padding="16">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -48,21 +48,30 @@
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       TextColor="Black"
-                       FontAttributes="Bold"/>
+                       TextColor="#EC6664"
+                       FontAttributes="Bold"
+                       FontFamily="Coiny"/>
+                
                 <!--Text box to input name-->
-                <Entry Grid.Row="1"
-                       HeightRequest="70"
-                       WidthRequest="300"
-                       FontSize="28"
-                       TextColor="Black"
+                <Border Background="#087E8B"
+                        Grid.Row="1"
+                        StrokeShape="RoundRectangle 20,20,20,20">
+                    
+                    <Entry HeightRequest="70"
+                           FontSize="28"
+                           TextColor="#EBEBE5"
+                           FontFamily="Coiny"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           MaxLength="30"
+                           ClearButtonVisibility="WhileEditing"
                        
-                       BackgroundColor="Teal"
-                />
+                    />
+                </Border>
             </Grid>
 
             <!--Avatar-->
-            <Grid Grid.Row="1" RowSpacing="10" Padding="10">
+            <Grid Grid.Row="1" RowSpacing="10" Padding="16">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -74,7 +83,8 @@
                        HorizontalOptions="Center"
                        FontSize="28"
                        FontAttributes="Bold"
-                       TextColor="Black"/>
+                       FontFamily="Coiny"
+                       TextColor="#EC6664"/>
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
@@ -106,9 +116,15 @@
                 
 
                 <Button Grid.Row="2"
-                        Text="Retake"
-                        FontSize="14"
-                        WidthRequest="85"/>
+                        Text="RETAKE"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        FontFamily="Coiny"
+                        BackgroundColor= "#74C1DD"
+                        CornerRadius="15"
+                        WidthRequest="300"
+
+                />
             </Grid>
 
             <!--Submit-->
@@ -118,10 +134,14 @@
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
 
-                    <Button Text="Add Player"
+                    <Button Text="+ ADD PLAYER"
                             Grid.Row="0"
-                            FontSize="20"
+                            FontSize="32"
+                            FontAttributes="Bold"
+                            FontFamily="Coiny"
                             HeightRequest="85"
+                            CornerRadius="25"
+                            BackgroundColor="#EC6664"
                     />
                 </Grid>
 
