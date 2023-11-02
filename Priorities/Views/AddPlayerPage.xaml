@@ -53,6 +53,7 @@
                        FontFamily="Coiny"/>
                 
                 <!--Text box to input name-->
+                <!--Figure out how to get rid of underline-->
                 <Border Background="#087E8B"
                         Grid.Row="1"
                         StrokeShape="RoundRectangle 20,20,20,20">
