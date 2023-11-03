@@ -10,6 +10,7 @@ namespace Priorities.Models
 
 		public GameResult()
 		{
+			
 		}
 	}
 }
