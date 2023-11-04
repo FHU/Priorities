@@ -1,62 +1,80 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Reflection;
+using System.Security.Cryptography;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Priorities.Models;
+using Priorities.Views;
 
 namespace Priorities.ViewModels
 {
-	public class PlayersPageViewModel: ObservableObject 
-	{
-		public ObservableCollection<Player> Players { get; set; }
+    public partial class PlayersPageViewModel : ObservableObject
+    {
+        [ObservableProperty]
+        string playerName;
 
+        [ObservableProperty]
+        string imagePath;
 
+        public ObservableCollection<Player> Players { get; set; }
 
-		public PlayersPageViewModel()
-		{
-            Players = new ObservableCollection<Player>();
-		}
+        public Command NavigateToAddPlayersPageCommand { get; }
+        public Command NavigateToGamePageCommand { get; }
 
-			//Model
-			//Player
+        public Command DeleteButtonCommand { get; private set; }
 
-			//string Name
+        public class Player
+        {
+            public string PlayerName { get; set; }
 
-			//string ImagePath
+            public string ImagePath { get; set; }
 
-			//View Model
-			//Properties
-			//ObservableCollection<Player> Players
+            public Player() 
+            { 
+            }
 
-			//Commands
-			//AddPlayer()
-
-			//RemovePlayer(Player)
-
-			//EditPlayer(Player)
-
-			//PlayGame()
-
-		public void AddPlayers()
-		{
-            throw new NotImplementedException();
         }
 
-		public void RemovePlayers()
-		{
-			throw new NotImplementedException();
-		}
+        public PlayersPageViewModel()
+        {
+            Players = new ObservableCollection<Player>
+        {
+            new Player{PlayerName="Joe", ImagePath="rando1.jpg"},
+            new Player{PlayerName="Mo", ImagePath="rando2.jpg"},
+            new Player{PlayerName="Shmo", ImagePath="rando3.jpg"},
+            new Player { PlayerName = "Tractor", ImagePath = "rando4.jpg" },
 
-		public void EditPlayer()
-		{
-			throw new NotImplementedException();
-		} 
+        };
 
-		public void PlayeGame()
-		{
-			throw new NotImplementedException();
-		}
 
+
+            NavigateToAddPlayersPageCommand = new Command(async () => await NavigateToAddPlayersPage());
+            NavigateToGamePageCommand = new Command(async () => await NavigateToGamePage());
+            //Players.Add(new Player { PlayerName = "Addison", ImagePath = "rando1.jpg" });
+            //Players.Add(new Player { PlayerName = "John", ImagePath = "rando2.jpg" });
+            DeleteButtonCommand = new Command<Player>(DeletePlayer);
+        }
+
+        private async Task NavigateToAddPlayersPage()
+        {
+            // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
+            await Shell.Current.GoToAsync($"{nameof(AddPlayerPage)}");
+        }
+        private async Task NavigateToGamePage()
+        {
+            // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
+            await Shell.Current.GoToAsync($"{nameof(GamePage)}");
+        }
+
+        [RelayCommand]
+        void DeletePlayer(Player player)
+        {
+            if (Players.Contains(player))
+            {
+                Players.Remove(player);
+            }
+        }
     }
 }
-
