@@ -3,24 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GameResultsPage"
              Title="GameResultsPage">
-    <VerticalStackLayout>
-      
-        <Label 
-            Text="Results"
-            HorizontalOptions="Center" />
-      
-        <Label
-            Text ="Total"/>
-        <Label
-          Text="{Binding Score}"/>
-      
-      <Label
-         Text="Rounds Played"/>
-      
-      <Label
-         Text="05"/>
-      
-      <Button Text="Next">
+                
+             
+    
+    <VerticalStackLayout HorizontalOptions="Center">
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            
+            <Label
+                HorizontalOptions="Center"
+                Text="Score"
+                Margin="5"
+                FontSize="Large"
+            />
+
+            <Label
+                HorizontalOptions="Center"
+                Margin="5"
+                FontSize="Large"
+                Text="{Binding Score}"/>
+           
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label
+                HorizontalOptions="Center"
+                Margin="5"
+                FontSize="Large"
+                Text="Time"/>
+
+            <Label
+                HorizontalOptions="Center"
+                Margin="10"
+                FontSize="Large"
+                Text="{Binding ElapsedTime}"/>
+            
+        </HorizontalStackLayout>
+
+
+
+
+
+
+        <Button Margin="10" Text="Next" FontSize="Medium" FontAttributes="Bold" WidthRequest="300" HeightRequest="35">
       </Button>
       
     </VerticalStackLayout>
