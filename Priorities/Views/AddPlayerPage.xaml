@@ -67,7 +67,7 @@
                            FontFamily="Coiny"
                            FontAttributes="Bold"
                            HorizontalTextAlignment="Center"
-                           MaxLength="30"
+                           MaxLength="15"
                            ClearButtonVisibility="WhileEditing"
                        
                     />
