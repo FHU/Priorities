@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Priorities.ViewModels
 {
-    public class HighScorePageViewModel : ObservableObject
+    public partial class HighScorePageViewModel : ObservableObject
     {
         public ObservableCollection<GameResult> GameResults { get; set; }
         public ObservableCollection<Achievement> achievements { get; private set; }
@@ -18,15 +18,18 @@ namespace Priorities.ViewModels
         {
             GameResults = new ObservableCollection<GameResult>();
 
-            var gameresult = new GameResult()
+            GameResult = new GameResult()
             {
                 Score = 4999,
                 Date = DateTime.Now,
                 Team = new Team() { Name="Skellingtons"},
                 Achievements = achievements
             };
-            GameResults.Add(gameresult);
+            GameResults.Add(GameResult);
+            
 
         }
+        [ObservableProperty]
+        private GameResult gameResult;
     }
 }

@@ -31,7 +31,7 @@
                             </Grid.ColumnDefinitions>
                             <Label FontSize="24" Grid.Column="0" Text="1." TextColor="Black"/>
                             <VerticalStackLayout Grid.Column="1">
-                                <Label FontSize="18" Text="2999" TextColor="Black"/>
+                                <Label FontSize="18" Text="{Binding GameResult.Team.Name}" TextColor="Black"/>
                                 <HorizontalStackLayout Spacing="-10">
                                     <toolkit:AvatarView
                                     ImageSource="kenan.jpeg"
@@ -55,7 +55,7 @@
                                     WidthRequest="20"/>
                                 </HorizontalStackLayout>
                             </VerticalStackLayout>
-                            <Label Grid.Column="2" FontSize="18" Text="Bean" TextColor="Black"/>
+                            <Label Grid.Column="2" FontSize="18" Text="{Binding GameResult.Score}" TextColor="Black"/>
                         </Grid>
                     </HorizontalStackLayout>
                     
@@ -315,7 +315,10 @@
 
                     </Grid>
 
-                    <Label Grid.Row="2" Text="Played: October 2nd, 8:15AM" TextColor="Black"/>
+                    <HorizontalStackLayout Grid.Row="2" Spacing="5">
+                        <Label Text="Played:" TextColor="Black"/>
+                        <Label Text="{Binding GameResult.Date}" TextColor="Black"/>
+                    </HorizontalStackLayout>
                 </Grid>
             </toolkit:Expander>
 
