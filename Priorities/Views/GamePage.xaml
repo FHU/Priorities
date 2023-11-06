@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GamePage"
@@ -46,7 +46,7 @@
                 <Frame
                    HeightRequest="70"
                    WidthRequest="70"
-                   CornerRadius="70"
+                   CornerRadius="35"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    IsClippedToBounds="True"
@@ -71,7 +71,7 @@
                     <Label
                     Text="{Binding PlayerName}"
                     FontSize="25"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Start"
                     ></Label>
                 </VerticalStackLayout>
 
