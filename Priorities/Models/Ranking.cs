@@ -5,16 +5,27 @@ namespace Priorities.Models
     {
 
         public int Number { get; set; }
+
         public string Name { get; set; }
 
-        public string Sign { get; set; } 
+        //public string Sign { get; set; }
 
-        public string ImagePath { get; set; }
+        public Color Color { get; set; }
 
         public int Points { get; set; }
 
+        public Ranking(int num, string name, string hex, int pts)
+        {
+            Number = num;
+            Name = name;
+            //Sign = sign;
+            Color = Color.FromArgb(hex);
+            Points = pts;
+        }
+
         public Ranking()
         {
+
         }
     }
 }

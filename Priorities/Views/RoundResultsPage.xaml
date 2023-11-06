@@ -92,14 +92,13 @@
 
                     <Grid Padding="10" Grid.Row="0" ColumnSpacing="5">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="60" />
-                            <ColumnDefinition Width="170" />
-                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="auto" />
                         </Grid.ColumnDefinitions>
 
                         <!-- guess 1 bg -->
-                        <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30" MaximumHeightRequest="70">
+                        <RoundRectangle Grid.Column="1" Fill="White" CornerRadius="30" MaximumHeightRequest="70">
                             <RoundRectangle.Shadow>
                                 <Shadow Brush="Gray"
                                         Radius="10"
@@ -148,40 +147,15 @@
                                Padding="32,0,0,0"
                                />
 
-                        <!-- check -->
-                        <Image Grid.Column="2"
-                               Source="{Binding ImagePath}"
-                               HeightRequest="35"
-                               WidthRequest="35">
-                        </Image>
-
-                        <!-- guess 1 pts bg -->
-                        <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2" CornerRadius="30"/>
-
-                        <Grid Grid.Column="3" ColumnSpacing="5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
-                            <!-- guess 1 sign -->
-                            <Label Grid.Column="0"
-                                   Text="{Binding Sign}"
-                                   FontAttributes="Bold"
-                                   FontSize="20"
-                                   VerticalOptions="Center"
-                                   HorizontalOptions="End"
-                                   />
-
-                            <!-- guess 1 points -->
-                            <Label Grid.Column="1"
-                                   Text="{Binding Points}"
-                                   FontAttributes="Bold"
-                                   FontSize="20"
-                                   VerticalOptions="Center"
-                                   HorizontalOptions="Start"
-                                   />
-                        </Grid>
+                        <!-- guess 1 points -->
+                        <Label Grid.Column="2"
+                               Text="{Binding Points,StringFormat='{0:+#;-#;0}'}"
+                               TextColor="{Binding Color}"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               />
                     </Grid>
 
                 </DataTemplate>
@@ -205,37 +179,12 @@
         </Button>
 
         <!-- round status -->
-        <Grid Grid.Row="3" RowSpacing="0" HorizontalOptions="Center" Margin="0,15,0,5">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto" />
-            </Grid.ColumnDefinitions>
-
-            <!-- round label -->
-            <Label Grid.Column="0"
-                   Text="Round "
-                   FontSize="16"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   />
-
-            <!-- round number -->
-            <Label Grid.Column="1"
-                   Text="{Binding Round}"
-                   FontSize="16"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   />
-
-            <!-- total rounds number -->
-            <Label Grid.Column="2"
-                   Text="/5"
-                   FontSize="16"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   />
-        </Grid>
+        <Label Grid.Row="3"
+               Text="{Binding Round,StringFormat='Round {0}/5'}"
+               FontSize="16"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               />
     </Grid>
 
 </ContentPage>
