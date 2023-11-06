@@ -35,22 +35,4 @@ namespace Priorities.ViewModels
 
     }
 
-
-    //partial class AddPlayersPageViewModel
-    //{
-
-    //    public string Name 
-    //    {
-    //        get => name; 
-    //        set => SetProperty(ref name, value); 
-    //    }
-
-    //    public string Image
-    //    {
-    //        get => image;
-    //        set => SetProperty(ref image, value);
-
-    //    }
-    //}
-
 }
