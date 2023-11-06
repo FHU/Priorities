@@ -7,7 +7,20 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:AddPlayersPageViewModel"
-             Title="Add Player">
+             >
+<!-- Added this to make changes to the top-->
+    <Shell.TitleView>
+        <HorizontalStackLayout>
+            <Label Text="ADD PLAYER"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   HeightRequest="50"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
 
 
     <ScrollView>
@@ -91,8 +104,9 @@
                        TextColor="#EC6664"/>
 
                 <!--Avatar Pic-->
+                <!--Working on camera work -->
                 <toolkit:AvatarView Grid.Row="1"
-                                    ImageSource="{Binding Image}"
+                                    ImageSource="avatar_pic.jpg"
                                     HeightRequest="300"
                                     WidthRequest="300"
                                     CornerRadius="150"/>
