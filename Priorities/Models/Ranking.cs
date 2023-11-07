@@ -8,8 +8,6 @@ namespace Priorities.Models
 
         public string Name { get; set; }
 
-        //public string Sign { get; set; }
-
         public Color Color { get; set; }
 
         public int Points { get; set; }
@@ -18,7 +16,6 @@ namespace Priorities.Models
         {
             Number = num;
             Name = name;
-            //Sign = sign;
             Color = Color.FromArgb(hex);
             Points = pts;
         }

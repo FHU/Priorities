@@ -19,65 +19,70 @@
         </Grid.RowDefinitions>
 
         <!-- header -->
-            <Grid Grid.Row="0" Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="60" BackgroundColor="DarkBlue">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="60" BackgroundColor="DarkBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
 
-                <!-- score number -->
-                <Label 
-            Grid.Column="0"
-            Text="{Binding Score}"
-            TextColor="White"
-            FontAttributes="Bold"
-            FontSize="32"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            />
-                <!-- score label -->
-                <Label 
-                Grid.Column="1"
-                Text="  points"
-                FontSize="16"
-                VerticalOptions="End"
-                TextColor="White"
-                FontAttributes="Bold"
-                Margin="0,0,0,5"
-                   />
-                <!-- round label -->
-                <Label Grid.Column="3"
-            Text="round  "
+            <!-- score number -->
+            <Label Grid.Column="0"
+                   Text="{Binding Score}"
                    TextColor="White"
-            FontSize="16"
-            HorizontalOptions="Center"
-            VerticalOptions="End"
-            Margin="0,0,0,5"
-            />
-                <Label Grid.Column="4"
-                Text="{Binding Round}"
-                   TextColor="White"
-                FontSize="32"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                />
-                <Label Grid.Column="5"
-                Text="/5"
-                   TextColor="White"
-                FontSize="32"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                   />
-            </Grid>
+                   FontAttributes="Bold"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                       />
 
-            <!-- player -->
+            <!-- score label -->
+            <Label Grid.Column="1"
+                   Text="  points"
+                   FontSize="16"
+                   VerticalOptions="End"
+                   TextColor="White"
+                   Margin="0,0,0,5"
+                   />
+
+            <!-- round label -->
+            <Label Grid.Column="3"
+                   Text="round  "
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   Margin="0,0,0,5"
+                   />
+
+            <!-- round number -->
+            <Label Grid.Column="4"
+                   Text="{Binding Round}"
+                   TextColor="White"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+
+            <!-- total rounds number -->
+            <Label Grid.Column="5"
+                   Text="/5"
+                   TextColor="White"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+        </Grid>
+
+        <!-- player -->
         <Grid Grid.Row="1" Padding="10,20,10,10" RowSpacing="0" VerticalOptions="Center" HeightRequest="70" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
@@ -103,7 +108,7 @@
             <Label Grid.Row="0"
                    Grid.Column="1"
                    Text="Revealing Results for"
-                   TextColor="Gray"
+                   TextColor="Black"
                    FontSize="16"
                    FontAttributes="Bold"
                    VerticalOptions="Center"
@@ -218,7 +223,7 @@
             </Button.Shadow>
         </Button>
 
-        
+
     </Grid>
 
 </ContentPage>
