@@ -13,9 +13,10 @@
             <VerticalStackLayout>
                 <Label
                 HorizontalOptions="Center"
-                TextColor="Black"
+                TextColor="#EC6664"
                 Margin="5, 5, 40, 5"
-                FontSize="Small"
+                FontSize="Medium"
+                FontAttributes="Bold"
                 Text="Time"/>
 
                 <Label
@@ -23,6 +24,7 @@
                 TextColor="Black"
                 Margin="5, 5, 40, 5"
                 FontSize="Large"
+                FontAttributes="Bold"
                 Text="{Binding ElapsedTime}"/>
             </VerticalStackLayout>
             
@@ -30,9 +32,10 @@
                 <Label
                 HorizontalOptions="Center"
                 Text="Score"
-               TextColor="Black"
+               TextColor="#EC6664"
                 Margin="5, 5, 40, 5"
-                FontSize="Small"
+                FontSize="Medium"
+                FontAttributes="Bold"
             />
 
                 <Label
@@ -40,6 +43,7 @@
                 TextColor="Black"
                 Margin="5, 5, 40, 5"
                 FontSize="Large"
+                FontAttributes="Bold"
                 Text="{Binding Score}"/>
             </VerticalStackLayout>
 
@@ -48,7 +52,7 @@
         <VerticalStackLayout>
             <Label
             Margin="0,50,0,0"
-            Text="Achivements"
+            Text="Achievements"
             HorizontalOptions="Center"
             TextColor="Black"
             HeightRequest="250"
