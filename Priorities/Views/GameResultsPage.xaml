@@ -9,43 +9,47 @@
     <VerticalStackLayout HorizontalOptions="Center">
 
         <HorizontalStackLayout HorizontalOptions="Center">
-            
+            <VerticalStackLayout>
             <Label
                 HorizontalOptions="Center"
                 Text="Score"
-                Margin="5"
-                FontSize="Large"
+                Margin="5, 5, 40, 5"
+                FontSize="Small"
             />
 
             <Label
                 HorizontalOptions="Center"
-                Margin="5"
-                FontSize="Large"
+                Margin="5, 5, 40, 5"
+                FontSize="Small"
                 Text="{Binding Score}"/>
-           
-        </HorizontalStackLayout>
+            </VerticalStackLayout>
 
-        <HorizontalStackLayout HorizontalOptions="Center">
+            <VerticalStackLayout>
             <Label
                 HorizontalOptions="Center"
-                Margin="5"
-                FontSize="Large"
+                Margin="5, 5, 40, 5"
+                FontSize="Small"
                 Text="Time"/>
 
             <Label
                 HorizontalOptions="Center"
-                Margin="10"
-                FontSize="Large"
+                Margin="5, 5, 40, 5"
+                FontSize="Small"
                 Text="{Binding ElapsedTime}"/>
-            
+            </VerticalStackLayout>
+
         </HorizontalStackLayout>
 
+        <Label
+            Margin="0,50,0,0"
+            Text="Achivements"
+            HorizontalOptions="Center"
+            FontSize="Large"/>
 
 
 
 
-
-        <Button Margin="10" Text="Next" FontSize="Medium" FontAttributes="Bold" WidthRequest="300" HeightRequest="35">
+        <Button Margin="10, 300, 10, 10" Text="Next" FontSize="Medium" FontAttributes="Bold" WidthRequest="300" HeightRequest="35" >
       </Button>
       
     </VerticalStackLayout>
