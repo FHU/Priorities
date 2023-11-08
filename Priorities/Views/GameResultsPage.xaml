@@ -11,7 +11,23 @@
 
         <HorizontalStackLayout HorizontalOptions="Center">
             <VerticalStackLayout>
-            <Label
+                <Label
+                HorizontalOptions="Center"
+                TextColor="Black"
+                Margin="5, 5, 40, 5"
+                FontSize="Small"
+                Text="Time"/>
+
+                <Label
+                HorizontalOptions="Center"
+                TextColor="Black"
+                Margin="5, 5, 40, 5"
+                FontSize="Large"
+                Text="{Binding ElapsedTime}"/>
+            </VerticalStackLayout>
+            
+            <VerticalStackLayout>
+                <Label
                 HorizontalOptions="Center"
                 Text="Score"
                TextColor="Black"
@@ -19,44 +35,36 @@
                 FontSize="Small"
             />
 
-            <Label
+                <Label
                 HorizontalOptions="Center"
                 TextColor="Black"
                 Margin="5, 5, 40, 5"
-                FontSize="Small"
+                FontSize="Large"
                 Text="{Binding Score}"/>
-            </VerticalStackLayout>
-
-            <VerticalStackLayout>
-            <Label
-                HorizontalOptions="Center"
-                TextColor="Black"
-                Margin="5, 5, 40, 5"
-                FontSize="Small"
-                Text="Time"/>
-
-            <Label
-                HorizontalOptions="Center"
-                TextColor="Black"
-                Margin="5, 5, 40, 5"
-                FontSize="Small"
-                Text="{Binding ElapsedTime}"/>
             </VerticalStackLayout>
 
         </HorizontalStackLayout>
 
-        <Label
+        <VerticalStackLayout>
+            <Label
             Margin="0,50,0,0"
             Text="Achivements"
             HorizontalOptions="Center"
             TextColor="Black"
+            HeightRequest="250"
             FontSize="Large"/>
+        </VerticalStackLayout>
 
 
 
+        <VerticalStackLayout>
+            <Button Margin="0,0,0,5" Text="High Score" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+            </Button>
+            <Button Margin="0,0,0,5" Text="Achivements" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+            </Button>
+            <Button Text="Play Again" FontSize="Medium" FontAttributes="Bold" WidthRequest="250" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+            </Button>
+        </VerticalStackLayout>
 
-        <Button Margin="10, 300, 10, 10" Text="Play Again" FontSize="Medium" FontAttributes="Bold" WidthRequest="300" HeightRequest="35" >
-      </Button>
-      
     </VerticalStackLayout>
 </ContentPage>
