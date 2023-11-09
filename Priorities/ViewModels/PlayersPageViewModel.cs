@@ -45,6 +45,10 @@ namespace Priorities.ViewModels
             new Player{PlayerName="Mo", ImagePath="rando2.jpg"},
             new Player{PlayerName="Shmo", ImagePath="rando3.jpg"},
             new Player { PlayerName = "Tractor", ImagePath = "rando4.jpg" },
+            new Player{PlayerName="Joe", ImagePath="rando1.jpg"},
+            new Player{PlayerName="Mo", ImagePath="rando2.jpg"},
+            new Player{PlayerName="Shmo", ImagePath="rando3.jpg"},
+            new Player { PlayerName = "Tractor", ImagePath = "rando4.jpg" },
 
         };
 
@@ -52,8 +56,6 @@ namespace Priorities.ViewModels
 
             NavigateToAddPlayersPageCommand = new Command(async () => await NavigateToAddPlayersPage());
             NavigateToGamePageCommand = new Command(async () => await NavigateToGamePage());
-            //Players.Add(new Player { PlayerName = "Addison", ImagePath = "rando1.jpg" });
-            //Players.Add(new Player { PlayerName = "John", ImagePath = "rando2.jpg" });
             DeleteButtonCommand = new Command<Player>(DeletePlayer);
         }
 

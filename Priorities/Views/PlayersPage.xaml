@@ -12,25 +12,43 @@
              >
 
 	<ContentPage.Content>
-		<VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
 
-			<Label
-            Text="Priorities"
-            TextColor="White"
-            HorizontalTextAlignment="Center"
-            FontSize="48"
-            BackgroundColor="Black"
-            HorizontalOptions="Fill"
-                Padding="15"/>
+            </Grid.RowDefinitions>
 
-			<Label
-            Margin="20"
-            TextColor="Black"
-            Text="Players"
-            FontSize="32"
-            HorizontalOptions="Center" />
+            <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
 
-			<!--<ScrollView>
+                    <Label
+                        Grid.Row="0"
+                        Text="Priorities"
+                        TextColor="White"
+                        HorizontalTextAlignment="Center"
+                        FontSize="48"
+                        BackgroundColor="Black"
+                        HorizontalOptions="Fill"
+                            Padding="15"
+                    />
+
+                    <Label
+                        Grid.Row="1"
+                        Margin="20"
+                        TextColor="Black"
+                        Text="Players"
+                        FontSize="32"
+                        HorizontalOptions="Center" 
+                    />
+                    
+                </Grid>
+
+                
+                <!--<ScrollView>
 				<FlexLayout AlignItems="Center" Direction="Column" Margin="5">
 
 					--><!--Card One--><!--
@@ -56,71 +74,94 @@
 			</ScrollView>-->
 
 			<!--Dynamic Cards-->
-			<CollectionView ItemsSource="{Binding Players}">
-				<CollectionView.ItemTemplate>
-					<DataTemplate>
-                        <ScrollView>
-                            <FlexLayout AlignItems="Center" Direction="Column" Margin="5">
 
-                                <!--Card One-->
-                                <Frame Margin="5" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
-                                    <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="350" HeightRequest="65"  >
-                                        <Frame
+                <ScrollView Grid.Row="1" >
+                    <CollectionView ItemsSource="{Binding Players}" VerticalOptions="FillAndExpand">
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+
+
+                                <FlexLayout AlignItems="Start" Direction="Column" Margin="5">
+
+                                    <!--Card One-->
+                                    <Frame Margin="5" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
+                                        <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="350" HeightRequest="65"  >
+                                            <Frame
                                             BorderColor="Black"
                                             CornerRadius="100"
                                             IsClippedToBounds="True"
                                             WidthRequest="50"
                                             HeightRequest="50"
                                             Margin="10">
-                                         <Image Source="{Binding ImagePath}"
+                                                <Image Source="{Binding ImagePath}"
                                             Aspect="AspectFill"
                                             Margin="-20" />
-                                        </Frame>
-                                        <Label Text="{Binding PlayerName}" FontSize="25" TextColor="White" HorizontalOptions="Center"
+                                            </Frame>
+                                            <Label Text="{Binding PlayerName}" FontSize="25" TextColor="White" HorizontalOptions="Center"
                                                 VerticalOptions="Center"/>
-                                        <Button Text="x" FontSize="25" TextColor="White" Margin="5" BackgroundColor="Transparent" 
+                                            <Button Text="x" FontSize="25" TextColor="White" Margin="5" BackgroundColor="Transparent" 
                                             HorizontalOptions="Center" VerticalOptions="Center" BorderColor="Transparent" BorderWidth="0" 
                                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PlayersPageViewModel}}, Path=DeleteButtonCommand}" 
                                             CommandParameter="{Binding .}" />
-                                    </FlexLayout>
-                                </Frame>
+                                        </FlexLayout>
+                                    </Frame>
 
-                            </FlexLayout>
-                        </ScrollView>
-                    </DataTemplate>
-				</CollectionView.ItemTemplate>
-			</CollectionView>
+                                </FlexLayout>
 
 
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
 
-			<!--New Player Button-->
-			<Button
-                Margin="10"
-                TextColor="White"
-                Text="Add New Player"
-                HorizontalOptions="Center"
-                FontSize="25"
-                BackgroundColor="OrangeRed"
-                Padding="15"
-                CornerRadius="20"
-                WidthRequest="250"
-                Command="{Binding NavigateToAddPlayersPageCommand}"
-                />
+                <Grid Grid.Row="1" VerticalOptions="End">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
 
-			<!--Play Button-->
-			<Button
-                Margin="10"
-                TextColor="White"
-                Text="Play!"
-                HorizontalOptions="Center"
-                FontSize="25"
-                BackgroundColor="Blue"
-                Padding="15"
-                CornerRadius="20"
-                WidthRequest="250"
-                Command="{Binding NavigateToGamePageCommand}"
-                />
+                    <Image  Grid.Row="1"
+            Grid.RowSpan="2"
+        Source="shapes.jpg"
+    />
 
-		</VerticalStackLayout>
+                    <!--New Player Button-->
+                    <Button
+        Grid.Row="0"
+        Margin="10"
+        TextColor="White"
+        Text="Add New Player"
+        HorizontalOptions="Center"
+        FontSize="25"
+        BackgroundColor="OrangeRed"
+        Padding="15"
+        CornerRadius="20"
+        WidthRequest="250"
+        Command="{Binding NavigateToAddPlayersPageCommand}"
+        />
+
+                    <!--Play Button-->
+
+                    <Button
+        Grid.Row="1"
+        Margin="10"
+        TextColor="White"
+        Text="Play!"
+        HorizontalOptions="Center"
+        FontSize="25"
+        BackgroundColor="Blue"
+        Padding="15"
+        CornerRadius="20"
+        WidthRequest="250"
+        Command="{Binding NavigateToGamePageCommand}"
+        />
+                </Grid>
+
+
+            
+        </Grid>
+        
 	</ContentPage.Content>
 </ContentPage>
