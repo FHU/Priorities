@@ -1,24 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Priorities.Views.RoundResultsPage"
-              xmlns:views="clr-namespace:Priorities.Views"
-             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
-             xmlns:models="clr-namespace:Priorities.Models"
-             x:DataType="viewmodels:RoundResultsPageViewModel"
-             Title="Rankings">
+<ContentPage
+    x:Class="Priorities.Views.RoundResultsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:Priorities.Models"
+    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+    xmlns:views="clr-namespace:Priorities.Views"
+    Title="Rankings"
+    x:DataType="viewmodels:RoundResultsPageViewModel">
 
-    <!-- main -->
-    <Grid RowSpacing="0" BackgroundColor="#EBEBE5" Padding="0,0,0,12">
+    <!--  main  -->
+    <Grid
+        Padding="0,0,0,12"
+        BackgroundColor="#EBEBE5"
+        RowSpacing="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
-        <!-- header -->
-        <Grid Grid.Row="0" Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="60" BackgroundColor="#EC6664">
+        <!--  header  -->
+        <Grid
+            Grid.Row="0"
+            Padding="10"
+            BackgroundColor="#EC6664"
+            HeightRequest="60"
+            RowSpacing="0"
+            VerticalOptions="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
@@ -31,58 +41,63 @@
                 <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
 
-            <!-- score number -->
-            <Label Grid.Column="0"
-                   Text="{Binding Score}"
-                   TextColor="#EBEBE5"
-                   FontAttributes="Bold"
-                   FontSize="32"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                       />
+            <!--  score number  -->
+            <Label
+                Grid.Column="0"
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="{Binding Score}"
+                TextColor="#EBEBE5"
+                VerticalOptions="Center" />
 
-            <!-- score label -->
-            <Label Grid.Column="1"
-                   Text="  points"
-                   FontSize="16"
-                   VerticalOptions="End"
-                   TextColor="#EBEBE5"
-                   Margin="0,0,0,5"
-                   />
+            <!--  score label  -->
+            <Label
+                Grid.Column="1"
+                Margin="0,0,0,5"
+                FontSize="16"
+                Text="  points"
+                TextColor="#EBEBE5"
+                VerticalOptions="End" />
 
-            <!-- round label -->
-            <Label Grid.Column="3"
-                   Text="round  "
-                   TextColor="#EBEBE5"
-                   FontSize="16"
-                   HorizontalOptions="Center"
-                   VerticalOptions="End"
-                   Margin="0,0,0,5"
-                   />
+            <!--  round label  -->
+            <Label
+                Grid.Column="3"
+                Margin="0,0,0,5"
+                FontSize="16"
+                HorizontalOptions="Center"
+                Text="round  "
+                TextColor="#EBEBE5"
+                VerticalOptions="End" />
 
-            <!-- round number -->
-            <Label Grid.Column="4"
-                   Text="{Binding Round}"
-                   TextColor="#EBEBE5"
-                   FontSize="32"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   />
+            <!--  round number  -->
+            <Label
+                Grid.Column="4"
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="{Binding Round}"
+                TextColor="#EBEBE5"
+                VerticalOptions="Center" />
 
-            <!-- total rounds number -->
-            <Label Grid.Column="5"
-                   Text="/5"
-                   TextColor="White"
-                   FontSize="32"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   />
+            <!--  total rounds number  -->
+            <Label
+                Grid.Column="5"
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="/5"
+                TextColor="White"
+                VerticalOptions="Center" />
         </Grid>
 
-        <!-- player -->
-        <Grid Grid.Row="1" Padding="10,20,10,10" RowSpacing="0" VerticalOptions="Center" HeightRequest="70" >
+        <!--  player  -->
+        <Grid
+            Grid.Row="1"
+            Padding="10,20,10,10"
+            HeightRequest="70"
+            RowSpacing="0"
+            VerticalOptions="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
@@ -93,86 +108,96 @@
                 <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
 
-            <!-- profile picture -->
-            <Image Grid.RowSpan="2"
-                   Grid.Column="0"
-                   Source="{Binding Person.ImageName}"
-                   HeightRequest="50"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Margin="10,5,20,0">
-            </Image>
+            <!--  profile picture  -->
+            <Image
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Margin="10,5,20,0"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                Source="{Binding Person.ImageName}"
+                VerticalOptions="Center" />
 
-            <!-- revealing results -->
-            <Label Grid.Row="0"
-                   Grid.Column="1"
-                   Text="Revealing Results for"
-                   TextColor="#3C3C3C"
-                   Opacity="0.7"
-                   FontSize="16"
-                   FontAttributes="Bold"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Start"
-                   />
+            <!--  revealing results  -->
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                FontAttributes="Bold"
+                FontSize="16"
+                HorizontalOptions="Start"
+                Opacity="0.7"
+                Text="Revealing Results for"
+                TextColor="#3C3C3C"
+                VerticalOptions="Center" />
 
-            <!-- player name -->
-            <Label Grid.Row="1"
-                   Grid.Column="1"
-                   Text="{Binding Person.Name}"
-                   TextColor="#3C3C3C"
-                   FontAttributes="Bold"
-                   FontSize="32"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Start"
-                   />
+            <!--  player name  -->
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Start"
+                Text="{Binding Person.Name}"
+                TextColor="#3C3C3C"
+                VerticalOptions="Center" />
 
         </Grid>
 
-        <!--rankings-->
-        <CollectionView Grid.Row="2" Margin="0,40,0,0" ItemsSource="{Binding rankings}">
+        <!--  rankings  -->
+        <CollectionView
+            Grid.Row="2"
+            Margin="0,40,0,0"
+            ItemsSource="{Binding rankings}">
             <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="16"/>
+                <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="16" />
             </CollectionView.ItemsLayout>
 
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Ranking">
 
-                    <Grid Padding="12,4" Grid.Row="0" ColumnSpacing="8">
+                    <Grid
+                        Grid.Row="0"
+                        Padding="12,4"
+                        ColumnSpacing="8">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="240" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <!-- guess text bg -->
-                        <RoundRectangle Grid.Column="1" Fill="#087E8B" CornerRadius="30">
+                        <!--  guess text bg  -->
+                        <RoundRectangle
+                            Grid.Column="1"
+                            CornerRadius="30"
+                            Fill="#087E8B">
                             <RoundRectangle.Shadow>
-                                <Shadow Brush="Gray"
-                                        Radius="10"
-                                        Offset="5,5"
-                                        Opacity="0.9">
-                                </Shadow>
+                                <Shadow
+                                    Brush="Gray"
+                                    Opacity="0.9"
+                                    Radius="10"
+                                    Offset="5,5" />
                             </RoundRectangle.Shadow>
                         </RoundRectangle>
 
-                        <!-- guess number circle -->
-                        <Border Grid.Column="0"
-                                StrokeShape="Ellipse"
-                                WidthRequest="60"
-                                HeightRequest="60"
-                                StrokeThickness="2"
-                                BackgroundColor="#087E8B">
+                        <!--  guess number circle  -->
+                        <Border
+                            Grid.Column="0"
+                            BackgroundColor="#087E8B"
+                            HeightRequest="60"
+                            StrokeShape="Ellipse"
+                            StrokeThickness="2"
+                            WidthRequest="60">
 
-                            <!-- guess number -->
-                            <Label Text="{Binding Number}"
-                                   TextColor="#EBEBE5"
-                                   FontAttributes="Bold"
-                                   FontSize="24"
-                                   VerticalOptions="Center"
-                                   HorizontalOptions="Center"
-                                   />
+                            <!--  guess number  -->
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                HorizontalOptions="Center"
+                                Text="{Binding Number}"
+                                TextColor="#EBEBE5"
+                                VerticalOptions="Center" />
 
-                            <!-- shadow -->
+                            <!--  shadow  -->
                             <!--<Border.Shadow>
                                 <Shadow Brush="Gray"
                                         Offset="2,2"
@@ -182,47 +207,48 @@
                             </Border.Shadow>-->
                         </Border>
 
-                        <!-- guess text -->
-                        <Label Grid.Column="1"
-                               Text="{Binding Name}"
-                               FontAttributes="Bold"
-                               FontSize="24"
-                               TextColor="#EBEBE5"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"
-                               />
+                        <!--  guess text  -->
+                        <Label
+                            Grid.Column="1"
+                            FontAttributes="Bold"
+                            FontSize="24"
+                            HorizontalOptions="Center"
+                            Text="{Binding Name}"
+                            TextColor="#EBEBE5"
+                            VerticalOptions="Center" />
 
-                        <!-- guess points -->
-                        <Label Grid.Column="2"
-                               Text="{Binding Points,StringFormat='{0:+#;-#;0}'}"
-                               TextColor="{Binding Color}"
-                               FontAttributes="Bold"
-                               FontSize="24"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"
-                               />
+                        <!--  guess points  -->
+                        <Label
+                            Grid.Column="2"
+                            FontAttributes="Bold"
+                            FontSize="24"
+                            HorizontalOptions="Center"
+                            Text="{Binding Points, StringFormat='{0:+#;-#;0}'}"
+                            TextColor="{Binding Color}"
+                            VerticalOptions="Center" />
                     </Grid>
 
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <!-- next button -->
-        <Button Grid.Row="3"
-                Text="NEXT"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontSize="22"
-                BackgroundColor="#EC6664"
-                Margin="20,10"
-                HeightRequest="80"
-                CornerRadius="24">
+        <!--  next button  -->
+        <Button
+            Grid.Row="3"
+            Margin="20,10"
+            BackgroundColor="#EC6664"
+            CornerRadius="24"
+            FontAttributes="Bold"
+            FontSize="22"
+            HeightRequest="80"
+            Text="NEXT"
+            TextColor="White">
 
             <Button.Shadow>
-                <Shadow Brush="Black"
-                        Radius="10"
-                        Opacity="0.9">
-                </Shadow>
+                <Shadow
+                    Brush="Black"
+                    Opacity="0.9"
+                    Radius="10" />
             </Button.Shadow>
         </Button>
 
