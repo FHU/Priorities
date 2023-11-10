@@ -5,7 +5,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="HighScorePage"          
              >
-    <ScrollView BackgroundColor="White">
+    <ScrollView BackgroundColor="#F1F1F1" HorizontalOptions="FillAndExpand">
         <VerticalStackLayout Spacing="5">
             <Label Text="Leaderboard" FontSize="22" TextColor="Black" Padding="10" HorizontalOptions="CenterAndExpand"/>
             <CollectionView ItemsSource="{Binding GameResults}">
@@ -21,16 +21,18 @@
                                 StrokeThickness="1"
                                 HorizontalOptions="FillAndExpand"
                                 MaximumWidthRequest="350"
+                                BackgroundColor="#DFD8F7"
                                 >
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="5" />
                             </Border.StrokeShape>
+                            
                             <toolkit:Expander>
 
                                 <toolkit:Expander.Header>
                                     <FlexLayout JustifyContent="SpaceBetween">
                                         <HorizontalStackLayout>
-                                            <Label Padding="20"  VerticalOptions="Center" FontSize="24" Text="{Binding Rank}" TextColor="Black"/>
+                                            <Label Padding="20" VerticalOptions="Center" FontSize="24" Text="{Binding Rank}" TextColor="Black"/>
                                             <VerticalStackLayout Padding="20" HorizontalOptions="Start">
                                                 <Label FontSize="18" Text="{Binding Team.Name}" TextColor="Black"/>
                                                 <StackLayout BindableLayout.ItemsSource="{Binding Team.Players}"
@@ -49,21 +51,23 @@
                                                 </StackLayout>
                                             </VerticalStackLayout>
                                         </HorizontalStackLayout>
+                                        
                                         <Border
                                             Stroke="#000000"
                                             StrokeThickness="1"
-                                            HorizontalOptions="FillAndExpand"
-                                            Padding="0">
+                                            Margin="4"
+                                            MinimumWidthRequest="85"
+                                            >
                                             <Border.StrokeShape>
                                                 <RoundRectangle CornerRadius="15" />
                                             </Border.StrokeShape>
-                                            <Label  Grid.Column="2" FontSize="18" Text="{Binding Score}" TextColor="Black" VerticalOptions="Center"/>
+                                            <Label FontSize="18" Text="{Binding Score}"  Padding="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
                                         </Border>
                                     </FlexLayout>
 
                                 </toolkit:Expander.Header>
 
-                                <Grid BackgroundColor="White" RowSpacing="10" Padding="10">
+                                <Grid BackgroundColor="#F1F1F1" RowSpacing="10" Padding="10">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="*"/>
                                         <RowDefinition Height="*"/>
@@ -76,10 +80,10 @@
                                         <BindableLayout.ItemTemplate>
                                             <DataTemplate>
                                                 <Border
-                                Stroke="#000000"
-                                StrokeThickness="0.5"
-                                Padding="5"
-                                HorizontalOptions="FillAndExpand">
+                                                    Stroke="#000000"
+                                                    StrokeThickness="0.5"
+                                                    Padding="5"
+                                                    HorizontalOptions="FillAndExpand">
                                                     <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="5" />
                                                     </Border.StrokeShape>
