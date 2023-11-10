@@ -11,7 +11,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate views:AddPlayerPage}"
+        ContentTemplate="{DataTemplate views:RoundResultsPage}"
         Route="MainPage" />
 
 </Shell>

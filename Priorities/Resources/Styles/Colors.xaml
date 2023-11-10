@@ -14,7 +14,7 @@
     <Color x:Key="Black">Black</Color>
 
     <Color x:Key="PrimaryRed">#EC6664</Color>
-    <Color x:Key="PrimaryBlueGreen">#DFD8F7</Color>
+    <Color x:Key="PrimaryBlueGreen">#087E8B</Color>
     <Color x:Key="DarkGray">#3C3C3C</Color>
     <Color x:Key="OffWhite">#F1F1F1</Color>
     <Color x:Key="SecondaryGreen">#BFE1B4</Color>
