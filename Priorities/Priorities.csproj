@@ -60,6 +60,9 @@
 
 	<!-- <ItemGroup>
 	  <None Remove="Models\" />
+	  <None Remove="Resources\Images\default_profile.svg" />
+	  <None Remove="Resources\Images\green_check.svg" />
+	  <None Remove="Resources\Images\red_x.svg" />
 	  <None Remove="Resources\Images\avatar_pic.jpg" />
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />

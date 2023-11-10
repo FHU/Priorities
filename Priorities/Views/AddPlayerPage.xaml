@@ -51,7 +51,7 @@
                         Text="X" />
             </Grid>-->
 
-        <!--Main Section-->
+            <!--Main Section-->
 
             <!--Name Section-->
             <Grid Grid.Row="0" Padding="16">
@@ -64,27 +64,17 @@
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       TextColor="#EC6664"
-                       FontAttributes="Bold"
-                       FontFamily="Coiny"/>
-                
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
                 <!--Text box to input name-->
-                <Border Background="#087E8B"
-                        Grid.Row="1"
-                        StrokeShape="RoundRectangle 20,20,20,20">
-                    
-                    <Entry HeightRequest="70"
-                           FontSize="28"
-                           Text="{Binding Name}"
-                           TextColor="#EBEBE5"
-                           FontFamily="Coiny"
-                           FontAttributes="Bold"
-                           HorizontalTextAlignment="Center"
-                           MaxLength="15"
-                           ClearButtonVisibility="WhileEditing"
+                <Entry Grid.Row="1"
+                       HeightRequest="70"
+                       WidthRequest="300"
+                       FontSize="28"
+                       TextColor="Black"
                        
-                    />
-                </Border>
+                       BackgroundColor="Teal"
+                />
             </Grid>
 
             <!--Avatar-->
@@ -100,11 +90,9 @@
                        HorizontalOptions="Center"
                        FontSize="28"
                        FontAttributes="Bold"
-                       FontFamily="Coiny"
-                       TextColor="#EC6664"/>
+                       TextColor="Black"/>
 
                 <!--Avatar Pic-->
-                <!--Working on camera work -->
                 <toolkit:AvatarView Grid.Row="1"
                                     ImageSource="avatar_pic.jpg"
                                     HeightRequest="300"
@@ -152,11 +140,9 @@
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
 
-                    <Button Text="+ ADD PLAYER"
+                    <Button Text="Add Player"
                             Grid.Row="0"
-                            FontSize="32"
-                            FontAttributes="Bold"
-                            FontFamily="Coiny"
+                            FontSize="20"
                             HeightRequest="85"
                             CornerRadius="25"
                             BackgroundColor="#EC6664"
