@@ -145,6 +145,7 @@
 
         <!--  rankings  -->
         <CollectionView
+            x:Name="Results"
             Grid.Row="2"
             Margin="0,40,0,0"
             ItemsSource="{Binding rankings}">

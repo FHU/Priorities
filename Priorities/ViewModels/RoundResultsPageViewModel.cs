@@ -65,7 +65,7 @@ namespace Priorities.ViewModels
             for (int i = 5; i > 0; i--)
             {
                 Thread.Sleep(1000); // doesn't work yet
-                Ranking result = GetResult(i);
+                Ranking result = getResult(i);
                 rankings.Insert(0, result);
                 Score += result.Points;
             }
@@ -88,7 +88,7 @@ namespace Priorities.ViewModels
             }
         }
 
-        Ranking GetResult(int rank)
+        private Ranking getResult(int rank)
         {
             Ranking ranking = new Ranking() { Number = rank, Name = GroupRanking[rank - 1] };
 
