@@ -95,12 +95,12 @@ namespace Priorities.ViewModels
             if (GroupRanking[rank - 1] == PlayerRanking[rank - 1])
             {
                 ranking.Points = 25 - (5 * (rank - 1));
-                ranking.Color = Color.FromArgb("#009900");
+                ranking.Color = Color.FromArgb("#74C1DD");
             }
             else
             {
                 ranking.Points = -1 * (25 - (5 * (rank - 1)));
-                ranking.Color = Color.FromArgb("#990000");
+                ranking.Color = Color.FromArgb("#EC6664");
             }
 
             return ranking;
