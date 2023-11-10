@@ -5,11 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Priorities"
     xmlns:views="clr-namespace:Priorities.Views"
+    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+    xmlns:models="clr-namespace:Priorities.Models"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate views:HighScorePage}"
+        ContentTemplate="{DataTemplate views:AddPlayerPage}"
         Route="MainPage" />
 
 </Shell>
