@@ -19,22 +19,27 @@
                 <Label
                     Text="{Binding Score}"
                     FontSize="30"
-                    Margin="5,0"/>
+                    Margin="5,0"
+                    FontFamily="ConcertOneRegular"
+                    />
                 <Label
                     Text="Points"
-                    VerticalOptions="End"/>
+                    VerticalOptions="End"
+                    FontFamily="ConcertOneRegular"/>
             </HorizontalStackLayout>
 
             <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,0,5">
                 <Label
                     VerticalOptions="End"
                     Text="Round"
-                    Margin="5,0"/>
+                    Margin="5,0"
+                    FontFamily="ConcertOneRegular"/>
 
                 <Label
                     VerticalOptions="End"
                     Text="{Binding RoundNumber}"
                     FontSize="30"
+                    FontFamily="ConcertOneRegular"
                 />
             </HorizontalStackLayout>
         </Grid>
@@ -66,11 +71,13 @@
                     HorizontalOptions="Center"
                     Margin="0,0,0,10"
                     FontSize="16"
+                    FontFamily="ConcertOneRegular"
                     />
                     <Label
                     Text="{Binding PlayerName}"
                     FontSize="25"
                     HorizontalOptions="Start"
+                    FontFamily="ConcertOneRegular"
                     ></Label>
                 </VerticalStackLayout>
 
@@ -84,6 +91,7 @@
             VerticalOptions="End"
             FontSize="20"
             IsEnabled="False"
+            FontFamily="ConcertOneRegular"
             />
         </Grid>
 
@@ -103,6 +111,7 @@
                 FontSize="20"
                 VerticalOptions="Center"
                 IsEnabled="False"
+                FontFamily="ConcertOneRegular"
             />
 
             <Button
@@ -115,6 +124,7 @@
                 FontSize="20"
                 VerticalOptions="Center"
                 IsEnabled="False"
+                FontFamily="ConcertOneRegular"
             />
 
             <Button
@@ -127,6 +137,7 @@
                 FontSize="20"
                 VerticalOptions="Center"
                 IsEnabled="False"
+                FontFamily="ConcertOneRegular"
             />
 
             <Button
@@ -139,6 +150,7 @@
                 FontSize="20"
                 VerticalOptions="Center"
                 IsEnabled="False"
+                FontFamily="ConcertOneRegular"
             />
 
             <Button
@@ -151,6 +163,7 @@
                 FontSize="20"
                 VerticalOptions="Center"
                 IsEnabled="False"
+                FontFamily="ConcertOneRegular"
             />
 
             <!-- Priority Cards -->
@@ -163,7 +176,8 @@
                         Text="{Binding Thing}"
                         Margin="0, 9"
                         HeightRequest="60"
-                        FontSize="20"/>
+                        FontSize="20"
+                        FontFamily="ConcertOneRegular"/>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
@@ -176,7 +190,8 @@
                 Text="Submit"
                 FontSize="20"
                 Margin="0,40,0,0"
-                HeightRequest="75"/>
+                HeightRequest="75"
+                FontFamily="ConcertOneRegular"/>
         </Grid>
     </Grid>
 </ContentPage>
