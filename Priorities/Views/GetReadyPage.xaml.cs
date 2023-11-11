@@ -1,9 +1,14 @@
-﻿namespace Priorities.Views;
+﻿using System;
+namespace Priorities.Views;
+using Priorities.ViewModels;
 
-public partial class GetReadyPage : ContentPage
-{
-	public GetReadyPage()
+	public partial class GetReadyPage : ContentPage
 	{
-		InitializeComponent();
+		public GetReadyPage()
+		{
+			InitializeComponent();
+			BindingContext = new GetReadyPageViewModel();
+		}
 	}
-}
+
+

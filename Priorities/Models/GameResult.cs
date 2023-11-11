@@ -8,6 +8,8 @@ namespace Priorities.Models
 
 		public DateTime Date { get; set; }
 
+		public int Round { get; set; }
+
 		public GameResult()
 		{
 		}

@@ -1,60 +1,110 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GetReadyPage"
-             BackgroundColor="LightBlue">
-    
-    <Grid Padding="20">
+             Title="GetReadyPage"
+             BackgroundColor="White"
+             xmlns:vm="clr-namespace:Priorities.ViewModels"
+            
+             Shell.FlyoutBehavior="Flyout"
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             xmlns:models="clr-namespace:Priorities.Models"
+             x:DataType="viewmodels:GetReadyPageViewModel">
+
+    <Grid Padding="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Top Bar with Round Number -->
-        <Label Text="Round 3/10" Grid.Row="1" HorizontalOptions="Center" FontSize="40"/>
+        <!-- Top Bar with App Name -->
+        <Label Text="PRIORITIES"
+               Grid.Row="0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"
+               BackgroundColor="#505050"
+               FontSize="40"
+               TextColor="White"
+               HeightRequest="100"
+               Padding="20,0"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+
+        <!-- Score and Round Number -->
+        <!-- Score and Round Number -->
+<Grid Grid.Row="1"
+      HorizontalOptions="FillAndExpand"
+      VerticalOptions="Center"
+      BackgroundColor="#E57373"
+      Margin="0"
+      Padding="10">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="30"/> <!-- This column acts as the spacer -->
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+    <Label Grid.Column="0"
+           FontSize="36"
+           TextColor="White"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           Text="200 points"/>
+
+    <!-- The empty column here serves as the space between the labels -->
+
+    <Label Grid.Column="2"
+           FontSize="24"
+           TextColor="White"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           Text="Round 1/10"/>
+</Grid>
+
 
         <!-- Pass the Phone Header -->
-        <Label Text="PASS THE PHONE TO..." Grid.Row="2" HorizontalOptions="Center" FontSize="28"/>
+        <Label Text="Pass the Phone to...."
+               Grid.Row="2"
+               Margin="20"
+               HorizontalOptions="Center"
+               FontSize="28"
+               TextColor="Black"/>
 
-        <!-- User Profile and Name -->
-        <StackLayout Grid.Row="3" HorizontalOptions="Center" Spacing="50">
-            <Frame BackgroundColor="White" 
-                   Padding="0" 
-                   CornerRadius="50" 
-                   HorizontalOptions="Center" 
-                   WidthRequest="100" 
-                   HeightRequest="100">
-                <Image Source="{Binding CurrentPlayer.ProfilePictureUrl}" 
-                       Aspect="AspectFill"/>
+         <!--User Profile and Name--> 
+        <StackLayout Grid.Row="3"
+                     HorizontalOptions="Center"
+                     Spacing="20"
+                     VerticalOptions="Center">
+             <!--Circle Frame for Profile Picture Placeholder--> 
+            <Frame WidthRequest="200"
+                   HeightRequest="200"
+                   CornerRadius="100"
+                   BackgroundColor="LightGray"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   IsClippedToBounds="True">
+                 <Image Source="{Binding CurrentPlayer.ImageName}"
+                        Aspect="AspectFill"
+                        WidthRequest="200"
+                        HeightRequest="200"
+                        />
+
             </Frame>
-            <Label Text="Austin!" FontSize="24" HorizontalOptions="Center"/>
+            <Label Text="{Binding CurrentPlayer.Name}" FontSize="36" TextColor="Black" HorizontalOptions="Center"/>
         </StackLayout>
 
-        <!-- Current Score and Ready Button with reduced spacing -->
-        <StackLayout Grid.Row="4" Spacing="20">
 
-            <!-- Current Score -->
-            <Label Text="Current Score" HorizontalOptions="Center" FontSize="24"/>
-            <Frame BackgroundColor="Purple" 
-                   Padding="10" 
-                   CornerRadius="50" 
-                   HorizontalOptions="Center" 
-                   WidthRequest="100" 
-                   HeightRequest="100">
-                <Label x:Name="PlayerScoreTextBlock" 
-                       Text="52"
-                       HorizontalOptions="CenterAndExpand" 
-                       VerticalOptions="CenterAndExpand" 
-                       FontSize="40" 
-                       TextColor="White"/>
-            </Frame>
+        <!-- Ready Button -->
+        <Button Text="READY?"
+                Grid.Row="4"
+                Margin="20"
+                TextColor="White"
+                BackgroundColor="#E57373"
+                FontSize="30"
+                CornerRadius="10"
+                HorizontalOptions="FillAndExpand"/>
 
-            <!-- Ready Button -->
-            <Button Text="Ready?" BackgroundColor="White" TextColor="Black" FontSize="40" CornerRadius="30" HorizontalOptions="Center" Padding="80,15"/>
-
-        </StackLayout>
     </Grid>
 </ContentPage>
