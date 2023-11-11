@@ -64,7 +64,7 @@ namespace Priorities.ViewModels
 
             for (int i = 5; i > 0; i--)
             {
-                Thread.Sleep(1000); // doesn't work yet
+                //Thread.Sleep(1000); // doesn't work yet
                 Ranking result = getResult(i);
                 rankings.Insert(0, result);
                 Score += result.Points;
