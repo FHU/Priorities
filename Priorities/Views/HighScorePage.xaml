@@ -3,11 +3,27 @@
              x:Class="Priorities.Views.HighScorePage"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Title="HighScorePage"          
+             Shell.BackgroundColor="#3C3C3C"
              >
+    <Shell.TitleView>
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <HorizontalStackLayout>
+                <Label Text="P" FontSize="24" TextColor="#EC6664"/>
+                <Label Text="R" FontSize="24" TextColor="#AFD2A4"/>
+                <Label Text="I" FontSize="24" TextColor="#74C1DD"/>
+                <Label Text="O" FontSize="24" TextColor="#38AECC"/>
+                <Label Text="R" FontSize="24" TextColor="#AFD2A4"/>
+                <Label Text="I" FontSize="24" TextColor="#EC6664"/>
+                <Label Text="T" FontSize="24" TextColor="#74C1DD"/>
+                <Label Text="I" FontSize="24" TextColor="#AFD2A4"/>
+                <Label Text="E" FontSize="24" TextColor="#74C1DD"/>
+                <Label Text="S" FontSize="24" TextColor="#EC6664"/>
+            </HorizontalStackLayout>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
     <ScrollView BackgroundColor="#F1F1F1" HorizontalOptions="FillAndExpand">
         <VerticalStackLayout Spacing="5">
-            <Label Text="Leaderboard" FontSize="22" TextColor="Black" Padding="10" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="High Scores" FontSize="32" TextColor="Black" Padding="30" HorizontalOptions="CenterAndExpand"/>
             <CollectionView ItemsSource="{Binding GameResults}">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="5">
