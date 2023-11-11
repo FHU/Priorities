@@ -21,7 +21,7 @@
                                 StrokeThickness="1"
                                 HorizontalOptions="FillAndExpand"
                                 MaximumWidthRequest="350"
-                                BackgroundColor="#DFD8F7"
+                                BackgroundColor="#087E8B"
                                 >
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="5" />
