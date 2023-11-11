@@ -1,12 +1,244 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.RoundResultsPage"
-             Title="RoundResultsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+              xmlns:views="clr-namespace:Priorities.Views"
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             xmlns:models="clr-namespace:Priorities.Models"
+             x:DataType="viewmodels:RoundResultsPageViewModel"
+             Title="Priorities">
+
+    <!-- main -->
+    <Grid RowSpacing="0" BackgroundColor="LightBlue" Padding="0,0,0,12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- header -->
+        <Grid Grid.Row="0" Padding="10" RowSpacing="0" VerticalOptions="Center" HeightRequest="80" BackgroundColor="DarkBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- profile picture -->
+            <Image Grid.RowSpan="2"
+                   Grid.Column="0"
+                   Source="{Binding Person.ImageName}"
+                   HeightRequest="50"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="10,5,20,0">
+            </Image>
+
+            <!-- revealing results -->
+            <Label Grid.Row="0"
+                   Grid.Column="1"
+                   Text="Revealing Results..."
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   />
+
+            <!-- player name -->
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   Text="{Binding Person.Name}"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   />
+
+            <!-- score label -->
+            <Label Grid.Row="0"
+                   Grid.Column="2"
+                   Text="Score"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   Padding="10,0"
+                   />
+
+            <!-- score number -->
+            <Label Grid.Row="1"
+                   Grid.Column="2"
+                   Text="{Binding Score}"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+        </Grid>
+
+        <!--rankings-->
+        <CollectionView
+    Grid.Row="1"
+            Margin="0,40,0,0"
+            
+    
+    ItemsSource="{Binding rankings}">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout
+            Orientation="Vertical"
+                    
+            />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Ranking">
+                    <Grid Padding="10" Grid.Row="0" ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="170" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- guess 1 bg -->
+                        <RoundRectangle Grid.Column="1" Grid.ColumnSpan="2"  Fill="White" CornerRadius="30" MaximumHeightRequest="70">
+                            <RoundRectangle.Shadow>
+                                <Shadow Brush="Gray"
+                    Radius="10"
+                    Offset="5,5"
+                    Opacity="0.9"
+                    Grid.ColumnSpan="2">
+                                </Shadow>
+                            </RoundRectangle.Shadow>
+                        </RoundRectangle>
+
+                        <!-- guess 1 circle -->
+                        <Border Grid.Column="0"  Stroke="Black" 
+            StrokeShape="Ellipse" WidthRequest="60" HeightRequest="60" StrokeThickness="2" BackgroundColor="#567BFF">
+
+                            <!-- guess 1 number -->
+                            <Label Text="{Binding Number}"
+               FontAttributes="Bold"
+               FontSize="24"
+               
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               />
+
+                            <!-- shadow -->
+                            <Border.Shadow>
+                                <Shadow Brush="Gray"
+                    Offset="2,2"
+                    Radius="5"
+                    Opacity="0.9">
+                                </Shadow>
+                            </Border.Shadow>
+                        </Border>
+
+                        <!-- guess 1 text -->
+                        <Label Grid.Column="1"
+           Text="{Binding Name}"
+           FontAttributes="Bold"
+           FontSize="24"
+           TextColor="Black"
+           VerticalOptions="Center" 
+           HorizontalOptions="Start"
+           Padding="32,0,0,0"
+           />
+
+                        <!-- check -->
+                        <Image Grid.Column="2"
+           Source="{Binding ImagePath}"
+           HeightRequest="35"
+           WidthRequest="35">
+                        </Image>
+
+                        <!-- guess 1 pts bg -->
+                        <RoundRectangle Grid.Column="3" Grid.ColumnSpan="2"  CornerRadius="30"/>
+
+                        <Grid Grid.Column="3" ColumnSpacing="5" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- guess 1 sign -->
+                            <Label 
+           Grid.Column="0" 
+           Text="{Binding Sign}"
+           FontAttributes="Bold"
+           FontSize="20"
+           VerticalOptions="Center" 
+           HorizontalOptions="End"
+           />
+
+                            <!-- guess 1 points -->
+                            <Label 
+Grid.Column="1" 
+Text="{Binding Points}"
+FontAttributes="Bold"
+FontSize="20"
+VerticalOptions="Center" 
+HorizontalOptions="Start"
+                              
+/>
+                        </Grid>
+                    </Grid>
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+
+        <!-- next button -->
+        <Button Grid.Row="2"
+                    Text="Next"
+                    FontAttributes="Bold"
+                    FontSize="22"
+                    BackgroundColor="DarkBlue"
+                    Margin="20,10">
+            <Button.Shadow>
+                <Shadow Brush="Black"
+                        Radius="10"
+                        Opacity="0.9">
+                </Shadow>
+            </Button.Shadow>
+        </Button>
+
+        <!-- round label -->
+        <Grid Grid.Row="3" RowSpacing="0" HorizontalOptions="Center" Margin="0,15,0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+                   Text="Round "
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+               
+                   />
+            <Label Grid.Column="1"
+       Text="{Binding Round}"
+       FontSize="16"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       />
+            <Label Grid.Column="2"
+       Text="/5"
+       FontSize="16"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       />
+        </Grid>
+    </Grid>
+
 </ContentPage>
