@@ -213,16 +213,31 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-            <Button
+            <Frame 
+                BackgroundColor="{StaticResource Primary}"
                 Grid.ColumnSpan="3"
                 Grid.Column="0"
                 CornerRadius="20"
                 Grid.Row="5"
-                Text="Submit"
-                FontSize="32"
                 Margin="0,40,0,0"
-                HeightRequest="75"
-                FontFamily="ConcertOneRegular"/>
+                HeightRequest="75">
+                <Grid ColumnDefinitions="*,*,*" Padding="10,0">
+                    <Label
+                        Grid.Column="1"
+                        Text="Submit"
+                    TextColor="{StaticResource OffWhite2}"
+                        FontSize="32"
+                        FontFamily="ConcertOneRegular"/>
+                    <Label
+                        Grid.Column="2"
+                        Text="➜"
+                        TextColor="{StaticResource OffWhite2}"
+                        HorizontalOptions="End"
+                        FontSize="32"
+                        FontFamily="ConcertOneRegular"/>
+                </Grid>
+               
+            </Frame>
         </Grid>
     </Grid>
 </ContentPage>
