@@ -1,4 +1,4 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.HighScorePage"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
@@ -8,22 +8,24 @@
     <Shell.TitleView>
         <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
             <HorizontalStackLayout>
-                <Label Text="P" FontSize="24" TextColor="#EC6664"/>
-                <Label Text="R" FontSize="24" TextColor="#AFD2A4"/>
-                <Label Text="I" FontSize="24" TextColor="#74C1DD"/>
-                <Label Text="O" FontSize="24" TextColor="#38AECC"/>
-                <Label Text="R" FontSize="24" TextColor="#AFD2A4"/>
-                <Label Text="I" FontSize="24" TextColor="#EC6664"/>
-                <Label Text="T" FontSize="24" TextColor="#74C1DD"/>
-                <Label Text="I" FontSize="24" TextColor="#AFD2A4"/>
-                <Label Text="E" FontSize="24" TextColor="#74C1DD"/>
-                <Label Text="S" FontSize="24" TextColor="#EC6664"/>
+                <Label Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="O" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                <Label Text="I" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                <Label Text="T" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                <Label Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
             </HorizontalStackLayout>
         </HorizontalStackLayout>
     </Shell.TitleView>
-    <ScrollView BackgroundColor="#F1F1F1" HorizontalOptions="FillAndExpand">
+    <ScrollView BackgroundColor="{StaticResource OffWhite}" HorizontalOptions="FillAndExpand">
         <VerticalStackLayout Spacing="5">
-            <Label Text="High Scores" FontSize="32" TextColor="Black" Padding="30" HorizontalOptions="CenterAndExpand"/>
+                    <Rectangle BackgroundColor="{StaticResource Primary}"
+                   MinimumHeightRequest="6"/>
+            <Label Text="High Scores" FontFamily="CoinyRegular" TextColor="{StaticResource Primary}" FontSize="40" Padding="12" HorizontalOptions="CenterAndExpand"/>
             <CollectionView ItemsSource="{Binding GameResults}">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="5">
@@ -37,20 +39,19 @@
                                 StrokeThickness="1"
                                 HorizontalOptions="FillAndExpand"
                                 MaximumWidthRequest="350"
-                                BackgroundColor="#087E8B"
+                                
                                 >
                             <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="5" />
+                                <RoundRectangle CornerRadius="26" />
                             </Border.StrokeShape>
-                            
-                            <toolkit:Expander>
+                            <toolkit:Expander BackgroundColor="{StaticResource PrimaryBlueGreen}">
 
                                 <toolkit:Expander.Header>
                                     <FlexLayout JustifyContent="SpaceBetween">
                                         <HorizontalStackLayout>
-                                            <Label Padding="20" VerticalOptions="Center" FontSize="24" Text="{Binding Rank}" TextColor="Black"/>
-                                            <VerticalStackLayout Padding="20" HorizontalOptions="Start">
-                                                <Label FontSize="18" Text="{Binding Team.Name}" TextColor="Black"/>
+                                            <Label Padding="16" VerticalOptions="Center" FontSize="26" FontFamily="CoinyRegular" Text="{Binding Rank}" TextColor="{StaticResource White}"/>
+                                            <VerticalStackLayout Padding="18,16" HorizontalOptions="Start">
+                                                <Label FontSize="20" Text="{Binding Team.Name}" FontFamily="CoinyRegular" TextColor="{StaticResource White}"/>
                                                 <StackLayout BindableLayout.ItemsSource="{Binding Team.Players}"
                                                              Orientation="Horizontal"
                                                              Spacing="-8">
@@ -73,11 +74,12 @@
                                             StrokeThickness="1"
                                             Margin="4"
                                             MinimumWidthRequest="85"
+                                            BackgroundColor="{StaticResource SecondaryLightBlue}"
                                             >
                                             <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="15" />
+                                                <RoundRectangle CornerRadius="15"/>
                                             </Border.StrokeShape>
-                                            <Label FontSize="18" Text="{Binding Score}"  Padding="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                                            <Label FontSize="26" FontFamily="CoinyRegular" Text="{Binding Score}" Padding="8" TextColor="{StaticResource White}" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" MinimumWidthRequest="20"/>
                                         </Border>
                                     </FlexLayout>
 
