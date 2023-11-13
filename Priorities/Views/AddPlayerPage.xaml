@@ -24,7 +24,7 @@
 
 
     <ScrollView>
-        <Grid Padding="0" RowSpacing="6" BackgroundColor="{StaticResource White}">
+        <Grid Padding="0" RowSpacing="4" BackgroundColor="{StaticResource White}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
@@ -54,16 +54,18 @@
             <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0" Padding="16">
+            <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <!--Label Name-->
                 <Label Grid.Row="0"
+                       Padding="8"
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
+                       FontFamily="OpenSansRegular"
                        TextColor="{StaticResource Black}"
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
@@ -71,14 +73,14 @@
                        HeightRequest="70"
                        WidthRequest="300"
                        FontSize="28"
-                       TextColor="{StaticResource Black}"
+                       TextColor="{StaticResource White}"
                        
                        BackgroundColor="{StaticResource Secondary}"
                 />
             </Grid>
 
             <!--Input Avatar-->
-            <Grid Grid.Row="1" RowSpacing="10" Padding="16">
+            <Grid Grid.Row="1" RowSpacing="10" VerticalOptions="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -95,8 +97,8 @@
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
                                     ImageSource="avatar_pic.jpg"
-                                    HeightRequest="300"
-                                    WidthRequest="300"
+                                    HeightRequest="224"
+                                    WidthRequest="236"
                                     CornerRadius="150"/>
 
 
@@ -128,7 +130,8 @@
                         FontFamily="Coiny"
                         BackgroundColor= "{StaticResource Tertiary}"
                         CornerRadius="15"
-                        WidthRequest="300"
+                        HeightRequest="41"
+                        WidthRequest="236"
                         TextColor="White"
 
                 />
@@ -138,21 +141,34 @@
             <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="16">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
                     <Button Text="ADD PLAYER"
                             Grid.Row="0"
                             FontSize="20"
-                            HeightRequest="85"
+                            HeightRequest="81"
+                            WidthRequest="296"
                             CornerRadius="25"
                             FontAttributes="Bold"
-                            BackgroundColor="#EC6664"
+                            BackgroundColor="{StaticResource Primary}"
                             TextColor="{StaticResource White}"
                     />
+
+                    <Image Source="shapes.png"
+                           Grid.Row="1"
+                           VerticalOptions="End"/>
                 </Grid>
 
             </StackLayout>
+            
+            <!--Bottom Style-->
+            <!--<StackLayout Grid.Row="3">
+
+                <Image Source="shapes.png"/>
+
+            </StackLayout>-->
 
 
         </Grid>
