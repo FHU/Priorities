@@ -1,14 +1,32 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.HighScorePage"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Title="HighScorePage"          
+             Shell.BackgroundColor="#3C3C3C"
              >
-    <ScrollView BackgroundColor="#F1F1F1" HorizontalOptions="FillAndExpand">
+    <Shell.TitleView>
+        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <HorizontalStackLayout>
+                <Label Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="O" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                <Label Text="I" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                <Label Text="T" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                <Label Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                <Label Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+            </HorizontalStackLayout>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    <ScrollView BackgroundColor="{StaticResource OffWhite}" HorizontalOptions="FillAndExpand">
         <VerticalStackLayout Spacing="5">
-            <Label Text="Leaderboard" FontSize="22" TextColor="Black" Padding="10" HorizontalOptions="CenterAndExpand"/>
-            <CollectionView ItemsSource="{Binding GameResults}">
+                    <Rectangle BackgroundColor="{StaticResource Primary}"
+                   MinimumHeightRequest="6"/>
+            <Label Text="High Scores" FontFamily="CoinyRegular" TextColor="{StaticResource Primary}" FontSize="40" Padding="12" HorizontalOptions="CenterAndExpand"/>
+            <CollectionView ItemsSource="{Binding GameResults}" HeightRequest="700">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="5">
                         
@@ -21,20 +39,18 @@
                                 StrokeThickness="1"
                                 HorizontalOptions="FillAndExpand"
                                 MaximumWidthRequest="350"
-                                BackgroundColor="#DFD8F7"
                                 >
                             <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="5" />
+                                <RoundRectangle CornerRadius="26" />
                             </Border.StrokeShape>
-                            
-                            <toolkit:Expander>
+                            <toolkit:Expander BackgroundColor="{StaticResource PrimaryBlueGreen}">
 
                                 <toolkit:Expander.Header>
                                     <FlexLayout JustifyContent="SpaceBetween">
                                         <HorizontalStackLayout>
-                                            <Label Padding="20" VerticalOptions="Center" FontSize="24" Text="{Binding Rank}" TextColor="Black"/>
-                                            <VerticalStackLayout Padding="20" HorizontalOptions="Start">
-                                                <Label FontSize="18" Text="{Binding Team.Name}" TextColor="Black"/>
+                                            <Label Padding="16" VerticalOptions="Center" FontSize="26" FontFamily="CoinyRegular" Text="{Binding Rank}" TextColor="{StaticResource White}"/>
+                                            <VerticalStackLayout Padding="18,16" HorizontalOptions="Start">
+                                                <Label FontSize="20" Text="{Binding Team.Name}" FontFamily="CoinyRegular" TextColor="{StaticResource White}"/>
                                                 <StackLayout BindableLayout.ItemsSource="{Binding Team.Players}"
                                                              Orientation="Horizontal"
                                                              Spacing="-8">
@@ -45,7 +61,7 @@
                                                                 HeightRequest="25"
                                                                 WidthRequest="25"
                                                                 Padding="0"
-                                                                BorderColor="Black"/>
+                                                                BorderColor="{StaticResource Black}"/>
                                                         </DataTemplate>
                                                     </BindableLayout.ItemTemplate>
                                                 </StackLayout>
@@ -57,17 +73,18 @@
                                             StrokeThickness="1"
                                             Margin="4"
                                             MinimumWidthRequest="85"
+                                            BackgroundColor="{StaticResource SecondaryLightBlue}"
                                             >
                                             <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="15" />
+                                                <RoundRectangle CornerRadius="15"/>
                                             </Border.StrokeShape>
-                                            <Label FontSize="18" Text="{Binding Score}"  Padding="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                                            <Label FontSize="26" FontFamily="CoinyRegular" Text="{Binding Score}" Padding="8" TextColor="{StaticResource White}" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" MinimumWidthRequest="20"/>
                                         </Border>
                                     </FlexLayout>
 
                                 </toolkit:Expander.Header>
 
-                                <Grid BackgroundColor="#F1F1F1" RowSpacing="10" Padding="10">
+                                <Grid BackgroundColor="{StaticResource PrimaryBlueGreen}" RowSpacing="10" Padding="10">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="*"/>
                                         <RowDefinition Height="*"/>
@@ -83,7 +100,8 @@
                                                     Stroke="#000000"
                                                     StrokeThickness="0.5"
                                                     Padding="5"
-                                                    HorizontalOptions="FillAndExpand">
+                                                    HorizontalOptions="FillAndExpand"
+                                                    BackgroundColor="{StaticResource PrimaryBlueGreen}">
                                                     <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="5" />
                                                     </Border.StrokeShape>
@@ -95,11 +113,12 @@
                                                         <Label Padding="3"
                                            Grid.Column="0"
                                            Text="{Binding Title}"
-                                           TextColor="Black"
+                                           TextColor="{StaticResource White}"
+                                        FontFamily="CoinyRegular"
                                            FontSize="16" 
                                            VerticalOptions="Center"/>
                                                         <Ellipse Grid.Column="1"
-                                             Fill="LightBlue"
+                                             Fill="{StaticResource PrimaryRed}"
                                              WidthRequest="25"
                                              HeightRequest="25"
                                              HorizontalOptions="End"/>
@@ -109,7 +128,7 @@
                                         </BindableLayout.ItemTemplate>
                                         <BindableLayout.EmptyViewTemplate>
                                             <DataTemplate>
-                                                <Label Text="No Achievements Earned" FontAttributes="Italic" TextColor="Black" FontSize="12"/>
+                                                <Label Text="No Achievements Earned" FontAttributes="Italic" TextColor="{StaticResource White}" FontSize="15" FontFamily="CoinyRegular"/>
                                             </DataTemplate>
                                         </BindableLayout.EmptyViewTemplate>
                                     </StackLayout>
@@ -123,6 +142,7 @@
                                         <BindableLayout.ItemTemplate>
                                             <DataTemplate>
                                                 <Border Stroke="#000000"
+                                                BackgroundColor="{StaticResource PrimaryBlueGreen}"
                                     StrokeThickness="0.5"
                                     Padding="5"
                                     WidthRequest="90"
@@ -138,8 +158,9 @@
                                             Padding="0"
                                             BorderColor="Black"/>
                                                         <Label Text="{Binding Name}"
-                                                TextColor="Black"
-                                                FontSize="12" 
+                                                TextColor="{StaticResource White}"
+                                                FontSize="12"
+                                                FontFamily="CoinyRegular"
                                                 VerticalOptions="Center"/>
                                                     </HorizontalStackLayout>
                                                 </Border>
@@ -148,8 +169,8 @@
                                     </FlexLayout>
 
                                     <HorizontalStackLayout Grid.Row="2" Spacing="5">
-                                        <Label Text="Played:" TextColor="Black"/>
-                                        <Label Text="{Binding Date}" TextColor="Black"/>
+                                        <Label Text="Played:" TextColor="{StaticResource White}" FontFamily="CoinyRegular"/>
+                                        <Label Text="{Binding Date}" TextColor="{StaticResource White}" FontFamily="CoinyRegular"/>
                                     </HorizontalStackLayout>
 
                                 </Grid>
