@@ -72,7 +72,7 @@
                        WidthRequest="300"
                        FontSize="28"
                        TextColor="Black"
-                       
+                       Text="{Binding Name}"
                        BackgroundColor="Teal"
                 />
             </Grid>
@@ -146,6 +146,7 @@
                             HeightRequest="85"
                             CornerRadius="25"
                             BackgroundColor="#EC6664"
+                            Command="{Binding AddPlayerCommand}"
                     />
                 </Grid>
 
