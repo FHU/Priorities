@@ -75,7 +75,7 @@
 
 			<!--Dynamic Cards-->
 
-                <ScrollView Grid.Row="1" >
+                <ScrollView Grid.Row="1" Margin="0,0,0,250">
                     <CollectionView ItemsSource="{Binding Players}" VerticalOptions="FillAndExpand">
 
                         <CollectionView.ItemTemplate>
@@ -85,7 +85,7 @@
                                 <FlexLayout AlignItems="Start" Direction="Column" Margin="5">
 
                                     <!--Card One-->
-                                    <Frame Margin="5" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
+                                    <Frame Margin="3" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
                                         <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="350" HeightRequest="65"  >
                                             <Frame
                                             BorderColor="Black"
@@ -115,7 +115,7 @@
                     </CollectionView>
                 </ScrollView>
 
-                <Grid Grid.Row="1" VerticalOptions="End">
+                <Grid Grid.Row="1" VerticalOptions="End" BackgroundColor="White">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
