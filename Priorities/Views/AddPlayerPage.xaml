@@ -65,7 +65,7 @@
                         HorizontalOptions="Center"
                         BackgroundColor="{StaticResource Secondary}"
                         WidthRequest="296"
-                        HeightRequest="85"
+                        HeightRequest="75"
                         CornerRadius="25">
                 </Frame>
                 <Label Grid.Row="0"
@@ -78,7 +78,7 @@
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       HeightRequest="65"
+                       HeightRequest="55"
                        WidthRequest="260"
                        MaxLength="15"
                        FontSize="28"
