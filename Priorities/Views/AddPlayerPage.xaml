@@ -60,6 +60,16 @@
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <!--Label Name-->
+                <Frame Grid.Row="1"
+                        HorizontalOptions="Center"
+                        BackgroundColor="{StaticResource Secondary}"
+                        WidthRequest="360"
+                        HeightRequest="85"
+                        CornerRadius="15">
+
+
+
+                </Frame>
                 <Label Grid.Row="0"
                        Text="Name"
                        HorizontalOptions="Center"
@@ -68,8 +78,8 @@
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       HeightRequest="70"
-                       WidthRequest="300"
+                       HeightRequest="65"
+                       WidthRequest="290"
                        FontSize="28"
                        TextColor="{StaticResource Black}"
                        
@@ -140,11 +150,11 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
-
                     <Button Text="ADD PLAYER"
                             Grid.Row="0"
                             FontSize="20"
                             HeightRequest="85"
+                            WidthRequest="325"
                             CornerRadius="25"
                             FontAttributes="Bold"
                             BackgroundColor="#EC6664"
