@@ -144,8 +144,15 @@
                         CornerRadius="15"
                         HeightRequest="41"
                         WidthRequest="236"
-                        TextColor="White"
-                />
+                        TextColor="White">
+                <Button.Shadow>
+                        <Shadow Opacity="0.5"
+                                Radius="15"
+                                Offset="10,10"
+                                Brush="{StaticResource Gray200}"
+                        />
+                </Button.Shadow>
+                </Button>
             </Grid>
 
             <!--Add Player Button-->
@@ -166,9 +173,15 @@
                             CornerRadius="25"
                             FontAttributes="Bold"
                             BackgroundColor="{StaticResource Primary}"
-                            TextColor="{StaticResource White}"
-                            
-                    />
+                            TextColor="{StaticResource White}">
+                        <Button.Shadow>
+                            <Shadow Opacity="0.5"
+                                Radius="15"
+                                Offset="10,10"
+                                Brush="{StaticResource Gray200}"
+        />
+                        </Button.Shadow>
+                    </Button>
 
                     <!--<Image Source="shapes.png"
                            Grid.Row="1"
