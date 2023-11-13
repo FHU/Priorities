@@ -60,20 +60,30 @@
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <!--Label Name-->
+                <Frame Grid.Row="1"
+                        HorizontalOptions="Center"
+                        BackgroundColor="{StaticResource Secondary}"
+                        WidthRequest="350"
+                        HeightRequest="85"
+                        CornerRadius="25">
+                </Frame>
                 <Label Grid.Row="0"
                        Padding="8"
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontFamily="OpenSansRegular"
-                       TextColor="{StaticResource Black}"
+                       FontFamily="Coiny"
+                       TextColor="{StaticResource Primary}"                       
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       HeightRequest="70"
-                       WidthRequest="300"
+                       HeightRequest="65"
+                       WidthRequest="290"
+                       MaxLength="15"
                        FontSize="28"
-                       TextColor="{StaticResource White}"
+                       FontFamily="Coiny"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource OffWhite}"
                        
                        BackgroundColor="{StaticResource Secondary}"
                 />
@@ -91,8 +101,9 @@
                        Text="Avatar Pic"
                        HorizontalOptions="Center"
                        FontSize="28"
+                       FontFamily="Coiny"
                        FontAttributes="Bold"
-                       TextColor="{StaticResource Black}"/>
+                       TextColor="{StaticResource Primary}"/>
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
@@ -145,11 +156,15 @@
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
+                    
+                    
                     <Button Text="ADD PLAYER"
+                            ImageSource="whiteadd.png"
+                            FontFamily="Coiny"
                             Grid.Row="0"
                             FontSize="20"
-                            HeightRequest="81"
-                            WidthRequest="296"
+                            HeightRequest="85"
+                            WidthRequest="350"
                             CornerRadius="25"
                             FontAttributes="Bold"
                             BackgroundColor="{StaticResource Primary}"
