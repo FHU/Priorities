@@ -116,6 +116,7 @@
         <!-- [Priority Cards Section: Priscilla Harris] -->
         <!-- Six Rows / Two Columns -->
         <Grid Row="2" RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="0.20*,0.75*, 0.05*" ColumnSpacing="9" Margin="20,0">
+            <Image Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Source="shapes.jpg" Margin="-20,0"/>
 
             <!-- Priority Rank Numbers -->
 
@@ -216,6 +217,7 @@
 
             <Frame 
                 BackgroundColor="{StaticResource Primary}"
+                BorderColor="Transparent"
                 Grid.ColumnSpan="3"
                 Grid.Column="0"
                 CornerRadius="20"
@@ -237,7 +239,15 @@
                         FontSize="32"
                         FontFamily="ConcertOneRegular"/>
                 </Grid>
-               
+                <Frame.Shadow>
+                    <Shadow Brush="Gray"
+                    Offset="0,20"
+                    Radius="15"
+                    Opacity="0.6"/>
+
+
+                </Frame.Shadow>
+
             </Frame>
         </Grid>
     </Grid>
