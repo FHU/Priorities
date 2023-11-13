@@ -21,7 +21,6 @@
     <Color x:Key="SecondaryBlue">#38AECC</Color>
     <Color x:Key="SecondaryLightBlue">#74C1DD</Color>
     <Color x:Key="SecondaryDarkBlue">#337096</Color>
-    <Color x:Key="Teal">#087E8B</Color>
     <Color x:Key="OffWhite2">#EBEBE5</Color>
     <!--  -->
 
