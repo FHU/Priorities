@@ -82,6 +82,7 @@
                        WidthRequest="260"
                        MaxLength="15"
                        FontSize="28"
+                       HorizontalTextAlignment="Center"
                        FontFamily="Coiny"
                        FontAttributes="Bold"
                        TextColor="{StaticResource OffWhite}"
