@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GamePage"
              Shell.FlyoutBehavior="Flyout"
+             Shell.BackgroundColor="#3C3C3C"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GamePageViewModel"
