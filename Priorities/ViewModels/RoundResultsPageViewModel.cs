@@ -49,7 +49,7 @@ namespace Priorities.ViewModels
             //Round = 1;
 
             rankings = new ObservableCollection<Ranking>();
-            Person = new Player() { Name = "John", ImageName = "dotnet_bot.svg" };
+            Person = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
 
             string i1 = "Giraffe";
             string i2 = "Chocolate";
