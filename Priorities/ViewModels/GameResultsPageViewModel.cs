@@ -34,6 +34,6 @@ namespace Priorities.ViewModels
 
             Achievements.Add(achievement);
         }
-
+        
     }
 }

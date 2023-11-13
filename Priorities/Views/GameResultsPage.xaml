@@ -12,9 +12,9 @@
         <HorizontalStackLayout HorizontalOptions="Center">
             <VerticalStackLayout>
                 <Label
-                HorizontalOptions="Center"
+               
                 TextColor="#EC6664"
-                Margin="5, 5, 40, 5"
+                Margin="0, 5, 130, 0"
                 FontSize="Medium"
                 FontAttributes="Bold"
                 Text="Time"/>
@@ -22,10 +22,10 @@
                 <Label
                 HorizontalOptions="Center"
                 TextColor="Black"
-                Margin="5, 5, 40, 5"
+                Margin="0, 5, 140, 5"
                 FontSize="Large"
                 FontAttributes="Bold"
-                Text="{Binding ElapsedTime}"/>
+                Text="{Binding ElapsedTime.Minutes}"/>
             </VerticalStackLayout>
             
             <VerticalStackLayout>
@@ -33,7 +33,7 @@
                 HorizontalOptions="Center"
                 Text="Score"
                TextColor="#EC6664"
-                Margin="5, 5, 40, 5"
+                Margin="5, 5, 0, 5"
                 FontSize="Medium"
                 FontAttributes="Bold"
             />
@@ -41,7 +41,7 @@
                 <Label
                 HorizontalOptions="Center"
                 TextColor="Black"
-                Margin="5, 5, 40, 5"
+                Margin="5, 5, 0, 5"
                 FontSize="Large"
                 FontAttributes="Bold"
                 Text="{Binding Score}"/>
@@ -52,11 +52,34 @@
         <VerticalStackLayout
             HeightRequest="300">
             <Label
-            Margin="0,50,0,0"
+            Margin="0,35,0,15"
             Text="Achievements"
             HorizontalOptions="Center"
             TextColor="#EC6664"
             FontSize="Large"/>
+
+
+            <Button
+                Margin="0,10,0,0"
+                WidthRequest="250"
+                HeightRequest="50"
+                BackgroundColor="#087E8B"
+                Text="Fastest Man Alive"
+                TextColor="White"
+                FontSize="Medium">
+
+                <Button.Shadow>
+                    <Shadow
+                        Opacity="0.2"
+                        Offset="10,10"
+                        Radius="10"
+                        
+                        />
+                </Button.Shadow>
+                
+            </Button>
+
+
 
             <Button
                 Margin="0,10,0,0"
@@ -65,7 +88,16 @@
                 BackgroundColor="#087E8B"
                 Text="Great Start"
                 TextColor="White"
-                FontSize="Large">
+                FontSize="Medium">
+
+                <Button.Shadow>
+                    <Shadow
+                        Opacity="0.2"
+                        Offset="10,10"
+                        Radius="10"
+                        
+                        />
+                </Button.Shadow>
             </Button>
 
             <Button
@@ -73,9 +105,18 @@
                 WidthRequest="250"
                 HeightRequest="50"
                 BackgroundColor="#087E8B"
-                Text="Great Start"
+                Text="Snail's Pace"
                 TextColor="White"
-                FontSize="Large">
+                FontSize="Medium">
+
+                <Button.Shadow>
+                    <Shadow
+                        Opacity="0.2"
+                        Offset="10,10"
+                        Radius="10"
+                        
+                        />
+                </Button.Shadow>
             </Button>
         </VerticalStackLayout>
 
@@ -83,12 +124,40 @@
 
         <VerticalStackLayout>
             <Button Margin="0,0,0,5" Text="High Score" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+                <Button.Shadow>
+                    <Shadow
+                        Opacity="0.2"
+                        Offset="10,10"
+                        Radius="10"
+                        
+                        />
+                </Button.Shadow>
             </Button>
             <Button Margin="0,0,0,5" Text="Achivements" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+                <Button.Shadow>
+                    <Shadow
+                        Opacity="0.2"
+                        Offset="10,10"
+                        Radius="10"
+                        
+                        />
+                </Button.Shadow>
             </Button>
             <Button Text="Play Again" FontSize="Medium" FontAttributes="Bold" WidthRequest="250" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+                <Button.Shadow>
+                    <Shadow
+                        Opacity="0.2"
+                        Offset="10,10"
+                        Radius="10"
+                        
+                        />
+                </Button.Shadow>
             </Button>
         </VerticalStackLayout>
+
+        
+            <Image  Source="Flower.jpg" />
+        
 
     </VerticalStackLayout>
 </ContentPage>
