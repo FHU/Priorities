@@ -129,6 +129,7 @@
                         BackgroundColor= "{StaticResource Tertiary}"
                         CornerRadius="15"
                         WidthRequest="300"
+                        TextColor="White"
 
                 />
             </Grid>
@@ -140,12 +141,14 @@
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
 
-                    <Button Text="Add Player"
+                    <Button Text="ADD PLAYER"
                             Grid.Row="0"
                             FontSize="20"
                             HeightRequest="85"
                             CornerRadius="25"
-                            BackgroundColor="{StaticResource Primary}"
+                            FontAttributes="Bold"
+                            BackgroundColor="#EC6664"
+                            TextColor="{StaticResource White}"
                     />
                 </Grid>
 
