@@ -71,14 +71,18 @@
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       TextColor="{StaticResource Black}"
+                       FontFamily="Coiny"
+                       TextColor="{StaticResource Primary}"                       
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
                        HeightRequest="65"
                        WidthRequest="290"
+                       MaxLength="15"
                        FontSize="28"
-                       TextColor="{StaticResource Black}"
+                       FontFamily="Coiny"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource OffWhite}"
                        
                        BackgroundColor="{StaticResource Secondary}"
                 />
@@ -96,8 +100,9 @@
                        Text="Avatar Pic"
                        HorizontalOptions="Center"
                        FontSize="28"
+                       FontFamily="Coiny"
                        FontAttributes="Bold"
-                       TextColor="{StaticResource Black}"/>
+                       TextColor="{StaticResource Primary}"/>
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
@@ -152,6 +157,7 @@
                     
                     <Button Text="ADD PLAYER"
                             ImageSource="whiteadd.png"
+                            FontFamily="Coiny"
                             Grid.Row="0"
                             FontSize="20"
                             HeightRequest="85"
@@ -161,15 +167,6 @@
                             BackgroundColor="#EC6664"
                             TextColor="{StaticResource White}"
                     />
-                    <Image Aspect="AspectFill"
-                           Source="whiteadd.png"
-                           Grid.Row="0"
-                           BackgroundColor="Black"
-                           WidthRequest="30"
-                           HeightRequest="30"
-                           HorizontalOptions="Start">
-
-                    </Image>
                 </Grid>
 
             </StackLayout>
