@@ -77,7 +77,7 @@
                 />
             </Grid>
 
-            <!--Avatar-->
+            <!--Input Avatar-->
             <Grid Grid.Row="1" RowSpacing="10" Padding="16">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
@@ -120,7 +120,7 @@
                     HorizontalOptions="Center" />
                 </Frame>-->
                 
-
+                <!--Retake Button-->
                 <Button Grid.Row="2"
                         Text="RETAKE"
                         FontSize="18"
@@ -133,7 +133,7 @@
                 />
             </Grid>
 
-            <!--Submit-->
+            <!--Add Player Button-->
             <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="16">
                 <Grid>
                     <Grid.RowDefinitions>
