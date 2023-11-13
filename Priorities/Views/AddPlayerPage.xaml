@@ -23,12 +23,13 @@
     </Shell.TitleView>
 
 
-    <ScrollView>
-        <Grid Padding="0" RowSpacing="4" BackgroundColor="{StaticResource White}">
+    <ContentView>
+        <Grid Padding="0" BackgroundColor="{StaticResource White}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="*" />
                 <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <!--Header-->
             <!--<Grid Grid.Row="1" ColumnSpacing="3" RowSpacing="10">
@@ -54,7 +55,7 @@
             <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" Padding="6">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -63,7 +64,7 @@
                 <Frame Grid.Row="1"
                         HorizontalOptions="Center"
                         BackgroundColor="{StaticResource Secondary}"
-                        WidthRequest="350"
+                        WidthRequest="296"
                         HeightRequest="85"
                         CornerRadius="25">
                 </Frame>
@@ -78,7 +79,7 @@
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
                        HeightRequest="65"
-                       WidthRequest="290"
+                       WidthRequest="260"
                        MaxLength="15"
                        FontSize="28"
                        FontFamily="Coiny"
@@ -90,7 +91,7 @@
             </Grid>
 
             <!--Input Avatar-->
-            <Grid Grid.Row="1" RowSpacing="10" VerticalOptions="Center">
+            <Grid Grid.Row="1" RowSpacing="12" VerticalOptions="Center" Margin="14">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -144,49 +145,52 @@
                         HeightRequest="41"
                         WidthRequest="236"
                         TextColor="White"
-
                 />
             </Grid>
 
             <!--Add Player Button-->
-            <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="16">
+            <StackLayout Grid.Row="2" VerticalOptions="End">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
+                        <!--<RowDefinition Height="auto"/>-->
                     </Grid.RowDefinitions>
 
-                    
-                    
                     <Button Text="ADD PLAYER"
                             ImageSource="whiteadd.png"
                             FontFamily="Coiny"
                             Grid.Row="0"
-                            FontSize="20"
+                            FontSize="32"
                             HeightRequest="85"
-                            WidthRequest="350"
+                            WidthRequest="296"
                             CornerRadius="25"
                             FontAttributes="Bold"
                             BackgroundColor="{StaticResource Primary}"
                             TextColor="{StaticResource White}"
+                            
                     />
 
-                    <Image Source="shapes.png"
+                    <!--<Image Source="shapes.png"
                            Grid.Row="1"
-                           VerticalOptions="End"/>
+                           VerticalOptions="End"
+                           HeightRequest="180"
+                           WidthRequest="200"
+                           />-->
                 </Grid>
 
             </StackLayout>
             
             <!--Bottom Style-->
-            <!--<StackLayout Grid.Row="3">
+            <StackLayout Grid.Row="3">
 
-                <Image Source="shapes.png"/>
+                <Image Source="shapes.png"
+                       WidthRequest="460"
+                       HeightRequest="180"/>
 
-            </StackLayout>-->
+            </StackLayout>
 
 
         </Grid>
-    </ScrollView>
+    </ContentView>
 
 </ContentPage>
