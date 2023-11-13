@@ -12,7 +12,7 @@
     <Shell.TitleView>
         <HorizontalStackLayout>
             <Label Text="ADD PLAYER"
-                   TextColor="White"
+                   TextColor="{StaticResource White}"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    VerticalOptions="Center"
@@ -24,7 +24,7 @@
 
 
     <ScrollView>
-        <Grid Padding="0" RowSpacing="6" BackgroundColor="White">
+        <Grid Padding="0" RowSpacing="6" BackgroundColor="{StaticResource White}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
@@ -64,16 +64,16 @@
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       TextColor="Black"
+                       TextColor="{StaticResource Black}"
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
                        HeightRequest="70"
                        WidthRequest="300"
                        FontSize="28"
-                       TextColor="Black"
+                       TextColor="{StaticResource Black}"
                        
-                       BackgroundColor="Teal"
+                       BackgroundColor="{StaticResource Secondary}"
                 />
             </Grid>
 
@@ -90,7 +90,7 @@
                        HorizontalOptions="Center"
                        FontSize="28"
                        FontAttributes="Bold"
-                       TextColor="Black"/>
+                       TextColor="{StaticResource Black}"/>
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
@@ -126,7 +126,7 @@
                         FontSize="18"
                         FontAttributes="Bold"
                         FontFamily="Coiny"
-                        BackgroundColor= "#74C1DD"
+                        BackgroundColor= "{StaticResource Tertiary}"
                         CornerRadius="15"
                         WidthRequest="300"
 
@@ -145,7 +145,7 @@
                             FontSize="20"
                             HeightRequest="85"
                             CornerRadius="25"
-                            BackgroundColor="#EC6664"
+                            BackgroundColor="{StaticResource Primary}"
                     />
                 </Grid>
 
