@@ -3,15 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Priorities.Views.AddPlayerPage"
-             Title="Add Player"
-             Shell.FlyoutBehavior="Flyout">
-    
-    
+             Shell.FlyoutBehavior="Flyout"
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             xmlns:models="clr-namespace:Priorities.Models"
+             x:DataType="viewmodels:AddPlayersPageViewModel"
+             >
+<!-- Added this to make changes to the top-->
+    <Shell.TitleView>
+        <HorizontalStackLayout>
+            <Label Text="ADD PLAYER"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   HeightRequest="50"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+
+
     <ScrollView>
-        <Grid Padding="0" RowSpacing="20" BackgroundColor="White">
+        <Grid Padding="0" RowSpacing="6" BackgroundColor="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <!--Header-->
@@ -38,7 +54,7 @@
             <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0" Padding="12">
+            <Grid Grid.Row="0" Padding="16">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -62,7 +78,7 @@
             </Grid>
 
             <!--Avatar-->
-            <Grid Grid.Row="1" RowSpacing="10" Padding="10">
+            <Grid Grid.Row="1" RowSpacing="10" Padding="16">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -106,9 +122,15 @@
                 
 
                 <Button Grid.Row="2"
-                        Text="Retake"
-                        FontSize="14"
-                        WidthRequest="85"/>
+                        Text="RETAKE"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        FontFamily="Coiny"
+                        BackgroundColor= "#74C1DD"
+                        CornerRadius="15"
+                        WidthRequest="300"
+
+                />
             </Grid>
 
             <!--Submit-->
@@ -122,6 +144,8 @@
                             Grid.Row="0"
                             FontSize="20"
                             HeightRequest="85"
+                            CornerRadius="25"
+                            BackgroundColor="#EC6664"
                     />
                 </Grid>
 
