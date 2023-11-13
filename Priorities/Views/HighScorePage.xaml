@@ -6,8 +6,26 @@
              Shell.BackgroundColor="#3C3C3C"
              >
     <Shell.TitleView>
-        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="Cyan">
+            <Label LineBreakMode="NoWrap" HorizontalOptions="Start">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="O" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="I" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="T" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+            <!--<HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="NavajoWhite">
                 <Label Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                 <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                 <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
@@ -18,18 +36,18 @@
                 <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                 <Label Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                 <Label Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-            </HorizontalStackLayout>
+            </HorizontalStackLayout>-->
         </HorizontalStackLayout>
     </Shell.TitleView>
     <ScrollView BackgroundColor="{StaticResource OffWhite}" HorizontalOptions="FillAndExpand">
         <VerticalStackLayout Spacing="5">
-                    <Rectangle BackgroundColor="{StaticResource Primary}"
+            <Rectangle BackgroundColor="{StaticResource Primary}"
                    MinimumHeightRequest="6"/>
             <Label Text="High Scores" FontFamily="CoinyRegular" TextColor="{StaticResource Primary}" FontSize="40" Padding="12" HorizontalOptions="CenterAndExpand"/>
-            <CollectionView ItemsSource="{Binding GameResults}" HeightRequest="700">
+            <CollectionView ItemsSource="{Binding GameResults}" >
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="5">
-                        
+
                     </LinearItemsLayout>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
@@ -67,7 +85,7 @@
                                                 </StackLayout>
                                             </VerticalStackLayout>
                                         </HorizontalStackLayout>
-                                        
+
                                         <Border
                                             Stroke="#000000"
                                             StrokeThickness="1"
@@ -181,7 +199,7 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </VerticalStackLayout>
-        
+
 
 
 
