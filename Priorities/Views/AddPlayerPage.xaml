@@ -63,12 +63,9 @@
                 <Frame Grid.Row="1"
                         HorizontalOptions="Center"
                         BackgroundColor="{StaticResource Secondary}"
-                        WidthRequest="360"
+                        WidthRequest="350"
                         HeightRequest="85"
-                        CornerRadius="15">
-
-
-
+                        CornerRadius="25">
                 </Frame>
                 <Label Grid.Row="0"
                        Text="Name"
@@ -150,16 +147,29 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
+
+                    
+                    
                     <Button Text="ADD PLAYER"
+                            ImageSource="whiteadd.png"
                             Grid.Row="0"
                             FontSize="20"
                             HeightRequest="85"
-                            WidthRequest="325"
+                            WidthRequest="350"
                             CornerRadius="25"
                             FontAttributes="Bold"
                             BackgroundColor="#EC6664"
                             TextColor="{StaticResource White}"
                     />
+                    <Image Aspect="AspectFill"
+                           Source="whiteadd.png"
+                           Grid.Row="0"
+                           BackgroundColor="Black"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           HorizontalOptions="Start">
+
+                    </Image>
                 </Grid>
 
             </StackLayout>
