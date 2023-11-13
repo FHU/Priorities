@@ -6,7 +6,7 @@
              Shell.BackgroundColor="#3C3C3C"
              >
     <Shell.TitleView>
-        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <HorizontalStackLayout>
                 <Label Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                 <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
@@ -26,7 +26,7 @@
                     <Rectangle BackgroundColor="{StaticResource Primary}"
                    MinimumHeightRequest="6"/>
             <Label Text="High Scores" FontFamily="CoinyRegular" TextColor="{StaticResource Primary}" FontSize="40" Padding="12" HorizontalOptions="CenterAndExpand"/>
-            <CollectionView ItemsSource="{Binding GameResults}">
+            <CollectionView ItemsSource="{Binding GameResults}" HeightRequest="700">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="5">
                         
@@ -39,7 +39,6 @@
                                 StrokeThickness="1"
                                 HorizontalOptions="FillAndExpand"
                                 MaximumWidthRequest="350"
-                                
                                 >
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="26" />
@@ -62,7 +61,7 @@
                                                                 HeightRequest="25"
                                                                 WidthRequest="25"
                                                                 Padding="0"
-                                                                BorderColor="Black"/>
+                                                                BorderColor="{StaticResource Black}"/>
                                                         </DataTemplate>
                                                     </BindableLayout.ItemTemplate>
                                                 </StackLayout>
