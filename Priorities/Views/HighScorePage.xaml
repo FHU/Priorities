@@ -85,7 +85,7 @@
 
                                 </toolkit:Expander.Header>
 
-                                <Grid BackgroundColor="#F1F1F1" RowSpacing="10" Padding="10">
+                                <Grid BackgroundColor="{StaticResource PrimaryBlueGreen}" RowSpacing="10" Padding="10">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="*"/>
                                         <RowDefinition Height="*"/>
@@ -101,7 +101,8 @@
                                                     Stroke="#000000"
                                                     StrokeThickness="0.5"
                                                     Padding="5"
-                                                    HorizontalOptions="FillAndExpand">
+                                                    HorizontalOptions="FillAndExpand"
+                                                    BackgroundColor="{StaticResource PrimaryBlueGreen}">
                                                     <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="5" />
                                                     </Border.StrokeShape>
@@ -113,11 +114,12 @@
                                                         <Label Padding="3"
                                            Grid.Column="0"
                                            Text="{Binding Title}"
-                                           TextColor="Black"
+                                           TextColor="{StaticResource White}"
+                                        FontFamily="CoinyRegular"
                                            FontSize="16" 
                                            VerticalOptions="Center"/>
                                                         <Ellipse Grid.Column="1"
-                                             Fill="LightBlue"
+                                             Fill="{StaticResource PrimaryRed}"
                                              WidthRequest="25"
                                              HeightRequest="25"
                                              HorizontalOptions="End"/>
@@ -127,7 +129,7 @@
                                         </BindableLayout.ItemTemplate>
                                         <BindableLayout.EmptyViewTemplate>
                                             <DataTemplate>
-                                                <Label Text="No Achievements Earned" FontAttributes="Italic" TextColor="Black" FontSize="12"/>
+                                                <Label Text="No Achievements Earned" FontAttributes="Italic" TextColor="{StaticResource White}" FontSize="15" FontFamily="CoinyRegular"/>
                                             </DataTemplate>
                                         </BindableLayout.EmptyViewTemplate>
                                     </StackLayout>
@@ -141,6 +143,7 @@
                                         <BindableLayout.ItemTemplate>
                                             <DataTemplate>
                                                 <Border Stroke="#000000"
+                                                BackgroundColor="{StaticResource PrimaryBlueGreen}"
                                     StrokeThickness="0.5"
                                     Padding="5"
                                     WidthRequest="90"
@@ -156,8 +159,9 @@
                                             Padding="0"
                                             BorderColor="Black"/>
                                                         <Label Text="{Binding Name}"
-                                                TextColor="Black"
-                                                FontSize="12" 
+                                                TextColor="{StaticResource White}"
+                                                FontSize="12"
+                                                FontFamily="CoinyRegular"
                                                 VerticalOptions="Center"/>
                                                     </HorizontalStackLayout>
                                                 </Border>
@@ -166,8 +170,8 @@
                                     </FlexLayout>
 
                                     <HorizontalStackLayout Grid.Row="2" Spacing="5">
-                                        <Label Text="Played:" TextColor="Black"/>
-                                        <Label Text="{Binding Date}" TextColor="Black"/>
+                                        <Label Text="Played:" TextColor="{StaticResource White}" FontFamily="CoinyRegular"/>
+                                        <Label Text="{Binding Date}" TextColor="{StaticResource White}" FontFamily="CoinyRegular"/>
                                     </HorizontalStackLayout>
 
                                 </Grid>
