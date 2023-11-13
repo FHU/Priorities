@@ -19,6 +19,7 @@
 
             <Label
                 Grid.Column="1"
+                FontFamily="CoinyRegular"
                 FontSize="32"
                 HorizontalOptions="Center"
                 Text="Rankings"
@@ -62,7 +63,7 @@
             <!--  score number  -->
             <Label
                 Grid.Column="0"
-                FontAttributes="Bold"
+                FontFamily="ConcertOneRegular"
                 FontSize="32"
                 HorizontalOptions="Center"
                 Text="{Binding Score}"
@@ -73,8 +74,9 @@
             <Label
                 Grid.Column="1"
                 Margin="0,0,0,5"
-                FontSize="16"
-                Text="  points"
+                FontFamily="ConcertOneRegular"
+                FontSize="20"
+                Text=" points"
                 TextColor="{StaticResource OffWhite}"
                 VerticalOptions="End" />
 
@@ -82,16 +84,17 @@
             <Label
                 Grid.Column="3"
                 Margin="0,0,0,5"
-                FontSize="16"
+                FontFamily="ConcertOneRegular"
+                FontSize="20"
                 HorizontalOptions="Center"
-                Text="round  "
+                Text="round "
                 TextColor="{StaticResource OffWhite}"
                 VerticalOptions="End" />
 
             <!--  round number  -->
             <Label
                 Grid.Column="4"
-                FontAttributes="Bold"
+                FontFamily="ConcertOneRegular"
                 FontSize="32"
                 HorizontalOptions="Center"
                 Text="{Binding Round}"
@@ -101,7 +104,7 @@
             <!--  total rounds number  -->
             <Label
                 Grid.Column="5"
-                FontAttributes="Bold"
+                FontFamily="ConcertOneRegular"
                 FontSize="32"
                 HorizontalOptions="Center"
                 Text="/5"
@@ -113,8 +116,9 @@
         <Grid
             Grid.Row="1"
             Padding="10,20,10,10"
+            ColumnSpacing="10"
             HeightRequest="70"
-            RowSpacing="0"
+            RowSpacing="5"
             VerticalOptions="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
@@ -140,8 +144,8 @@
             <Label
                 Grid.Row="0"
                 Grid.Column="1"
-                FontAttributes="Bold"
-                FontSize="16"
+                FontFamily="ConcertOneRegular"
+                FontSize="20"
                 HorizontalOptions="Start"
                 Opacity="0.7"
                 Text="Revealing Results for"
@@ -152,8 +156,8 @@
             <Label
                 Grid.Row="1"
                 Grid.Column="1"
-                FontAttributes="Bold"
-                FontSize="32"
+                FontFamily="ConcertOneRegular"
+                FontSize="36"
                 HorizontalOptions="Start"
                 Text="{Binding Person.Name}"
                 TextColor="#3C3C3C"
@@ -168,7 +172,7 @@
             Margin="0,40,0,0"
             ItemsSource="{Binding rankings}">
             <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="16" />
+                <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="12" />
             </CollectionView.ItemsLayout>
 
             <CollectionView.ItemTemplate>
@@ -187,7 +191,7 @@
                         <!--  guess text bg  -->
                         <RoundRectangle
                             Grid.Column="1"
-                            CornerRadius="30"
+                            CornerRadius="24"
                             Fill="{StaticResource PrimaryBlueGreen}">
                             <RoundRectangle.Shadow>
                                 <Shadow
@@ -209,8 +213,8 @@
 
                             <!--  guess number  -->
                             <Label
-                                FontAttributes="Bold"
-                                FontSize="24"
+                                FontFamily="ConcertOneRegular"
+                                FontSize="28"
                                 HorizontalOptions="Center"
                                 Text="{Binding Number}"
                                 TextColor="{StaticResource OffWhite}"
@@ -229,8 +233,8 @@
                         <!--  guess text  -->
                         <Label
                             Grid.Column="1"
-                            FontAttributes="Bold"
-                            FontSize="24"
+                            FontFamily="ConcertOneRegular"
+                            FontSize="32"
                             HorizontalOptions="Center"
                             Text="{Binding Name}"
                             TextColor="#EBEBE5"
@@ -239,8 +243,8 @@
                         <!--  guess points  -->
                         <Label
                             Grid.Column="2"
-                            FontAttributes="Bold"
-                            FontSize="24"
+                            FontFamily="ConcertOneRegular"
+                            FontSize="28"
                             HorizontalOptions="Center"
                             Text="{Binding Points, StringFormat='{0:+#;-#;0}'}"
                             TextColor="{Binding Color}"
@@ -257,8 +261,8 @@
             Margin="20,10"
             BackgroundColor="{StaticResource PrimaryRed}"
             CornerRadius="24"
-            FontAttributes="Bold"
-            FontSize="22"
+            FontFamily="ConcertOneRegular"
+            FontSize="32"
             HeightRequest="80"
             Text="NEXT"
             TextColor="White">
