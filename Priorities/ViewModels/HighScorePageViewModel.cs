@@ -132,6 +132,48 @@ namespace Priorities.ViewModels
             };
             GameResults.Add(gameResult5);
 
+            var gameResult6 = new GameResult()
+            {
+                Rank = 6,
+                Score = 2145,
+                Date = DateTime.Now,
+                Team = new Team()
+                {
+                    Name = "The English Major",
+                    Players = new List<Player>
+                {
+                            new Player() { Name="Hannah", ImageName="kenan.jpeg" },
+                }
+                },
+                Achievements = new ObservableCollection<Achievement>
+                {
+                            new Achievement() { Title="Jane Austen", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+                            new Achievement() { Title="Single Eagle", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+  },
+            };
+            GameResults.Add(gameResult6);
+
+            var gameResult7 = new GameResult()
+            {
+                Rank = 7,
+                Score = 2005,
+                Date = DateTime.Now,
+                Team = new Team()
+                {
+                    Name = "The English Major",
+                    Players = new List<Player>
+                {
+                            new Player() { Name="Hannah", ImageName="kenan.jpeg" },
+                }
+                },
+                Achievements = new ObservableCollection<Achievement>
+                {
+                            new Achievement() { Title="Jane Austen", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+                            new Achievement() { Title="Single Eagle", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+  },
+            };
+            GameResults.Add(gameResult7);
+
         }
        
         
