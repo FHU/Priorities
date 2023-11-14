@@ -71,4 +71,10 @@
 	  <Folder Include="Models\" />
 	</ItemGroup> -->
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\shapes.jpg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\shapes.svg" />
+	</ItemGroup>
 </Project>
