@@ -12,21 +12,72 @@
     Shell.BackgroundColor="{StaticResource DarkGray}">
 
     <Shell.TitleView>
-        <Grid>
+        <Grid HeightRequest="80">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="4*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label
+            <!--<Label
                 Grid.Column="1"
                 FontFamily="CoinyRegular"
                 FontSize="32"
                 HorizontalOptions="Center"
                 Text="RANKINGS"
                 TextColor="{StaticResource OffWhite}"
-                VerticalOptions="Center" />
+                VerticalOptions="Center" />-->
+
+            <Label
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                LineBreakMode="NoWrap"
+                VerticalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="R"
+                            TextColor="{StaticResource PrimaryRed}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="A"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="N"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="K"
+                            TextColor="{StaticResource SecondaryBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="N"
+                            TextColor="{StaticResource PrimaryRed}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="G"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="S"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </Grid>
     </Shell.TitleView>
 
