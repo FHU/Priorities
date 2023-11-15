@@ -52,6 +52,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+<<<<<<< Updated upstream
+=======
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
+>>>>>>> Stashed changes
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
 	</ItemGroup>
