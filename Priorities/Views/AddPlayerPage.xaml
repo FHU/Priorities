@@ -6,29 +6,39 @@
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
+             BackgroundColor="{StaticResource OffWhite}"
              x:DataType="viewmodels:AddPlayersPageViewModel"
              >
 <!-- Added this to make changes to the top-->
     <Shell.TitleView>
         <HorizontalStackLayout>
-            <Label Text="ADD PLAYER"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   VerticalOptions="Center"
-                   HeightRequest="50"
-                   FontSize="Medium"
-                   FontAttributes="Bold"/>
+            <Label LineBreakMode="NoWrap" HorizontalOptions="Start" BackgroundColor="{StaticResource DarkGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text=" " FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="P" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="L" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="A" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="Y" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="R" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </HorizontalStackLayout>
     </Shell.TitleView>
 
 
-    <ScrollView>
-        <Grid Padding="0" RowSpacing="6" BackgroundColor="White">
+    <ContentView>
+        <Grid Padding="0" BackgroundColor="{StaticResource White}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="*" />
                 <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <!--Header-->
             <!--<Grid Grid.Row="1" ColumnSpacing="3" RowSpacing="10">
@@ -54,31 +64,44 @@
             <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0" Padding="16">
+            <Grid Grid.Row="0" Padding="6">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <!--Label Name-->
+                <Frame Grid.Row="1"
+                        HorizontalOptions="Center"
+                        BackgroundColor="{StaticResource Secondary}"
+                        WidthRequest="296"
+                        HeightRequest="75"
+                        CornerRadius="25">
+                </Frame>
                 <Label Grid.Row="0"
+                       Padding="8"
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       TextColor="Black"
+                       FontFamily="Coiny"
+                       TextColor="{StaticResource Primary}"                       
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       HeightRequest="70"
-                       WidthRequest="300"
+                       HeightRequest="55"
+                       WidthRequest="260"
+                       MaxLength="15"
                        FontSize="28"
-                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="Coiny"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource OffWhite}"
                        
-                       BackgroundColor="Teal"
+                       BackgroundColor="{StaticResource Secondary}"
                 />
             </Grid>
 
-            <!--Avatar-->
-            <Grid Grid.Row="1" RowSpacing="10" Padding="16">
+            <!--Input Avatar-->
+            <Grid Grid.Row="1" RowSpacing="12" VerticalOptions="Center" Margin="14">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -89,14 +112,15 @@
                        Text="Avatar Pic"
                        HorizontalOptions="Center"
                        FontSize="28"
+                       FontFamily="Coiny"
                        FontAttributes="Bold"
-                       TextColor="Black"/>
+                       TextColor="{StaticResource Primary}"/>
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
                                     ImageSource="avatar_pic.jpg"
-                                    HeightRequest="300"
-                                    WidthRequest="300"
+                                    HeightRequest="224"
+                                    WidthRequest="236"
                                     CornerRadius="150"/>
 
 
@@ -120,39 +144,77 @@
                     HorizontalOptions="Center" />
                 </Frame>-->
                 
-
+                <!--Retake Button-->
                 <Button Grid.Row="2"
                         Text="RETAKE"
                         FontSize="18"
                         FontAttributes="Bold"
                         FontFamily="Coiny"
-                        BackgroundColor= "#74C1DD"
+                        BackgroundColor= "{StaticResource Tertiary}"
                         CornerRadius="15"
-                        WidthRequest="300"
-
-                />
+                        HeightRequest="41"
+                        WidthRequest="236"
+                        TextColor="White">
+                <Button.Shadow>
+                        <Shadow Opacity="0.5"
+                                Radius="15"
+                                Offset="10,10"
+                                Brush="{StaticResource Gray200}"
+                        />
+                </Button.Shadow>
+                </Button>
             </Grid>
 
-            <!--Submit-->
-            <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="16">
+            <!--Add Player Button-->
+            <StackLayout Grid.Row="2" VerticalOptions="End">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto"/>
+                        <!--<RowDefinition Height="auto"/>-->
                     </Grid.RowDefinitions>
 
-                    <Button Text="Add Player"
+                    <Button Text="ADD PLAYER"
+                            ImageSource="whiteadd.png"
+                            FontFamily="Coiny"
                             Grid.Row="0"
-                            FontSize="20"
+                            FontSize="32"
                             HeightRequest="85"
+                            WidthRequest="296"
                             CornerRadius="25"
-                            BackgroundColor="#EC6664"
-                    />
+                            FontAttributes="Bold"
+                            BackgroundColor="{StaticResource Primary}"
+                            TextColor="{StaticResource White}">
+                        <Button.Shadow>
+                            <Shadow Opacity="0.5"
+                                Radius="15"
+                                Offset="10,10"
+                                Brush="{StaticResource Gray200}"
+        />
+                        </Button.Shadow>
+                    </Button>
+
+                    <!--<Image Source="shapes.png"
+                           Grid.Row="1"
+                           VerticalOptions="End"
+                           HeightRequest="180"
+                           WidthRequest="200"
+                           />-->
                 </Grid>
+
+            </StackLayout>
+            
+            <!--Bottom Style-->
+            <StackLayout Grid.Row="3"
+                         VerticalOptions="End">
+
+                <Image Source="shapes.png"
+                       WidthRequest="460"
+                       HeightRequest="180"/>
 
             </StackLayout>
 
 
         </Grid>
-    </ScrollView>
+    </ContentView>
 
 </ContentPage>
