@@ -4,6 +4,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Priorities.Views.AddPlayerPage"
              Shell.FlyoutBehavior="Flyout"
+             Shell.BackgroundColor="{StaticResource DarkGray}"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              BackgroundColor="{StaticResource OffWhite}"
@@ -12,7 +13,7 @@
 <!-- Added this to make changes to the top-->
     <Shell.TitleView>
         <HorizontalStackLayout>
-            <Label LineBreakMode="NoWrap" HorizontalOptions="Start" BackgroundColor="{StaticResource DarkGray}">
+            <Label LineBreakMode="NoWrap" HorizontalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -82,7 +83,7 @@
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontFamily="Coiny"
+                       FontFamily="CoinyRegular"
                        TextColor="{StaticResource Primary}"                       
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
@@ -92,7 +93,7 @@
                        MaxLength="15"
                        FontSize="28"
                        HorizontalTextAlignment="Center"
-                       FontFamily="Coiny"
+                       FontFamily="CoinyRegular"
                        FontAttributes="Bold"
                        TextColor="{StaticResource OffWhite}"
                        
@@ -112,7 +113,7 @@
                        Text="Avatar Pic"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontFamily="Coiny"
+                       FontFamily="CoinyRegular"
                        FontAttributes="Bold"
                        TextColor="{StaticResource Primary}"/>
 
@@ -149,10 +150,11 @@
                         Text="RETAKE"
                         FontSize="18"
                         FontAttributes="Bold"
-                        FontFamily="Coiny"
+                        FontFamily="CoinyRegular"
+                        VerticalOptions="Center"
                         BackgroundColor= "{StaticResource Tertiary}"
                         CornerRadius="15"
-                        HeightRequest="41"
+                        HeightRequest="50"
                         WidthRequest="236"
                         TextColor="White">
                 <Button.Shadow>
@@ -175,7 +177,7 @@
 
                     <Button Text="ADD PLAYER"
                             ImageSource="whiteadd.png"
-                            FontFamily="Coiny"
+                            FontFamily="CoinyRegular"
                             Grid.Row="0"
                             FontSize="32"
                             HeightRequest="85"
