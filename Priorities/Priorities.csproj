@@ -75,6 +75,6 @@
 	  <None Remove="Resources\Images\shapes.jpg" />
 	</ItemGroup>
 	<ItemGroup>
-	  <BundleResource Include="Resources\Images\shapes.svg" />
+	  <BundleResource Include="Resources\Images\shapes.png" />
 	</ItemGroup>
 </Project>
