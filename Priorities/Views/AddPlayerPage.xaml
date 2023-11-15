@@ -6,6 +6,7 @@
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
+             BackgroundColor="{StaticResource OffWhite}"
              x:DataType="viewmodels:AddPlayersPageViewModel"
              >
 <!-- Added this to make changes to the top-->
