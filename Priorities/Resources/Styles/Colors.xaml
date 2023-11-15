@@ -1,14 +1,28 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿ ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <?xaml-comp compile="true" ?>
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Color x:Key="Primary">#512BD4</Color>
-    <Color x:Key="Secondary">#DFD8F7</Color>
-    <Color x:Key="Tertiary">#2B0B98</Color>
+    <!-- Priorities Color Scheme -->
+    <!-- Refrence Figma file for color key if confused -->
+    <!-- https://www.figma.com/file/OL6qivTGvdVE3jG4OpvLMZ/Priorities?type=design&node-id=0%3A1&mode=design&t=WSnWfJozGtqedUWq-1 -->
+    <Color x:Key="Primary">#EC6664</Color>
+    <Color x:Key="Secondary">#087E8B</Color>
+    <Color x:Key="Tertiary">#38AECC</Color>
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
+
+    <Color x:Key="PrimaryRed">#EC6664</Color>
+    <Color x:Key="PrimaryBlueGreen">#087E8B</Color>
+    <Color x:Key="DarkGray">#3C3C3C</Color>
+    <Color x:Key="OffWhite">#F1F1F1</Color>
+    <Color x:Key="SecondaryGreen">#AFD2A4</Color>
+    <Color x:Key="SecondaryBlue">#38AECC</Color>
+    <Color x:Key="SecondaryLightBlue">#74C1DD</Color>
+    <Color x:Key="SecondaryDarkBlue">#337096</Color>
+    <!--  -->
+
     <Color x:Key="Gray100">#E1E1E1</Color>
     <Color x:Key="Gray200">#C8C8C8</Color>
     <Color x:Key="Gray300">#ACACAC</Color>

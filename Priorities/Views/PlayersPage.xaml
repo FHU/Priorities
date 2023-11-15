@@ -4,14 +4,16 @@
              x:Class="Priorities.Views.PlayersPage"
              Title="PlayersPage"
              xmlns:vm="clr-namespace:Priorities.ViewModels"
-             Background="White"
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:PlayersPageViewModel"
+             BackgroundColor="{StaticResource  OffWhite}"
              >
 
-	<ContentPage.Content>
+
+
+    <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="200"/>
@@ -25,10 +27,10 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <Label
+                <Label
                         Grid.Row="0"
-                        Text="Priorities"
-                        TextColor="White"
+                        Text="Players"
+                        TextColor="{StaticResource  SecondaryGreen}"
                         HorizontalTextAlignment="Center"
                         FontSize="48"
                         BackgroundColor="Black"
@@ -36,16 +38,7 @@
                             Padding="15"
                     />
 
-                    <Label
-                        Grid.Row="1"
-                        Margin="20"
-                        TextColor="Black"
-                        Text="Players"
-                        FontSize="32"
-                        HorizontalOptions="Center" 
-                    />
-                    
-                </Grid>
+            </Grid>
 
                 
                 <!--<ScrollView>
@@ -86,7 +79,7 @@
 
                                     <!--Card One-->
                                     <Frame Margin="3" Padding="0" BorderColor="Black" HasShadow="True" CornerRadius="20" >
-                                        <FlexLayout Direction="Row"  BackgroundColor="Blue" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="350" HeightRequest="65"  >
+                                    <FlexLayout Direction="Row"  BackgroundColor="{StaticResource  SecondaryGreen}" JustifyContent="SpaceBetween" AlignItems="Center" WidthRequest="350" HeightRequest="65"  >
                                             <Frame
                                             BorderColor="Black"
                                             CornerRadius="100"
@@ -135,7 +128,7 @@
         Text="Add New Player"
         HorizontalOptions="Center"
         FontSize="25"
-        BackgroundColor="OrangeRed"
+        BackgroundColor="{StaticResource  PrimaryRed}"
         Padding="15"
         CornerRadius="20"
         WidthRequest="250"
@@ -151,7 +144,7 @@
         Text="Play!"
         HorizontalOptions="Center"
         FontSize="25"
-        BackgroundColor="Blue"
+        BackgroundColor="{StaticResource  PrimaryBlueGreen}"
         Padding="15"
         CornerRadius="20"
         WidthRequest="250"
