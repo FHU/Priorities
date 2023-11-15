@@ -71,4 +71,14 @@
 	  <Folder Include="Models\" />
 	</ItemGroup> -->
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\shannon.jpeg" />
+	  <None Remove="Resources\Images\shapes.png" />
+	  <None Remove="Resources\Images\tj.jpeg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\shannon.jpg" />
+	  <BundleResource Include="Resources\Images\shapes.jpg" />
+	  <BundleResource Include="Resources\Images\tj.jpg" />
+	</ItemGroup>
 </Project>
