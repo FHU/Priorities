@@ -8,7 +8,14 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new PlayersPage();
-	}
+		MainPage = new AppShell();
+
+        Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
+        {
+#if ANDROID
+            handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
+#endif
+        });
+    }
 }
 

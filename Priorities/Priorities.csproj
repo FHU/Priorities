@@ -52,7 +52,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
@@ -60,6 +60,9 @@
 
 	<!-- <ItemGroup>
 	  <None Remove="Models\" />
+	  <None Remove="Resources\Images\default_profile.svg" />
+	  <None Remove="Resources\Images\green_check.svg" />
+	  <None Remove="Resources\Images\red_x.svg" />
 	  <None Remove="Resources\Images\avatar_pic.jpg" />
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
