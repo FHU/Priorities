@@ -19,6 +19,7 @@
                    VerticalOptions="Center"
                    HeightRequest="50"
                    FontSize="Medium"
+                   FontFamily="Coiny"
                    FontAttributes="Bold"/>
         </HorizontalStackLayout>
     </Shell.TitleView>
@@ -66,7 +67,7 @@
                         HorizontalOptions="Center"
                         BackgroundColor="{StaticResource Secondary}"
                         WidthRequest="296"
-                        HeightRequest="85"
+                        HeightRequest="75"
                         CornerRadius="25">
                 </Frame>
                 <Label Grid.Row="0"
@@ -79,10 +80,11 @@
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       HeightRequest="65"
+                       HeightRequest="55"
                        WidthRequest="260"
                        MaxLength="15"
                        FontSize="28"
+                       HorizontalTextAlignment="Center"
                        FontFamily="Coiny"
                        FontAttributes="Bold"
                        TextColor="{StaticResource OffWhite}"
@@ -195,7 +197,8 @@
             </StackLayout>
             
             <!--Bottom Style-->
-            <StackLayout Grid.Row="3">
+            <StackLayout Grid.Row="3"
+                         VerticalOptions="End">
 
                 <Image Source="shapes.png"
                        WidthRequest="460"
