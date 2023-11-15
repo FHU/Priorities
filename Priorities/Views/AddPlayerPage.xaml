@@ -75,7 +75,7 @@
                         HorizontalOptions="Center"
                         BackgroundColor="{StaticResource Secondary}"
                         WidthRequest="296"
-                        HeightRequest="75"
+                        HeightRequest="70"
                         CornerRadius="25">
                 </Frame>
                 <Label Grid.Row="0"
@@ -88,10 +88,10 @@
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       HeightRequest="55"
+                       HeightRequest="50"
                        WidthRequest="260"
                        MaxLength="15"
-                       FontSize="28"
+                       FontSize="24"
                        HorizontalTextAlignment="Center"
                        FontFamily="CoinyRegular"
                        FontAttributes="Bold"
@@ -148,13 +148,13 @@
                 <!--Retake Button-->
                 <Button Grid.Row="2"
                         Text="RETAKE"
-                        FontSize="18"
+                        FontSize="17"
                         FontAttributes="Bold"
                         FontFamily="CoinyRegular"
                         VerticalOptions="Center"
                         BackgroundColor= "{StaticResource Tertiary}"
                         CornerRadius="15"
-                        HeightRequest="50"
+                        HeightRequest="47"
                         WidthRequest="236"
                         TextColor="White">
                 <Button.Shadow>
@@ -179,8 +179,8 @@
                             ImageSource="whiteadd.png"
                             FontFamily="CoinyRegular"
                             Grid.Row="0"
-                            FontSize="32"
-                            HeightRequest="85"
+                            FontSize="30"
+                            HeightRequest="80"
                             WidthRequest="296"
                             CornerRadius="25"
                             FontAttributes="Bold"
