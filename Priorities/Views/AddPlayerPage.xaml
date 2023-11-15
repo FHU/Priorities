@@ -11,7 +11,16 @@
              >
 <!-- Added this to make changes to the top-->
     <Shell.TitleView>
-        <HorizontalStackLayout>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+        </Grid>
+        
+        <!--<HorizontalStackLayout>
             <Label Text="ADD PLAYER"
                    TextColor="{StaticResource White}"
                    HorizontalTextAlignment="Center"
@@ -21,7 +30,7 @@
                    FontSize="Medium"
                    FontFamily="Coiny"
                    FontAttributes="Bold"/>
-        </HorizontalStackLayout>
+        </HorizontalStackLayout>-->
     </Shell.TitleView>
 
 
