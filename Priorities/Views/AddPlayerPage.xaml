@@ -18,6 +18,7 @@
                    VerticalOptions="Center"
                    HeightRequest="50"
                    FontSize="Medium"
+                   FontFamily="Coiny"
                    FontAttributes="Bold"/>
         </HorizontalStackLayout>
     </Shell.TitleView>
@@ -195,7 +196,8 @@
             </StackLayout>
             
             <!--Bottom Style-->
-            <StackLayout Grid.Row="3">
+            <StackLayout Grid.Row="3"
+                         VerticalOptions="End">
 
                 <Image Source="shapes.png"
                        WidthRequest="460"
