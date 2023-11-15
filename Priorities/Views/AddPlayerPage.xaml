@@ -12,15 +12,22 @@
 <!-- Added this to make changes to the top-->
     <Shell.TitleView>
         <HorizontalStackLayout>
-            <Label Text="ADD PLAYER"
-                   TextColor="{StaticResource White}"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   VerticalOptions="Center"
-                   HeightRequest="50"
-                   FontSize="Medium"
-                   FontFamily="Coiny"
-                   FontAttributes="Bold"/>
+            <Label LineBreakMode="NoWrap" HorizontalOptions="Start" BackgroundColor="{StaticResource DarkGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text=" " FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="P" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="L" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="A" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="Y" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="R" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </HorizontalStackLayout>
     </Shell.TitleView>
 
