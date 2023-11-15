@@ -15,25 +15,12 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
-        </Grid>
-        
-        <!--<HorizontalStackLayout>
-            <Label Text="ADD PLAYER"
-                   TextColor="{StaticResource White}"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   VerticalOptions="Center"
-                   HeightRequest="50"
-                   FontSize="Medium"
-                   FontFamily="Coiny"
-                   FontAttributes="Bold"/>
-        </HorizontalStackLayout>-->
-        <HorizontalStackLayout>
-            <Label LineBreakMode="NoWrap" HorizontalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
+
+            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -49,7 +36,9 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-        </HorizontalStackLayout>
+        </Grid>
+        
+        
     </Shell.TitleView>
 
 
