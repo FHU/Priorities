@@ -196,11 +196,12 @@
             />
 
             <!-- Priority Cards -->
-            <CollectionView Grid.RowSpan="5" Grid.Column="1"
+            <VerticalStackLayout Grid.RowSpan="5" Grid.Column="1">
+                <CollectionView  VerticalScrollBarVisibility="Never" 
                 ItemsSource="{Binding Priorities}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:Priority">
-                        <Button
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Priority">
+                            <Button
                         CornerRadius="20"
                         Text="{Binding Thing}"
                         BackgroundColor="{StaticResource PrimaryBlueGreen}"
@@ -208,12 +209,15 @@
                         Margin="0, 9"
                         HeightRequest="60"
                         FontSize="30"
+                        HorizontalOptions="FillAndExpand"
                         FontFamily="ConcertOneRegular">
 
-                        </Button>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                            </Button>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+            
 
             <Frame 
                 BackgroundColor="{StaticResource Primary}"
