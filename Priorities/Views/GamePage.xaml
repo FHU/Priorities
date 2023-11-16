@@ -7,10 +7,25 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GamePageViewModel"
+             BackgroundColor="{StaticResource OffWhite}"
              Title="GamePage">
 
+    <Shell.TitleView>
+        <Grid ColumnDefinitions="*,4*,*">
+            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="G" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="A" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="M" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+    </Shell.TitleView>
+    
     <!-- Grid wrapper for the entire game page -->
-
     <Grid RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10" Background="{StaticResource OffWhite}">
 
         <!-- [Header: Abbie Vance] -->
@@ -239,15 +254,6 @@
                         FontSize="32"
                         FontFamily="ConcertOneRegular"/>
                 </Grid>
-                <Frame.Shadow>
-                    <Shadow Brush="Gray"
-                    Offset="0,20"
-                    Radius="15"
-                    Opacity="0.6"/>
-
-
-                </Frame.Shadow>
-
             </Frame>
         </Grid>
     </Grid>
