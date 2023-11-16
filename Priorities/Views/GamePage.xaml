@@ -7,8 +7,8 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GamePageViewModel"
-             BackgroundColor="{StaticResource OffWhite}"
-             Title="GamePage">
+             Title="GamePage"
+             BackgroundColor="{StaticResource OffWhite}">
 
     <Shell.TitleView>
         <Grid ColumnDefinitions="*,4*,*">
@@ -128,17 +128,19 @@
  
         </Grid>
 
+
+        <Image Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="3" Source="shapes.jpg" Margin="0,-40" VerticalOptions="EndAndExpand"/>
+
         <!-- [Priority Cards Section: Priscilla Harris] -->
         <!-- Six Rows / Two Columns -->
         <Grid Row="2" RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="0.20*,0.75*, 0.05*" ColumnSpacing="9" Margin="20,0">
-            <Image Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Source="shapes.jpg" Margin="-20,0"/>
 
             <!-- Priority Rank Numbers -->
 
             <Button
-                CornerRadius="100"
-                HeightRequest="55"
-                WidthRequest="55"
+                CornerRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
                 Grid.Column="0"
                 Grid.Row="0"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
@@ -151,9 +153,9 @@
             />
 
             <Button
-                CornerRadius="100"
-                HeightRequest="55"
-                WidthRequest="55"
+                CornerRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
                 Grid.Column="0"
                 Grid.Row="1"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
@@ -166,9 +168,9 @@
             />
 
             <Button
-                CornerRadius="100"
-                HeightRequest="55"
-                WidthRequest="55"
+                CornerRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
                 Grid.Column="0"
                 Grid.Row="2"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
@@ -181,9 +183,9 @@
             />
 
             <Button
-                CornerRadius="100"
-                HeightRequest="55"
-                WidthRequest="55"
+                CornerRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
                 Grid.Column="0"
                 Grid.Row="3"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
@@ -196,10 +198,9 @@
             />
 
             <Button
-                CornerRadius="100"
-                HeightRequest="55"
-                WidthRequest="55"
-                Grid.Column="0"
+                CornerRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
                 Grid.Row="4"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
                 TextColor="{StaticResource OffWhite2}"
@@ -211,11 +212,12 @@
             />
 
             <!-- Priority Cards -->
-            <CollectionView Grid.RowSpan="5" Grid.Column="1"
+            <VerticalStackLayout Grid.RowSpan="5" Grid.Column="1">
+                <CollectionView  VerticalScrollBarVisibility="Never" 
                 ItemsSource="{Binding Priorities}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:Priority">
-                        <Button
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Priority">
+                            <Button
                         CornerRadius="20"
                         Text="{Binding Thing}"
                         BackgroundColor="{StaticResource PrimaryBlueGreen}"
@@ -223,12 +225,15 @@
                         Margin="0, 9"
                         HeightRequest="60"
                         FontSize="30"
+                        HorizontalOptions="FillAndExpand"
                         FontFamily="ConcertOneRegular">
 
-                        </Button>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                            </Button>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+            
 
             <Frame 
                 BackgroundColor="{StaticResource Primary}"
@@ -256,5 +261,8 @@
                 </Grid>
             </Frame>
         </Grid>
+
+
+
     </Grid>
 </ContentPage>
