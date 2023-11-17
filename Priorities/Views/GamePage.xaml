@@ -163,54 +163,98 @@
 
                 <!-- Priority Cards -->
             <VerticalStackLayout Grid.RowSpan="5" Grid.Column="1">
-                <CollectionView  VerticalScrollBarVisibility="Never" 
+
+                    <CollectionView  VerticalScrollBarVisibility="Never" 
                 ItemsSource="{Binding Priorities}">
                     <CollectionView.ItemTemplate>
+                        
+                        
                         <DataTemplate x:DataType="models:Priority">
-                            <Button
+                                <Grid>
+                                    <RoundRectangle
+                                    Grid.Column="1"
+                                    CornerRadius="24"
+                                        HeightRequest="60"
+                                                  
+                                        
+                                    Fill="{StaticResource PrimaryBlueGreen}">
+                                        <RoundRectangle.Shadow>
+                                            <Shadow
+                                                
+                                               
+                                        Brush="Gray"
+                                        Opacity="0.9"
+                                        Radius="10"
+                                        Offset="3,10" />
+                                        </RoundRectangle.Shadow>
+                                    </RoundRectangle>
+
+                                    <Button
                         CornerRadius="20"
+                                        Grid.Column="1"
                         Text="{Binding Thing}"
-                        BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                    TextColor="{StaticResource OffWhite2}"
-                        Margin="0, 8"
-                        HeightRequest="60"
+                        TextColor="{StaticResource OffWhite2}"
+                        Margin="0, 10"
+                                        BackgroundColor="Transparent"
+                        
                         FontSize="30"
                         HorizontalOptions="FillAndExpand"
                         FontFamily="ConcertOneRegular">
 
-                            </Button>
+                                    </Button>
+                                </Grid>
+
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </VerticalStackLayout>
-            
 
-            <Frame 
+
+                <Border 
                 BackgroundColor="{StaticResource Primary}"
-                BorderColor="Transparent"
+                StrokeThickness="0"
+                    
+                   
                 Grid.ColumnSpan="3"
                 Grid.Column="0"
-                CornerRadius="20"
                 Grid.Row="5"
                 Margin="0,40,0,0"
                 HeightRequest="75">
-                <Grid ColumnDefinitions="*,*,*" Padding="10,0">
-                    <Label
+                    <Border.Shadow>
+                        <Shadow Brush="Black"
+                    Offset="20,40"
+                    Radius="60"
+                    Opacity="0.25" />
+                    </Border.Shadow>
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30, 30, 30, 30" />
+                    </Border.StrokeShape>
+
+                    <Grid ColumnDefinitions="*,*,*" Padding="10,0">
+                        <Label
+                            VerticalOptions="Center"
                         Grid.Column="1"
                         Text="Submit"
                     TextColor="{StaticResource OffWhite2}"
                         FontSize="32"
+                        
                         FontFamily="ConcertOneRegular"/>
-                    <Label
+                        <Label
+                            VerticalOptions="Center"
                         Grid.Column="2"
                         Text="➜"
                         TextColor="{StaticResource OffWhite2}"
                         HorizontalOptions="End"
                         FontSize="32"
                         FontFamily="ConcertOneRegular"/>
-                </Grid>
-            </Frame>
-        </Grid>
+                    </Grid>
+                </Border>
+
+
+
+
+
+            </Grid>
 
 
 
