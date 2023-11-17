@@ -12,8 +12,15 @@
              >
 <!-- Added this to make changes to the top-->
     <Shell.TitleView>
-        <HorizontalStackLayout>
-            <Label LineBreakMode="NoWrap" Padding="-10" HorizontalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text=" " FontSize="40"/>
@@ -30,7 +37,9 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-        </HorizontalStackLayout>
+        </Grid>
+        
+        
     </Shell.TitleView>
 
 
