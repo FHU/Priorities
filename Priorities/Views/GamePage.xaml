@@ -9,11 +9,13 @@
              x:DataType="viewmodels:GamePageViewModel"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="GamePage"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource OffWhite}">
 
-    <Shell.TitleView>
-        <Grid ColumnDefinitions="*,4*,*">
-            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="Center">
+    <!-- Grid wrapper for the entire game page -->
+    <Grid RowDefinitions="0.10*, 0.90*">
+        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}">
+            <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="G" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -24,10 +26,8 @@
                 </Label.FormattedText>
             </Label>
         </Grid>
-    </Shell.TitleView>
-    
-    <!-- Grid wrapper for the entire game page -->
-    <Grid RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10" Background="{StaticResource OffWhite}">
+
+        <Grid  Grid.Row="1"  RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10" Background="{StaticResource OffWhite}">
 
         <!-- [Header: Abbie Vance] -->
         <!-- One Row / Two Columns -->
@@ -258,5 +258,6 @@
 
 
 
+    </Grid>
     </Grid>
 </ContentPage>
