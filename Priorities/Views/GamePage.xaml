@@ -7,12 +7,15 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GamePageViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="GamePage"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource OffWhite}">
 
-    <Shell.TitleView>
-        <Grid ColumnDefinitions="*,4*,*">
-            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="Center">
+    <!-- Grid wrapper for the entire game page -->
+    <Grid RowDefinitions="0.10*, 0.90*">
+        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}">
+            <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="G" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -23,10 +26,8 @@
                 </Label.FormattedText>
             </Label>
         </Grid>
-    </Shell.TitleView>
-    
-    <!-- Grid wrapper for the entire game page -->
-    <Grid RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10" Background="{StaticResource OffWhite}">
+
+        <Grid  Grid.Row="1"  RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10" Background="{StaticResource OffWhite}">
 
         <!-- [Header: Abbie Vance] -->
         <!-- One Row / Two Columns -->
@@ -70,22 +71,15 @@
         <!-- One Row / Three Columns -->
         <Grid Row="1" RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="10,0" VerticalOptions="Center">
             <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
-                <Frame
-                   HeightRequest="70"
-                   WidthRequest="70"
-                   CornerRadius="35"
-                   VerticalOptions="Center"
-                   IsClippedToBounds="True"
-                   Margin="0,0,20,0">
-                    <Image
-                        Aspect="AspectFit"
-                        Source="{Binding PlayerImage}"
-                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                        HeightRequest="70"
-                        WidthRequest="70"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center" />
-                </Frame>
+                <toolkit:AvatarView
+                Margin="10,5,20,0"
+                CornerRadius="100"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                ImageSource="{Binding PlayerImage}"
+                VerticalOptions="Center"
+                WidthRequest="70" />
+
                 <VerticalStackLayout Grid.Column="1" VerticalOptions="End">
                     <Label
                     Text="Guessing Priorities for"
@@ -265,5 +259,6 @@
 
 
 
+    </Grid>
     </Grid>
 </ContentPage>
