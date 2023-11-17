@@ -20,10 +20,11 @@ namespace Priorities.ViewModels
             {
                 new Player() { Name = "Kenan", ImageName = "kenan.jpeg" },
                 new Player() { Name = "Bot", ImageName = "avatar_pic.jpg" },
-                new Player() { Name = "TJ", ImageName = "tj.jpg"}
+                new Player() { Name = "TJ Kirk", ImageName = "tj.jpg"},
+                new Player() { Name = "David Shannon", ImageName = "shannon.jpg"}
             };
 
-            CurrentPlayer = Players[2];
+            CurrentPlayer = Players[3];
 
             Console.WriteLine(CurrentPlayer.ImageName);
         }

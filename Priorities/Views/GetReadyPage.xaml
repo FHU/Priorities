@@ -166,7 +166,7 @@
 
             </Frame>
 
-            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" FontSize="40" FontFamily="CoinyRegular" HorizontalTextAlignment="Center" Padding="2"/>
+            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" FontSize="40" FontFamily="CoinyRegular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End"/>
 
         </VerticalStackLayout>
 
@@ -174,7 +174,7 @@
         <!-- Ready Button -->
         <Button Text="READY?"
                 Grid.Row="4"
-                Margin="20"
+                Margin="5"
                 VerticalOptions="Start"
                 TextColor="White"
                 BackgroundColor="#EC6664"
