@@ -167,21 +167,16 @@
                     <CollectionView  VerticalScrollBarVisibility="Never" 
                 ItemsSource="{Binding Priorities}">
                     <CollectionView.ItemTemplate>
-                        
-                        
+                                     
                         <DataTemplate x:DataType="models:Priority">
                                 <Grid>
                                     <RoundRectangle
                                     Grid.Column="1"
                                     CornerRadius="24"
-                                        HeightRequest="60"
-                                                  
-                                        
+                                    HeightRequest="60"                                    
                                     Fill="{StaticResource PrimaryBlueGreen}">
                                         <RoundRectangle.Shadow>
-                                            <Shadow
-                                                
-                                               
+                                            <Shadow                                
                                         Brush="Gray"
                                         Opacity="0.9"
                                         Radius="10"
@@ -190,21 +185,18 @@
                                     </RoundRectangle>
 
                                     <Button
-                        CornerRadius="20"
-                                        Grid.Column="1"
-                        Text="{Binding Thing}"
-                        TextColor="{StaticResource OffWhite2}"
-                        Margin="0, 10"
-                                        BackgroundColor="Transparent"
-                        
-                        FontSize="30"
-                        HorizontalOptions="FillAndExpand"
-                        FontFamily="ConcertOneRegular">
-
+                                    CornerRadius="20"
+                                    Grid.Column="1"
+                                    Text="{Binding Thing}"
+                                    TextColor="{StaticResource OffWhite2}"
+                                    Margin="0, 10"
+                                    BackgroundColor="Transparent"              
+                                    FontSize="30"
+                                    HorizontalOptions="FillAndExpand"
+                                    FontFamily="ConcertOneRegular">
                                     </Button>
                                 </Grid>
-
-                        </DataTemplate>
+                            </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </VerticalStackLayout>
@@ -212,9 +204,7 @@
 
                 <Border 
                 BackgroundColor="{StaticResource Primary}"
-                StrokeThickness="0"
-                    
-                   
+                StrokeThickness="0"                 
                 Grid.ColumnSpan="3"
                 Grid.Column="0"
                 Grid.Row="5"
