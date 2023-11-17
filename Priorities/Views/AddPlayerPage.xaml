@@ -20,7 +20,7 @@
                 <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
+            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -170,7 +170,7 @@
                         <Shadow Opacity="0.5"
                                 Radius="15"
                                 Offset="10,10"
-                                Brush="{StaticResource Gray200}"
+                                Brush="{StaticResource Gray400}"
                         />
                 </Button.Shadow>
                 </Button>
@@ -199,7 +199,7 @@
                             <Shadow Opacity="0.5"
                                 Radius="15"
                                 Offset="10,10"
-                                Brush="{StaticResource Gray200}"
+                                Brush="{StaticResource Gray400}"
         />
                         </Button.Shadow>
                     </Button>
