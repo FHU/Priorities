@@ -202,6 +202,7 @@
 
                                     <Button
                                         CornerRadius="16"
+                                        HeightRequest="60"
                                         Grid.Column="1"
                                         Text="{Binding Thing}"
                                         TextColor="{StaticResource OffWhite2}"
