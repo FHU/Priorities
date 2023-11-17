@@ -37,7 +37,7 @@
 
         <ScrollView Padding="20" Grid.Row="2" BackgroundColor="{StaticResource OffWhite}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <VerticalStackLayout VerticalOptions="FillAndExpand" Spacing="5">
-                <CollectionView ItemsSource="{Binding GameResults}">
+                <CollectionView ItemsSource="{Binding GameResults}" HeightRequest="4000">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Vertical" ItemSpacing="20">
 
