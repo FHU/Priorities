@@ -172,7 +172,7 @@
                                 <Grid>
                                     <RoundRectangle
                                     Grid.Column="1"
-                                    CornerRadius="24"                 
+                                    CornerRadius="18"                 
 
                                     HeightRequest="60"                                    
                                     Fill="{StaticResource PrimaryBlueGreen}">
@@ -186,7 +186,7 @@
                                     </RoundRectangle>
 
                                     <Button
-                                    CornerRadius="20"
+                                    CornerRadius="18"
                                     Grid.Column="1"
                                     Text="{Binding Thing}"
                                     TextColor="{StaticResource OffWhite2}"
@@ -218,7 +218,7 @@
                     Opacity="0.25" />
                     </Border.Shadow>
                     <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="30, 30, 30, 30" />
+                        <RoundRectangle CornerRadius="18" />
                     </Border.StrokeShape>
 
                     <Grid ColumnDefinitions="*,*,*" Padding="10,0">
