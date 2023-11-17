@@ -27,7 +27,7 @@
             </Label>
         </Grid>
 
-        <Grid  Grid.Row="1"  RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10" Background="{StaticResource OffWhite}">
+        <Grid  Grid.Row="1"  RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10">
 
         <!-- [Header: Abbie Vance] -->
         <!-- One Row / Two Columns -->
@@ -111,10 +111,10 @@
             IsEnabled="False"
             FontFamily="ConcertOneRegular">
             <Button.Shadow>
-                <Shadow Brush="Gray"
+                <Shadow Brush="Black"
                 Offset="0,20"
                 Radius="15"
-                Opacity="0.6"/>
+                Opacity="0.25"/>
 
 
             </Button.Shadow>
@@ -128,7 +128,7 @@
 
         <!-- [Priority Cards Section: Priscilla Harris] -->
         <!-- Six Rows / Two Columns -->
-        <Grid Row="2" RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="0.20*,0.75*, 0.05*" ColumnSpacing="9" Margin="20,0">
+            <Grid Row="2" RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="0.20*,0.75*, 0.05*" ColumnSpacing="9" Margin="20,0">
 
             <!-- Priority Rank Numbers -->
                 <CollectionView Grid.Column="0" Grid.RowSpan="5">
@@ -164,7 +164,7 @@
                 <!-- Priority Cards -->
             <VerticalStackLayout Grid.RowSpan="5" Grid.Column="1">
 
-                    <CollectionView  VerticalScrollBarVisibility="Never" 
+                    <CollectionView  
                 ItemsSource="{Binding Priorities}">
                     <CollectionView.ItemTemplate>
                                      
@@ -172,15 +172,16 @@
                                 <Grid>
                                     <RoundRectangle
                                     Grid.Column="1"
-                                    CornerRadius="24"
+                                    CornerRadius="24"                 
+
                                     HeightRequest="60"                                    
                                     Fill="{StaticResource PrimaryBlueGreen}">
                                         <RoundRectangle.Shadow>
                                             <Shadow                                
-                                        Brush="Gray"
-                                        Opacity="0.9"
+                                        Brush="Black"
+                                        Opacity="0.25"
                                         Radius="10"
-                                        Offset="3,10" />
+                                        Offset="0,15" />
                                         </RoundRectangle.Shadow>
                                     </RoundRectangle>
 
@@ -235,6 +236,7 @@
                         Text="➜"
                         TextColor="{StaticResource OffWhite2}"
                         HorizontalOptions="End"
+                        Margin="0,0,20,0"
                         FontSize="32"
                         FontFamily="ConcertOneRegular"/>
                     </Grid>
