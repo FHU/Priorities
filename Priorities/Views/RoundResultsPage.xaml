@@ -9,24 +9,31 @@
     xmlns:views="clr-namespace:Priorities.Views"
     x:DataType="viewmodels:RoundResultsPageViewModel"
     BackgroundColor="{StaticResource OffWhite}"
-    Shell.BackgroundColor="{StaticResource DarkGray}">
+    Shell.BackgroundColor="{StaticResource DarkGray}"
+    Shell.NavBarIsVisible="False">
 
-    <Shell.TitleView>
-        <Grid HeightRequest="80">
+    <!--  main  -->
+    <Grid
+        Padding="0,0,0,12"
+        BackgroundColor="{StaticResource OffWhite}"
+        RowSpacing="0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="16" />
+        </Grid.RowDefinitions>
+
+        <!--  page title  -->
+        <Grid Grid.Row="0" BackgroundColor="{StaticResource DarkGray}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="4*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-
-            <!--<Label
-                Grid.Column="1"
-                FontFamily="CoinyRegular"
-                FontSize="32"
-                HorizontalOptions="Center"
-                Text="RANKINGS"
-                TextColor="{StaticResource OffWhite}"
-                VerticalOptions="Center" />-->
 
             <Label
                 Grid.Column="1"
@@ -79,24 +86,10 @@
                 </Label.FormattedText>
             </Label>
         </Grid>
-    </Shell.TitleView>
 
-    <!--  main  -->
-    <Grid
-        Padding="0,0,0,12"
-        BackgroundColor="{StaticResource OffWhite}"
-        RowSpacing="0">
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="auto" />
-        </Grid.RowDefinitions>
-
-        <!--  header  -->
+        <!--  pts and round  -->
         <Grid
-            Grid.Row="0"
+            Grid.Row="1"
             Padding="10"
             BackgroundColor="{StaticResource PrimaryRed}"
             HeightRequest="60"
@@ -168,7 +161,7 @@
 
         <!--  player  -->
         <Grid
-            Grid.Row="1"
+            Grid.Row="2"
             Padding="10,20,10,10"
             ColumnSpacing="0"
             HeightRequest="70"
@@ -204,7 +197,7 @@
                 HorizontalOptions="Start"
                 Opacity="0.7"
                 Text="Revealing Results for"
-                TextColor="#3C3C3C"
+                TextColor="{StaticResource DarkGray}"
                 VerticalOptions="Center" />
 
             <!--  player name  -->
@@ -215,13 +208,23 @@
                 FontSize="36"
                 HorizontalOptions="Start"
                 Text="{Binding Person.Name}"
-                TextColor="#3C3C3C"
+                TextColor="{StaticResource DarkGray}"
                 VerticalOptions="Center" />
 
         </Grid>
 
+        <!--  shapes  -->
+        <Image
+            Grid.Row="5"
+            Grid.RowSpan="3"
+            Margin="-25,0,-25,-75"
+            HeightRequest="250"
+            Source="shapes.jpg"
+            VerticalOptions="End"
+            WidthRequest="450" />
+
         <!--  rankings  -->
-        <VerticalStackLayout Grid.Row="2">
+        <VerticalStackLayout Grid.Row="3">
             <CollectionView
                 x:Name="Results"
                 Margin="0,40,0,0"
@@ -303,7 +306,7 @@
 
         <!--  next button  -->
         <Button
-            Grid.Row="3"
+            Grid.Row="4"
             Margin="20,10"
             BackgroundColor="{StaticResource PrimaryRed}"
             CornerRadius="24"
