@@ -32,7 +32,7 @@
             </VerticalStackLayout>
             
 
-            <CollectionView ItemsSource="{Binding GameResults}" >
+            <CollectionView ItemsSource="{Binding GameResults}">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="20">
 
@@ -201,11 +201,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
+            <Image Source="shapes.png" Margin="-20" ZIndex="-1"/>
         </VerticalStackLayout>
-
-
-
-
     </ScrollView>
 </ContentPage>
