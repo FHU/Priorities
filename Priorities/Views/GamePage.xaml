@@ -7,6 +7,7 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GamePageViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="GamePage"
              BackgroundColor="{StaticResource OffWhite}">
 
@@ -70,22 +71,15 @@
         <!-- One Row / Three Columns -->
         <Grid Row="1" RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="10,0" VerticalOptions="Center">
             <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
-                <Frame
-                   HeightRequest="70"
-                   WidthRequest="70"
-                   CornerRadius="35"
-                   VerticalOptions="Center"
-                   IsClippedToBounds="True"
-                   Margin="0,0,20,0">
-                    <Image
-                        Aspect="AspectFit"
-                        Source="{Binding PlayerImage}"
-                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                        HeightRequest="70"
-                        WidthRequest="70"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center" />
-                </Frame>
+                <toolkit:AvatarView
+                Margin="10,5,20,0"
+                CornerRadius="100"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                ImageSource="{Binding PlayerImage}"
+                VerticalOptions="Center"
+                WidthRequest="70" />
+
                 <VerticalStackLayout Grid.Column="1" VerticalOptions="End">
                     <Label
                     Text="Guessing Priorities for"
