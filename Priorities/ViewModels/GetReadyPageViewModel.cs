@@ -22,7 +22,7 @@ namespace Priorities.ViewModels
                 new Player() { Name = "Bot", ImageName = "avatar_pic.jpg" }
             };
 
-            CurrentPlayer = Players[0];
+            CurrentPlayer = Players[1];
 
             Console.WriteLine(CurrentPlayer.ImageName);
         }

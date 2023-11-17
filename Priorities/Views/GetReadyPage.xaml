@@ -129,10 +129,11 @@
         <Label Text="Pass the Phone to...."
                FontFamily="CoinyRegular"
                Grid.Row="2"
-               Margin="20"
+               Margin="30"
                HorizontalOptions="Center"
                FontSize="28"
                TextColor="#404040"
+               
                TranslationY="30"/>
 
 
@@ -152,10 +153,10 @@
                    CornerRadius="125"
                    BackgroundColor="Transparent"
                    HorizontalOptions="Center"
-                   VerticalOptions="Center"
+                   VerticalOptions="End"
+                   IsClippedToBounds="True"
+                   >
                    
-                   IsClippedToBounds="True">
-
 
                 <Image Source="{Binding CurrentPlayer.ImageName}"
                         Aspect="AspectFill"
@@ -165,7 +166,7 @@
 
             </Frame>
 
-            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" FontSize="40" FontFamily="CoinyRegular" />
+            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" FontSize="40" FontFamily="CoinyRegular" HorizontalTextAlignment="Center" Padding="2"/>
 
         </VerticalStackLayout>
 
