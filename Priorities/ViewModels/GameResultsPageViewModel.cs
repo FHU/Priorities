@@ -18,6 +18,8 @@ namespace Priorities.ViewModels
         [ObservableProperty]
         //public TimeSpan ElapsedTime { get; set; }
         TimeSpan elapsedTime;
+
+        
         
         public ObservableCollection<Achievement> Achievements { get; set; }
 
@@ -28,11 +30,21 @@ namespace Priorities.ViewModels
             Achievements = new ObservableCollection<Achievement>();
 
             var achievement = new Achievement();
-
             achievement.Title = "Great Start";
-            achievement.Description = "Finish one game";
+
+            
+
+            var achievement2 = new Achievement();
+            achievement2.Title = "Fastest Man Alive";
+            
+
+            var achievement3 = new Achievement();
+            achievement3.Title = "Snail's Pace";
+            
 
             Achievements.Add(achievement);
+            Achievements.Add(achievement2);
+            Achievements.Add(achievement3);
         }
         
     }
