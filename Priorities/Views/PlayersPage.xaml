@@ -69,7 +69,7 @@
                 </CollectionView>
             </ScrollView>
 
-            <Grid Grid.Row="1" VerticalOptions="End" >
+            <Grid Grid.Row="1" VerticalOptions="End" BackgroundColor="Transparent">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -108,7 +108,7 @@
                     <Button Grid.Row="1"
                             Margin="10"
                             TextColor="White"
-                            Text="Play!"
+                            Text="PLAY!"
                             HorizontalOptions="Center"
                             FontSize="25"
                             BackgroundColor="{StaticResource PrimaryBlueGreen}"
@@ -116,7 +116,8 @@
                             CornerRadius="20"
                             WidthRequest="250"
                             HeightRequest="85"
-                            Command="{Binding NavigateToGamePageCommand}">
+                            Command="{Binding NavigateToGamePageCommand}"
+                            FontFamily="CoinyRegular">
                         <Button.Shadow>
                             <Shadow Brush="Black"
                                     Offset="-10,20"
