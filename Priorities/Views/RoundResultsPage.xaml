@@ -219,7 +219,7 @@
             Grid.RowSpan="3"
             Margin="-25,0,-25,-75"
             HeightRequest="250"
-            Source="shapes.jpg"
+            Source="shapes.svg"
             VerticalOptions="End"
             WidthRequest="450" />
 
