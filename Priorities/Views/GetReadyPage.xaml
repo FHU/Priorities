@@ -16,8 +16,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="270"/>
         </Grid.RowDefinitions>
 
         <!-- Top Bar with App Name -->
@@ -165,7 +165,7 @@
 
             </Frame>
 
-            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" Grid.Row="2"/>
+            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" FontSize="40" FontFamily="CoinyRegular" />
 
         </VerticalStackLayout>
 
@@ -174,7 +174,7 @@
         <Button Text="READY?"
                 Grid.Row="4"
                 Margin="20"
-                
+                VerticalOptions="Start"
                 TextColor="White"
                 BackgroundColor="#EC6664"
                 FontSize="30"
@@ -182,14 +182,14 @@
                 CornerRadius="10"
                 HeightRequest="80"
                 WidthRequest="320"
-                VerticalOptions="End"
+                
                 HorizontalOptions="FillAndExpand"/>
 
         <Image Source="shapes.jpg"
                         Aspect="AspectFill"
                         WidthRequest="400"
                         HeightRequest="200"
-                        Grid.Row="4"
+                        Grid.Row="5"
                         VerticalOptions="End"
                         ZIndex="-1"
                         />
