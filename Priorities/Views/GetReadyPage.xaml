@@ -26,6 +26,7 @@
                 HorizontalOptions="FillAndExpand"
                 LineBreakMode="NoWrap"
                 VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
                 BackgroundColor="#404040">
                 <Label.FormattedText>
                     <FormattedString>
@@ -100,7 +101,8 @@
            FontSize="36"
            TextColor="White"
            HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
+           VerticalTextAlignment="End"
+           TranslationY="15"
            Text="200 points"
            FontFamily="CoinyRegular"/>
 
@@ -111,7 +113,9 @@
            FontSize="20"
            TextColor="White"
            HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
+           VerticalTextAlignment="End"
+           TranslationX="30"
+           TranslationY="7"
            Text="Round 1/10"
            FontFamily="CoinyRegular"/>
 </Grid>
@@ -122,31 +126,34 @@
                Grid.Row="2"
                Margin="20"
                HorizontalOptions="Center"
-               FontSize="24"
-               TextColor="#404040"/>
+               FontSize="28"
+               TextColor="#404040"
+               TranslationY="30"/>
         <!--User Profile and Name-->
         <StackLayout Grid.Row="3"
                      HorizontalOptions="Center"
+                     TranslationY="30"
                      Spacing="20"
                      VerticalOptions="Center">
              <!--Circle Frame for Profile Picture Placeholder-->
-            <Frame WidthRequest="200"
-                   HeightRequest="200"
+            <Frame WidthRequest="160"
+                   HeightRequest="160"
                    CornerRadius="100"
                    BackgroundColor="LightGray"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
+                   TranslationY="-20"
                    IsClippedToBounds="True">
                  <Image Source="kenan.jpeg"
                         Aspect="AspectFill"
-                        WidthRequest="200"
-                        HeightRequest="200"
+                        WidthRequest="160"
+                        HeightRequest="160"
                         />
 
             </Frame>
              <Frame WidthRequest="400"
                    HeightRequest="200"
-                   TranslationY="120"
+                   TranslationY="150"
                    BorderColor="Transparent"
                    BackgroundColor="Transparent"
                    HorizontalOptions="Center"
@@ -160,7 +167,7 @@
 
             </Frame>
 
-            <Label Text="David Shannon" TranslationY="-235" FontSize="36" TextColor="#404040" HorizontalOptions="Center" FontFamily="CoinyRegular"/>
+            <Label Text="David Shannon" TranslationY="-265" FontSize="36" TextColor="#404040" HorizontalOptions="Center" FontFamily="CoinyRegular"/>
         </StackLayout>
 
 
@@ -168,12 +175,13 @@
         <Button Text="READY?"
                 Grid.Row="4"
                 Margin="20"
-                TranslationY="-140"
+                TranslationY="-180"
                 TextColor="White"
                 BackgroundColor="#EC6664"
                 FontSize="30"
                 FontFamily="CoinyRegular"
                 CornerRadius="10"
+                WidthRequest="320"
                 HorizontalOptions="FillAndExpand"/>
 
 
