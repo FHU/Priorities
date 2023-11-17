@@ -157,7 +157,7 @@
         </VerticalStackLayout>
 
         
-            <Image  Source="Flower.jpg" />
+            <Image  Source="shapes.jpg" WidthRequest="300"/>
         
 
     </VerticalStackLayout>
