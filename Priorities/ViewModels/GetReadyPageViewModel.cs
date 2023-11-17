@@ -14,22 +14,17 @@ namespace Priorities.ViewModels
 
         public ObservableCollection<Player> Players { get; set; }
 
-
-
-
         public GetReadyPageViewModel()
         {
-            Players = new ObservableCollection<Player>
+            Players = new ObservableCollection<Player>()
             {
-                new Player{Name="Kenan", ImageName="kenan.jpg"},
-                new Player{Name="David", ImageName="shannon.jpg"},
-                new Player{Name="TJ", ImageName="tj.jpg"}
+                new Player() { Name = "Kenan", ImageName = "kenan.jpeg" },
+                new Player() { Name = "Bot", ImageName = "avatar_pic.jpg" }
             };
 
-            var playerCurrent = Players[2];
-            CurrentPlayer = playerCurrent;
+            CurrentPlayer = Players[0];
 
-
+            Console.WriteLine(CurrentPlayer.ImageName);
         }
     }
 }

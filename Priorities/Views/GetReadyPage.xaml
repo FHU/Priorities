@@ -27,7 +27,9 @@
                 LineBreakMode="NoWrap"
                 VerticalOptions="Center"
                 HorizontalTextAlignment="Center"
-                BackgroundColor="#404040">
+                VerticalTextAlignment="Center"
+                BackgroundColor="#404040"
+                HeightRequest="130">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span
@@ -90,8 +92,9 @@
       HorizontalOptions="FillAndExpand"
       VerticalOptions="Center"
       BackgroundColor="#EC6664"
+      HeightRequest="60"
       Margin="0"
-      Padding="10">
+      Padding="5">
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto"/>
         <ColumnDefinition Width="30"/> <!-- This column acts as the spacer -->
@@ -102,7 +105,8 @@
            TextColor="White"
            HorizontalTextAlignment="Center"
            VerticalTextAlignment="End"
-           TranslationY="15"
+           TranslationX="10"
+           TranslationY="12"
            Text="200 points"
            FontFamily="CoinyRegular"/>
 
@@ -115,73 +119,72 @@
            HorizontalTextAlignment="Center"
            VerticalTextAlignment="End"
            TranslationX="30"
-           TranslationY="7"
+           TranslationY="5"
            Text="Round 1/10"
            FontFamily="CoinyRegular"/>
 </Grid>
 
         <!-- Pass the Phone Header -->
-        <Label Text="Pass the Phone to...."
+        <!--<Label Text="Pass the Phone to...."
                FontFamily="CoinyRegular"
                Grid.Row="2"
                Margin="20"
                HorizontalOptions="Center"
                FontSize="28"
                TextColor="#404040"
-               TranslationY="30"/>
+               TranslationY="30"/>-->
+
+            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" Grid.Row="2"/>
+
         <!--User Profile and Name-->
-        <StackLayout Grid.Row="3"
+        <VerticalStackLayout Grid.Row="3"
                      HorizontalOptions="Center"
-                     TranslationY="30"
-                     Spacing="20"
-                     VerticalOptions="Center">
+                     Spacing="0"
+                     VerticalOptions="Center"
+                     BackgroundColor="red"
+                     >
+
+
+
+
              <!--Circle Frame for Profile Picture Placeholder-->
             <Frame WidthRequest="160"
                    HeightRequest="160"
-                   CornerRadius="100"
-                   BackgroundColor="LightGray"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   TranslationY="-20"
-                   IsClippedToBounds="True">
-                 <Image Source="kenan.jpeg"
-                        Aspect="AspectFill"
-                        WidthRequest="160"
-                        HeightRequest="160"
-                        />
-
-            </Frame>
-             <Frame WidthRequest="400"
-                   HeightRequest="200"
-                   TranslationY="150"
-                   BorderColor="Transparent"
+                   CornerRadius="80"
                    BackgroundColor="Transparent"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   IsClippedToBounds="True">
-                 <Image Source="shapes.png"
+                   
+                   IsClippedToBounds="False">
+
+
+                 <Image Source="{Binding CurrentPlayer.ImageName}"
                         Aspect="AspectFill"
-                        WidthRequest="400"
-                        HeightRequest="200"
+                        WidthRequest="250"
+                        HeightRequest="250"
                         />
 
             </Frame>
 
-            <Label Text="David Shannon" TranslationY="-265" FontSize="36" TextColor="#404040" HorizontalOptions="Center" FontFamily="CoinyRegular"/>
-        </StackLayout>
+             
+            
+            <Label Text="{Binding CurrentPlayer.Name}" FontSize="36" TextColor="#404040" HorizontalOptions="Center" FontFamily="CoinyRegular"/>
+        </VerticalStackLayout>
 
 
         <!-- Ready Button -->
         <Button Text="READY?"
-                Grid.Row="4"
+                Grid.Row="3"
                 Margin="20"
-                TranslationY="-180"
+                
                 TextColor="White"
                 BackgroundColor="#EC6664"
                 FontSize="30"
                 FontFamily="CoinyRegular"
                 CornerRadius="10"
+                HeightRequest="70"
                 WidthRequest="320"
+                VerticalOptions="End"
                 HorizontalOptions="FillAndExpand"/>
 
 
@@ -189,7 +192,13 @@
 
 
 
-
+        <Image Source="shapes.png"
+                        Aspect="AspectFill"
+                        WidthRequest="400"
+                        HeightRequest="200"
+                        Grid.Row="4"
+                        VerticalOptions="End"
+                        />
 
 
 
