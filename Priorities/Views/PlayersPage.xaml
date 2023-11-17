@@ -57,7 +57,7 @@
                                                    Margin="-20"
                                                     />
                                         </Frame>
-                                        <Label Text="{Binding PlayerName}" FontFamily="ConcertOneRegular" FontSize="25" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Margin="-20,0,0,0" />
+                                        <Label Text="{Binding PlayerName}" FontFamily="ConcertOneRegular" FontSize="28" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Margin="-20,0,0,0" />
                                         <Button Text="x" FontSize="30" TextColor="White"  FontFamily="CoinyRegular" 
                                                 HorizontalOptions="Center" VerticalOptions="Center" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent"
                                                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PlayersPageViewModel}}, Path=DeleteButtonCommand}" 
@@ -90,12 +90,12 @@
                             TextColor="White"
                             Text="ADD PLAYER"
                             HorizontalOptions="Center"
-                            FontSize="30"
+                            FontSize="36"
                             BackgroundColor="{StaticResource PrimaryRed}"
                             Padding="15"
                             CornerRadius="20"
-                            WidthRequest="250"
-                            HeightRequest="85"
+                            MinimumWidthRequest="250"
+                            HeightRequest="90"
                             Command="{Binding NavigateToAddPlayersPageCommand}"
                             FontFamily="ConcertOneRegular">
                         <Button.Shadow>
@@ -112,12 +112,12 @@
                             TextColor="White"
                             Text="PLAY!"
                             HorizontalOptions="Center"
-                            FontSize="35"
+                            FontSize="40"
                             BackgroundColor="{StaticResource PrimaryBlueGreen}"
                             Padding="15"
                             CornerRadius="20"
                             WidthRequest="250"
-                            HeightRequest="85"
+                            HeightRequest="90"
                             Command="{Binding NavigateToGamePageCommand}"
                             FontFamily="ConcertOneRegular">
                         <Button.Shadow>
