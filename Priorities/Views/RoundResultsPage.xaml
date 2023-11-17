@@ -228,7 +228,7 @@
             <CollectionView
                 x:Name="Results"
                 Margin="0,40,0,0"
-                ItemsSource="{Binding rankings}">
+                ItemsSource="{Binding Rankings}">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="12" />
                 </CollectionView.ItemsLayout>

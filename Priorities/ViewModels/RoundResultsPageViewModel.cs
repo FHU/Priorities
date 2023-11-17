@@ -25,30 +25,11 @@ namespace Priorities.ViewModels
 
         private List<string> GroupRanking { get; set; }
 
-        public ObservableCollection<Ranking> rankings { get; set; }
+        public ObservableCollection<Ranking> Rankings { get; set; }
 
         public RoundResultsPageViewModel()
         {
-            //rankings = new ObservableCollection<Ranking>();
-            //Person = new Player() { Name = "John", ImageName = "dotnet_bot.svg" };
-            //var rank1 = "Giraffe";
-            //var rank2 = "Chocolate";
-            //var rank3 = "Fruit";
-            //var rank4 = "Sleep";
-            //var rank5 = "Casey";
-            //PlayerRanking = new List<string> { rank1, rank2, rank3, rank4, rank5 };
-
-            //var grank1 = "Giraffe";
-            //var grank2 = "Chocolate";
-            //var grank3 = "Sleep";
-            //var grank4 = "Fruit";
-            //var grank5 = "Casey";
-            //GroupRanking = new List<string> { grank1, grank2, grank3, grank4, grank5 };
-            //Score = 0;
-            //Compare(PlayerRanking, GroupRanking);
-            //Round = 1;
-
-            rankings = new ObservableCollection<Ranking>();
+            Rankings = new ObservableCollection<Ranking>();
             Person = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
 
             string i1 = "Giraffe";
@@ -64,10 +45,12 @@ namespace Priorities.ViewModels
 
             for (int i = 5; i > 0; i--)
             {
-                //Thread.Sleep(1000); // doesn't work yet
-                Ranking result = getResult(i);
-                rankings.Insert(0, result);
-                Score += result.Points;
+                Thread.Sleep(1000); // doesn't work yet
+                //Ranking result = GetResult(i);
+                //Rankings.Insert(0, result);
+                //Score += result.Points;
+
+                GetResult(i);
             }
         }
 
@@ -88,8 +71,10 @@ namespace Priorities.ViewModels
             }
         }
 
-        private Ranking getResult(int rank)
+        public async void GetResult(int rank)
         {
+            await Task.Delay(5000);
+
             Ranking ranking = new Ranking() { Number = rank, Name = GroupRanking[rank - 1] };
 
             if (GroupRanking[rank - 1] == PlayerRanking[rank - 1])
@@ -103,7 +88,7 @@ namespace Priorities.ViewModels
                 ranking.Color = Color.FromArgb("#EC6664");
             }
 
-            return ranking;
+            Rankings.Insert(0, ranking);
         }
 
         [RelayCommand]
