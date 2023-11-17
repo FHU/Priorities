@@ -12,40 +12,39 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <VerticalStackLayout Grid.Row="0"                         
-                        BackgroundColor="{StaticResource DarkGray}">
-
-                <Label Text="Players"
-                       TextColor="{StaticResource SecondaryGreen}"
-                       HorizontalTextAlignment="Center"
-                       FontSize="56"
-                       Padding="20"
-                       VerticalOptions="Center"
-                       
-                       FontFamily="CoinyRegular"/>
-
-                <Label BackgroundColor="{StaticResource PrimaryRed}"
-                       HeightRequest="10"
-                       VerticalOptions="End"
-                       />
+            <VerticalStackLayout Grid.Row="0">
+                <Label Grid.Row="0" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="115" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="P" FontSize="48" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                            <Span Text="L" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="A" FontSize="48" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="Y" FontSize="48" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="E" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="R" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="S" FontSize="48" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
             </VerticalStackLayout>
 
-            <ScrollView Grid.Row="1" Margin="0,15,0,250">
+            <ScrollView Grid.Row="1" Margin="0,15,0,250" BackgroundColor="{StaticResource OffWhite}" Padding="12,0">
                 <CollectionView ItemsSource="{Binding Players}" VerticalOptions="FillAndExpand">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <VerticalStackLayout Padding="13">
-                                <Border Padding="0" WidthRequest="300" HeightRequest="70" StrokeShape="RoundRectangle 20">
-                                    <Border.Shadow>
+                            <VerticalStackLayout Padding="8">
+                                <Border Padding="0"  HeightRequest="70" StrokeShape="RoundRectangle 20">
+                                    <!--<Border.Shadow>
                                         <Shadow Brush="Black"
                                                 Offset="-10,20"
                                                 Radius="30"
                                                 Opacity="0.5" />
-                                    </Border.Shadow>
+                                    </Border.Shadow>-->
                                     <FlexLayout Direction="Row" BackgroundColor="{StaticResource SecondaryLightBlue}"  JustifyContent="SpaceBetween" AlignItems="Center">
                                         <Frame 
                                                CornerRadius="25"
@@ -58,7 +57,7 @@
                                                    Margin="-20"
                                                     />
                                         </Frame>
-                                        <Label Text="{Binding PlayerName}" FontFamily="ConcertOneRegular" FontSize="25" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <Label Text="{Binding PlayerName}" FontFamily="ConcertOneRegular" FontSize="25" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Margin="-20,0,0,0" />
                                         <Button Text="x" FontSize="30" TextColor="White"  FontFamily="CoinyRegular" 
                                                 HorizontalOptions="Center" VerticalOptions="Center" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent"
                                                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PlayersPageViewModel}}, Path=DeleteButtonCommand}" 
@@ -77,7 +76,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.Row="1" WidthRequest="440" Source="shapes.png" VerticalOptions="End"/>
+                <Image Grid.Row="1"  Source="shapes.png" VerticalOptions="End"/>
 
                 <Grid Grid.Row="1" VerticalOptions="End" Margin="0,0,0,25">
                     <Grid.RowDefinitions>
