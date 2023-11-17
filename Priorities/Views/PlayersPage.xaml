@@ -22,17 +22,18 @@
                 <Label Text="Players"
                        TextColor="{StaticResource SecondaryGreen}"
                        HorizontalTextAlignment="Center"
-                       FontSize="48"
+                       FontSize="56"
                        HorizontalOptions="Fill"
-                       Padding="15"/>
+                       Padding="15"
+                       FontFamily="CoinyRegular"/>
 
                 <Label BackgroundColor="{StaticResource PrimaryRed}"
                        HeightRequest="10"
                        VerticalOptions="End"
-                       Margin="0,25,0,0"/>
+                       />
             </VerticalStackLayout>
 
-            <ScrollView Grid.Row="1" Margin="0,10,0,250">
+            <ScrollView Grid.Row="1" Margin="0,15,0,250">
                 <CollectionView ItemsSource="{Binding Players}" VerticalOptions="FillAndExpand">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -56,8 +57,8 @@
                                                    Margin="-20"
                                                     />
                                         </Frame>
-                                        <Label Text="{Binding PlayerName}" FontSize="25" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
-                                        <Button Text="x" FontSize="25" TextColor="White" Margin="5"  
+                                        <Label Text="{Binding PlayerName}" FontFamily="ConcertOneRegular" FontSize="25" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <Button Text="x" FontSize="30" TextColor="White" Margin="0,0,5,5" FontFamily="CoinyRegular" 
                                                 HorizontalOptions="Center" VerticalOptions="Center" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent"
                                                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PlayersPageViewModel}}, Path=DeleteButtonCommand}" 
                                                 CommandParameter="{Binding .}" />
@@ -87,15 +88,16 @@
                     <Button Grid.Row="0"
                             Margin="10"
                             TextColor="White"
-                            Text="Add New Player"
+                            Text="ADD PLAYER"
                             HorizontalOptions="Center"
-                            FontSize="25"
+                            FontSize="30"
                             BackgroundColor="{StaticResource PrimaryRed}"
                             Padding="15"
                             CornerRadius="20"
                             WidthRequest="250"
                             HeightRequest="85"
-                            Command="{Binding NavigateToAddPlayersPageCommand}">
+                            Command="{Binding NavigateToAddPlayersPageCommand}"
+                            FontFamily="ConcertOneRegular">
                         <Button.Shadow>
                             <Shadow Brush="Black"
                                     Offset="-10,20"
@@ -110,14 +112,14 @@
                             TextColor="White"
                             Text="PLAY!"
                             HorizontalOptions="Center"
-                            FontSize="25"
+                            FontSize="35"
                             BackgroundColor="{StaticResource PrimaryBlueGreen}"
                             Padding="15"
                             CornerRadius="20"
                             WidthRequest="250"
                             HeightRequest="85"
                             Command="{Binding NavigateToGamePageCommand}"
-                            FontFamily="CoinyRegular">
+                            FontFamily="ConcertOneRegular">
                         <Button.Shadow>
                             <Shadow Brush="Black"
                                     Offset="-10,20"
