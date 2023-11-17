@@ -14,7 +14,7 @@
                 <Label
                
                 TextColor="{StaticResource Primary}"
-                Margin="0, 5, 130, 0"
+                Margin="0, 0, 130, 0"
                 FontSize="30"
                 FontFamily="CoinyRegular"
                 Text="Time"/>
@@ -22,7 +22,7 @@
                 <Label
                 HorizontalOptions="Center"
                 TextColor="{StaticResource Black}"
-                Margin="0, 5, 140, 5"
+                Margin="0, 0, 140, 5"
                 FontSize="Large"
                 FontFamily="CoinyRegular"
                 Text="{Binding ElapsedTime.Minutes}"/>
@@ -33,7 +33,7 @@
                 HorizontalOptions="Center"
                 Text="Score"
                TextColor="{StaticResource Primary}"
-                Margin="5, 5, 0, 5"
+                Margin="5, 0, 0, 5"
                 FontSize="30"
                 FontFamily="CoinyRegular"
             />
@@ -41,7 +41,7 @@
                 <Label
                 HorizontalOptions="Center"
                 TextColor="{StaticResource Black}"
-                Margin="5, 5, 0, 5"
+                Margin="5, 0, 0, 5"
                 FontSize="Large"
                 FontFamily="CoinyRegular"
                 Text="{Binding Score}"/>
@@ -124,7 +124,7 @@
 
 
         <VerticalStackLayout>
-            <Button Margin="0,0,0,5" Text="High Score" FontSize="Medium" FontFamily="CoinyRegular" WidthRequest="220" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
+            <Button Margin="0,0,0,5" Padding="0,12" Text="High Score" VerticalOptions="Center" FontFamily="CoinyRegular" WidthRequest="220" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
                 <Button.Shadow>
                     <Shadow
                         Opacity="0.2"
@@ -134,7 +134,7 @@
                         />
                 </Button.Shadow>
             </Button>
-            <Button Margin="0,0,0,5" Text="Achivements" FontSize="Medium" FontFamily="CoinyRegular" WidthRequest="220" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
+            <Button Margin="0,0,0,5" Text="Achivements" VerticalOptions="Center" FontFamily="CoinyRegular" WidthRequest="220" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
                 <Button.Shadow>
                     <Shadow
                         Opacity="0.2"
@@ -144,7 +144,7 @@
                         />
                 </Button.Shadow>
             </Button>
-            <Button Text="Play Again" FontSize="Medium" FontFamily="CoinyRegular" WidthRequest="250" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
+            <Button Text="Play Again" VerticalOptions="Center" FontSize="20" FontFamily="CoinyRegular" WidthRequest="250" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
                 <Button.Shadow>
                     <Shadow
                         Opacity="0.2"
