@@ -54,6 +54,7 @@ namespace Priorities.ViewModels
             timer = "0:43";
             score = "0";
 
+
         }
     }
 }

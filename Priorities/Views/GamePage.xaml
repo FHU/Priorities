@@ -131,82 +131,37 @@
         <Grid Row="2" RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="0.20*,0.75*, 0.05*" ColumnSpacing="9" Margin="20,0">
 
             <!-- Priority Rank Numbers -->
-
-            <Button
-                CornerRadius="30"
-                HeightRequest="60"
-                WidthRequest="60"
-                Grid.Column="0"
-                Grid.Row="0"
-                BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                Text="1"
-                TextColor="{StaticResource OffWhite2}"
-                FontSize="30"
-                VerticalOptions="Center"
-                IsEnabled="False"
-                FontFamily="ConcertOneRegular"
+                <CollectionView Grid.Column="0" Grid.RowSpan="5">
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:Int32}">
+                            <x:Int32>1</x:Int32>
+                            <x:Int32>2</x:Int32>
+                            <x:Int32>3</x:Int32>
+                            <x:Int32>4</x:Int32>
+                            <x:Int32>5</x:Int32>
+                            
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Priority">
+                            <Button
+                        CornerRadius="30"
+                        HeightRequest="60"
+                        WidthRequest="60"
+                        BackgroundColor="{StaticResource PrimaryBlueGreen}"
+                        Text="{Binding .}"
+                        TextColor="{StaticResource OffWhite2}"
+                        FontSize="30"
+                        VerticalOptions="Center"
+                        Margin="0, 8"
+                        IsEnabled="False"
+                        FontFamily="ConcertOneRegular"
             />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
-            <Button
-                CornerRadius="30"
-                HeightRequest="60"
-                WidthRequest="60"
-                Grid.Column="0"
-                Grid.Row="1"
-                BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                TextColor="{StaticResource OffWhite2}"
-                Text="2"
-                FontSize="30"
-                VerticalOptions="Center"
-                IsEnabled="False"
-                FontFamily="ConcertOneRegular"
-            />
-
-            <Button
-                CornerRadius="30"
-                HeightRequest="60"
-                WidthRequest="60"
-                Grid.Column="0"
-                Grid.Row="2"
-                BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                TextColor="{StaticResource OffWhite2}"
-                Text="3"
-                FontSize="30"
-                VerticalOptions="Center"
-                IsEnabled="False"
-                FontFamily="ConcertOneRegular"
-            />
-
-            <Button
-                CornerRadius="30"
-                HeightRequest="60"
-                WidthRequest="60"
-                Grid.Column="0"
-                Grid.Row="3"
-                BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                TextColor="{StaticResource OffWhite2}"
-                Text="4"
-                FontSize="30"
-                VerticalOptions="Center"
-                IsEnabled="False"
-                FontFamily="ConcertOneRegular"
-            />
-
-            <Button
-                CornerRadius="30"
-                HeightRequest="60"
-                WidthRequest="60"
-                Grid.Row="4"
-                BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                TextColor="{StaticResource OffWhite2}"
-                Text="5"
-                FontSize="30"
-                VerticalOptions="Center"
-                IsEnabled="False"
-                FontFamily="ConcertOneRegular"
-            />
-
-            <!-- Priority Cards -->
+                <!-- Priority Cards -->
             <VerticalStackLayout Grid.RowSpan="5" Grid.Column="1">
                 <CollectionView  VerticalScrollBarVisibility="Never" 
                 ItemsSource="{Binding Priorities}">
@@ -217,7 +172,7 @@
                         Text="{Binding Thing}"
                         BackgroundColor="{StaticResource PrimaryBlueGreen}"
                     TextColor="{StaticResource OffWhite2}"
-                        Margin="0, 9"
+                        Margin="0, 8"
                         HeightRequest="60"
                         FontSize="30"
                         HorizontalOptions="FillAndExpand"
