@@ -19,10 +19,11 @@ namespace Priorities.ViewModels
             Players = new ObservableCollection<Player>()
             {
                 new Player() { Name = "Kenan", ImageName = "kenan.jpeg" },
-                new Player() { Name = "Bot", ImageName = "avatar_pic.jpg" }
+                new Player() { Name = "Bot", ImageName = "avatar_pic.jpg" },
+                new Player() { Name = "TJ", ImageName = "tj.jpg"}
             };
 
-            CurrentPlayer = Players[1];
+            CurrentPlayer = Players[2];
 
             Console.WriteLine(CurrentPlayer.ImageName);
         }
