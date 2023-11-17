@@ -13,13 +13,14 @@
 <!-- Added this to make changes to the top-->
     <Shell.TitleView>
         <HorizontalStackLayout>
-            <Label LineBreakMode="NoWrap" HorizontalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
+            <Label LineBreakMode="NoWrap" Padding="-10" HorizontalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
                 <Label.FormattedText>
                     <FormattedString>
+                        <Span Text=" " FontSize="40"/>
                         <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                         <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                         <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text=" " FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text=" " FontSize="40"/>
                         <Span Text="P" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                         <Span Text="L" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                         <Span Text="A" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
@@ -76,7 +77,8 @@
                         BackgroundColor="{StaticResource Secondary}"
                         WidthRequest="296"
                         HeightRequest="70"
-                        CornerRadius="25">
+                        CornerRadius="25"
+                        BorderColor="Transparent">
                 </Frame>
                 <Label Grid.Row="0"
                        Padding="8"
