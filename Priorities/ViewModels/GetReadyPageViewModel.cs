@@ -24,7 +24,7 @@ namespace Priorities.ViewModels
                 new Player() { Name = "David Shannon", ImageName = "shannon.jpg"}
             };
 
-            CurrentPlayer = Players[3];
+            CurrentPlayer = Players[2];
 
             Console.WriteLine(CurrentPlayer.ImageName);
         }
