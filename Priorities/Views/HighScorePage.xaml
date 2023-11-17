@@ -4,59 +4,33 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Background="{StaticResource OffWhite}"
-             Shell.BackgroundColor="#3C3C3C"
+             Shell.NavBarIsVisible="False"
              >
-    <Shell.TitleView>
-        <Grid >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
 
-            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="H" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="G" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="H" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-            <Label Grid.Column="2" LineBreakMode="NoWrap" HorizontalOptions="Start">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="C" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="O" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-        </Grid>
-    </Shell.TitleView>
-
-    <!--<HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="NavajoWhite">
-                <Label Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                <Label Text="O" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                <Label Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                <Label Text="I" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                <Label Text="T" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                <Label Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                <Label Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                <Label Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-            </HorizontalStackLayout>-->
     <ScrollView BackgroundColor="{StaticResource OffWhite}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <VerticalStackLayout VerticalOptions="FillAndExpand" Spacing="5">
-            <Rectangle BackgroundColor="{StaticResource Primary}"
-                   MinimumHeightRequest="6"/>
-            <Rectangle BackgroundColor="{StaticResource OffWhite}" MinimumHeightRequest="30"/>
+            <VerticalStackLayout>
+                <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="115" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="H" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                            <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="G" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="H" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text=" " FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="C" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                            <Span Text="O" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
+                <Rectangle BackgroundColor="{StaticResource OffWhite}" MinimumHeightRequest="30"/>
+            </VerticalStackLayout>
+            
 
             <CollectionView ItemsSource="{Binding GameResults}" >
                 <CollectionView.ItemsLayout>
@@ -228,7 +202,6 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-            <Rectangle BackgroundColor="{StaticResource OffWhite}" MinimumHeightRequest="30"/>
         </VerticalStackLayout>
 
 
