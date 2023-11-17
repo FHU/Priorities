@@ -7,7 +7,9 @@
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
-             x:DataType="viewmodels:GetReadyPageViewModel">
+             x:DataType="viewmodels:GetReadyPageViewModel"
+             Shell.NavBarIsVisible="False">
+    
 
         <Grid Padding="0">
             <Grid.RowDefinitions>
@@ -19,18 +21,67 @@
             </Grid.RowDefinitions>
 
         <!-- Top Bar with App Name -->
-        <Label Text="PRIORITIES"
-               Grid.Row="0"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="Center"
-               BackgroundColor="#505050"
-               FontSize="40"
-               FontFamily="CoinyRegular"
-               TextColor="White"
-               HeightRequest="100"
-               Padding="20,0"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"/>
+        <Label
+                Grid.Column="1"
+                HorizontalOptions="FillAndExpand"
+                LineBreakMode="NoWrap"
+                VerticalOptions="Center"
+                BackgroundColor="#404040">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="P"
+                            TextColor="{StaticResource PrimaryRed}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="R"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="O"
+                            TextColor="{StaticResource SecondaryBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="R"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
+                            TextColor="{StaticResource PrimaryRed}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="T"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="E"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="S"
+                            TextColor="{StaticResource PrimaryRed}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
 
         <!-- Score and Round Number -->
         <!-- Score and Round Number -->
@@ -86,7 +137,7 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    IsClippedToBounds="True">
-                 <Image Source="avatar_pic.jpg"
+                 <Image Source="kenan.jpeg"
                         Aspect="AspectFill"
                         WidthRequest="200"
                         HeightRequest="200"
@@ -95,13 +146,13 @@
             </Frame>
              <Frame WidthRequest="400"
                    HeightRequest="200"
-                   TranslationY="80"
+                   TranslationY="120"
                    BorderColor="Transparent"
                    BackgroundColor="Transparent"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    IsClippedToBounds="True">
-                 <Image Source="Resources/Images/shapes.jpg"
+                 <Image Source="shapes.png"
                         Aspect="AspectFill"
                         WidthRequest="400"
                         HeightRequest="200"
@@ -109,7 +160,7 @@
 
             </Frame>
 
-            <Label Text="David Shannon" TranslationY="-245" FontSize="36" TextColor="#404040" HorizontalOptions="Center" FontFamily="CoinyRegular"/>
+            <Label Text="David Shannon" TranslationY="-235" FontSize="36" TextColor="#404040" HorizontalOptions="Center" FontFamily="CoinyRegular"/>
         </StackLayout>
 
 
@@ -117,7 +168,7 @@
         <Button Text="READY?"
                 Grid.Row="4"
                 Margin="20"
-                TranslationY="-110"
+                TranslationY="-140"
                 TextColor="White"
                 BackgroundColor="#EC6664"
                 FontSize="30"
