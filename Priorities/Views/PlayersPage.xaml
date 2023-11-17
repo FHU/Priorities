@@ -37,7 +37,7 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <VerticalStackLayout Padding="13">
-                                <Border BackgroundColor="Black" Padding="0" WidthRequest="300" HeightRequest="70" StrokeShape="RoundRectangle 20">
+                                <Border Padding="0" WidthRequest="300" HeightRequest="70" StrokeShape="RoundRectangle 20">
                                     <Border.Shadow>
                                         <Shadow Brush="Black"
                                                 Offset="-10,20"
@@ -45,7 +45,7 @@
                                                 Opacity="0.5" />
                                     </Border.Shadow>
                                     <FlexLayout Direction="Row" BackgroundColor="{StaticResource SecondaryLightBlue}"  JustifyContent="SpaceBetween" AlignItems="Center">
-                                        <Frame BorderColor="Black"
+                                        <Frame 
                                                CornerRadius="25"
                                                IsClippedToBounds="True"
                                                WidthRequest="50"
@@ -75,7 +75,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.Row="1" WidthRequest="440" Source="shapes.jpg" VerticalOptions="End"/>
+                <Image Grid.Row="1" WidthRequest="440" Source="shapes.png" VerticalOptions="End"/>
 
                 <Grid Grid.Row="1" VerticalOptions="End" Margin="0,0,0,25">
                     <Grid.RowDefinitions>
