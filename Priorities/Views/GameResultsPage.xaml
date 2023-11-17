@@ -13,15 +13,15 @@
             <VerticalStackLayout>
                 <Label
                
-                TextColor="#EC6664"
+                TextColor="{StaticResource Primary}"
                 Margin="0, 5, 130, 0"
-                FontSize="Medium"
+                FontSize="42"
                 FontAttributes="Bold"
                 Text="Time"/>
 
                 <Label
                 HorizontalOptions="Center"
-                TextColor="Black"
+                TextColor="{StaticResource Black}"
                 Margin="0, 5, 140, 5"
                 FontSize="Large"
                 FontAttributes="Bold"
@@ -32,7 +32,7 @@
                 <Label
                 HorizontalOptions="Center"
                 Text="Score"
-               TextColor="#EC6664"
+               TextColor="{StaticResource Primary}"
                 Margin="5, 5, 0, 5"
                 FontSize="Medium"
                 FontAttributes="Bold"
@@ -40,7 +40,7 @@
 
                 <Label
                 HorizontalOptions="Center"
-                TextColor="Black"
+                TextColor="{StaticResource Black}"
                 Margin="5, 5, 0, 5"
                 FontSize="Large"
                 FontAttributes="Bold"
@@ -55,7 +55,7 @@
             Margin="0,35,0,15"
             Text="Achievements"
             HorizontalOptions="Center"
-            TextColor="#EC6664"
+            TextColor="{StaticResource Primary}"
             FontSize="Large"/>
 
 
@@ -63,9 +63,9 @@
                 Margin="0,10,0,0"
                 WidthRequest="250"
                 HeightRequest="50"
-                BackgroundColor="#087E8B"
+                BackgroundColor="{StaticResource Secondary}"
                 Text="Fastest Man Alive"
-                TextColor="White"
+                TextColor="{StaticResource White}"
                 FontSize="Medium">
 
                 <Button.Shadow>
@@ -85,9 +85,9 @@
                 Margin="0,10,0,0"
                 WidthRequest="250"
                 HeightRequest="50"
-                BackgroundColor="#087E8B"
+                BackgroundColor="{StaticResource Secondary}"
                 Text="Great Start"
-                TextColor="White"
+                TextColor="{StaticResource White}"
                 FontSize="Medium">
 
                 <Button.Shadow>
@@ -104,9 +104,9 @@
                 Margin="0,10,0,0"
                 WidthRequest="250"
                 HeightRequest="50"
-                BackgroundColor="#087E8B"
+                BackgroundColor="{StaticResource Secondary}"
                 Text="Snail's Pace"
-                TextColor="White"
+                TextColor="{StaticResource White}"
                 FontSize="Medium">
 
                 <Button.Shadow>
@@ -123,7 +123,7 @@
 
 
         <VerticalStackLayout>
-            <Button Margin="0,0,0,5" Text="High Score" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+            <Button Margin="0,0,0,5" Text="High Score" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
                 <Button.Shadow>
                     <Shadow
                         Opacity="0.2"
@@ -133,7 +133,7 @@
                         />
                 </Button.Shadow>
             </Button>
-            <Button Margin="0,0,0,5" Text="Achivements" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+            <Button Margin="0,0,0,5" Text="Achivements" FontSize="Medium" FontAttributes="Bold" WidthRequest="220" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
                 <Button.Shadow>
                     <Shadow
                         Opacity="0.2"
@@ -143,7 +143,7 @@
                         />
                 </Button.Shadow>
             </Button>
-            <Button Text="Play Again" FontSize="Medium" FontAttributes="Bold" WidthRequest="250" HeightRequest="50" TextColor="White" BackgroundColor="#EC6664">
+            <Button Text="Play Again" FontSize="Medium" FontAttributes="Bold" WidthRequest="250" HeightRequest="50" TextColor="{StaticResource White}" BackgroundColor="{StaticResource Primary}">
                 <Button.Shadow>
                     <Shadow
                         Opacity="0.2"
