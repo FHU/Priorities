@@ -20,7 +20,7 @@
                 <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
+            <Label Grid.Column="1" Padding="-10" LineBreakMode="NoWrap" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text=" " FontSize="40"/>
