@@ -9,16 +9,16 @@
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GetReadyPageViewModel"
              Shell.NavBarIsVisible="False">
-    
 
-        <Grid Padding="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+
+    <Grid Padding="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
         <!-- Top Bar with App Name -->
         <Label
@@ -30,77 +30,78 @@
                 VerticalTextAlignment="Center"
                 BackgroundColor="#404040"
                 HeightRequest="130">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="P"
                             TextColor="{StaticResource PrimaryRed}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="R"
                             TextColor="{StaticResource SecondaryGreen}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="I"
                             TextColor="{StaticResource SecondaryLightBlue}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="O"
                             TextColor="{StaticResource SecondaryBlue}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="R"
                             TextColor="{StaticResource SecondaryGreen}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="I"
                             TextColor="{StaticResource PrimaryRed}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="T"
                             TextColor="{StaticResource SecondaryLightBlue}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="I"
                             TextColor="{StaticResource SecondaryGreen}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="E"
                             TextColor="{StaticResource SecondaryLightBlue}" />
-                        <Span
+                    <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="S"
                             TextColor="{StaticResource PrimaryRed}" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
 
         <!-- Score and Round Number -->
         <!-- Score and Round Number -->
-<Grid Grid.Row="1"
+        <Grid Grid.Row="1"
       HorizontalOptions="FillAndExpand"
       VerticalOptions="Center"
       BackgroundColor="#EC6664"
       HeightRequest="60"
       Margin="0"
       Padding="5">
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="Auto"/>
-        <ColumnDefinition Width="30"/> <!-- This column acts as the spacer -->
-        <ColumnDefinition Width="Auto"/>
-    </Grid.ColumnDefinitions>
-             <Label Grid.Column="0"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="30"/>
+                <!-- This column acts as the spacer -->
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
            FontSize="36"
            TextColor="White"
            HorizontalTextAlignment="Center"
@@ -111,9 +112,9 @@
            FontFamily="CoinyRegular"/>
 
 
-    <!-- The empty column here serves as the space between the labels -->
+            <!-- The empty column here serves as the space between the labels -->
 
-    <Label Grid.Column="2"
+            <Label Grid.Column="2"
            FontSize="20"
            TextColor="White"
            HorizontalTextAlignment="Center"
@@ -122,43 +123,41 @@
            TranslationY="5"
            Text="Round 1/10"
            FontFamily="CoinyRegular"/>
-</Grid>
+        </Grid>
 
         <!-- Pass the Phone Header -->
-        <!--<Label Text="Pass the Phone to...."
+        <Label Text="Pass the Phone to...."
                FontFamily="CoinyRegular"
                Grid.Row="2"
                Margin="20"
                HorizontalOptions="Center"
                FontSize="28"
                TextColor="#404040"
-               TranslationY="30"/>-->
+               TranslationY="30"/>
 
-            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" Grid.Row="2"/>
 
         <!--User Profile and Name-->
         <VerticalStackLayout Grid.Row="3"
                      HorizontalOptions="Center"
                      Spacing="0"
                      VerticalOptions="Center"
-                     BackgroundColor="red"
                      >
 
 
 
 
-             <!--Circle Frame for Profile Picture Placeholder-->
-            <Frame WidthRequest="160"
-                   HeightRequest="160"
-                   CornerRadius="80"
+            <!--Circle Frame for Profile Picture Placeholder-->
+            <Frame WidthRequest="250"
+                   HeightRequest="250"
+                   CornerRadius="125"
                    BackgroundColor="Transparent"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    
-                   IsClippedToBounds="False">
+                   IsClippedToBounds="True">
 
 
-                 <Image Source="{Binding CurrentPlayer.ImageName}"
+                <Image Source="{Binding CurrentPlayer.ImageName}"
                         Aspect="AspectFill"
                         WidthRequest="250"
                         HeightRequest="250"
@@ -166,15 +165,14 @@
 
             </Frame>
 
-             
-            
-            <Label Text="{Binding CurrentPlayer.Name}" FontSize="36" TextColor="#404040" HorizontalOptions="Center" FontFamily="CoinyRegular"/>
+            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" Grid.Row="2"/>
+
         </VerticalStackLayout>
 
 
         <!-- Ready Button -->
         <Button Text="READY?"
-                Grid.Row="3"
+                Grid.Row="4"
                 Margin="20"
                 
                 TextColor="White"
@@ -182,28 +180,24 @@
                 FontSize="30"
                 FontFamily="CoinyRegular"
                 CornerRadius="10"
-                HeightRequest="70"
+                HeightRequest="80"
                 WidthRequest="320"
                 VerticalOptions="End"
                 HorizontalOptions="FillAndExpand"/>
 
-
-
-
-
-
-        <Image Source="shapes.png"
+        <Image Source="shapes.jpg"
                         Aspect="AspectFill"
                         WidthRequest="400"
                         HeightRequest="200"
                         Grid.Row="4"
                         VerticalOptions="End"
+                        ZIndex="-1"
                         />
 
 
 
-        </Grid>
+    </Grid>
 
-    
-    
+
+
 </ContentPage>
