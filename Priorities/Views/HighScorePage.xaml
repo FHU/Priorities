@@ -48,8 +48,8 @@
                                 >
                             <Border.Shadow>
                                 <Shadow Brush="Black"
-                                        Offset="0, 2"
-                                        Opacity="0.8"/> 
+                                        Offset="0, 1"
+                                        Opacity="0.5"/> 
                             </Border.Shadow>
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="26" />
@@ -84,7 +84,7 @@
                                             Stroke="#000000"
                                             StrokeThickness="1"
                                             Margin="4"
-                                            MinimumWidthRequest="85"
+                                            WidthRequest="85"
                                             BackgroundColor="{StaticResource SecondaryLightBlue}"
                                             >
                                             <Border.StrokeShape>
@@ -201,7 +201,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
+            <Rectangle BackgroundColor="{StaticResource OffWhite}" MinimumHeightRequest="10"/>
         </VerticalStackLayout>
 
 

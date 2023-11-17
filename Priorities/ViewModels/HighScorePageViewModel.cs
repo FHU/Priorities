@@ -118,16 +118,17 @@ namespace Priorities.ViewModels
                 Date = DateTime.Now,
                 Team = new Team()
                 {
-                    Name = "English Major",
+                    Name = "EnglishMajors",
                     Players = new List<Player>
                 {
-                            new Player() { Name="Hannah", ImageName="kenan.jpeg" },
+                            new Player() { Name="Hannah", ImageName="raccoon.jpg" },
+                            new Player() { Name="Ashley", ImageName="kenan.jpeg" },
                 }
                 },
                 Achievements = new ObservableCollection<Achievement>
                 {
                             new Achievement() { Title="Jane Austen", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
-                            new Achievement() { Title="Single Eagle", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+                            new Achievement() { Title="Book Club", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
   },
             };
             GameResults.Add(gameResult5);
