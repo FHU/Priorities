@@ -28,7 +28,7 @@
                     </Label.FormattedText>
                 </Label>
                 <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
-                <Rectangle BackgroundColor="{StaticResource OffWhite}" MinimumHeightRequest="30"/>
+                <Rectangle BackgroundColor="{StaticResource OffWhite}" MinimumHeightRequest="25"/>
             </VerticalStackLayout>
             
 
