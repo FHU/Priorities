@@ -76,7 +76,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.Row="1"  Source="shapes.png" VerticalOptions="End"/>
+                <Image Grid.Row="1"  Source="shapes" VerticalOptions="End" Margin="0,0,0,-30" Aspect="AspectFill"/>
 
                 <Grid Grid.Row="1" VerticalOptions="End" Margin="0,0,0,25">
                     <Grid.RowDefinitions>
