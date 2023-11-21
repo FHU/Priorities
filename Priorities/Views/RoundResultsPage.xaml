@@ -12,9 +12,14 @@
     Shell.BackgroundColor="{StaticResource DarkGray}"
     Shell.NavBarIsVisible="False">
 
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
+    </ContentPage.Behaviors>
+
     <!--  main  -->
     <Grid
         Padding="0,0,0,12"
+        
         BackgroundColor="{StaticResource OffWhite}"
         RowSpacing="0">
 
@@ -28,12 +33,14 @@
         </Grid.RowDefinitions>
 
         <!--  page title  -->
-        <Grid Grid.Row="0" BackgroundColor="{StaticResource DarkGray}">
+        <Grid Grid.Row="0" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="4*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+
+            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/> 
 
             <Label
                 Grid.Column="1"

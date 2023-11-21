@@ -31,8 +31,8 @@ namespace Priorities.ViewModels
             /*Abbie*/
             var playerOne = new Player
             {
-                Name = "Gavin Boler",
-                ImageName = "dotnet_bot.png"
+                Name = "K-Dawg",
+                ImageName = "kenan.jpeg"
             };
 
             playerName = playerOne.Name;
@@ -48,11 +48,12 @@ namespace Priorities.ViewModels
             Priorities.Add(new Priority("Calculus"));
 
             /*Gavin*/
-            roundNumber = "1 / 10";
+            roundNumber = "1/10";
 
             /*Priscilla*/
-            timer = "0:59";
+            timer = "0:43";
             score = "0";
+
 
         }
     }
