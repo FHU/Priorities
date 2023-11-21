@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Reflection;
-using System.Security.Cryptography;
-using System.Threading.Tasks;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.Maui.Controls.PlatformConfiguration;
-using Priorities.Models;
 using Priorities.Views;
+using System.Collections.ObjectModel;
 
 namespace Priorities.ViewModels
 {
@@ -45,7 +39,7 @@ namespace Priorities.ViewModels
             new Player{PlayerName="Joe", ImagePath="rando1.jpg"},
             new Player{PlayerName="Mo", ImagePath="rando2.jpg"},
             new Player{PlayerName="Shmo", ImagePath="rando3.jpg"},
-            new Player{PlayerName = "Tractor", ImagePath = "rando4.jpg" },
+            new Player{PlayerName = "JOhnDrTractor", ImagePath = "rando4.jpg" },
             new Player{PlayerName="Joe", ImagePath="rando1.jpg"},
             new Player{PlayerName="Mo", ImagePath="rando2.jpg"},
             new Player{PlayerName="Shmo", ImagePath="rando3.jpg"},
