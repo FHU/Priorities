@@ -21,7 +21,8 @@
     <Color x:Key="SecondaryBlue">#38AECC</Color>
     <Color x:Key="SecondaryLightBlue">#74C1DD</Color>
     <Color x:Key="SecondaryDarkBlue">#337096</Color>
-<!--  -->
+    <Color x:Key="OffWhite2">#EBEBE5</Color>
+    <!--  -->
 
     <Color x:Key="Gray100">#E1E1E1</Color>
     <Color x:Key="Gray200">#C8C8C8</Color>

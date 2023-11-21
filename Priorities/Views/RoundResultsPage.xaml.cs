@@ -11,4 +11,9 @@ public partial class RoundResultsPage : ContentPage
 		InitializeComponent();
 		BindingContext = vm;
 	}
+
+    void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+		Shell.Current.FlyoutIsPresented = true;
+    }
 }

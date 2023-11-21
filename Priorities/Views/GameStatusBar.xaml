@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Priorities.Views.GameStatusBar">
+
+    <Grid RowDefinitions="*" ColumnDefinitions="*,*" Row="0" Padding="16,4" BackgroundColor="{StaticResource Primary}">
+        <HorizontalStackLayout Grid.ColumnSpan="2" VerticalOptions="Center" Margin="0,0,0,0">
+            <Label
+                    Text="{Binding Score}"
+                    TextColor="{StaticResource OffWhite2}"
+                    FontSize="40"
+                    Margin="0,0,4,0"
+                    FontFamily="ConcertOneRegular"
+                    />
+            <Label
+                    Text="points"
+                    TextColor="{StaticResource OffWhite2}"
+                    FontSize="24"
+                    Margin="0,0,0,4"
+                    Opacity="0.8"
+                    VerticalOptions="End"
+                    FontFamily="ConcertOneRegular"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,0,0">
+            <Label
+                    VerticalOptions="End"
+                    TextColor="{StaticResource OffWhite2}"
+                    Text="round"
+                    Opacity="0.8"
+                    FontSize="24"
+                    Margin="0,0,4,4"
+                    FontFamily="ConcertOneRegular"/>
+
+            <Label
+                    VerticalOptions="End"
+                    Margin="0"
+                    TextColor="{StaticResource OffWhite2}"
+                    Text="{Binding RoundNumber}"
+                    FontSize="40"
+                    FontFamily="ConcertOneRegular"
+                />
+        </HorizontalStackLayout>
+    </Grid>
+</ContentView>
+
