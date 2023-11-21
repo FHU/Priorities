@@ -19,7 +19,7 @@
     </ContentPage.Behaviors>
 
     <!-- Grid wrapper for the entire game page -->
-    <Grid RowDefinitions="100, *" >
+    <Grid RowDefinitions="80, *" >
         <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
             <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/>
             <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
@@ -43,7 +43,7 @@
             </Label>
         </Grid>
 
-        <Grid Grid.Row="1" RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10">
+        <Grid Grid.Row="1" RowDefinitions="60,auto,*" ColumnDefinitions="*" RowSpacing="10">
 
             <ContentView Grid.Row="0" >
                 <views:GameStatusBar />
