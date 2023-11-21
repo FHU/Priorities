@@ -5,11 +5,12 @@
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
-             x:DataType="viewmodels:GamePageViewModel"
+             xmlns:views="clr-namespace:Priorities.Views"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+
+             x:DataType="viewmodels:GamePageViewModel"
              Title="GamePage"
              Shell.NavBarIsVisible="False"
-             
              Shell.BackgroundColor="{StaticResource DarkGray}"
              BackgroundColor="{StaticResource OffWhite}">
 
@@ -20,7 +21,8 @@
     <!-- Grid wrapper for the entire game page -->
     <Grid RowDefinitions="100, *" >
         <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
-            <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
+            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/>
+            <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Start">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -33,6 +35,9 @@
                         <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                         <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                         <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
@@ -40,9 +45,13 @@
 
         <Grid Grid.Row="1" RowDefinitions="0.10*,0.13*,0.77*" ColumnDefinitions="*" RowSpacing="10">
 
+            <ContentView Grid.Row="0" >
+                <views:GameStatusBar />
+            </ContentView>
+
             <!-- [Header: Abbie Vance] -->
             <!-- One Row / Two Columns -->
-            <Grid RowDefinitions="*" ColumnDefinitions="*,*" Row="0" Padding="16,4" BackgroundColor="{StaticResource Primary}">
+            <!--<Grid RowDefinitions="*" ColumnDefinitions="*,*" Row="0" Padding="16,4" BackgroundColor="{StaticResource Primary}">
                 <HorizontalStackLayout Grid.ColumnSpan="2" VerticalOptions="Center" Margin="0,0,0,0">
                     <Label
                     Text="{Binding Score}"
@@ -80,7 +89,7 @@
                     FontFamily="ConcertOneRegular"
                 />
                 </HorizontalStackLayout>
-            </Grid>
+            </Grid>-->
 
             <!-- [Guesser / Prioritize Label: Priscilla Harris] -->
             <!-- One Row / Three Columns -->
