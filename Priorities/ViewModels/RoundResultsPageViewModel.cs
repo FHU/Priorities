@@ -16,6 +16,9 @@ namespace Priorities.ViewModels
         private int round;
 
         [ObservableProperty]
+        private int totalRounds;
+
+        [ObservableProperty]
         private int score;
 
         [ObservableProperty]
@@ -41,7 +44,8 @@ namespace Priorities.ViewModels
             PlayerRanking = new List<string> { i1, i2, i3, i4, i5 };
             GroupRanking = new List<string> { i1, i2, i4, i3, i5 };
             Round = 1;
-            Score = 0;
+            Score = 500;
+            TotalRounds = 10;
 
             for (int i = 5; i > 0; i--)
             {

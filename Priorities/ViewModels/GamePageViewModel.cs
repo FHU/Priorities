@@ -6,26 +6,26 @@ namespace Priorities.ViewModels
 {
     public partial class GamePageViewModel : ObservableObject
     {
-        /*Player Properties (Abbie Vance)*/
         [ObservableProperty]
         public string playerName;
 
         [ObservableProperty]
         public string playerImage;
 
-        /*Priority Card Properties (Priscilla Harris)*/
-        public ObservableCollection<Priority> Priorities { get; set; }
-
-        /*Round and Score Properties (Gavin Boler)*/
         [ObservableProperty]
-        public string roundNumber;
+        public int round;
 
-        /*Timer (Priscilla Harris)*/
+        [ObservableProperty]
+        private int totalRounds;
+
         [ObservableProperty]
         public string score;
 
         [ObservableProperty]
         public string timer;
+
+        public ObservableCollection<Priority> Priorities { get; set; }
+
         public GamePageViewModel()
         {
             /*Abbie*/
@@ -48,7 +48,8 @@ namespace Priorities.ViewModels
             Priorities.Add(new Priority("Calculus"));
 
             /*Gavin*/
-            roundNumber = "1/10";
+            Round = 1;
+            TotalRounds = 10;
 
             /*Priscilla*/
             timer = "0:43";

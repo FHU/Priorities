@@ -36,7 +36,15 @@
                     VerticalOptions="End"
                     Margin="0"
                     TextColor="{StaticResource OffWhite2}"
-                    Text="{Binding RoundNumber}"
+                    Text="{Binding Round}"
+                    FontSize="40"
+                    FontFamily="ConcertOneRegular"
+                />
+             <Label
+                    VerticalOptions="End"
+                    Margin="0"
+                    TextColor="{StaticResource OffWhite2}"
+                    Text="{Binding TotalRounds, StringFormat='/{0}'}"
                     FontSize="40"
                     FontFamily="ConcertOneRegular"
                 />

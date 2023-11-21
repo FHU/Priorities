@@ -25,7 +25,7 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="80" />
-            <RowDefinition Height="auto" />
+            <RowDefinition Height="60" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="5*" />
             <RowDefinition Height="*" />
@@ -57,113 +57,45 @@
                         <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
-                            Text="A"
+                            Text="E"
                             TextColor="{StaticResource SecondaryGreen}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="N"
-                            TextColor="{StaticResource SecondaryLightBlue}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="K"
-                            TextColor="{StaticResource SecondaryBlue}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="I"
-                            TextColor="{StaticResource SecondaryGreen}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="N"
-                            TextColor="{StaticResource PrimaryRed}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="G"
-                            TextColor="{StaticResource SecondaryLightBlue}" />
                         <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="S"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="U"
+                            TextColor="{StaticResource SecondaryBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="L"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="T"
+                            TextColor="{StaticResource PrimaryRed}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="S"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text=""
                             TextColor="{StaticResource SecondaryGreen}" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
         </Grid>
 
-        <!--  pts and round  -->
-        <Grid
-            Grid.Row="1"
-            Padding="10"
-            BackgroundColor="{StaticResource PrimaryRed}"
-            HeightRequest="60"
-            RowSpacing="0"
-            VerticalOptions="Center">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto" />
-            </Grid.ColumnDefinitions>
-
-            <!--  score number  -->
-            <Label
-                Grid.Column="0"
-                FontFamily="ConcertOneRegular"
-                FontSize="32"
-                HorizontalOptions="Center"
-                Text="{Binding Score}"
-                TextColor="{StaticResource OffWhite}"
-                VerticalOptions="Center" />
-
-            <!--  score label  -->
-            <Label
-                Grid.Column="1"
-                Margin="0,0,0,5"
-                FontFamily="ConcertOneRegular"
-                FontSize="20"
-                Text=" points"
-                TextColor="{StaticResource OffWhite}"
-                VerticalOptions="End" />
-
-            <!--  round label  -->
-            <Label
-                Grid.Column="3"
-                Margin="0,0,0,5"
-                FontFamily="ConcertOneRegular"
-                FontSize="20"
-                HorizontalOptions="Center"
-                Text="round "
-                TextColor="{StaticResource OffWhite}"
-                VerticalOptions="End" />
-
-            <!--  round number  -->
-            <Label
-                Grid.Column="4"
-                FontFamily="ConcertOneRegular"
-                FontSize="32"
-                HorizontalOptions="Center"
-                Text="{Binding Round}"
-                TextColor="#EBEBE5"
-                VerticalOptions="Center" />
-
-            <!--  total rounds number  -->
-            <Label
-                Grid.Column="5"
-                FontFamily="ConcertOneRegular"
-                FontSize="32"
-                HorizontalOptions="Center"
-                Text="/5"
-                TextColor="{StaticResource OffWhite}"
-                VerticalOptions="Center" />
+        <Grid Grid.Row="1">
+            <views:GameStatusBar />
         </Grid>
 
         <!--  player  -->
