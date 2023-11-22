@@ -1,4 +1,7 @@
-﻿namespace Priorities;
+﻿using Priorities.ViewModels;
+using Priorities.Views;
+
+namespace Priorities;
 
 public partial class App : Application
 {

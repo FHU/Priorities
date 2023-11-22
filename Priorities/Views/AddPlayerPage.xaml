@@ -4,23 +4,25 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Priorities.Views.AddPlayerPage"
              Shell.FlyoutBehavior="Flyout"
-             Shell.BackgroundColor="{StaticResource DarkGray}"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
-             BackgroundColor="{StaticResource OffWhite}"
+             xmlns:views="clr-namespace:Priorities.Views"
+             
              x:DataType="viewmodels:AddPlayersPageViewModel"
+             Title="AddPlayerPage"
+             Shell.NavBarIsVisible="False"
+             Shell.BackgroundColor="{StaticResource DarkGray}"
+             BackgroundColor="{StaticResource OffWhite}"
              >
-<!-- Added this to make changes to the top-->
-    <Shell.TitleView>
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto" />
-            </Grid.ColumnDefinitions>
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}"/>
+    </ContentPage.Behaviors>
 
-            <Label Grid.Column="1" Padding="-10" LineBreakMode="NoWrap" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="{StaticResource DarkGray}">
+    <Grid RowDefinitions="80, *">
+        <Grid Grid.Row="0" ColumnDefinitions="auto,auto,auto" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
+            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/>
+            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Center" VerticalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text=" " FontSize="40"/>
@@ -38,39 +40,15 @@
                 </Label.FormattedText>
             </Label>
         </Grid>
-        
-        
-    </Shell.TitleView>
 
 
-    <ContentView>
-        <Grid Padding="0" BackgroundColor="{StaticResource White}">
+        <Grid Grid.Row="1" Padding="0" BackgroundColor="{StaticResource White}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="160"/>
             </Grid.RowDefinitions>
-            <!--Header-->
-            <!--<Grid Grid.Row="1" ColumnSpacing="3" RowSpacing="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                </Grid.ColumnDefinitions>
-
-                <Button Grid.Row="0"
-                        Grid.Column="0"
-                        Text="Hamburger" />
-
-                <Label Grid.Row="0"
-                       Grid.Column="1"
-                       Text="Add Player" />
-
-                <Button Grid.Row="0"
-                        Grid.Column="2"
-                        Text="X" />
-            </Grid>-->
 
             <!--Main Section-->
 
@@ -107,8 +85,8 @@
                        FontFamily="CoinyRegular"
                        FontAttributes="Bold"
                        TextColor="{StaticResource OffWhite}"
-                       
-                       BackgroundColor="{StaticResource Secondary}"
+               
+               BackgroundColor="{StaticResource Secondary}"
                 />
             </Grid>
 
@@ -130,32 +108,32 @@
 
                 <!--Avatar Pic-->
                 <toolkit:AvatarView Grid.Row="1"
-                                    ImageSource="avatar_pic.jpg"
-                                    HeightRequest="224"
-                                    WidthRequest="236"
-                                    CornerRadius="150"/>
+                            ImageSource="avatar_pic.jpg"
+                            HeightRequest="224"
+                            WidthRequest="236"
+                            CornerRadius="150"/>
 
 
                 <!--<Frame Grid.Row="1"
-                   HeightRequest="300"
-                   WidthRequest="300"
-                   CornerRadius="150"
-                   HorizontalOptions="Center"
-                   IsClippedToBounds="True"
-                   Padding="3"
-                   BorderColor="Gray"
-                   Margin="0,0,0,0">
+                       HeightRequest="300"
+                       WidthRequest="300"
+                       CornerRadius="150"
+                       HorizontalOptions="Center"
+                       IsClippedToBounds="True"
+                       Padding="3"
+                       BorderColor="Gray"
+                       Margin="0,0,0,0">
 
-                <Image
-                    Aspect="AspectFit"
-                    Source="kenan.jpeg"
-                    SemanticProperties.Description="Kenan Casey Staring into your soul"
-                    HeightRequest="300"
-                    WidthRequest="300"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center" />
-                </Frame>-->
-                
+                    <Image
+                        Aspect="AspectFit"
+                        Source="kenan.jpeg"
+                        SemanticProperties.Description="Kenan Casey Staring into your soul"
+                        HeightRequest="300"
+                        WidthRequest="300"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" />
+                    </Frame>-->
+
                 <!--Retake Button-->
                 <Button Grid.Row="2"
                         Text="RETAKE"
@@ -168,13 +146,13 @@
                         HeightRequest="47"
                         WidthRequest="236"
                         TextColor="White">
-                <Button.Shadow>
-                        <Shadow Opacity="0.5"
+                            <Button.Shadow>
+                                <Shadow Opacity="0.5"
                                 Radius="15"
                                 Offset="10,10"
                                 Brush="{StaticResource Gray400}"
                         />
-                </Button.Shadow>
+                            </Button.Shadow>
                 </Button>
             </Grid>
 
@@ -197,13 +175,13 @@
                             FontAttributes="Bold"
                             BackgroundColor="{StaticResource Primary}"
                             TextColor="{StaticResource White}">
-                        <Button.Shadow>
-                            <Shadow Opacity="0.5"
+                                <Button.Shadow>
+                                    <Shadow Opacity="0.5"
                                 Radius="15"
                                 Offset="10,10"
                                 Brush="{StaticResource Gray400}"
         />
-                        </Button.Shadow>
+                                </Button.Shadow>
                     </Button>
 
                     <!--<Image Source="shapes.png"
@@ -215,19 +193,34 @@
                 </Grid>
 
             </StackLayout>
-            
+
+            <Image Source="shapes.png"
+                   Aspect="AspectFill"
+                   WidthRequest="400"
+                   HeightRequest="180"
+                   Grid.Row="3"
+                   VerticalOptions="End"
+                   ZIndex="-1"/>
+
             <!--Bottom Style-->
-            <StackLayout Grid.Row="3"
-                         VerticalOptions="End">
+            <!--<StackLayout Grid.Row="3"
+                        VerticalOptions="End">
 
                 <Image Source="shapes.png"
-                       WidthRequest="460"
-                       HeightRequest="180"/>
+                       WidthRequest="360"
+                       HeightRequest=""/>
 
-            </StackLayout>
+            </StackLayout>-->
 
 
         </Grid>
-    </ContentView>
+
+
+    </Grid>
+    
+    
+    
+
+    
 
 </ContentPage>
