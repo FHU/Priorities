@@ -1,4 +1,6 @@
 namespace Priorities.Views;
+
+using Camera.MAUI;
 using Priorities.ViewModels;
 
 public partial class AddPlayerPage : ContentPage
@@ -15,4 +17,19 @@ public partial class AddPlayerPage : ContentPage
         Shell.Current.FlyoutIsPresented = true;
     }
 
+    void cameraView_CamerasLoaded(System.Object sender, System.EventArgs e)
+    {
+        cameraView.Camera = cameraView.Cameras.First();
+
+        MainThread.BeginInvokeOnMainThread(async () =>
+        {
+            await cameraView.StopCameraAsync();
+            var result = await cameraView.StartCameraAsync();
+        });
+    }
+
+    void Button_Clicked(System.Object sender, System.EventArgs e)
+    {
+        avatarPic.Source = cameraView.GetSnapShot(Camera.MAUI.ImageFormat.JPEG);
+    }
 }

@@ -7,7 +7,7 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              xmlns:views="clr-namespace:Priorities.Views"
-             
+             xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
              x:DataType="viewmodels:AddPlayersPageViewModel"
              Title="AddPlayerPage"
              Shell.NavBarIsVisible="False"
@@ -107,11 +107,14 @@
                        TextColor="{StaticResource Primary}"/>
 
                 <!--Avatar Pic-->
-                <toolkit:AvatarView Grid.Row="1"
+                <cv:CameraView x:Name="cameraView" HeightRequest="200" WidthRequest="200"
+                               CamerasLoaded="cameraView_CamerasLoaded"/>
+                <Image x:Name="avatarPic" HeightRequest="200" WidthRequest="200"/>
+                <!--<toolkit:AvatarView Grid.Row="1"
                             ImageSource="avatar_pic.jpg"
                             HeightRequest="224"
                             WidthRequest="236"
-                            CornerRadius="150"/>
+                            CornerRadius="150"/>-->
 
 
                 <!--<Frame Grid.Row="1"
@@ -137,6 +140,7 @@
                 <!--Retake Button-->
                 <Button Grid.Row="2"
                         Text="RETAKE"
+                        Clicked="Button_Clicked"
                         FontSize="17"
                         FontAttributes="Bold"
                         FontFamily="CoinyRegular"
