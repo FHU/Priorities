@@ -109,8 +109,8 @@
                 <!--Avatar Pic-->
                 
                 <Frame Grid.Row="1"
-                       HeightRequest="300"
-                       WidthRequest="300"
+                       HeightRequest="250"
+                       WidthRequest="250"
                        CornerRadius="150"
                        HorizontalOptions="Center"
                        IsClippedToBounds="True"
@@ -121,8 +121,8 @@
 
                     <Image Grid.Row="1"
                        x:Name="avatarPic"
-                       HeightRequest="300"
-                       WidthRequest="300"
+                       HeightRequest="250"
+                       WidthRequest="250"
                        />
 
                 </Frame>
@@ -130,8 +130,8 @@
                 
 
                 <Frame Grid.Row="1"
-                       HeightRequest="300"
-                       WidthRequest="300"
+                       HeightRequest="250"
+                       WidthRequest="250"
                        CornerRadius="150"
                        HorizontalOptions="Center"
                        IsClippedToBounds="True"
@@ -140,7 +140,7 @@
                        BackgroundColor="Transparent"
                        Margin="0,0,0,0">
 
-                    <cv:CameraView x:Name="cameraView" HeightRequest="300" WidthRequest="300"
+                    <cv:CameraView x:Name="cameraView" HeightRequest="250" WidthRequest="250"
                                CamerasLoaded="cameraView_CamerasLoaded"/>
 
                 </Frame>
