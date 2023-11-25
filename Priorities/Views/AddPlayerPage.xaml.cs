@@ -19,13 +19,23 @@ public partial class AddPlayerPage : ContentPage
 
     void cameraView_CamerasLoaded(System.Object sender, System.EventArgs e)
     {
-        cameraView.Camera = cameraView.Cameras.First();
 
-        MainThread.BeginInvokeOnMainThread(async () =>
+        if( cameraView.Cameras.Count > 0)
         {
-            await cameraView.StopCameraAsync();
-            var result = await cameraView.StartCameraAsync();
-        });
+            cameraView.Camera = cameraView.Cameras.First();
+
+            MainThread.BeginInvokeOnMainThread(async () =>
+            {
+                await cameraView.StopCameraAsync();
+                var result = await cameraView.StartCameraAsync();
+            });
+        }
+        else
+        {
+            Console.WriteLine("No CAMERAS");
+        }
+
+       
     }
 
     void Button_Clicked(System.Object sender, System.EventArgs e)
