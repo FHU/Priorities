@@ -63,12 +63,12 @@
                         HorizontalOptions="Center"
                         BackgroundColor="{StaticResource Secondary}"
                         WidthRequest="296"
-                        HeightRequest="70"
+                        HeightRequest="60"
                         CornerRadius="25"
                         BorderColor="Transparent">
                 </Frame>
                 <Label Grid.Row="0"
-                       Padding="2"
+                       Padding="1"
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
@@ -78,10 +78,11 @@
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
                        HeightRequest="50"
-                       WidthRequest="200"
+                       WidthRequest="260"
                        MaxLength="15"
                        FontSize="24"
                        HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
                        FontFamily="CoinyRegular"
                        FontAttributes="Bold"
                        TextColor="{StaticResource OffWhite}"
@@ -100,6 +101,7 @@
 
                 <Label Grid.Row="0"
                        Text="Avatar Pic"
+                       Padding="1"
                        HorizontalOptions="Center"
                        FontSize="28"
                        FontFamily="CoinyRegular"
@@ -114,7 +116,7 @@
                        CornerRadius="150"
                        HorizontalOptions="Center"
                        IsClippedToBounds="True"
-                       Padding="2"
+                       Padding="4"
                        BorderColor="Transparent"
                        BackgroundColor="Transparent"
                        Margin="0,0,0,0">
@@ -225,7 +227,7 @@
                             FontFamily="ConcertOneRegular"
                             Grid.Row="0"
                             FontSize="32"
-                            HeightRequest="80"
+                            HeightRequest="70"
                             WidthRequest="296"
                             CornerRadius="25"
                             FontAttributes="Bold"
