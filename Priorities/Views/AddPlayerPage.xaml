@@ -191,9 +191,9 @@
                         x:Name="smile"
                         Clicked="Button_Clicked"
                         CharacterSpacing="2"
-                        FontSize="17"
+                        FontSize="20"
                         FontAttributes="Bold"
-                        FontFamily="CoinyRegular"
+                        FontFamily="ConcertOneRegular"
                         VerticalOptions="Center"
                         BackgroundColor= "{StaticResource Tertiary}"
                         CornerRadius="15"
@@ -222,9 +222,9 @@
 
                     <Button Text="ADD PLAYER"
                             ImageSource="whiteadd.png"
-                            FontFamily="CoinyRegular"
+                            FontFamily="ConcertOneRegular"
                             Grid.Row="0"
-                            FontSize="30"
+                            FontSize="32"
                             HeightRequest="80"
                             WidthRequest="296"
                             CornerRadius="25"
@@ -233,10 +233,10 @@
                             TextColor="{StaticResource White}">
                                 <Button.Shadow>
                                     <Shadow Opacity="0.5"
-                                Radius="15"
-                                Offset="10,10"
-                                Brush="{StaticResource Gray400}"
-        />
+                                        Radius="15"
+                                        Offset="10,10"
+                                        Brush="{StaticResource Gray400}"
+                                    />
                                 </Button.Shadow>
                     </Button>
 

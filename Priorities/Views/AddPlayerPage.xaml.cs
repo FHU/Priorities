@@ -20,7 +20,7 @@ public partial class AddPlayerPage : ContentPage
     void cameraView_CamerasLoaded(System.Object sender, System.EventArgs e)
     {
 
-        if( cameraView.Cameras.Count > 0)
+        if (cameraView.Cameras.Count > 0)
         {
             // Use this for real cameras
             // cameraView.Camera = cameraView.Cameras[1];
