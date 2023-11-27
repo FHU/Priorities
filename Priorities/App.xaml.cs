@@ -1,4 +1,7 @@
-﻿namespace Priorities;
+﻿using Priorities.ViewModels;
+using Priorities.Views;
+
+namespace Priorities;
 
 public partial class App : Application
 {
@@ -6,7 +9,8 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+
+        MainPage = new AppShell();
 
         Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
         {
@@ -15,5 +19,6 @@ public partial class App : Application
 #endif
         });
     }
+
 }
 
