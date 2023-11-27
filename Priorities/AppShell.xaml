@@ -4,9 +4,9 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Priorities"
-    xmlns:views="clr-namespace:Priorities.Views"
-    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
     xmlns:models="clr-namespace:Priorities.Models"
+    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+    xmlns:views="clr-namespace:Priorities.Views"
     Shell.FlyoutBehavior="Flyout">
 
     <Shell.FlyoutHeader >
@@ -22,10 +22,40 @@
 
     </Shell.FlyoutFooter>
 
-    <ShellContent
+     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate views:AddPlayerPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate views:HomePage}"
+        Route="HomePage" />
+
+    <ShellContent
+        Title="GamePage"
+        ContentTemplate="{DataTemplate views:GamePage}"
+        Route="GamePage" />
+
+    <ShellContent
+        Title="GameResultsPage"
+        ContentTemplate="{DataTemplate views:GameResultsPage}"
+        Route="GameResultsPage" />
+
+    <ShellContent
+        Title="GetReadyPage"
+        ContentTemplate="{DataTemplate views:GetReadyPage}"
+        Route="GetReadyPage" />
+
+    <ShellContent
+        Title="HighScorePage"
+        ContentTemplate="{DataTemplate views:HighScorePage}"
+        Route="HighScorePage" />
+
+    <ShellContent
+        Title="PlayersPage"
+        ContentTemplate="{DataTemplate views:PlayersPage}"
+        Route="PlayersPage" />
+
+    <ShellContent
+        Title="RoundResultsPage"
+        ContentTemplate="{DataTemplate views:RoundResultsPage}"
+        Route="RoundResultsPage" />
 
     <ShellContent
         Title="GamePage"
