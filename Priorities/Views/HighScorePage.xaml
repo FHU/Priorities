@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <VerticalStackLayout>
-            <Label Grid.Row="0" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="115" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+            <Label Grid.Row="0" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="H" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -67,7 +67,7 @@
                                             <HorizontalStackLayout>
                                                 <Label Padding="16" VerticalOptions="Center" FontSize="32" FontFamily="CoinyRegular" Text="{Binding Rank}" TextColor="{StaticResource White}"/>
                                                 <VerticalStackLayout Padding="18,16" HorizontalOptions="Start">
-                                                    <Label FontSize="24" Text="{Binding Team.Name}" FontFamily="CoinyRegular" TextColor="{StaticResource White}"/>
+                                                    <Label FontSize="24" Text="{Binding Team.Name}" FontFamily="ConcertOneRegular" TextColor="{StaticResource White}"/>
                                                     <StackLayout BindableLayout.ItemsSource="{Binding Team.Players}"
                                                          Orientation="Horizontal"
                                                          Spacing="-8">
@@ -136,7 +136,7 @@
                                                                    Grid.Column="0"
                                                                    Text="{Binding Title}"
                                                                    TextColor="{StaticResource White}"
-                                                                   FontFamily="CoinyRegular"
+                                                                   FontFamily="ConcertOneRegular"
                                                                    FontSize="20" 
                                                                    VerticalOptions="Center"/>
                                                             <Ellipse Grid.Column="1"
@@ -150,7 +150,7 @@
                                             </BindableLayout.ItemTemplate>
                                             <BindableLayout.EmptyViewTemplate>
                                                 <DataTemplate>
-                                                    <Label Text="No Achievements Earned" FontAttributes="Italic" TextColor="{StaticResource White}" FontSize="15" FontFamily="CoinyRegular"/>
+                                                    <Label Text="No Achievements Earned" FontAttributes="Italic" TextColor="{StaticResource White}" FontSize="15" FontFamily="ConcertOneRegular"/>
                                                 </DataTemplate>
                                             </BindableLayout.EmptyViewTemplate>
                                         </StackLayout>
@@ -186,7 +186,7 @@
                                                             <Label Text="{Binding Name}"
                                             TextColor="{StaticResource White}"
                                             FontSize="14"
-                                            FontFamily="CoinyRegular"
+                                            FontFamily="ConcertOneRegular"
                                             VerticalOptions="Center"/>
                                                         </HorizontalStackLayout>
                                                     </Border>
@@ -195,8 +195,8 @@
                                         </FlexLayout>
 
                                         <HorizontalStackLayout Grid.Row="2" Spacing="5" Padding="5">
-                                            <Label Text="Played:" TextColor="{StaticResource White}" FontFamily="CoinyRegular" FontSize="16"/>
-                                            <Label Text="{Binding Date}" TextColor="{StaticResource White}" FontFamily="CoinyRegular" FontSize="16"/>
+                                            <!--<Label Text="Played:" TextColor="{StaticResource White}" FontFamily="ConcertOneRegular" FontSize="16"/>-->
+                                            <Label Text="{Binding Date}" TextColor="{StaticResource White}" FontFamily="ConcertOneRegular" FontSize="16"/>
                                         </HorizontalStackLayout>
 
                                     </Grid>
