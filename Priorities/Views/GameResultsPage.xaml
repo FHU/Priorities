@@ -24,7 +24,7 @@
                 TextColor="{StaticResource Black}"
                 Margin="0, 0, 140, 5"
                 FontSize="Large"
-                FontFamily="CoinyRegular"
+                FontFamily="ConcertOneRegular"
                 Text="{Binding ElapsedTime.Minutes}"/>
             </VerticalStackLayout>
             
