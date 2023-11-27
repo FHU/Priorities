@@ -3,12 +3,132 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.PlayersPage"
              Title="PlayersPage"
-             xmlns:vm="clr-namespace:Priorities.ViewModels"
-             >
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Shell.FlyoutBehavior="Flyout"
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             xmlns:models="clr-namespace:Priorities.Models"
+             x:DataType="viewmodels:PlayersPageViewModel"
+             BackgroundColor="{StaticResource OffWhite}">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <VerticalStackLayout Grid.Row="0">
+                <Label Grid.Row="0" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="115" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="P" FontSize="48" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                            <Span Text="L" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="A" FontSize="48" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="Y" FontSize="48" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="E" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="R" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="S" FontSize="48" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
+            </VerticalStackLayout>
+
+            <ScrollView Grid.Row="1" Margin="0,15,0,250" BackgroundColor="{StaticResource OffWhite}" Padding="12,0">
+                <CollectionView ItemsSource="{Binding Players}" VerticalOptions="FillAndExpand">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout Padding="8">
+                                <Border Padding="0"  HeightRequest="70" StrokeShape="RoundRectangle 20">
+                                    <!--<Border.Shadow>
+                                        <Shadow Brush="Black"
+                                                Offset="-10,20"
+                                                Radius="30"
+                                                Opacity="0.5" />
+                                    </Border.Shadow>-->
+                                    <FlexLayout Direction="Row" BackgroundColor="{StaticResource SecondaryLightBlue}"  JustifyContent="SpaceBetween" AlignItems="Center">
+                                        <Frame 
+                                               CornerRadius="25"
+                                               IsClippedToBounds="True"
+                                               WidthRequest="50"
+                                               HeightRequest="50"
+                                               Margin="10">
+                                            <Image Source="{Binding ImagePath}"
+                                                   Aspect="AspectFill"
+                                                   Margin="-20"
+                                                    />
+                                        </Frame>
+                                        <Label Text="{Binding PlayerName}" FontFamily="ConcertOneRegular" FontSize="28" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Margin="-20,0,0,0" />
+                                        <Button Text="x" FontSize="30" TextColor="White"  FontFamily="CoinyRegular" 
+                                                HorizontalOptions="Center" VerticalOptions="Center" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PlayersPageViewModel}}, Path=DeleteButtonCommand}" 
+                                                CommandParameter="{Binding .}" />
+                                    </FlexLayout>
+                                </Border>
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+
+            <Grid Grid.Row="1" VerticalOptions="End" BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="1"  Source="shapes" VerticalOptions="End" Margin="0,0,0,-30" Aspect="AspectFill"/>
+
+                <Grid Grid.Row="1" VerticalOptions="End" Margin="0,0,0,25">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- New Player Button -->
+                    <Button Grid.Row="0"
+                            Margin="10"
+                            TextColor="White"
+                            Text="ADD PLAYER"
+                            HorizontalOptions="Center"
+                            FontSize="36"
+                            BackgroundColor="{StaticResource PrimaryRed}"
+                            Padding="15"
+                            CornerRadius="20"
+                            MinimumWidthRequest="250"
+                            HeightRequest="90"
+                            Command="{Binding NavigateToAddPlayersPageCommand}"
+                            FontFamily="ConcertOneRegular">
+                        <Button.Shadow>
+                            <Shadow Brush="Black"
+                                    Offset="-10,20"
+                                    Radius="30"
+                                    Opacity="0.3" />
+                        </Button.Shadow>
+                    </Button>
+
+                    <!-- Play Button -->
+                    <Button Grid.Row="1"
+                            Margin="10"
+                            TextColor="White"
+                            Text="PLAY!"
+                            HorizontalOptions="Center"
+                            FontSize="40"
+                            BackgroundColor="{StaticResource PrimaryBlueGreen}"
+                            Padding="15"
+                            CornerRadius="20"
+                            WidthRequest="250"
+                            HeightRequest="90"
+                            Command="{Binding NavigateToGamePageCommand}"
+                            FontFamily="ConcertOneRegular">
+                        <Button.Shadow>
+                            <Shadow Brush="Black"
+                                    Offset="-10,20"
+                                    Radius="30"
+                                    Opacity="0.3" />
+                        </Button.Shadow>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
