@@ -186,7 +186,7 @@
                 
                 HorizontalOptions="FillAndExpand"/>
 
-        <Image Source="shapes.jpg"
+        <Image Source="shapes"
                         Aspect="AspectFill"
                         WidthRequest="400"
                         HeightRequest="200"
