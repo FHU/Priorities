@@ -44,7 +44,7 @@ namespace Priorities.ViewModels
             PlayerRanking = new List<string> { i1, i2, i3, i4, i5 };
             GroupRanking = new List<string> { i1, i2, i4, i3, i5 };
             Round = 1;
-            Score = 500;
+            Score = 0;
             TotalRounds = 10;
 
             for (int i = 5; i > 0; i--)
@@ -64,11 +64,13 @@ namespace Priorities.ViewModels
             {
                 ranking.Points = 25 - (5 * (rank - 1));
                 ranking.Color = Color.FromArgb("#74C1DD");
+                Score += ranking.Points;
             }
             else
             {
                 ranking.Points = -1 * (25 - (5 * (rank - 1)));
                 ranking.Color = Color.FromArgb("#EC6664");
+                Score += ranking.Points;
             }
 
             Rankings.Insert(0, ranking);
