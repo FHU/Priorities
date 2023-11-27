@@ -49,29 +49,8 @@ namespace Priorities.ViewModels
 
             for (int i = 5; i > 0; i--)
             {
-                Thread.Sleep(1000); // doesn't work yet
-                //Ranking result = GetResult(i);
-                //Rankings.Insert(0, result);
-                //Score += result.Points;
-
+                Thread.Sleep(1000);
                 GetResult(i);
-            }
-        }
-
-        void Compare(List<string> pRank, List<string> gRank)
-        {
-            for (int i = 0; i < pRank.Count; i++)
-            {
-                if (pRank[i] == gRank[i])
-                {
-                    //rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "+", Points = 25 - (5 * i), ImagePath = "green_check.svg" });
-                    Score = Score + (25 - (5 * i));
-                }
-                else
-                {
-                    //rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "-", Points = 25 - (5 * i), ImagePath = "red_x.svg" });
-                    Score = Score - (25 - (5 * i));
-                }
             }
         }
 
