@@ -53,7 +53,7 @@
             <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0" Padding="6">
+            <Grid Grid.Row="0" Padding="4">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -68,7 +68,7 @@
                         BorderColor="Transparent">
                 </Frame>
                 <Label Grid.Row="0"
-                       Padding="8"
+                       Padding="2"
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
@@ -78,7 +78,7 @@
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
                        HeightRequest="50"
-                       WidthRequest="260"
+                       WidthRequest="200"
                        MaxLength="15"
                        FontSize="24"
                        HorizontalTextAlignment="Center"
@@ -91,7 +91,7 @@
             </Grid>
 
             <!--Input Avatar-->
-            <Grid Grid.Row="1" RowSpacing="12" VerticalOptions="Center" Margin="14">
+            <Grid Grid.Row="1" RowSpacing="12" VerticalOptions="Center" Margin="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -114,7 +114,7 @@
                        CornerRadius="150"
                        HorizontalOptions="Center"
                        IsClippedToBounds="True"
-                       Padding="3"
+                       Padding="2"
                        BorderColor="Transparent"
                        BackgroundColor="Transparent"
                        Margin="0,0,0,0">
