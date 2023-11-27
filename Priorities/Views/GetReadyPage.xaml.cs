@@ -9,5 +9,11 @@ public partial class GetReadyPage : ContentPage
 		InitializeComponent();
 
 		this.BindingContext =  new GetReadyPageViewModel();
+
 	}
+
+    void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

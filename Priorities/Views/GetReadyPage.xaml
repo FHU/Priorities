@@ -3,12 +3,17 @@
              x:Class="Priorities.Views.GetReadyPage"
              BackgroundColor="#F1F1F1"
              xmlns:vm="clr-namespace:Priorities.ViewModels"
-           
+             
+            xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GetReadyPageViewModel"
              Shell.NavBarIsVisible="False">
+    
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
+    </ContentPage.Behaviors>
 
 
     <Grid Padding="0">
@@ -19,6 +24,8 @@
             <RowDefinition Height="300"/>
             <RowDefinition Height="270"/>
         </Grid.RowDefinitions>
+
+        <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/> 
 
         <!-- Top Bar with App Name -->
         <Label
@@ -94,7 +101,7 @@
       BackgroundColor="#EC6664"
       HeightRequest="60"
       Margin="0"
-      Padding="5">
+      Padding="15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="30"/>
