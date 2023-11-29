@@ -12,11 +12,15 @@
              Title="GamePage"
              Shell.NavBarIsVisible="False"
              Shell.BackgroundColor="{StaticResource DarkGray}"
-             BackgroundColor="{StaticResource OffWhite}">
+             BackgroundColor="{StaticResource OffWhite}"
+             x:Name="MainPageContainer">
+
 
     <ContentPage.Behaviors>
         <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
     </ContentPage.Behaviors>
+
+
 
     <!-- Grid wrapper for the entire game page -->
     <Grid RowDefinitions="80, *" >
@@ -188,51 +192,62 @@
                 <!-- Priority Cards -->
                 <VerticalStackLayout Grid.RowSpan="5" Grid.Column="1">
 
-                    <CollectionView  
-                        ItemsSource="{Binding Priorities}" >
+                    <CollectionView
+            Grid.Row="0"
+            Margin="0,0,0,0"
+            ItemsSource="{Binding Priorities}"
+            SelectionMode="None">
                         <CollectionView.ItemTemplate>
-
                             <DataTemplate x:DataType="models:Priority">
-                                <Grid >
-                                    <!--<RoundRectangle
-                                    Grid.Column="1"
-                                    CornerRadius="18"                 
+                                <Frame
+                        Padding="3"
+                        BorderColor="Transparent"
+                        IsClippedToBounds="True"
+                        CornerRadius="16"
+                         Margin="0, 5">
+                                    <VerticalStackLayout>
+                                        <StackLayout
+                                Padding="10"
+                                HeightRequest="60"
+                                HorizontalOptions="FillAndExpand"
+                                Orientation="Horizontal"
+                                VerticalOptions="FillAndExpand"
+                                 BackgroundColor="{StaticResource Secondary}">
 
-                                    HeightRequest="60"                                    
-                                    Fill="{StaticResource PrimaryBlueGreen}">
-                                        <RoundRectangle.Shadow>
-                                            <Shadow                                
-                                        Brush="Black"
-                                        Opacity="0.25"
-                                        Radius="10"
-                                        Offset="0,15" />
-                                        </RoundRectangle.Shadow>
-                                    </RoundRectangle>-->
 
-                                    <Button
-                                        CornerRadius="16"
-                                        HeightRequest="60"
-                                        Grid.Column="1"
-                                        Text="{Binding Thing}"
-                                        TextColor="{StaticResource OffWhite2}"
-                                        Margin="0, 8"
-                                        BackgroundColor="{StaticResource Secondary}"              
-                                        FontSize="30"
-                                        HorizontalOptions="FillAndExpand"
-                                        FontFamily="ConcertOneRegular">
-                                        <Button.Shadow>
-                                            <Shadow
-                                            Brush="Black"
-                                            Opacity="0.25"
-                                            Radius="4"
-                                            Offset="2,4" />
+                                            <!--  User Name  -->
+                                            <Label
+                                    x:Name="UserName"
+                                    HorizontalOptions="FillAndExpand"
+                                    Text="{Binding Thing}"
+                                    TextColor="{StaticResource OffWhite2}"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                     FontFamily="ConcertOneRegular"
+                                     FontSize="30"/>
 
-                                        </Button.Shadow>
-                                    </Button>
-                                </Grid>
+
+                                            <StackLayout.GestureRecognizers>
+                                                <DragGestureRecognizer
+                                        CanDrag="True"
+                                        DragStartingCommand="{Binding BindingContext.ItemDraggedCommand, Source={x:Reference MainPageContainer}}"
+                                        DragStartingCommandParameter="{Binding}" />
+                                                <DropGestureRecognizer
+                                        AllowDrop="True"
+                                        DragLeaveCommand="{Binding BindingContext.ItemDragLeaveCommand, Source={x:Reference MainPageContainer}}"
+                                        DragLeaveCommandParameter="{Binding}"
+                                        DragOverCommand="{Binding BindingContext.ItemDraggedOverCommand, Source={x:Reference MainPageContainer}}"
+                                        DragOverCommandParameter="{Binding}"
+                                        DropCommand="{Binding BindingContext.ItemDroppedCommand, Source={x:Reference MainPageContainer}}"
+                                        DropCommandParameter="{Binding}" />
+                                            </StackLayout.GestureRecognizers>
+                                        </StackLayout>
+                                    </VerticalStackLayout>
+                                </Frame>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
+
                 </VerticalStackLayout>
 
 
@@ -275,14 +290,7 @@
                             FontFamily="ConcertOneRegular"/>
                     </Grid>
                 </Border>
-
-
-
-
-
             </Grid>
-
-
 
         </Grid>
     </Grid>
