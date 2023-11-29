@@ -10,12 +10,28 @@ namespace Priorities.ViewModels
     {
 
         [ObservableProperty]
+        public int round;
+
+        [ObservableProperty]
+        private int totalRounds;
+
+        [ObservableProperty]
+        public string score;
+
+        [ObservableProperty]
         Player currentPlayer;
 
         public ObservableCollection<Player> Players { get; set; }
 
+
+
         public GetReadyPageViewModel()
         {
+            Round = 1;
+            TotalRounds = 2;
+            Score = "200";
+
+
             Players = new ObservableCollection<Player>()
             {
                 new Player() { Name = "Kenan", ImageName = "kenan.jpeg" },
