@@ -8,14 +8,13 @@ public partial class AppShell : Shell
 
 
 		Routing.RegisterRoute(nameof(AddPlayerPage), typeof(AddPlayerPage));
-        Routing.RegisterRoute(nameof(Views.GamePage), typeof(Views.GamePage));
-        Routing.RegisterRoute(nameof(Views.GameResultsPage), typeof(Views.GameResultsPage));
-        Routing.RegisterRoute(nameof(Views.GameStatusBar), typeof(Views.GameStatusBar));
-        Routing.RegisterRoute(nameof(Views.GetReadyPage), typeof(Views.GetReadyPage));
-        Routing.RegisterRoute(nameof(Views.HighScorePage), typeof(Views.HighScorePage));
-        Routing.RegisterRoute(nameof(Views.HomePage), typeof(Views.HomePage));
-        Routing.RegisterRoute(nameof(Views.PlayersPage), typeof(Views.PlayersPage));
-        Routing.RegisterRoute(nameof(Views.RoundResultsPage), typeof(Views.RoundResultsPage));
+        Routing.RegisterRoute(nameof(GamePage), typeof(GamePage));
+        Routing.RegisterRoute(nameof(GameResultsPage), typeof(GameResultsPage));
+        Routing.RegisterRoute(nameof(GetReadyPage), typeof(GetReadyPage));
+        Routing.RegisterRoute(nameof(HighScorePage), typeof(HighScorePage));
+        Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+        Routing.RegisterRoute(nameof(PlayersPage), typeof(PlayersPage));
+        Routing.RegisterRoute(nameof(RoundResultsPage), typeof(RoundResultsPage));
     }
 }
 
