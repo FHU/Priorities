@@ -4,10 +4,16 @@
              x:Class="Priorities.Views.PlayersPage"
              Title="PlayersPage"
              Shell.FlyoutBehavior="Flyout"
+             Shell.NavBarIsVisible="False"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:PlayersPageViewModel"
-             BackgroundColor="{StaticResource OffWhite}">
+             BackgroundColor="{StaticResource OffWhite}"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
+    </ContentPage.Behaviors>
 
     <ContentPage.Content>
         <Grid>
@@ -16,22 +22,22 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <VerticalStackLayout Grid.Row="0">
-                <Label Grid.Row="0" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="115" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+            <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0" Padding="12">
+                <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,0,0,0" Clicked="HamburgerMenuButton_Clicked"/>
+                <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="P" FontSize="48" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                            <Span Text="L" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                            <Span Text="A" FontSize="48" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                            <Span Text="Y" FontSize="48" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                            <Span Text="E" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                            <Span Text="R" FontSize="48" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                            <Span Text="S" FontSize="48" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                            <Span Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                            <Span Text="L" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="A" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="Y" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
-            </VerticalStackLayout>
+            </Grid>
 
             <ScrollView Grid.Row="1" Margin="0,15,0,250" BackgroundColor="{StaticResource OffWhite}" Padding="12,0">
                 <CollectionView ItemsSource="{Binding Players}" VerticalOptions="FillAndExpand">
