@@ -16,4 +16,11 @@ public partial class RoundResultsPage : ContentPage
     {
 		Shell.Current.FlyoutIsPresented = true;
     }
+
+    protected override async void OnAppearing()
+	{
+        //await Task.Delay(5000);
+
+        vm.ShowRankingsCommand.Execute(null);
+	}
 }

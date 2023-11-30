@@ -47,16 +47,16 @@ namespace Priorities.ViewModels
             Score = 0;
             TotalRounds = 10;
 
-            for (int i = 5; i > 0; i--)
-            {
-                Thread.Sleep(1000);
-                GetResult(i);
-            }
+            //for (int i = 5; i > 0; i--)
+            //{
+            //    Thread.Sleep(1000);
+            //    GetResult(i);
+            //}
         }
 
         public async void GetResult(int rank)
         {
-            await Task.Delay(5000);
+            //await Task.Delay(5000);
 
             Ranking ranking = new Ranking() { Number = rank, Name = GroupRanking[rank - 1] };
 
@@ -81,6 +81,17 @@ namespace Priorities.ViewModels
         {
             Round++;
             // change page and add round and score as variables
+        }
+
+        [RelayCommand]
+        async Task ShowRankings()
+        {
+            for (int i = 5; i > 0; i--)
+            {
+                //Thread.Sleep(1000);
+                await Task.Delay(1000);
+                GetResult(i);
+            }
         }
 
     }
