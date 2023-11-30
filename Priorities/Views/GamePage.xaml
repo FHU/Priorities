@@ -200,33 +200,31 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="models:Priority">
                                 <Frame
-                        Padding="3"
-                        BorderColor="Transparent"
-                        IsClippedToBounds="True"
-                        CornerRadius="16"
-                         Margin="0, 5">
+                                    Padding="3"
+                                    CornerRadius="16"
+                                    BackgroundColor="{StaticResource Secondary}"
+                                     Margin="0, 5">
                                     <VerticalStackLayout>
                                         <StackLayout
-                                Padding="10"
-                                HeightRequest="60"
-                                HorizontalOptions="FillAndExpand"
-                                Orientation="Horizontal"
-                                VerticalOptions="FillAndExpand"
-                                 BackgroundColor="{StaticResource Secondary}">
-
-
-                                            <!--  User Name  -->
+                                            Padding="10"
+                                            HeightRequest="60"
+                                            HorizontalOptions="FillAndExpand"
+                                            Orientation="Horizontal"
+                                            VerticalOptions="FillAndExpand"
+                                             BackgroundColor="Transparent">
+                                            
                                             <Label
-                                    x:Name="UserName"
-                                    HorizontalOptions="FillAndExpand"
-                                    Text="{Binding Thing}"
-                                    TextColor="{StaticResource OffWhite2}"
-                                    VerticalTextAlignment="Center"
-                                    HorizontalTextAlignment="Center"
-                                     FontFamily="ConcertOneRegular"
-                                     FontSize="30"/>
+                                            x:Name="Priority"
+                                            HorizontalOptions="FillAndExpand"
+                                            Text="{Binding Thing}"
+                                            TextColor="{StaticResource OffWhite2}"
+                                            VerticalTextAlignment="Center"
+                                            HorizontalTextAlignment="Center"
+                                             FontFamily="ConcertOneRegular"
+                                             FontSize="30"/>
 
-
+                                        <!-- I got this off the internet-->
+                                        <!-- https://github.com/Alam-Ashraf/MAUIDragDropCollectionViewItemsDemo -->
                                             <StackLayout.GestureRecognizers>
                                                 <DragGestureRecognizer
                                         CanDrag="True"
@@ -242,6 +240,7 @@
                                         DropCommandParameter="{Binding}" />
                                             </StackLayout.GestureRecognizers>
                                         </StackLayout>
+
                                     </VerticalStackLayout>
                                 </Frame>
                             </DataTemplate>

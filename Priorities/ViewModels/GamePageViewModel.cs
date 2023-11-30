@@ -61,6 +61,9 @@ namespace Priorities.ViewModels
 
         }
 
+        // I got this off the internet
+        // https://github.com/Alam-Ashraf/MAUIDragDropCollectionViewItemsDemo
+
         [RelayCommand]
         public void ItemDragged(Priority priority)
         {
