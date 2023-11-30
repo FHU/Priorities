@@ -10,4 +10,9 @@ public partial class GameResultsPage : ContentPage
 
 		BindingContext = new GameResultsPageViewModel();
 	}
+
+    void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

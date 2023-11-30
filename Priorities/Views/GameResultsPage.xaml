@@ -6,13 +6,18 @@
              BackgroundColor="{StaticResource OffWhite}"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              Shell.NavBarIsVisible="False"
-
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+   
              >
+
+            <ContentPage.Behaviors>
+                <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
+            </ContentPage.Behaviors>
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.1*"/>
-            <RowDefinition Height="0.11*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="45"/>
             <RowDefinition Height="0.35*"/>
             <RowDefinition Height="0.3*"/>
 
@@ -29,7 +34,8 @@
 
             <VerticalStackLayout>
                 <Label Grid.Row="0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.FormattedText>
+
+                <Label.FormattedText>
                         <FormattedString>
                             <Span Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                             <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
