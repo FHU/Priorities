@@ -60,7 +60,7 @@
                     TextColor="#EC6664"
                     Margin="5, 5, 130, 0"
                     FontSize="Medium"
-                    FontFamily="CoinyRegular"
+                    FontFamily="ConcertOneRegular"
                     FontAttributes="Bold"
                     Text="Time"/>
 
@@ -70,7 +70,7 @@
                     TextColor="Black"
                     Margin="5, 5, 0, 0"
                     FontSize="Large"
-                    FontFamily="CoinyRegular"
+                    FontFamily="ConcertOneRegular"
                     FontAttributes="Bold"
                     Text="{Binding ElapsedTime.Minutes}"/>
 
@@ -79,7 +79,7 @@
                     TextColor="Black"
                     Margin="5, 5, 0, 0"
                     FontSize="Large"
-                    FontFamily="CoinyRegular"
+                    FontFamily="ConcertOneRegular"
                     FontAttributes="Bold"
                     Text=":"/>
 
@@ -88,7 +88,7 @@
                     TextColor="Black"
                     Margin="5, 5, 0, 0"
                     FontSize="Large"
-                    FontFamily="CoinyRegular"
+                    FontFamily="ConcertOneRegular"
                     FontAttributes="Bold"
                     Text="{Binding ElapsedTime.Seconds}"/>
                     </HorizontalStackLayout>
@@ -102,7 +102,7 @@
                    TextColor="#EC6664"
                     Margin="-5, 5, 5, 5"
                     FontSize="Medium"
-                    FontFamily="CoinyRegular"
+                    FontFamily="ConcertOneRegular"
                     FontAttributes="Bold"
                 />
 
@@ -112,6 +112,7 @@
                     Margin="0, 0, 5, 0"
                     FontSize="Large"
                     FontAttributes="Bold"
+                    FontFamily="ConcertOneRegular"
                     Text="{Binding Score}"/>
                 </VerticalStackLayout>
 
@@ -126,7 +127,7 @@
                 HorizontalOptions="Center"
                 TextColor="#EC6664"
                 FontSize="Large"
-                FontFamily="CoinyRegular"/>
+                FontFamily="ConcertOneRegular"/>
 
 
                 <CollectionView ItemsSource="{Binding Achievements}">
@@ -135,7 +136,7 @@
                             <Frame Margin="35, 5, 35, 5" Padding="0" CornerRadius="10" BorderColor="Transparent" >
                                 <FlexLayout Direction="Row" BackgroundColor="#087E8B" JustifyContent="SpaceBetween" AlignItems="Center"  HeightRequest="60">
 
-                                <Button   Text="{Binding Title}" FontSize="25" FontFamily="CoinyRegular" TextColor="White" BackgroundColor="#087E8B"/>
+                                <Button   Text="{Binding Title}" FontSize="25" FontFamily="ConcertOneRegular" TextColor="White" BackgroundColor="#087E8B"/>
                                 
 
 
@@ -151,7 +152,7 @@
 
 
         <VerticalStackLayout Grid.Row="3">
-            <Button Margin="16,8,16,8" Text="High Score" FontSize="Medium" FontFamily="CoinyRegular" FontAttributes="Bold"  TextColor="White" BackgroundColor="#EC6664">
+            <Button Margin="16,8,16,8" Text="High Score" FontSize="Medium" FontFamily="ConcertOneRegular" FontAttributes="Bold"  TextColor="White" BackgroundColor="#EC6664">
                 <Button.Shadow>
                     <Shadow
                                 Opacity="0.2"
@@ -161,7 +162,7 @@
                                 />
                 </Button.Shadow>
             </Button>
-            <Button Margin="16,0,16,10" Text="Achivements" FontSize="Medium" FontFamily="CoinyRegular" FontAttributes="Bold" TextColor="White" BackgroundColor="#EC6664">
+            <Button Margin="16,0,16,10" Text="Achivements" FontSize="Medium" FontFamily="ConcertOneRegular" FontAttributes="Bold" TextColor="White" BackgroundColor="#EC6664">
                 <Button.Shadow>
                     <Shadow
                                 Opacity="0.4"
@@ -171,7 +172,7 @@
                                 />
                 </Button.Shadow>
             </Button>
-            <Button Margin="16,0,16,10" Text="Play Again" HeightRequest="70" FontSize="Medium" FontFamily="CoinyRegular" FontAttributes="Bold"  TextColor="White" BackgroundColor="#EC6664">
+            <Button Margin="16,0,16,10" Text="Play Again" HeightRequest="70" FontSize="Medium" FontFamily="ConcertOneRegular" FontAttributes="Bold"  TextColor="White" BackgroundColor="#EC6664">
                 <Button.Shadow>
                     <Shadow
                                 Opacity="0.5"
