@@ -1,15 +1,18 @@
 namespace Priorities.Views;
 using Priorities.ViewModels;
 using Priorities.Models;
+using Priorities.Services;
 
 public partial class RoundResultsPage : ContentPage
 {
-    private RoundResultsPageViewModel vm = new RoundResultsPageViewModel();
+    private RoundResultsPageViewModel vm;
 
-	public RoundResultsPage()
+	public RoundResultsPage(IGameStateService gameStateService)
 	{
 		InitializeComponent();
-		BindingContext = vm;
+
+        vm = new RoundResultsPageViewModel(gameStateService);
+        BindingContext = vm;
 	}
 
     void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
@@ -19,8 +22,6 @@ public partial class RoundResultsPage : ContentPage
 
     protected override async void OnAppearing()
 	{
-        //await Task.Delay(5000);
-
         vm.ShowRankingsCommand.Execute(null);
 	}
 }

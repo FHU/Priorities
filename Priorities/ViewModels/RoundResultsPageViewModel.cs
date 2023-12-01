@@ -8,11 +8,14 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using Priorities.Models;
 using CommunityToolkit.Mvvm.Input;
 using Priorities.Views;
+using Priorities.Services;
 
 namespace Priorities.ViewModels
 {
     public partial class RoundResultsPageViewModel : ObservableObject
     {
+        private readonly IGameStateService gameStateService;
+
         [ObservableProperty]
         private int round;
 
@@ -31,22 +34,43 @@ namespace Priorities.ViewModels
 
         public ObservableCollection<Ranking> Rankings { get; set; }
 
-        public RoundResultsPageViewModel()
+        public RoundResultsPageViewModel(IGameStateService gameStateService)
         {
-            Rankings = new ObservableCollection<Ranking>();
-            Person = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
-
             string i1 = "Giraffe";
             string i2 = "Chocolate";
             string i3 = "Fruit";
             string i4 = "Sleep";
             string i5 = "Casey";
 
-            PlayerRanking = new List<string> { i1, i2, i3, i4, i5 };
-            GroupRanking = new List<string> { i1, i2, i4, i3, i5 };
-            Round = 1;
-            Score = 0;
-            TotalRounds = 10;
+            this.gameStateService = gameStateService;
+            this.gameStateService.Score = 0;
+            this.gameStateService.Round = 1;
+            this.gameStateService.TotalRounds = 10;
+            this.gameStateService.PlayerRankings = new List<string> { i1, i2, i3, i4, i5 };
+            this.gameStateService.GroupRankings = new List<string> { i1, i2, i4, i3, i5 };
+            this.gameStateService.CurrentPlayer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
+
+            this.Round = this.gameStateService.Round;
+            this.TotalRounds = this.gameStateService.TotalRounds;
+            this.Score = this.gameStateService.Score;
+            this.Person = this.gameStateService.CurrentPlayer;
+            this.PlayerRanking = this.gameStateService.PlayerRankings;
+            this.GroupRanking = this.gameStateService.GroupRankings;
+
+            Rankings = new ObservableCollection<Ranking>();
+            //Person = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
+
+            //string i1 = "Giraffe";
+            //string i2 = "Chocolate";
+            //string i3 = "Fruit";
+            //string i4 = "Sleep";
+            //string i5 = "Casey";
+
+            //PlayerRanking = new List<string> { i1, i2, i3, i4, i5 };
+            //GroupRanking = new List<string> { i1, i2, i4, i3, i5 };
+            //Round = 1;
+            //Score = 0;
+            //TotalRounds = 10;
         }
 
         public void GetResult(int rank)
@@ -73,7 +97,11 @@ namespace Priorities.ViewModels
         void Next()
         {
             Round++;
-            // change page and add round and score as variables
+            gameStateService.Score = Score;
+            gameStateService.Round = Round;
+            gameStateService.PlayerRankings.Clear();
+            gameStateService.GroupRankings.Clear();
+            //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
             Shell.Current.GoToAsync($"{nameof(GamePage)}");
         }
 
