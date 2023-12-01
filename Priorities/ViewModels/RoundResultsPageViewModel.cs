@@ -48,15 +48,15 @@ namespace Priorities.ViewModels
             this.gameStateService.Round = 1;
             this.gameStateService.TotalRounds = 10;
             this.gameStateService.PlayerRankings = new List<string> { i1, i2, i3, i4, i5 };
-            this.gameStateService.GroupRankings = new List<string> { i1, i2, i4, i3, i5 };
+            this.gameStateService.GroupRankings = new List<string> { i1, i4, i3, i2, i5 };
             this.gameStateService.CurrentPlayer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
 
-            this.Round = this.gameStateService.Round;
-            this.TotalRounds = this.gameStateService.TotalRounds;
-            this.Score = this.gameStateService.Score;
-            this.Person = this.gameStateService.CurrentPlayer;
-            this.PlayerRanking = this.gameStateService.PlayerRankings;
-            this.GroupRanking = this.gameStateService.GroupRankings;
+            Round = this.gameStateService.Round;
+            TotalRounds = this.gameStateService.TotalRounds;
+            Score = this.gameStateService.Score;
+            Person = this.gameStateService.CurrentPlayer;
+            PlayerRanking = this.gameStateService.PlayerRankings;
+            GroupRanking = this.gameStateService.GroupRankings;
 
             Rankings = new ObservableCollection<Ranking>();
         }
