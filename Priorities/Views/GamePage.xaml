@@ -34,11 +34,11 @@
                         <Span Text="I" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                         <Span Text="O" FontSize="36" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
                         <Span Text="R" FontSize="36" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="I" FontSize="36" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="T" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                         <Span Text="I" FontSize="36" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="T" FontSize="36" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="I" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="E" FontSize="36" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="S" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="S" FontSize="36" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                         <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                         <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                         <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
