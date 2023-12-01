@@ -2,11 +2,15 @@
 using CommunityToolkit.Mvvm.Input;
 using Priorities.Models;
 using System.Collections.ObjectModel;
+using Priorities.Services;
 
 namespace Priorities.ViewModels
 {
     public partial class GamePageViewModel : ObservableObject
     {
+
+        private readonly IGameStateService gameStateService;
+
         [ObservableProperty]
         public string playerName;
 
@@ -29,9 +33,13 @@ namespace Priorities.ViewModels
 
         private Priority itemBeingDragged;
 
-        public GamePageViewModel()
+        public GamePageViewModel(IGameStateService gameStateService)
         {
+
+            this.gameStateService = gameStateService;
+
             /*Abbie*/
+
             var playerOne = new Player
             {
                 Name = "K-Dawg",
@@ -57,6 +65,7 @@ namespace Priorities.ViewModels
             /*Priscilla*/
             timer = "0:43";
             score = "0";
+
 
 
         }
