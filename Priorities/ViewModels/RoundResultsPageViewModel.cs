@@ -47,18 +47,10 @@ namespace Priorities.ViewModels
             Round = 1;
             Score = 0;
             TotalRounds = 10;
-
-            //for (int i = 5; i > 0; i--)
-            //{
-            //    Thread.Sleep(1000);
-            //    GetResult(i);
-            //}
         }
 
-        public async void GetResult(int rank)
+        public void GetResult(int rank)
         {
-            //await Task.Delay(5000);
-
             Ranking ranking = new Ranking() { Number = rank, Name = GroupRanking[rank - 1] };
 
             if (GroupRanking[rank - 1] == PlayerRanking[rank - 1])
@@ -90,7 +82,6 @@ namespace Priorities.ViewModels
         {
             for (int i = 5; i > 0; i--)
             {
-                //Thread.Sleep(1000);
                 await Task.Delay(1000);
                 GetResult(i);
             }
