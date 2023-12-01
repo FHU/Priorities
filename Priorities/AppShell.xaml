@@ -4,15 +4,86 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Priorities"
-    xmlns:views="clr-namespace:Priorities.Views"
-    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
     xmlns:models="clr-namespace:Priorities.Models"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+    xmlns:views="clr-namespace:Priorities.Views"
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.FlyoutHeader >
+        <Label Text="PRIORITIES" FontSize="Title"/>
+    </Shell.FlyoutHeader>
+
+    <!--<FlyoutItem Title="Home">
+        <ShellContent>
+            <Label Text="Home Page" />
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="High Scores">
+        <ShellContent>
+            <Label Text="High Scores Page" />
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Achievements">
+        <ShellContent>
+            <Label Text="Achievements Page" />
+        </ShellContent>
+    </FlyoutItem>-->
+
+    <!--<Shell.FlyoutContent>
+
+        <StackLayout Orientation="Vertical">
+
+            <Label Text="Flyout Content" />
+
+        </StackLayout>
+       
+    </Shell.FlyoutContent>-->
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout >
+
+            <Label Text="Copyright 2023 FHU" HorizontalTextAlignment="End"/>
+
+        </VerticalStackLayout>
+
+    </Shell.FlyoutFooter>
+
+     <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate views:HomePage}"
+        Route="HomePage" />
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:AddPlayerPage}"
-        Route="MainPage" />
+        Title="GamePage"
+        ContentTemplate="{DataTemplate views:GamePage}"
+        Route="GamePage" />
+
+    <ShellContent
+        Title="GameResultsPage"
+        ContentTemplate="{DataTemplate views:GameResultsPage}"
+        Route="GameResultsPage" />
+
+    <ShellContent
+        Title="GetReadyPage"
+        ContentTemplate="{DataTemplate views:GetReadyPage}"
+        Route="GetReadyPage" />
+
+    <ShellContent
+        Title="HighScorePage"
+        ContentTemplate="{DataTemplate views:HighScorePage}"
+        Route="HighScorePage" />
+
+    <ShellContent
+        Title="PlayersPage"
+        ContentTemplate="{DataTemplate views:PlayersPage}"
+        Route="PlayersPage" />
+
+    <ShellContent
+        Title="RoundResultsPage"
+        ContentTemplate="{DataTemplate views:RoundResultsPage}"
+        Route="RoundResultsPage" />
 
 </Shell>
 

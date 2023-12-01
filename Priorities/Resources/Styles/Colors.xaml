@@ -4,9 +4,9 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-<!-- Priorities Color Scheme -->
-<!-- Refrence Figma file for color key if confused -->
-<!-- https://www.figma.com/file/OL6qivTGvdVE3jG4OpvLMZ/Priorities?type=design&node-id=0%3A1&mode=design&t=WSnWfJozGtqedUWq-1 -->
+    <!-- Priorities Color Scheme -->
+    <!-- Refrence Figma file for color key if confused -->
+    <!-- https://www.figma.com/file/OL6qivTGvdVE3jG4OpvLMZ/Priorities?type=design&node-id=0%3A1&mode=design&t=WSnWfJozGtqedUWq-1 -->
     <Color x:Key="Primary">#EC6664</Color>
     <Color x:Key="Secondary">#087E8B</Color>
     <Color x:Key="Tertiary">#38AECC</Color>
@@ -21,7 +21,8 @@
     <Color x:Key="SecondaryBlue">#38AECC</Color>
     <Color x:Key="SecondaryLightBlue">#74C1DD</Color>
     <Color x:Key="SecondaryDarkBlue">#337096</Color>
-<!--  -->
+    <Color x:Key="OffWhite2">#EBEBE5</Color>
+    <!--  -->
 
     <Color x:Key="Gray100">#E1E1E1</Color>
     <Color x:Key="Gray200">#C8C8C8</Color>
