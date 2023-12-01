@@ -46,7 +46,7 @@ namespace Priorities.ViewModels
 
             var phasePlaceholder = "Guessing";
 
-            gameStateService.CurrentPlayer = new Player()
+            gameStateService.Prioritizer = new Player()
             {
                 Name = "K-Dawg",
                 ImageName = "kenan.jpg"
@@ -58,10 +58,13 @@ namespace Priorities.ViewModels
             gameStateService.Score = 0;
 
 
+            var phase = gameStateService.Phase;
+
+
             /*Abbie*/
 
-            playerName = gameStateService.CurrentPlayer.Name;
-            playerImage = gameStateService.CurrentPlayer.ImageName;
+            playerName = gameStateService.Prioritizer.Name;
+            playerImage = gameStateService.Prioritizer.ImageName;
 
             /*Priscilla*/
             Priorities = new ObservableCollection<Priority>();
@@ -94,7 +97,6 @@ namespace Priorities.ViewModels
             
 
 
-            var phase = gameStateService.Phase;
            
 
         }
