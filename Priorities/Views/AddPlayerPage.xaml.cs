@@ -1,15 +1,16 @@
 namespace Priorities.Views;
 
 using Camera.MAUI;
+using Priorities.Services;
 using Priorities.ViewModels;
 
 public partial class AddPlayerPage : ContentPage
 {
-	public AddPlayerPage()
+	public AddPlayerPage(IGameStateService gameStateService)
 	{
         InitializeComponent();
 
-		BindingContext = new AddPlayersPageViewModel();
+		BindingContext = new AddPlayersPageViewModel( gameStateService);
     }
 
     void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
