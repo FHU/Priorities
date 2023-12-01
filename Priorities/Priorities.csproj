@@ -15,7 +15,7 @@
 		<ApplicationTitle>Priorities</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.priorities</ApplicationId>
+		<ApplicationId>edu.fhu.priorities</ApplicationId>
 		<ApplicationIdGuid>8ee0cf2a-0279-476d-8e09-edd81311712c</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -32,6 +32,9 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
+	  <CodesignProvision>Priorities+Kenan's iPhone13</CodesignProvision>
+	  <CodesignKey>iPhone Developer</CodesignKey>
+	  <MtouchDebug>true</MtouchDebug>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -80,6 +83,10 @@
 	</ItemGroup> -->
 
 	<ItemGroup>
+	  <None Remove="Services\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Services\" />
 	  <BundleResource Include="Resources\Images\kenan.jpg" />
 	  <BundleResource Include="Resources\Images\avatar_pic.jpg" />
 	  <BundleResource Include="Resources\Images\dotnet_bot.svg" />

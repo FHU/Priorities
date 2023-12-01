@@ -1,13 +1,15 @@
 namespace Priorities.Views;
+
+using Priorities.Services;
 using Priorities.ViewModels;
 
 public partial class AddPlayerPage : ContentPage
 {
-	public AddPlayerPage()
+	public AddPlayerPage(IGameStateService gameStateService)
 	{
         InitializeComponent();
 
-		BindingContext = new AddPlayersPageViewModel();
+		BindingContext = new AddPlayersPageViewModel( gameStateService);
     }
 
 }
