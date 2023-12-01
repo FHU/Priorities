@@ -42,7 +42,8 @@ namespace Priorities.ViewModels
             string i4 = "Sleep";
             string i5 = "Casey";
 
-            this.gameStateService = gameStateService;
+            this.gameStateService = gameStateService; // MADISON DON'T DELETE THIS LINE
+
             this.gameStateService.Score = 0;
             this.gameStateService.Round = 1;
             this.gameStateService.TotalRounds = 10;
@@ -58,19 +59,6 @@ namespace Priorities.ViewModels
             this.GroupRanking = this.gameStateService.GroupRankings;
 
             Rankings = new ObservableCollection<Ranking>();
-            //Person = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
-
-            //string i1 = "Giraffe";
-            //string i2 = "Chocolate";
-            //string i3 = "Fruit";
-            //string i4 = "Sleep";
-            //string i5 = "Casey";
-
-            //PlayerRanking = new List<string> { i1, i2, i3, i4, i5 };
-            //GroupRanking = new List<string> { i1, i2, i4, i3, i5 };
-            //Round = 1;
-            //Score = 0;
-            //TotalRounds = 10;
         }
 
         public void GetResult(int rank)
