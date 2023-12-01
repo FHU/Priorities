@@ -260,7 +260,8 @@
             FontSize="32"
             HeightRequest="80"
             Text="NEXT"
-            TextColor="White">
+            TextColor="White"
+            Command="{Binding NextCommand}">
 
             <Button.Shadow>
                 <Shadow

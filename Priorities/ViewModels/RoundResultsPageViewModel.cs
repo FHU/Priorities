@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Priorities.Models;
 using CommunityToolkit.Mvvm.Input;
+using Priorities.Views;
 
 namespace Priorities.ViewModels
 {
@@ -81,6 +82,7 @@ namespace Priorities.ViewModels
         {
             Round++;
             // change page and add round and score as variables
+            Shell.Current.GoToAsync($"{nameof(GamePage)}");
         }
 
         [RelayCommand]
