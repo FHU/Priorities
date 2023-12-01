@@ -44,17 +44,20 @@ namespace Priorities.ViewModels
 
             this.gameStateService = gameStateService; // MADISON DON'T DELETE THIS LINE
 
+            /* Delete these lines later */
             this.gameStateService.Score = 0;
             this.gameStateService.Round = 1;
             this.gameStateService.TotalRounds = 10;
             this.gameStateService.PlayerRankings = new List<string> { i1, i2, i3, i4, i5 };
             this.gameStateService.GroupRankings = new List<string> { i1, i2, i4, i3, i5 };
-            this.gameStateService.CurrentPlayer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
+            this.gameStateService.Prioritizer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
 
+
+            /* KEEP THESE LINES */
             this.Round = this.gameStateService.Round;
             this.TotalRounds = this.gameStateService.TotalRounds;
             this.Score = this.gameStateService.Score;
-            this.Person = this.gameStateService.CurrentPlayer;
+            this.Person = this.gameStateService.Prioritizer;
             this.PlayerRanking = this.gameStateService.PlayerRankings;
             this.GroupRanking = this.gameStateService.GroupRankings;
 

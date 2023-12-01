@@ -67,6 +67,8 @@ namespace Priorities.ViewModels
             score = "0";
 
 
+            var phase = gameStateService.Phase;
+           
 
         }
 
