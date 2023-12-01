@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Priorities.Views;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -10,40 +12,72 @@ namespace Priorities.ViewModels
     public partial class PlayersPageViewModel : ObservableObject
     {
 		private readonly IGameStateService gameStateService;
+        [ObservableProperty]
+        string playerName;
+
+        [ObservableProperty]
+        string imagePath;
+
+        public ObservableCollection<Player> Players { get; set; }
+
+        public Command NavigateToAddPlayersPageCommand { get; }
+        public Command NavigateToGamePageCommand { get; }
+
+        public Command DeleteButtonCommand { get; private set; }
+
+        public class Player
+        {
+            public string PlayerName { get; set; }
+
+            public string ImagePath { get; set; }
+
+            public Player() 
+            { 
+            }
+
+        }
+
+        public PlayersPageViewModel()
+        {
+            Players = new ObservableCollection<Player>
+        {
+            new Player{PlayerName="Joe", ImagePath="rando1.jpg"},
+            new Player{PlayerName="Mo", ImagePath="rando2.jpg"},
+            new Player{PlayerName="Shmo", ImagePath="rando3.jpg"},
+            new Player{PlayerName = "JOhnDrTractor", ImagePath = "rando4.jpg" },
+            new Player{PlayerName="Joe", ImagePath="rando1.jpg"},
+            new Player{PlayerName="Mo", ImagePath="rando2.jpg"},
+            new Player{PlayerName="Shmo", ImagePath="rando3.jpg"},
+            new Player{PlayerName = "Tractor", ImagePath = "rando4.jpg" },
+
+        };
 
 
         public ObservableCollection<Player> Players { get; set; }
 
-		public PlayersPageViewModel(IGameStateService gameStateService)
-		{
-			this.gameStateService = gameStateService;
-
-			Players = new();
-
-            LoadData();
+            NavigateToAddPlayersPageCommand = new Command(async () => await NavigateToAddPlayersPage());
+            NavigateToGamePageCommand = new Command(async () => await NavigateToGamePage());
+            DeleteButtonCommand = new Command<Player>(DeletePlayer);
         }
 
-
-        //[RelayCommand]
-        //private void LoadData()
-        //{
-        //    foreach (var player in gameStateService.Players)
-        //    {
-        //        Players.Add(player);
-        //    }
-        //}
-
-        public void LoadData()
+        private async Task NavigateToAddPlayersPage()
         {
-            Players.Clear();
+            // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
+            await Shell.Current.GoToAsync($"{nameof(AddPlayerPage)}");
+        }
+        private async Task NavigateToGamePage()
+        {
+            // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
+            await Shell.Current.GoToAsync($"{nameof(GamePage)}");
+        }
 
-            foreach (var player in gameStateService.Players)
+        [RelayCommand]
+        void DeletePlayer(Player player)
+        {
+            if (Players.Contains(player))
             {
-                Players.Add(player);
+                Players.Remove(player);
             }
         }
-
-
     }
 }
-

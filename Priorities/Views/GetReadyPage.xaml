@@ -1,60 +1,204 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GetReadyPage"
-             BackgroundColor="LightBlue">
-    
-    <Grid Padding="20">
+             BackgroundColor="#F1F1F1"
+             xmlns:vm="clr-namespace:Priorities.ViewModels"
+           
+             Shell.FlyoutBehavior="Flyout"
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             xmlns:models="clr-namespace:Priorities.Models"
+             x:DataType="viewmodels:GetReadyPageViewModel"
+             Shell.NavBarIsVisible="False">
+
+
+    <Grid Padding="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="270"/>
         </Grid.RowDefinitions>
 
-        <!-- Top Bar with Round Number -->
-        <Label Text="Round 3/10" Grid.Row="1" HorizontalOptions="Center" FontSize="40"/>
+        <!-- Top Bar with App Name -->
+        <Label
+                Grid.Column="1"
+                HorizontalOptions="FillAndExpand"
+                LineBreakMode="NoWrap"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="#404040"
+                HeightRequest="130">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="P"
+                            TextColor="{StaticResource PrimaryRed}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="R"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="O"
+                            TextColor="{StaticResource SecondaryBlue}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="R"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
+                            TextColor="{StaticResource PrimaryRed}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="T"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="E"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="S"
+                            TextColor="{StaticResource PrimaryRed}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <!-- Score and Round Number -->
+        <!-- Score and Round Number -->
+        <Grid Grid.Row="1"
+      HorizontalOptions="FillAndExpand"
+      VerticalOptions="Center"
+      BackgroundColor="#EC6664"
+      HeightRequest="60"
+      Margin="0"
+      Padding="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="30"/>
+                <!-- This column acts as the spacer -->
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+           FontSize="36"
+           TextColor="White"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="End"
+           TranslationX="10"
+           TranslationY="12"
+           Text="200 points"
+           FontFamily="CoinyRegular"/>
+
+
+            <!-- The empty column here serves as the space between the labels -->
+
+            <Label Grid.Column="2"
+           FontSize="20"
+           TextColor="White"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="End"
+           TranslationX="30"
+           TranslationY="5"
+           Text="Round 1/10"
+           FontFamily="CoinyRegular"/>
+        </Grid>
 
         <!-- Pass the Phone Header -->
-        <Label Text="PASS THE PHONE TO..." Grid.Row="2" HorizontalOptions="Center" FontSize="28"/>
+        <Label Text="Pass the Phone to...."
+               FontFamily="CoinyRegular"
+               Grid.Row="2"
+               Margin="30"
+               HorizontalOptions="Center"
+               FontSize="28"
+               TextColor="#404040"
+               
+               TranslationY="30"/>
 
-        <!-- User Profile and Name -->
-        <StackLayout Grid.Row="3" HorizontalOptions="Center" Spacing="50">
-            <Frame BackgroundColor="White" 
-                   Padding="0" 
-                   CornerRadius="50" 
-                   HorizontalOptions="Center" 
-                   WidthRequest="100" 
-                   HeightRequest="100">
-                <Image Source="{Binding CurrentPlayer.ProfilePictureUrl}" 
-                       Aspect="AspectFill"/>
+
+        <!--User Profile and Name-->
+        <VerticalStackLayout Grid.Row="3"
+                     HorizontalOptions="Center"
+                     Spacing="0"
+                     VerticalOptions="Center"
+                     >
+
+
+
+
+            <!--Circle Frame for Profile Picture Placeholder-->
+            <Frame WidthRequest="250"
+                   HeightRequest="250"
+                   CornerRadius="125"
+                   BackgroundColor="Transparent"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   IsClippedToBounds="True"
+                   >
+                   
+
+                <Image Source="{Binding CurrentPlayer.ImageName}"
+                        Aspect="AspectFill"
+                        WidthRequest="250"
+                        HeightRequest="250"
+                        />
+
             </Frame>
-            <Label Text="Austin!" FontSize="24" HorizontalOptions="Center"/>
-        </StackLayout>
 
-        <!-- Current Score and Ready Button with reduced spacing -->
-        <StackLayout Grid.Row="4" Spacing="20">
+            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" FontSize="40" FontFamily="CoinyRegular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End"/>
 
-            <!-- Current Score -->
-            <Label Text="Current Score" HorizontalOptions="Center" FontSize="24"/>
-            <Frame BackgroundColor="Purple" 
-                   Padding="10" 
-                   CornerRadius="50" 
-                   HorizontalOptions="Center" 
-                   WidthRequest="100" 
-                   HeightRequest="100">
-                <Label x:Name="PlayerScoreTextBlock" 
-                       Text="52"
-                       HorizontalOptions="CenterAndExpand" 
-                       VerticalOptions="CenterAndExpand" 
-                       FontSize="40" 
-                       TextColor="White"/>
-            </Frame>
+        </VerticalStackLayout>
 
-            <!-- Ready Button -->
-            <Button Text="Ready?" BackgroundColor="White" TextColor="Black" FontSize="40" CornerRadius="30" HorizontalOptions="Center" Padding="80,15"/>
 
-        </StackLayout>
+        <!-- Ready Button -->
+        <Button Text="READY?"
+                Grid.Row="4"
+                Margin="5"
+                VerticalOptions="Start"
+                TextColor="White"
+                BackgroundColor="#EC6664"
+                FontSize="30"
+                FontFamily="CoinyRegular"
+                CornerRadius="10"
+                HeightRequest="80"
+                WidthRequest="320"
+                
+                HorizontalOptions="FillAndExpand"/>
+
+        <Image Source="shapes"
+                        Aspect="AspectFill"
+                        WidthRequest="400"
+                        HeightRequest="200"
+                        Grid.Row="5"
+                        VerticalOptions="End"
+                        ZIndex="-1"
+                        />
+
+
+
     </Grid>
+
+
+
 </ContentPage>
