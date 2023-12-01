@@ -79,7 +79,11 @@
 	  <Folder Include="Models\" />
 	</ItemGroup> -->
 
+	<!-- <ItemGroup>
+	  <None Remove="Services\" />
+	</ItemGroup> -->
 	<ItemGroup>
+	  <Folder Include="Services\" />
 	  <BundleResource Include="Resources\Images\kenan.jpg" />
 	  <BundleResource Include="Resources\Images\avatar_pic.jpg" />
 	  <BundleResource Include="Resources\Images\dotnet_bot.svg" />

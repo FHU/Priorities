@@ -3,22 +3,19 @@
              x:Class="Priorities.Views.GetReadyPage"
              BackgroundColor="#F1F1F1"
              xmlns:vm="clr-namespace:Priorities.ViewModels"
-             
-            xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:views="clr-namespace:Priorities.Views"
              xmlns:models="clr-namespace:Priorities.Models"
              x:DataType="viewmodels:GetReadyPageViewModel"
              Shell.NavBarIsVisible="False">
-    
+
     <ContentPage.Behaviors>
         <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
     </ContentPage.Behaviors>
 
-
     <Grid Padding="0">
-          
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -27,22 +24,19 @@
             <RowDefinition Height="270"/>
         </Grid.RowDefinitions>
 
-        
         <!-- Top Bar with App Name -->
         <Label
-            
-                BackgroundColor="{StaticResource DarkGray}"
-                HorizontalOptions="FillAndExpand"
-                LineBreakMode="NoWrap"
-                VerticalOptions="Center"
-                HorizontalTextAlignment="End"
-                VerticalTextAlignment="Center"
-                Padding="10,20,20,10"
-                WidthRequest="390"
-                HeightRequest="100">
+            BackgroundColor="{StaticResource DarkGray}"
+            HorizontalOptions="FillAndExpand"
+            LineBreakMode="NoWrap"
+            VerticalOptions="Center"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Padding="10,20,20,10"
+            WidthRequest="390"
+            HeightRequest="100">
             <Label.FormattedText>
                 <FormattedString >
-                    
                     <Span
                             
                             FontFamily="CoinyRegular"
@@ -98,27 +92,23 @@
             </Label.FormattedText>
         </Label>
 
+        <Button Text="☰" BackgroundColor="Transparent" FontSize="60" VerticalOptions="Center" Margin="0,-16,0,0" HorizontalOptions="Start" Clicked="HamburgerMenuButton_Clicked"/>
 
-        <Button Text="☰"  BackgroundColor="Transparent" FontSize="60" VerticalOptions="Center" Margin="0,-16,0,0" HorizontalOptions="Start" Clicked="HamburgerMenuButton_Clicked"/>
-
-
+        <!--Status Bar-->
         <Grid Grid.Row="1" RowDefinitions="60,auto,*" ColumnDefinitions="*" RowSpacing="10">
-             <ContentView Grid.Row="0" >
+            <ContentView Grid.Row="0">
                 <views:GameStatusBar />
             </ContentView>
         </Grid>
-       
 
-
-        <!-- Score and Round Number -->
         <!-- Score and Round Number -->
         <!--<Grid Grid.Row="1"
-      HorizontalOptions="FillAndExpand"
-      VerticalOptions="Center"
-      BackgroundColor="#EC6664"
-      HeightRequest="60"
-      Margin="0"
-      Padding="20,0,0,0">
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"
+              BackgroundColor="#EC6664"
+              HeightRequest="60"
+              Margin="0"
+              Padding="20,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -127,43 +117,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            
-            <Label Grid.Column="0"
-           FontSize="40"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
-           Text="200"
-           FontFamily="ConcertOne-Regular"/>
-
-            <Label Grid.Column="1"
-           FontSize="25"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
-           Margin="0,10,20,0"
-           Text=" points"
-           FontFamily="ConcertOne-Regular"/>
-             The empty column here serves as the space between the labels 
-
-            <Label Grid.Column="2"
-           FontSize="25"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
-           Margin="45,10,0,0"
-           Text="round"
-           FontFamily="ConcertOne-Regular"/>
-
-
-             <Label Grid.Column="3"
-           FontSize="40"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="End"
-           Margin="12,0,0,7"
-           Text="1/10"
-           FontFamily="ConcertOne-Regular"/>
+             Labels for Score and Round Number 
         </Grid>-->
 
         <!-- Pass the Phone Header -->
@@ -171,26 +125,21 @@
                FontFamily="ConcertOne-Regular"
                Grid.Row="2"
                Margin="30,60,30,15"
-               
                HorizontalOptions="Center"
                FontSize="35"
                TextColor="#404040"/>
-               
-               
 
+        <Grid Grid.Row="3"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
+            <!-- User Profile and Name elements -->
 
-        <!--User Profile and Name-->
-        <VerticalStackLayout Grid.Row="3"
-                     HorizontalOptions="Center"
-                     Spacing="0"
-                     VerticalOptions="Center"
-                     >
-
-
-
-
-            <!--Circle Frame for Profile Picture Placeholder-->
-            <Frame WidthRequest="250"
+            <VerticalStackLayout Grid.Row="3"
+                HorizontalOptions="Center"
+                Spacing="0"
+                VerticalOptions="Center"
+                >
+             <Frame WidthRequest="250"
                    HeightRequest="250"
                    CornerRadius="125"
                    BackgroundColor="Transparent"
@@ -208,10 +157,9 @@
 
             </Frame>
 
-            <Label Text="{Binding CurrentPlayer.Name}" TextColor="{StaticResource DarkGray}" FontSize="40" FontFamily="ConcertOne-Regular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End" Margin="0,15,0,0"/>
-            
-        </VerticalStackLayout>
-
+             <Label Text="{Binding CurrentPlayer.Name}" TextColor="{StaticResource DarkGray}" FontSize="40" FontFamily="ConcertOne-Regular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End" Margin="0,15,0,0"/>
+            </VerticalStackLayout>
+        </Grid>
 
         <!-- Ready Button -->
         <Button Text="READY?"
@@ -225,33 +173,26 @@
                 CornerRadius="10"
                 HeightRequest="75"
                 WidthRequest="335"
-                
                 HorizontalOptions="FillAndExpand">
-
             <Button.Shadow>
                 <Shadow Brush="Black"
                         Offset="10,10"
                         Opacity="0.4" />
             </Button.Shadow>
-
         </Button>
 
-            
-
+        <!-- Additional elements, if any -->
         <Image Source="shapes"
-                        Aspect="AspectFill"
-                        WidthRequest="400"
-                        HeightRequest="180"
-                        Grid.Row="5"
-                        Margin="0,0,0,20"
-                        VerticalOptions="End"
-                        ZIndex="-1"
-                        />
-
-
-
+           Aspect="AspectFill"
+           WidthRequest="400"
+           HeightRequest="180"
+           Grid.Row="5"
+           Margin="0,0,0,20"
+           
+           
+           VerticalOptions="End"
+           ZIndex="-1" />
     </Grid>
 
-
-
+    
 </ContentPage>
