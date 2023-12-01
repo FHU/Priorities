@@ -11,6 +11,12 @@ namespace Priorities.Services
         public int Round { get; set; }
         public int TotalRounds { get; set; }
 
+        public TimeSpan TimeElapsed { get; set; }
+
+        public List<string> PlayerRankings { get; set; }
+        public List<string> GroupRankings { get; set; }
+
+        public Player CurrentPlayer { get; set; }
     }
 }
 
