@@ -97,7 +97,7 @@
 
             <!-- [Guesser / Prioritize Label: Priscilla Harris] -->
             <!-- One Row / Three Columns -->
-            <Grid Row="1" RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="16,0" VerticalOptions="Center">
+            <Grid Row="1" RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="16,16" VerticalOptions="Center">
                 <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
                     <toolkit:AvatarView
                         Margin="0,5,20,0"
@@ -206,9 +206,14 @@
                                     BorderColor="Transparent"
                                     BackgroundColor="Transparent"
                                     IsClippedToBounds="True"
-                                     Margin="0, 5">
+                                     Margin="0, 4">
                                     <VerticalStackLayout>
-                                        <StackLayout
+                                        <Border>
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="16" />
+                                            </Border.StrokeShape>
+
+                                            <StackLayout
                                             Padding="10"
                                             HeightRequest="60"
                                             
@@ -216,7 +221,7 @@
                                             Orientation="Horizontal"
                                             VerticalOptions="FillAndExpand"
                                              BackgroundColor="{StaticResource Secondary}">
-                                            
+
                                             <Label
                                             x:Name="Priority"
                                             HorizontalOptions="FillAndExpand"
@@ -229,7 +234,7 @@
                                              FontFamily="ConcertOneRegular"
                                              FontSize="30"/>
 
-                                        <!-- I got this off the internet-->
+                                            <!-- I got this off the internet-->
                                         <!-- https://github.com/Alam-Ashraf/MAUIDragDropCollectionViewItemsDemo -->
                                             <StackLayout.GestureRecognizers>
                                                 <DragGestureRecognizer
@@ -246,6 +251,7 @@
                                         DropCommandParameter="{Binding}" />
                                             </StackLayout.GestureRecognizers>
                                         </StackLayout>
+                                        </Border>
 
                                     </VerticalStackLayout>
                                 </Frame>
