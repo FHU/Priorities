@@ -90,7 +90,7 @@ namespace Priorities.ViewModels
             gameStateService.PlayerRankings.Clear();
             gameStateService.GroupRankings.Clear();
             //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
-            Shell.Current.GoToAsync($"{nameof(GamePage)}");
+            Shell.Current.GoToAsync($"{nameof(GetReadyPage)}");
         }
 
         [RelayCommand]
