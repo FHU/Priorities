@@ -24,7 +24,11 @@ namespace Priorities.Services
 		public List<string> PlayerRankings { get; set; }
 		public List<string> GroupRankings { get; set; }
 
-		public Player CurrentPlayer { get; set; }
+		public Player Prioritizer { get; set; }
+
+		public Player Guesser { get; set; }
+
+		public GamePhase Phase { get; set; }
 
 	}
 }
