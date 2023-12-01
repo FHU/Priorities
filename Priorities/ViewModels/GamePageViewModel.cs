@@ -24,7 +24,7 @@ namespace Priorities.ViewModels
         private int totalRounds;
 
         [ObservableProperty]
-        public string score;
+        public int score;
 
         [ObservableProperty]
         public string timer;
@@ -38,16 +38,22 @@ namespace Priorities.ViewModels
 
             this.gameStateService = gameStateService;
 
-            /*Abbie*/
-
-            var playerOne = new Player
+            gameStateService.CurrentPlayer = new Player()
             {
                 Name = "K-Dawg",
-                ImageName = "kenan.jpeg"
+                ImageName = "kenan.jpg"
             };
 
-            playerName = playerOne.Name;
-            playerImage = playerOne.ImageName;
+            gameStateService.Round = 1;
+            gameStateService.TotalRounds = 10;
+
+            gameStateService.Score = 0;
+
+
+            /*Abbie*/
+
+            playerName = gameStateService.CurrentPlayer.Name;
+            playerImage = gameStateService.CurrentPlayer.ImageName;
 
             /*Priscilla*/
             Priorities = new ObservableCollection<Priority>();
@@ -59,12 +65,12 @@ namespace Priorities.ViewModels
             Priorities.Add(new Priority("Calculus"));
 
             /*Gavin*/
-            Round = 1;
-            TotalRounds = 10;
+            Round = gameStateService.Round;
+            TotalRounds = gameStateService.TotalRounds;
 
             /*Priscilla*/
             timer = "0:43";
-            score = "0";
+            score = gameStateService.Score;
 
 
 
