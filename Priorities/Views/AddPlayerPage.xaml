@@ -7,7 +7,7 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              xmlns:views="clr-namespace:Priorities.Views"
-             xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             
              x:DataType="viewmodels:AddPlayersPageViewModel"
              Title="AddPlayerPage"
              Shell.NavBarIsVisible="False"
@@ -124,6 +124,7 @@
                        x:Name="avatarPic"
                        HeightRequest="250"
                        WidthRequest="250"
+                       Source="{Binding Image}"
                        />
 
                 </Frame>
@@ -141,8 +142,8 @@
                        BackgroundColor="Transparent"
                        Margin="0,0,0,0">
 
-                    <cv:CameraView x:Name="cameraView" HeightRequest="250" WidthRequest="250"
-                               CamerasLoaded="cameraView_CamerasLoaded"/>
+                    <!--<cv:CameraView x:Name="cameraView" HeightRequest="250" WidthRequest="250"
+                               CamerasLoaded="cameraView_CamerasLoaded"/>-->
 
                 </Frame>
 
@@ -162,8 +163,31 @@
 
                 </Frame>-->
 
-                <!--Retake Button-->
                 <Button Grid.Row="2"
+                        Text="Take Photo!"
+                        x:Name="smile"
+                        Command="{Binding TakePhotoCommand}"
+                        CharacterSpacing="2"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        FontFamily="ConcertOneRegular"
+                        VerticalOptions="Center"
+                        BackgroundColor= "{StaticResource Tertiary}"
+                        CornerRadius="15"
+                        HeightRequest="47"
+                        WidthRequest="236"
+                        TextColor="White">
+                            <Button.Shadow>
+                                <Shadow Opacity="0.5"
+                                Radius="15"
+                                Offset="10,10"
+                                Brush="{StaticResource Gray400}"
+                        />
+                            </Button.Shadow>
+                </Button>
+
+                <!--Retake Button-->
+                <!--<Button Grid.Row="2"
                         Text="RETAKE"
                         x:Name="retake"
                         Clicked="Button_Clicked_1"
@@ -184,10 +208,10 @@
                                 Brush="{StaticResource Gray400}"
                         />
                             </Button.Shadow>
-                </Button>
+                </Button>-->
 
                 <!--Smile Button-->
-                <Button Grid.Row="2"
+                <!--<Button Grid.Row="2"
                         Text="SMILE!"
                         x:Name="smile"
                         Clicked="Button_Clicked"
@@ -208,7 +232,7 @@
                                 Brush="{StaticResource Gray400}"
                         />
                             </Button.Shadow>
-                </Button>
+                </Button>-->
 
                
             </Grid>
