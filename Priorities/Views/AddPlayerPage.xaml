@@ -53,10 +53,11 @@
             <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0" Padding="4">
+            <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <!--Label Name-->
                 <Frame Grid.Row="1"
@@ -79,20 +80,29 @@
                 <Entry Grid.Row="1"
                        HeightRequest="50"
                        WidthRequest="260"
-                       MaxLength="15"
+                       MaxLength="12"
                        FontSize="24"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
                        FontFamily="CoinyRegular"
                        FontAttributes="Bold"
                        TextColor="{StaticResource OffWhite}"
-               
-               BackgroundColor="{StaticResource Secondary}"
+                       BackgroundColor="{StaticResource Secondary}"
+                       TextChanged="Entry_TextChanged"
                 />
+                <Label x:Name="charLimitLabel"
+                       Grid.Row="2"
+                       Padding="0,0,65,0" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
+                       FontSize="14"
+                       TextColor="{StaticResource Secondary}"/>
+                
             </Grid>
 
             <!--Input Avatar-->
-            <Grid Grid.Row="1" RowSpacing="12" VerticalOptions="Center" Margin="10">
+            <Grid Grid.Row="1" RowSpacing="12" VerticalOptions="Center" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />

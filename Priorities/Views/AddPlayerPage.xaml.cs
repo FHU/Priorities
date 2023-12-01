@@ -10,6 +10,20 @@ public partial class AddPlayerPage : ContentPage
         InitializeComponent();
 
 		BindingContext = new AddPlayersPageViewModel();
+
+        // set maxlength 
+        //yourEntryControl.MaxLength = 12;
+    }
+
+    private void Entry_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        Entry entry = (Entry)sender;
+
+        int currentLength = entry.Text.Length;
+        int maxLength = entry.MaxLength;
+
+        // Update the character count label 
+        charLimitLabel.Text = $"{currentLength}/{maxLength}";
     }
 
     void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
