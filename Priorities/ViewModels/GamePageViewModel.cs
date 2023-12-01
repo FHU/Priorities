@@ -12,6 +12,12 @@ namespace Priorities.ViewModels
         private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
+        public bool prioritizing;
+
+        [ObservableProperty]
+        public bool guessing;
+
+        [ObservableProperty]
         public string playerName;
 
         [ObservableProperty]
@@ -37,6 +43,8 @@ namespace Priorities.ViewModels
         {
 
             this.gameStateService = gameStateService;
+
+            var phasePlaceholder = "Guessing";
 
             gameStateService.CurrentPlayer = new Player()
             {
@@ -71,6 +79,19 @@ namespace Priorities.ViewModels
             /*Priscilla*/
             timer = "0:43";
             score = gameStateService.Score;
+
+            // for guessing / prioritizing mode
+            if (phasePlaceholder.Equals("Prioritizng"))
+            {
+                prioritizing = true;
+                guessing = false;
+            }
+            else
+            {
+                prioritizing = false;
+                guessing = true;
+            }
+            
 
 
 

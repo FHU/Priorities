@@ -116,7 +116,17 @@
                             HorizontalOptions="Center"
                             Margin="0,0,0,10"
                             FontSize="20"
-                            FontFamily="ConcertOneRegular" />
+                            FontFamily="ConcertOneRegular"
+                            IsVisible="{Binding Guessing}"/>
+                        <Label
+                            Text="Submitting Priorities for"
+                            TextColor="{StaticResource DarkGray}"
+                            Opacity="0.7"
+                            HorizontalOptions="Center"
+                            Margin="0,0,0,10"
+                            FontSize="20"
+                            FontFamily="ConcertOneRegular"
+                            IsVisible="{Binding Prioritizing}"/>
                         <Label
                             TextColor="{StaticResource DarkGray}"
                             Text="{Binding PlayerName}"
