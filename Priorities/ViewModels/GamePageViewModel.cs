@@ -45,7 +45,7 @@ namespace Priorities.ViewModels
 
             this.gameStateService = gameStateService;
 
-            var phasePlaceholder = "Guessing";
+            gameStateService.Phase = GamePhase.Guessing;
 
             gameStateService.Prioritizer = new Player()
             {
@@ -85,7 +85,7 @@ namespace Priorities.ViewModels
             score = gameStateService.Score;
 
             // for guessing / prioritizing mode
-            if (phasePlaceholder.Equals("Prioritizng"))
+            if (phase.Equals("Prioritizng"))
             {
                 prioritizing = true;
                 guessing = false;
