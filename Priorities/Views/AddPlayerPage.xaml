@@ -92,9 +92,8 @@
                 />
                 <Label x:Name="charLimitLabel"
                        Grid.Row="2"
-                       Padding="0,0,65,0" 
                        FontAttributes="Bold"
-                       HorizontalOptions="End"
+                       HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="14"
                        TextColor="{StaticResource Secondary}"/>
