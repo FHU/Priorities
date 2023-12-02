@@ -292,10 +292,11 @@
                     </Border.StrokeShape>
 
                     <Grid ColumnDefinitions="*,*,*" Padding="10,0">
-                        <Label
+                        <Button
                             VerticalOptions="Center"
                             Grid.Column="1"
                             Text="Submit"
+                            Command="{Binding NavigateToRoundResultsPageCommand}"
                             TextColor="{StaticResource OffWhite2}"
                             FontSize="32"
                         

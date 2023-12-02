@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Priorities.Models;
 using System.Collections.ObjectModel;
 using Priorities.Services;
+using Priorities.Views;
 
 namespace Priorities.ViewModels
 {
@@ -99,6 +100,13 @@ namespace Priorities.ViewModels
 
            
 
+        }
+
+
+        [RelayCommand]
+        async Task NavigateToRoundResultsPage()
+        {
+            await Shell.Current.GoToAsync(nameof(RoundResultsPage));
         }
 
         // I got this off the internet
