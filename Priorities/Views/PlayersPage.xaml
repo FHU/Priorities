@@ -6,7 +6,6 @@
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
-             x:DataType="viewmodels:PlayersPageViewModel"
              BackgroundColor="{StaticResource OffWhite}">
 
     <ContentPage.Content>
@@ -57,7 +56,7 @@
                                                    Margin="-20"
                                                     />
                                         </Frame>
-                                        <Label Text="{Binding PlayerName}" FontFamily="ConcertOneRegular" FontSize="28" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Margin="-20,0,0,0" />
+                                        <Label Text="{Binding Name}" FontFamily="ConcertOneRegular" FontSize="28" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Margin="-20,0,0,0" />
                                         <Button Text="x" FontSize="30" TextColor="White"  FontFamily="CoinyRegular" 
                                                 HorizontalOptions="Center" VerticalOptions="Center" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent"
                                                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PlayersPageViewModel}}, Path=DeleteButtonCommand}" 

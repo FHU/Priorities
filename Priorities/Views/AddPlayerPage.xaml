@@ -64,7 +64,7 @@
                         HorizontalOptions="Center"
                         BackgroundColor="{StaticResource Secondary}"
                         WidthRequest="296"
-                        HeightRequest="60"
+                        HeightRequest="63"
                         CornerRadius="25"
                         BorderColor="Transparent">
                 </Frame>
@@ -78,7 +78,7 @@
                        FontAttributes="Bold"/>
                 <!--Text box to input name-->
                 <Entry Grid.Row="1"
-                       HeightRequest="50"
+                       HeightRequest="53"
                        WidthRequest="260"
                        MaxLength="12"
                        FontSize="24"
@@ -242,7 +242,8 @@
                             CornerRadius="25"
                             FontAttributes="Bold"
                             BackgroundColor="{StaticResource Primary}"
-                            TextColor="{StaticResource White}">
+                            TextColor="{StaticResource White}"
+                            Command="{Binding AddPlayerCommand}">
                                 <Button.Shadow>
                                     <Shadow Opacity="0.5"
                                         Radius="15"
@@ -250,6 +251,7 @@
                                         Brush="{StaticResource Gray400}"
                                     />
                                 </Button.Shadow>
+                            
                     </Button>
 
                     <!--<Image Source="shapes.png"
@@ -258,6 +260,8 @@
                            HeightRequest="180"
                            WidthRequest="200"
                            />-->
+                            
+                    
                 </Grid>
 
             </StackLayout>

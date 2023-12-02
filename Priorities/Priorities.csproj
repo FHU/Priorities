@@ -15,7 +15,7 @@
 		<ApplicationTitle>Priorities</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.priorities</ApplicationId>
+		<ApplicationId>edu.fhu.priorities</ApplicationId>
 		<ApplicationIdGuid>8ee0cf2a-0279-476d-8e09-edd81311712c</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -32,6 +32,9 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
+	  <CodesignProvision>Priorities+Kenan's iPhone13</CodesignProvision>
+	  <CodesignKey>iPhone Developer</CodesignKey>
+	  <MtouchDebug>true</MtouchDebug>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -50,9 +53,15 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
-	<ItemGroup>
+	<!-- <ItemGroup>
+	  <None Remove="Resources\Images\kenan.jpg" />
+	  <None Remove="Resources\Images\avatar_pic.jpg" />
+	  <None Remove="Resources\Images\dotnet_bot.svg" />
+	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\kenan.jpeg" />
+	  <None Remove="Resources\Images\settings.svg" />
 	  <None Remove="Resources\Images\shapes.svg" />
-	</ItemGroup>
+	</ItemGroup> -->
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
@@ -75,9 +84,17 @@
 	</ItemGroup> -->
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\whiteadd.png" />
+	  <None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <BundleResource Include="Resources\Images\whiteadd.png" />
+	  <Folder Include="Services\" />
+	  <BundleResource Include="Resources\Images\kenan.jpg" />
+	  <BundleResource Include="Resources\Images\avatar_pic.jpg" />
+	  <BundleResource Include="Resources\Images\dotnet_bot.svg" />
+	  <BundleResource Include="Resources\Images\home.svg" />
+	  <BundleResource Include="Resources\Images\kenan.jpeg" />
+	  <BundleResource Include="Resources\Images\settings.svg" />
+	  <BundleResource Include="Resources\Images\shapes.svg" />
 	</ItemGroup>
+
 </Project>

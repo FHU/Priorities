@@ -1,29 +1,16 @@
 namespace Priorities.Views;
 
 using Camera.MAUI;
+using Priorities.Services;
 using Priorities.ViewModels;
 
 public partial class AddPlayerPage : ContentPage
 {
-	public AddPlayerPage()
+	public AddPlayerPage(IGameStateService gameStateService)
 	{
         InitializeComponent();
 
-		BindingContext = new AddPlayersPageViewModel();
-
-        // set maxlength 
-        //yourEntryControl.MaxLength = 12;
-    }
-
-    private void Entry_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        Entry entry = (Entry)sender;
-
-        int currentLength = entry.Text.Length;
-        int maxLength = entry.MaxLength;
-
-        // Update the character count label 
-        charLimitLabel.Text = $"{currentLength}/{maxLength}";
+		BindingContext = new AddPlayersPageViewModel( gameStateService);
     }
 
     void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
