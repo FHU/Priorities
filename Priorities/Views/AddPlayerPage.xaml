@@ -146,6 +146,8 @@
                             HeightRequest="85"
                             CornerRadius="25"
                             BackgroundColor="#EC6664"
+                            Command="{Binding AddPlayerCommand}"
+                            ImageSource="plus.png"
                     />
                 </Grid>
 
