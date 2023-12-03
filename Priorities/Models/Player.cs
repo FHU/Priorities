@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using Priorities.Models;
 namespace Priorities.Models
 {
 	public class Player

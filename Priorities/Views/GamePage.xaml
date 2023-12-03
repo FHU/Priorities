@@ -1,211 +1,289 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.GamePage"
              Shell.FlyoutBehavior="Flyout"
-             Title="GamePage">
-    
-    <!-- DIRECTIONS: Do the section under your name. It will be very helpful to reference back to our FACADE apps for this assignment.
-    PLEASE reference our GamePage XAML Planning JIRA card and both ours and Casey's UI Design Cards -->
-    
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             xmlns:models="clr-namespace:Priorities.Models"
+             xmlns:views="clr-namespace:Priorities.Views"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+
+             x:DataType="viewmodels:GamePageViewModel"
+             Title="GamePage"
+             Shell.NavBarIsVisible="False"
+             Shell.BackgroundColor="{StaticResource DarkGray}"
+             BackgroundColor="{StaticResource OffWhite}">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
+    </ContentPage.Behaviors>
+
     <!-- Grid wrapper for the entire game page -->
-    
-    <Grid RowDefinitions="0.15*,0.15*,0.60*,0.10*" ColumnDefinitions="*" RowSpacing="10"> <!-- Four Rows / One Column -->
-        
-        <!-- TODO [Header: Abbie Vance] --> <!-- One Row / Three Columns -->
-        <Grid Row="0" BackgroundColor="#dddddd">
+    <Grid RowDefinitions="80, *" >
+        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
+            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/>
+            <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="O" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="T" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
+        <Grid Grid.Row="1" RowDefinitions="60,auto,*" ColumnDefinitions="*" RowSpacing="10">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+            <ContentView Grid.Row="0" >
+                <views:GameStatusBar />
+            </ContentView>
 
-
-
-                <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
-                <Frame
-                   HeightRequest="70"
-                   WidthRequest="70"
-                   CornerRadius="70"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   IsClippedToBounds="True"
-                   Padding="0"
-                   BorderColor="Gray"
-                   Margin="20,0,20,0">
-                        <Image
-                        Aspect="AspectFit"
-                        Source="dotnet_bot.png"
-                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                        HeightRequest="70"
-                        WidthRequest="70"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center" />
-                </Frame>
-                <Label
-                    Text="Gavin Boler"
+            <!-- [Header: Abbie Vance] -->
+            <!-- One Row / Two Columns -->
+            <!--<Grid RowDefinitions="*" ColumnDefinitions="*,*" Row="0" Padding="16,4" BackgroundColor="{StaticResource Primary}">
+                <HorizontalStackLayout Grid.ColumnSpan="2" VerticalOptions="Center" Margin="0,0,0,0">
+                    <Label
+                    Text="{Binding Score}"
+                    TextColor="{StaticResource OffWhite2}"
+                    FontSize="40"
+                    Margin="0,0,4,0"
+                    FontFamily="ConcertOneRegular"
+                    />
+                    <Label
+                    Text="points"
+                    TextColor="{StaticResource OffWhite2}"
                     FontSize="24"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    ></Label>
-            </HorizontalStackLayout>
+                    Margin="0,0,0,4"
+                    Opacity="0.8"
+                    VerticalOptions="End"
+                    FontFamily="ConcertOneRegular"/>
+                </HorizontalStackLayout>
 
-            
+                <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,0,0">
+                    <Label
+                    VerticalOptions="End"
+                    TextColor="{StaticResource OffWhite2}"
+                    Text="round"
+                    Opacity="0.8"
+                    FontSize="24"
+                    Margin="0,0,4,4"
+                    FontFamily="ConcertOneRegular"/>
 
-            <VerticalStackLayout
-                Padding="0, 0, 50, 0"
-                Grid.Column="1"
-                VerticalOptions="Center">
-                <Label
-                VerticalOptions="Center"
-                    HorizontalOptions="End"
-                Text="Score"
-                ></Label>
-
-                <Label
-                VerticalOptions="Center"
-                    HorizontalOptions="End"
-                Text="0"
-                FontSize="30"
-                ></Label>
-            </VerticalStackLayout>
-
-
-
-
-        </Grid>
-
-        <!-- TODO [Guesser / Prioritize Label: Priscilla Harris] --> <!-- Two Rows / One Column -->
-        <Grid Row="1" RowDefinitions="*,*" Margin="0,10">
-            <Label
-            Grid.Row="0"
-            Text="Guess the Priorities"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            FontSize="20"
-            />
-
-            <Label
-            Grid.Row="1"
-            Text="0:59"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            FontSize="30"
-            />
-        </Grid>
-        
-        <!-- TODO [Priority Cards Section: Priscilla Harris] --> <!-- Six Rows / Two Columns -->
-        <Grid Row="2" RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="0.10*,0.90*" Margin="50, 0" RowSpacing="10" ColumnSpacing="20">
-
-            <!-- Priority Rank Numbers -->
-            <Label
-            Grid.Column="0"
-            Grid.Row="0"
-            Text="1"
-            FontSize="30"
-            VerticalOptions="Center"
-            />
-            
-            <Label
-            Grid.Column="0"
-            Grid.Row="1"
-            Text="2"
-            FontSize="30"
-            VerticalOptions="Center"
-            />
-            
-            <Label
-            Grid.Column="0"
-            Grid.Row="2"
-            Text="3"
-            FontSize="30"
-            VerticalOptions="Center"
-            />
-            
-            <Label
-            Grid.Column="0"
-            Grid.Row="3"
-            Text="4"
-            FontSize="30"
-            VerticalOptions="Center"
-            />
-            
-            <Label
-            Grid.Column="0"
-            Grid.Row="4"
-            Text="5"
-            FontSize="30"
-            VerticalOptions="Center"
-            />
-            
-            <!-- Priority Cards -->
-            <Button
-            Grid.Column="1"
-            Grid.Row="0"
-            Text="Turtles"   
-            FontSize="20"
-           
-            />
-
-            <Button
-            Grid.Column="1"
-            Grid.Row="1"
-            Text="Evan Kahan"     
-            FontSize="20"   
-           
-            />
-
-            <Button
-            Grid.Column="1"
-            Grid.Row="2"
-            Text="Microwaves"
-            FontSize="20"
-           
-            />
-
-            <Button
-            Grid.Column="1"
-            Grid.Row="3"
-            Text="Musicals" 
-            FontSize="20"       
-           
-            />
-
-            <Button
-            Grid.Column="1"
-            Grid.Row="4"
-            Text="Calculus"
-            FontSize="20"
-           
-            />
-
-            <Button
-            Grid.ColumnSpan="2"
-            Grid.Column="0"
-            Grid.Row="5"
-            Text="Submit"
-            FontSize="20"
-            HeightRequest="55"
-            Margin="0, 20, 0, 0"
-           
-            />
-
-        </Grid>
-        
-        <!-- TODO [Footer: Gavin Boler] --> <!-- One Row -->
-        <Grid Row="3" RowDefinitions="*" ColumnDefinitions="*" BackgroundColor="#dddddd" Margin="0,15,0,0">
-
-
-            <Label
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    Text="Round 1/8"
-                    FontSize="15"
+                    <Label
+                    VerticalOptions="End"
+                    Margin="0"
+                    TextColor="{StaticResource OffWhite2}"
+                    Text="{Binding RoundNumber}"
+                    FontSize="40"
+                    FontFamily="ConcertOneRegular"
                 />
+                </HorizontalStackLayout>
+            </Grid>-->
+
+            <!-- [Guesser / Prioritize Label: Priscilla Harris] -->
+            <!-- One Row / Three Columns -->
+            <Grid Row="1" RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="16,0" VerticalOptions="Center">
+                <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center">
+                    <toolkit:AvatarView
+                        Margin="0,5,20,0"
+                        CornerRadius="100"
+                        HeightRequest="70"
+                        HorizontalOptions="Center"
+                        ImageSource="{Binding PlayerImage}"
+                        VerticalOptions="Center"
+                        WidthRequest="70" />
+
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="End">
+                        <Label
+                            Text="Guessing Priorities for"
+                            TextColor="{StaticResource DarkGray}"
+                            Opacity="0.7"
+                            HorizontalOptions="Center"
+                            Margin="0,0,0,10"
+                            FontSize="20"
+                            FontFamily="ConcertOneRegular" />
+                        <Label
+                            Text="{Binding PlayerName}"
+                            FontSize="36"
+                            HorizontalOptions="Start"
+                            FontFamily="ConcertOneRegular"
+                            ></Label>
+                    </VerticalStackLayout>
+
+                </HorizontalStackLayout>
+
+                <Button
+                    Grid.Column="2"
+                    Text="{Binding Timer}"
+                    BackgroundColor="{StaticResource White}"
+                    CornerRadius="16"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    FontSize="24"
+                    IsEnabled="False"
+                    FontFamily="ConcertOneRegular">
+                    <Button.Shadow>
+                        <Shadow Brush="{StaticResource Black}"
+                            Offset="2,4"
+                            Radius="16"
+                            Opacity="0.5"/>
+                    </Button.Shadow>
+
+                </Button>
+
+            </Grid>
+
+
+            <Image Grid.Row="2" Grid.RowSpan="1" Grid.ColumnSpan="3" Source="shapes.jpg"  Margin="0,-40" VerticalOptions="EndAndExpand" />
+
+            <!-- [Priority Cards Section: Priscilla Harris] -->
+            <!-- Six Rows / Two Columns -->
+            <Grid Row="2" RowDefinitions="*,*,*,*,*,*,auto" ColumnDefinitions="0.2*,0.8*" ColumnSpacing="8" Margin="16,0" >
+
+                <!-- Priority Rank Numbers -->
+                <CollectionView Grid.Column="0" Grid.RowSpan="5" >
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:Int32}">
+                            <x:Int32>1</x:Int32>
+                            <x:Int32>2</x:Int32>
+                            <x:Int32>3</x:Int32>
+                            <x:Int32>4</x:Int32>
+                            <x:Int32>5</x:Int32>
+
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Priority">
+                            <Grid >
+                                <Button
+                                    CornerRadius="30"
+                                    HeightRequest="60"
+                                    WidthRequest="60"
+                                    BackgroundColor="{StaticResource PrimaryBlueGreen}"
+                                    Text="{Binding .}"
+                                    TextColor="{StaticResource OffWhite2}"
+                                    FontSize="30"
+                                    VerticalOptions="Center"
+                                    Margin="0, 8"
+                                    IsEnabled="False"
+                                    FontFamily="ConcertOneRegular"
+                                    ZIndex="5"
+                                    />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Priority Cards -->
+                <VerticalStackLayout Grid.RowSpan="5" Grid.Column="1">
+
+                    <CollectionView  
+                        ItemsSource="{Binding Priorities}" >
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate x:DataType="models:Priority">
+                                <Grid >
+                                    <!--<RoundRectangle
+                                    Grid.Column="1"
+                                    CornerRadius="18"                 
+
+                                    HeightRequest="60"                                    
+                                    Fill="{StaticResource PrimaryBlueGreen}">
+                                        <RoundRectangle.Shadow>
+                                            <Shadow                                
+                                        Brush="Black"
+                                        Opacity="0.25"
+                                        Radius="10"
+                                        Offset="0,15" />
+                                        </RoundRectangle.Shadow>
+                                    </RoundRectangle>-->
+
+                                    <Button
+                                        CornerRadius="16"
+                                        HeightRequest="60"
+                                        Grid.Column="1"
+                                        Text="{Binding Thing}"
+                                        TextColor="{StaticResource OffWhite2}"
+                                        Margin="0, 8"
+                                        BackgroundColor="{StaticResource Secondary}"              
+                                        FontSize="30"
+                                        HorizontalOptions="FillAndExpand"
+                                        FontFamily="ConcertOneRegular">
+                                        <Button.Shadow>
+                                            <Shadow
+                                            Brush="Black"
+                                            Opacity="0.25"
+                                            Radius="4"
+                                            Offset="2,4" />
+
+                                        </Button.Shadow>
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+
+
+                <Border
+                    BackgroundColor="{StaticResource Primary}"
+                    StrokeThickness="0"                 
+                    Grid.ColumnSpan="3"
+                    Grid.Column="0"
+                    Grid.Row="5"
+                    Margin="0,0,0,48"
+                    HeightRequest="75">
+                    <Border.Shadow>
+                        <Shadow Brush="{StaticResource Black}"
+                            Offset="2,4"
+                            Radius="8"
+                            Opacity="0.5" />
+                    </Border.Shadow>
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16" />
+                    </Border.StrokeShape>
+
+                    <Grid ColumnDefinitions="*,*,*" Padding="10,0">
+                        <Label
+                            VerticalOptions="Center"
+                            Grid.Column="1"
+                            Text="Submit"
+                            TextColor="{StaticResource OffWhite2}"
+                            FontSize="32"
+                        
+                            FontFamily="ConcertOneRegular"/>
+                        <Label
+                            VerticalOptions="Center"
+                            Grid.Column="2"
+                            Text="➜"
+                            TextColor="{StaticResource OffWhite2}"
+                            HorizontalOptions="End"
+                            Margin="0,0,20,0"
+                            FontSize="32"
+                            FontFamily="ConcertOneRegular"/>
+                    </Grid>
+                </Border>
+
+
+
+
+
+            </Grid>
+
+
+
         </Grid>
     </Grid>
 </ContentPage>

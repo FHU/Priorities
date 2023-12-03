@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="Priorities.Views.GameStatusBar"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid
+        Padding="16,4"
+        BackgroundColor="{StaticResource Primary}"
+        ColumnDefinitions="*,*"
+        Row="0"
+        RowDefinitions="*">
+        <HorizontalStackLayout
+            Grid.ColumnSpan="2"
+            Margin="0,0,0,0"
+            VerticalOptions="Center">
+            <Label
+                Margin="0,0,4,0"
+                FontFamily="ConcertOneRegular"
+                FontSize="40"
+                Text="{Binding Score}"
+                TextColor="{StaticResource OffWhite2}" />
+            <Label
+                Margin="0,0,0,4"
+                FontFamily="ConcertOneRegular"
+                FontSize="24"
+                Opacity="0.8"
+                Text="points"
+                TextColor="{StaticResource OffWhite2}"
+                VerticalOptions="End" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+            Grid.Column="1"
+            Margin="0,0,0,0"
+            HorizontalOptions="End"
+            VerticalOptions="Center">
+            <Label
+                Margin="0,0,4,4"
+                FontFamily="ConcertOneRegular"
+                FontSize="24"
+                Opacity="0.8"
+                Text="round"
+                TextColor="{StaticResource OffWhite2}"
+                VerticalOptions="End" />
+
+            <Label
+                Margin="0"
+                FontFamily="ConcertOneRegular"
+                FontSize="40"
+                TextColor="{StaticResource OffWhite2}"
+                VerticalOptions="End">
+
+                <!--  https://xamgirl.com/understanding-multi-binding-in-xamarin-forms/  -->
+                <Label.Text>
+                    <MultiBinding StringFormat="{}{0}/{1}">
+                        <Binding Path="Round" />
+                        <Binding Path="TotalRounds" />
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
+        </HorizontalStackLayout>
+    </Grid>
+</ContentView>
+

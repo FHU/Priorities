@@ -7,36 +7,20 @@ using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Priorities.Models;
 using CommunityToolkit.Mvvm.Input;
+using Priorities.Views;
+using Priorities.Services;
 
 namespace Priorities.ViewModels
 {
     public partial class RoundResultsPageViewModel : ObservableObject
     {
-        public RoundResultsPageViewModel()
-        {
-            rankings = new ObservableCollection<Ranking>();
-            Person = new Player() { Name = "John", ImageName = "dotnet_bot.svg" };
-            var rank1 = "Giraffe";
-            var rank2 = "Chocolate" ;
-            var rank3 = "Fruit" ;
-            var rank4 = "Sleep" ;
-            var rank5 = "Casey" ;
-            PlayerRanking = new List<String> { rank1, rank2, rank3, rank4, rank5 };
-
-            var grank1 = "Giraffe" ;
-            var grank2 = "Chocolate" ;
-            var grank3 = "Sleep" ;
-            var grank4 = "Fruit" ;
-            var grank5 = "Casey" ;
-            GroupRanking = new List<String> { grank1, grank2, grank3, grank4, grank5 };
-            Score = 0;
-            Compare(PlayerRanking, GroupRanking);
-            Round = 1;
-            
-        }
+        private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
         private int round;
+
+        [ObservableProperty]
+        private int totalRounds;
 
         [ObservableProperty]
         private int score;
@@ -44,37 +28,82 @@ namespace Priorities.ViewModels
         [ObservableProperty]
         private Player person;
 
-        private List<String> PlayerRanking { get; set; }
+        private List<string> PlayerRanking { get; set; }
 
-        private List<String> GroupRanking { get; set; }
+        private List<string> GroupRanking { get; set; }
 
-        public ObservableCollection<Ranking> rankings { get; set; }
+        public ObservableCollection<Ranking> Rankings { get; set; }
 
-         void Compare(List<String> pRank, List<String> gRank)
+        public RoundResultsPageViewModel(IGameStateService gameStateService)
         {
-            for (int i = 0; i < pRank.Count; i++) {
-                if (pRank[i] == gRank[i])
-                {
-                    rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "+", Points = 25 - (5*i), ImagePath = "green_check.svg" });
-                    Score = Score + (25 - (5 * i));
-                }
-                else
-                {
-                    rankings.Add(new Ranking { Name = pRank[i], Number = i + 1, Sign = "-", Points = 25 - (5*i), ImagePath = "red_x.svg" });
-                    Score = Score - (25 - (5 * i));
-                }
+            string i1 = "Giraffe";
+            string i2 = "Chocolate";
+            string i3 = "Fruit";
+            string i4 = "Sleep";
+            string i5 = "Casey";
+
+            this.gameStateService = gameStateService; // MADISON DON'T DELETE THIS LINE
+
+            this.gameStateService.Score = 0;
+            this.gameStateService.Round = 1;
+            this.gameStateService.TotalRounds = 10;
+            this.gameStateService.PlayerRankings = new List<string> { i1, i2, i3, i4, i5 };
+            this.gameStateService.GroupRankings = new List<string> { i1, i2, i4, i3, i5 };
+            this.gameStateService.CurrentPlayer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
+
+            this.Round = this.gameStateService.Round;
+            this.TotalRounds = this.gameStateService.TotalRounds;
+            this.Score = this.gameStateService.Score;
+            this.Person = this.gameStateService.CurrentPlayer;
+            this.PlayerRanking = this.gameStateService.PlayerRankings;
+            this.GroupRanking = this.gameStateService.GroupRankings;
+
+            Rankings = new ObservableCollection<Ranking>();
+        }
+
+        public void GetResult(int rank)
+        {
+            Ranking ranking = new Ranking() { Number = rank, Name = GroupRanking[rank - 1] };
+
+            if (GroupRanking[rank - 1] == PlayerRanking[rank - 1])
+            {
+                ranking.Points = 25 - (5 * (rank - 1));
+                ranking.Color = Color.FromArgb("#74C1DD");
+                Score += ranking.Points;
             }
+            else
+            {
+                ranking.Points = -1 * (25 - (5 * (rank - 1)));
+                ranking.Color = Color.FromArgb("#EC6664");
+                Score += ranking.Points;
+            }
+
+            Rankings.Insert(0, ranking);
         }
 
         [RelayCommand]
         void Next()
         {
-          
             Round++;
-            // change page and add round and score as variables
+            gameStateService.Score = Score;
+            gameStateService.Round = Round;
+            gameStateService.PlayerRankings.Clear();
+            gameStateService.GroupRankings.Clear();
+            //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
+            Shell.Current.GoToAsync($"{nameof(GamePage)}");
+        }
+
+        [RelayCommand]
+        async Task ShowRankings()
+        {
+            for (int i = 5; i > 0; i--)
+            {
+                await Task.Delay(1000);
+                GetResult(i);
+            }
         }
 
     }
 
-    
+
 }
