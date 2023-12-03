@@ -294,21 +294,12 @@
                     <Grid ColumnDefinitions="*,*,*" Padding="10,0">
                         <Button
                             VerticalOptions="Center"
-                            Grid.Column="1"
-                            Text="Submit"
+                            Grid.ColumnSpan="3"
+                            Text="SUBMIT"
                             Command="{Binding NavigateToRoundResultsPageCommand}"
                             TextColor="{StaticResource OffWhite2}"
                             FontSize="32"
                         
-                            FontFamily="ConcertOneRegular"/>
-                        <Label
-                            VerticalOptions="Center"
-                            Grid.Column="2"
-                            Text="➜"
-                            TextColor="{StaticResource OffWhite2}"
-                            HorizontalOptions="End"
-                            Margin="0,0,20,0"
-                            FontSize="32"
                             FontFamily="ConcertOneRegular"/>
                     </Grid>
                 </Border>
