@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.HomePage"
@@ -8,10 +8,13 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <VerticalStackLayout>
-            <Label Grid.Row="0" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+        <VerticalStackLayout Grid.Row="0">
+            <Label LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="P" FontSize="60" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -30,17 +33,7 @@
             <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
         </VerticalStackLayout>
 
-
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-            </Grid.RowDefinitions>
-
-            <VerticalStackLayout>
-                <Label Grid.Row="1" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource PrimaryBlueGreen}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="1" LineBreakMode="NoWrap" Padding="15" BackgroundColor="{StaticResource PrimaryBlueGreen}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="▶" FontSize="80" TextColor="White" FontFamily="CoinyRegular"/>
@@ -48,32 +41,29 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Label Grid.Row="2" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="2" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="High Scores" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Label Grid.Row="3" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="3" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Achievements" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Label Grid.Row="4" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource SecondaryLightBlue}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="4" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource SecondaryLightBlue}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="How to Play" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-            </VerticalStackLayout>
 
         </Grid>
-
-    </Grid>
 
 
 
