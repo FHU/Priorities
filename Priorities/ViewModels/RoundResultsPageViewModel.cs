@@ -48,15 +48,21 @@ namespace Priorities.ViewModels
             this.gameStateService.Round = 1;
             this.gameStateService.TotalRounds = 10;
             this.gameStateService.PlayerRankings = new List<string> { i1, i2, i3, i4, i5 };
+            //this.gameStateService.PrioritizerRankings = new List<string> { i1, i2, i3, i4, i5 };
             this.gameStateService.GroupRankings = new List<string> { i1, i4, i3, i2, i5 };
+            //this.gameStateService.GuesserRankings = new List<string> { i1, i4, i3, i2, i5 };
             this.gameStateService.CurrentPlayer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
+            //this.gameStateService.Prioritizer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
 
             Round = this.gameStateService.Round;
             TotalRounds = this.gameStateService.TotalRounds;
             Score = this.gameStateService.Score;
             Person = this.gameStateService.CurrentPlayer;
+            //Person = this.gameStateService.Prioritizer;
             PlayerRanking = this.gameStateService.PlayerRankings;
+            //PlayerRanking = this.gameStateService.PrioritizerRankings;
             GroupRanking = this.gameStateService.GroupRankings;
+            //GroupRanking = this.gameStateService.GuesserRankings;
 
             Rankings = new ObservableCollection<Ranking>();
         }
@@ -87,7 +93,9 @@ namespace Priorities.ViewModels
             // update game state service
             gameStateService.Score = Score;
             gameStateService.PlayerRankings.Clear();
+            //gameStateService.PrioritizerRankings.Clear();
             gameStateService.GroupRankings.Clear();
+            //gameStateService.GuesserRankings.Clear();
 
             if (Round == TotalRounds)
             {
@@ -97,10 +105,10 @@ namespace Priorities.ViewModels
             else
             {
                 // update round
-                Round++;
+                //Round++;
 
                 // update game state service round
-                gameStateService.Round = Round;
+                //gameStateService.Round = Round;
 
                 // pass to next player
                 Shell.Current.GoToAsync($"{nameof(GetReadyPage)}");
