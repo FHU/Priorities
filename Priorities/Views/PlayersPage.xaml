@@ -103,7 +103,8 @@
                             MinimumWidthRequest="250"
                             HeightRequest="90"
                             Command="{Binding NavigateToAddPlayersPageCommand}"
-                            FontFamily="ConcertOneRegular">
+                            FontFamily="ConcertOneRegular"
+                            IsEnabled="{Binding HasEnoughPlayers}">
                         <Button.Shadow>
                             <Shadow Brush="Black"
                                     Offset="-10,20"

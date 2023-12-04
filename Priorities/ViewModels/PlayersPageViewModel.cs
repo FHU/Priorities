@@ -4,18 +4,22 @@ using Priorities.Views;
 using System.Collections.ObjectModel;
 using Priorities.Models;
 using Priorities.Services;
+using HealthKit;
 
 namespace Priorities.ViewModels
 {
     public partial class PlayersPageViewModel : ObservableObject
     {
-		private readonly IGameStateService gameStateService;
+        private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
         string playerName;
 
         [ObservableProperty]
         string imagePath;
+
+        [ObservableProperty]
+        bool hasEnoughPlayers = false;
 
         public ObservableCollection<Player> Players { get; set; } = new();
 
@@ -44,6 +48,8 @@ namespace Priorities.ViewModels
             {
                 Players.Add(p);
             }
+
+            updateHasEnoughPlayers();
         }
 
 
@@ -65,6 +71,17 @@ namespace Priorities.ViewModels
         {
             Players.Remove(player);
             gameStateService.Players.Remove(player);
+            updateHasEnoughPlayers();
+        }
+
+        private void updateHasEnoughPlayers()
+        {
+            if(Players.Count > 1 && gameStateService.Players.Count > 1)
+            {
+                HasEnoughPlayers = true;
+            }
+            HasEnoughPlayers =  false;
+            
         }
     }
 }
