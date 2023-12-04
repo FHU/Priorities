@@ -45,7 +45,7 @@ namespace Priorities.ViewModels
 
             this.gameStateService = gameStateService;
 
-            gameStateService.Phase = GamePhase.Guessing;
+            gameStateService.Phase = GamePhase.Prioritizing;
 
             gameStateService.Prioritizer = new Player()
             {
@@ -85,7 +85,7 @@ namespace Priorities.ViewModels
             score = gameStateService.Score;
 
             // for guessing / prioritizing mode
-            if (phase.Equals("Prioritizng"))
+            if (phase.Equals(GamePhase.Prioritizing))
             {
                 prioritizing = true;
                 guessing = false;
@@ -106,6 +106,19 @@ namespace Priorities.ViewModels
         [RelayCommand]
         async Task NavigateToRoundResultsPage()
         {
+            var rankingList = new List<string>();
+            foreach (var priority in Priorities)
+            {
+                rankingList.Add(priority.Thing);
+            }
+            if (gameStateService.Phase.Equals(GamePhase.Prioritizing))
+            {
+                gameStateService.PlayerRankings = rankingList;
+            }
+            else
+            {
+                gameStateService.GroupRankings = rankingList;
+            }
             await Shell.Current.GoToAsync(nameof(RoundResultsPage));
         }
 
