@@ -21,14 +21,19 @@ namespace Priorities.Services
 
 		public TimeSpan TimeElapsed { get; set; }
 
-		public List<string> PlayerRankings { get; set; }
-		public List<string> GroupRankings { get; set; }
+		public List<string> PrioritizerRankings { get; set; }
+		public List<string> GuesserRankings { get; set; }
 
 		public Player Prioritizer { get; set; }
 
 		public Player Guesser { get; set; }
 
 		public GamePhase Phase { get; set; }
+
+		public List<string> GetRandomItems(int number)
+		{
+			return new List<string>();
+		}
 
 	}
 }

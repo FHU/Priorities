@@ -97,9 +97,6 @@ namespace Priorities.ViewModels
             }
             
 
-
-           
-
         }
 
 
@@ -113,11 +110,11 @@ namespace Priorities.ViewModels
             }
             if (gameStateService.Phase.Equals(GamePhase.Prioritizing))
             {
-                gameStateService.PlayerRankings = rankingList;
+                gameStateService.PrioritizerRankings = rankingList;
             }
             else
             {
-                gameStateService.GroupRankings = rankingList;
+                gameStateService.GuesserRankings = rankingList;
             }
             await Shell.Current.GoToAsync(nameof(RoundResultsPage));
         }

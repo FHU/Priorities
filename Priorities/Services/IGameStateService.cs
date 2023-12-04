@@ -19,8 +19,8 @@ namespace Priorities.Services
 
         public TimeSpan TimeElapsed { get; set; }
 
-        public List<string> PlayerRankings { get; set; }
-        public List<string> GroupRankings { get; set; }
+        public List<string> PrioritizerRankings { get; set; }
+        public List<string> GuesserRankings { get; set; }
 
         public Player Prioritizer { get; set; }
 

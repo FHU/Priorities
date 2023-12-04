@@ -28,9 +28,9 @@ namespace Priorities.ViewModels
         [ObservableProperty]
         private Player person;
 
-        private List<string> PlayerRanking { get; set; }
+        private List<string> PrioritizerRankings { get; set; }
 
-        private List<string> GroupRanking { get; set; }
+        private List<string> GuesserRankings { get; set; }
 
         public ObservableCollection<Ranking> Rankings { get; set; }
 
@@ -48,8 +48,8 @@ namespace Priorities.ViewModels
             this.gameStateService.Score = 0;
             this.gameStateService.Round = 1;
             this.gameStateService.TotalRounds = 10;
-            this.gameStateService.PlayerRankings = new List<string> { i1, i2, i3, i4, i5 };
-            this.gameStateService.GroupRankings = new List<string> { i1, i2, i4, i3, i5 };
+            this.gameStateService.PrioritizerRankings = new List<string> { i1, i2, i3, i4, i5 };
+            this.gameStateService.GuesserRankings = new List<string> { i1, i2, i4, i3, i5 };
             this.gameStateService.Prioritizer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
 
 
@@ -58,17 +58,17 @@ namespace Priorities.ViewModels
             this.TotalRounds = this.gameStateService.TotalRounds;
             this.Score = this.gameStateService.Score;
             this.Person = this.gameStateService.Prioritizer;
-            this.PlayerRanking = this.gameStateService.PlayerRankings;
-            this.GroupRanking = this.gameStateService.GroupRankings;
+            this.PrioritizerRankings = this.gameStateService.PrioritizerRankings;
+            this.GuesserRankings = this.gameStateService.GuesserRankings;
 
             Rankings = new ObservableCollection<Ranking>();
         }
 
         public void GetResult(int rank)
         {
-            Ranking ranking = new Ranking() { Number = rank, Name = GroupRanking[rank - 1] };
+            Ranking ranking = new Ranking() { Number = rank, Name = GuesserRankings[rank - 1] };
 
-            if (GroupRanking[rank - 1] == PlayerRanking[rank - 1])
+            if (GuesserRankings[rank - 1] == PrioritizerRankings[rank - 1])
             {
                 ranking.Points = 25 - (5 * (rank - 1));
                 ranking.Color = Color.FromArgb("#74C1DD");
@@ -90,8 +90,8 @@ namespace Priorities.ViewModels
             Round++;
             gameStateService.Score = Score;
             gameStateService.Round = Round;
-            gameStateService.PlayerRankings.Clear();
-            gameStateService.GroupRankings.Clear();
+            gameStateService.PrioritizerRankings.Clear();
+            gameStateService.GuesserRankings.Clear();
             //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
             Shell.Current.GoToAsync($"{nameof(GamePage)}");
         }
