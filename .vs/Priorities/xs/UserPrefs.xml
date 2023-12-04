@@ -1,8 +1,6 @@
 ﻿<Properties StartupConfiguration="{91192315-2352-4C23-B55C-625EA8592BCD}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.emulator-5554" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Priorities/MainPage.xaml">
     <Files>
       <File FileName="PlayersPage.xaml" />
@@ -12,16 +10,16 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Priorities" expanded="True">
-            <Node name="Priorities" expanded="True">
-              <Node name="MainPage.xaml" selected="True" />
-            </Node>
+            <Node name="Priorities" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Priorities PreferredExecutionTarget="Android.pixel_5_-_api_30" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Priorities PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
 </Properties>
