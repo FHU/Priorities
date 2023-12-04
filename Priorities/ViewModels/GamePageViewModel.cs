@@ -45,7 +45,7 @@ namespace Priorities.ViewModels
 
             this.gameStateService = gameStateService;
 
-            gameStateService.Phase = GamePhase.Guessing;
+            gameStateService.Phase = GamePhase.Prioritizing;
 
             gameStateService.Prioritizer = new Player()
             {
