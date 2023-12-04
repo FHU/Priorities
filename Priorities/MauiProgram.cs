@@ -3,7 +3,6 @@ using CommunityToolkit.Maui;
 using Priorities.Views;
 using Priorities.ViewModels;
 using Priorities.Models;
-using Camera.MAUI;
 using Priorities.Services;
 
 namespace Priorities;
@@ -15,7 +14,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseMauiCameraView()
+			//.UseMauiCameraView()
 			.UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
