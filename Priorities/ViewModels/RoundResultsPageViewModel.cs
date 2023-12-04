@@ -84,13 +84,25 @@ namespace Priorities.ViewModels
         [RelayCommand]
         void Next()
         {
-            Round++;
-            gameStateService.Score = Score;
-            gameStateService.Round = Round;
-            gameStateService.PlayerRankings.Clear();
-            gameStateService.GroupRankings.Clear();
-            //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
-            Shell.Current.GoToAsync($"{nameof(GetReadyPage)}");
+            if (Round == TotalRounds)
+            {
+                gameStateService.Score = Score;
+                Shell.Current.GoToAsync($"{nameof(GameResultsPage)}");
+            }
+            else
+            {
+                // update round
+                Round++;
+
+                // update game state service
+                gameStateService.Score = Score;
+                gameStateService.Round = Round;
+                gameStateService.PlayerRankings.Clear();
+                gameStateService.GroupRankings.Clear();
+
+                // navigate
+                Shell.Current.GoToAsync($"{nameof(GetReadyPage)}");
+            }
         }
 
         [RelayCommand]
