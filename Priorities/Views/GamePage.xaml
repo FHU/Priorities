@@ -296,7 +296,7 @@
                             VerticalOptions="Center"
                             Grid.ColumnSpan="3"
                             Text="SUBMIT"
-                            Command="{Binding NavigateToRoundResultsPageCommand}"
+                            Command="{Binding NavigateToNextPageCommand}"
                             TextColor="{StaticResource OffWhite2}"
                             FontSize="32"
                         

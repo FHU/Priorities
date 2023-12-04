@@ -45,7 +45,7 @@ namespace Priorities.ViewModels
 
             this.gameStateService = gameStateService;
 
-            gameStateService.Phase = GamePhase.Prioritizing;
+            gameStateService.Phase = GamePhase.Guessing;
 
             gameStateService.Prioritizer = new Player()
             {
@@ -101,7 +101,7 @@ namespace Priorities.ViewModels
 
 
         [RelayCommand]
-        async Task NavigateToRoundResultsPage()
+        async Task NavigateToNextPage()
         {
             var rankingList = new List<string>();
             foreach (var priority in Priorities)
@@ -111,12 +111,14 @@ namespace Priorities.ViewModels
             if (gameStateService.Phase.Equals(GamePhase.Prioritizing))
             {
                 gameStateService.PrioritizerRankings = rankingList;
+                await Shell.Current.GoToAsync(nameof(GetReadyPage));
+
             }
             else
             {
                 gameStateService.GuesserRankings = rankingList;
+                await Shell.Current.GoToAsync(nameof(RoundResultsPage));
             }
-            await Shell.Current.GoToAsync(nameof(RoundResultsPage));
         }
 
         // I got this off the internet
