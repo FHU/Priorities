@@ -3,6 +3,7 @@ using CommunityToolkit.Maui;
 using Priorities.Views;
 using Priorities.ViewModels;
 using Priorities.Models;
+using Priorities.Services;
 
 namespace Priorities;
 
@@ -23,9 +24,22 @@ public static class MauiProgram
 
 			});
 
-		builder.Services.AddTransient<RoundResultsPage>();
+		
+
+		builder.Services.AddSingleton<IGameStateService, GameStateService>();
+
+		builder.Services.AddTransient<AddPlayersPageViewModel>();
+        builder.Services.AddTransient<AddPlayerPage>();
+
+        builder.Services.AddTransient<PlayersPageViewModel>();
+        builder.Services.AddTransient<PlayersPage>();
+
+        builder.Services.AddTransient<RoundResultsPage>();
         builder.Services.AddTransient<RoundResultsPageViewModel>();
-		builder.Services.AddTransient<Ranking>();
+
+        builder.Services.AddTransient<GamePage>();
+        builder.Services.AddTransient<GamePageViewModel>();
+
 
 #if DEBUG
         builder.Logging.AddDebug();

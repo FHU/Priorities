@@ -1,53 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Priorities.Views.GameStatusBar">
+<ContentView
+    x:Class="Priorities.Views.GameStatusBar"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Grid RowDefinitions="*" ColumnDefinitions="*,*" Row="0" Padding="16,4" BackgroundColor="{StaticResource Primary}">
-        <HorizontalStackLayout Grid.ColumnSpan="2" VerticalOptions="Center" Margin="0,0,0,0">
+    <Grid
+        Padding="16,4"
+        BackgroundColor="{StaticResource Primary}"
+        ColumnDefinitions="*,*"
+        Row="0"
+        RowDefinitions="*">
+        <HorizontalStackLayout
+            Grid.ColumnSpan="2"
+            Margin="0,0,0,0"
+            VerticalOptions="Center">
             <Label
-                    Text="{Binding Score}"
-                    TextColor="{StaticResource OffWhite2}"
-                    FontSize="40"
-                    Margin="0,0,4,0"
-                    FontFamily="ConcertOneRegular"
-                    />
+                Margin="0,0,4,0"
+                FontFamily="ConcertOneRegular"
+                FontSize="40"
+                Text="{Binding Score}"
+                TextColor="{StaticResource OffWhite2}" />
             <Label
-                    Text="points"
-                    TextColor="{StaticResource OffWhite2}"
-                    FontSize="24"
-                    Margin="0,0,0,4"
-                    Opacity="0.8"
-                    VerticalOptions="End"
-                    FontFamily="ConcertOneRegular"/>
+                Margin="0,0,0,4"
+                FontFamily="ConcertOneRegular"
+                FontSize="24"
+                Opacity="0.8"
+                Text="points"
+                TextColor="{StaticResource OffWhite2}"
+                VerticalOptions="End" />
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,0,0">
+        <HorizontalStackLayout
+            Grid.Column="1"
+            Margin="0,0,0,0"
+            HorizontalOptions="End"
+            VerticalOptions="Center">
             <Label
-                    VerticalOptions="End"
-                    TextColor="{StaticResource OffWhite2}"
-                    Text="round"
-                    Opacity="0.8"
-                    FontSize="24"
-                    Margin="0,0,4,4"
-                    FontFamily="ConcertOneRegular"/>
+                Margin="0,0,4,4"
+                FontFamily="ConcertOneRegular"
+                FontSize="24"
+                Opacity="0.8"
+                Text="round"
+                TextColor="{StaticResource OffWhite2}"
+                VerticalOptions="End" />
 
             <Label
-                    VerticalOptions="End"
-                    Margin="0"
-                    TextColor="{StaticResource OffWhite2}"
-                    Text="{Binding Round}"
-                    FontSize="40"
-                    FontFamily="ConcertOneRegular"
-                />
-             <Label
-                    VerticalOptions="End"
-                    Margin="0"
-                    TextColor="{StaticResource OffWhite2}"
-                    Text="{Binding TotalRounds, StringFormat='/{0}'}"
-                    FontSize="40"
-                    FontFamily="ConcertOneRegular"
-                />
+                Margin="0"
+                FontFamily="ConcertOneRegular"
+                FontSize="40"
+                TextColor="{StaticResource OffWhite2}"
+                VerticalOptions="End">
+
+                <!--  https://xamgirl.com/understanding-multi-binding-in-xamarin-forms/  -->
+                <Label.Text>
+                    <MultiBinding StringFormat="{}{0}/{1}">
+                        <Binding Path="Round" />
+                        <Binding Path="TotalRounds" />
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
         </HorizontalStackLayout>
     </Grid>
 </ContentView>

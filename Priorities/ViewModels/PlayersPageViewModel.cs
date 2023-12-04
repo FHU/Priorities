@@ -9,7 +9,7 @@ namespace Priorities.ViewModels
 {
     public partial class PlayersPageViewModel : ObservableObject
     {
-        private readonly IGameStateService gameStateService;
+		private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
         string playerName;
