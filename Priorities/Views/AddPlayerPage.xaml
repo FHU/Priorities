@@ -24,7 +24,6 @@
             <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Center" VerticalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text=" " FontSize="40"/>
                         <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                         <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                         <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
@@ -59,23 +58,25 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <!--Label Name-->
-                <Frame Grid.Row="1"
-                        HorizontalOptions="Center"
-                        BackgroundColor="{StaticResource Secondary}"
-                        WidthRequest="296"
-                        HeightRequest="63"
-                        CornerRadius="25"
-                        BorderColor="Transparent">
-                </Frame>
+                
                 <Label Grid.Row="0"
-                       Padding="1"
+                       Padding="0"
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
                        FontFamily="CoinyRegular"
                        TextColor="{StaticResource Primary}"                       
                        FontAttributes="Bold"/>
+
                 <!--Text box to input name-->
+                <Frame Grid.Row="1"
+                       HorizontalOptions="Center"
+                       BackgroundColor="{StaticResource Secondary}"
+                       WidthRequest="296"
+                       HeightRequest="63"
+                       CornerRadius="25"
+                       BorderColor="Transparent">
+                </Frame>
                 <Entry Grid.Row="1"
                        HeightRequest="53"
                        WidthRequest="260"
@@ -101,7 +102,7 @@
             </Grid>
 
             <!--Input Avatar-->
-            <Grid Grid.Row="1" RowSpacing="12" VerticalOptions="Center" Margin="8">
+            <Grid Grid.Row="1" RowSpacing="10" VerticalOptions="Center" Margin="8">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -110,7 +111,6 @@
 
                 <Label Grid.Row="0"
                        Text="Avatar Pic"
-                       Padding="1"
                        HorizontalOptions="Center"
                        FontSize="28"
                        FontFamily="CoinyRegular"
@@ -118,7 +118,7 @@
                        TextColor="{StaticResource Primary}"/>
 
                 <!--Avatar Pic-->
-                
+
                 <Frame Grid.Row="1"
                        HeightRequest="250"
                        WidthRequest="250"
@@ -127,7 +127,29 @@
                        IsClippedToBounds="True"
                        Padding="4"
                        BorderColor="Transparent"
-                       BackgroundColor="{StaticResource SecondaryDarkBlue}"
+                       BackgroundColor="{StaticResource SecondaryGreen}"
+                       Margin="0,0,0,0"
+                       >
+
+                    <Image Grid.Row="1"
+                           x:Name="avatarPic"
+                           HeightRequest="350"
+                           WidthRequest="300"
+                           Source="{Binding Image}"
+                           
+                       />
+
+                </Frame>
+                
+                <!--<Frame Grid.Row="1"
+                       HeightRequest="250"
+                       WidthRequest="250"
+                       CornerRadius="150"
+                       HorizontalOptions="Center"
+                       IsClippedToBounds="True"
+                       Padding="4"
+                       BorderColor="Transparent"
+                       BackgroundColor="{StaticResource SecondaryGreen}"
                        Margin="0,0,0,0">
 
                     <Image Grid.Row="1"
@@ -137,7 +159,7 @@
                        Source="{Binding Image}"
                        />
 
-                </Frame>
+                </Frame>-->
 
                 
 
@@ -183,7 +205,6 @@
                         Text="Take Photo!"
                         x:Name="smile"
                         Command="{Binding TakePhotoCommand}"
-                        CharacterSpacing="2"
                         FontSize="20"
                         FontAttributes="Bold"
                         FontFamily="ConcertOneRegular"
@@ -221,6 +242,7 @@
                             HeightRequest="70"
                             WidthRequest="296"
                             CornerRadius="25"
+                            Margin="8"
                             FontAttributes="Bold"
                             BackgroundColor="{StaticResource Primary}"
                             TextColor="{StaticResource White}"
