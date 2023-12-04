@@ -126,13 +126,14 @@
                        IsClippedToBounds="True"
                        Padding="4"
                        BorderColor="Transparent"
-                       BackgroundColor="Pink"
+                       BackgroundColor="{StaticResource SecondaryDarkBlue}"
                        Margin="0,0,0,0">
 
                     <Image Grid.Row="1"
                        x:Name="avatarPic"
                        HeightRequest="250"
                        WidthRequest="250"
+                       Source="{Binding Image}"
                        />
 
                 </Frame>
