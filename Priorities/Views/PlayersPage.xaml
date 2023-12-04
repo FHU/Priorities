@@ -127,7 +127,6 @@
                             HeightRequest="90"
                             Command="{Binding NavigateToGamePageCommand}"
                             FontFamily="ConcertOneRegular"
-                            FontFamily="ConcertOneRegular"
                             ImageSource="play.png"
                             IsEnabled="{Binding HasEnoughPlayers}">
 
