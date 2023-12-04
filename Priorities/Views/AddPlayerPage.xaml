@@ -126,7 +126,7 @@
                        IsClippedToBounds="True"
                        Padding="4"
                        BorderColor="Transparent"
-                       BackgroundColor="Transparent"
+                       BackgroundColor="Pink"
                        Margin="0,0,0,0">
 
                     <Image Grid.Row="1"
