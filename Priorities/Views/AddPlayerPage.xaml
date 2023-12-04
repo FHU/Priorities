@@ -172,32 +172,15 @@
                 </Frame>-->
 
                 <!--Retake Button-->
-                <Button Grid.Row="2"
-                        Text="RETAKE"
-                        x:Name="retake"
-                        CharacterSpacing="2"
-                        FontSize="17"
-                        FontAttributes="Bold"
-                        FontFamily="CoinyRegular"
-                        VerticalOptions="Center"
-                        BackgroundColor= "{StaticResource Tertiary}"
-                        CornerRadius="15"
-                        HeightRequest="47"
-                        WidthRequest="236"
-                        TextColor="White">
-                            <Button.Shadow>
-                                <Shadow Opacity="0.5"
-                                Radius="15"
-                                Offset="10,10"
-                                Brush="{StaticResource Gray400}"
-                        />
-                            </Button.Shadow>
-                </Button>
+                
 
                 <!--Smile Button-->
+                
+
                 <Button Grid.Row="2"
-                        Text="SMILE!"
+                        Text="Take Photo!"
                         x:Name="smile"
+                        Command="{Binding TakePhotoCommand}"
                         CharacterSpacing="2"
                         FontSize="20"
                         FontAttributes="Bold"

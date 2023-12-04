@@ -27,26 +27,36 @@ namespace Priorities.ViewModels
         public AddPlayersPageViewModel(IGameStateService gameStateService)
         {
             this.gameStateService = gameStateService;
-
-            //PropertyChanged += (s, e) =>
-            //{
-            //    if (e.PropertyName == nameof(Name))
-            //    {
-            //        string updateName = Name;
-            //    }
-            //    else if (e.PropertyName == nameof(Image))
-            //    {
-            //        string updateImage = Image;
-            //    }
-            //};
-
         }
 
         [RelayCommand]
-        void AddPlayer() {
+        async Task TakePhoto()
+        {
+            if (MediaPicker.Default.IsCaptureSupported)
+            {
+                FileResult photo = await MediaPicker.Default.CapturePhotoAsync();
+
+                if (photo != null)
+                {
+                    // save the file into local storage
+                    string localFilePath = Path.Combine(FileSystem.AppDataDirectory, photo.FileName);
+
+                    using Stream sourceStream = await photo.OpenReadAsync();
+                    using FileStream localFileStream = File.OpenWrite(localFilePath);
+
+                    await sourceStream.CopyToAsync(localFileStream);
+
+                    Image = localFilePath;
+                }
+            }
+        }
+
+        [RelayCommand]
+        void AddPlayer()
+        {
 
             gameStateService.Players.Add(
-                new Player() { Name = this.Name, ImageName=Image });
+                new Player() { Name = this.Name, ImageName = Image });
 
             Shell.Current.GoToAsync("../");
 
