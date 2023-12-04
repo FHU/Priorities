@@ -24,7 +24,6 @@
             <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Center" VerticalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text=" " FontSize="40"/>
                         <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                         <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                         <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
@@ -133,8 +132,9 @@
 
                     <Image Grid.Row="1"
                            x:Name="avatarPic"
-                           HeightRequest="100"
-                           WidthRequest="100"
+                           HeightRequest="350"
+                           WidthRequest="300"
+                           Source="{Binding Image}"
                            
                        />
 
