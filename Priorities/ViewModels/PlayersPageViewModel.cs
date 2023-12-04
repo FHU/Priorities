@@ -4,7 +4,6 @@ using Priorities.Views;
 using System.Collections.ObjectModel;
 using Priorities.Models;
 using Priorities.Services;
-using HealthKit;
 
 namespace Priorities.ViewModels
 {
@@ -80,8 +79,10 @@ namespace Priorities.ViewModels
             {
                 HasEnoughPlayers = true;
             }
-            HasEnoughPlayers =  false;
-            
+            else
+            {
+                HasEnoughPlayers = false;
+            }
         }
     }
 }

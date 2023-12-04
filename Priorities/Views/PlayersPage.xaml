@@ -103,7 +103,7 @@
                             MinimumWidthRequest="250"
                             HeightRequest="90"
                             Command="{Binding NavigateToAddPlayersPageCommand}"
-                            FontFamily="ConcertOneRegular"
+                            FontFamily="ConcertOneRegular">
                         <Button.Shadow>
                             <Shadow Brush="Black"
                                     Offset="-10,20"
