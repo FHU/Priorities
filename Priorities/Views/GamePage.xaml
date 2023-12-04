@@ -161,7 +161,7 @@
             </Grid>
 
 
-            <Image Grid.Row="2" Grid.RowSpan="1" Grid.ColumnSpan="3" Source="shapes.jpg"  Margin="0,-40" VerticalOptions="EndAndExpand" />
+            <Image Grid.Row="2" Grid.RowSpan="1" Grid.ColumnSpan="3" Source="shapes"  Margin="0,-40" VerticalOptions="EndAndExpand" />
 
             <!-- [Priority Cards Section: Priscilla Harris] -->
             <!-- Six Rows / Two Columns -->
