@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{91192315-2352-4C23-B55C-625EA8592BCD}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.emulator-5554" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Priorities/MainPage.xaml">
+    <Files>
+      <File FileName="PlayersPage.xaml" />
+      <File FileName="Priorities/MainPage.xaml" Line="25" Column="61" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Priorities" expanded="True">
+            <Node name="Priorities" expanded="True">
+              <Node name="MainPage.xaml" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Priorities PreferredExecutionTarget="Android.pixel_5_-_api_30" />
+</Properties>
