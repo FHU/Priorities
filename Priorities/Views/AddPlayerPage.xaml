@@ -81,6 +81,7 @@
                        WidthRequest="260"
                        MaxLength="12"
                        FontSize="24"
+                       Text="{Binding Name}"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
                        FontFamily="CoinyRegular"

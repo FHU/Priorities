@@ -18,15 +18,15 @@ public partial class AddPlayerPage : ContentPage
         Shell.Current.FlyoutIsPresented = true;
     }
 
-    private void Entry_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        Entry entry = (Entry)sender;
+    private void Entry_TextChanged(object sender, TextChangedEventArgs e)	
+    {	
+        Entry entry = (Entry)sender;	
 
-        int currentLength = entry.Text.Length;
-        int maxLength = entry.MaxLength;
+        int currentLength = entry.Text.Length;	
+        int maxLength = entry.MaxLength;	
 
         // Update the character count label 	
-        charLimitLabel.Text = $"{currentLength}/{maxLength}";
+        charLimitLabel.Text = $"{currentLength}/{maxLength}";	
     }
 
     //void cameraView_CamerasLoaded(System.Object sender, System.EventArgs e)
@@ -51,9 +51,9 @@ public partial class AddPlayerPage : ContentPage
     //        Console.WriteLine("No CAMERAS");
     //    }
 
+        
 
-
-
+       
     //}
 
     //void Button_Clicked(System.Object sender, System.EventArgs e)
