@@ -6,12 +6,19 @@
     <members>
         <member name="T:Priorities.ViewModels.AddPlayersPageViewModel">
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:Priorities.ViewModels.AddPlayersPageViewModel.Name">
             <inheritdoc cref="F:Priorities.ViewModels.AddPlayersPageViewModel.name"/>
         </member>
         <member name="P:Priorities.ViewModels.AddPlayersPageViewModel.Image">
             <inheritdoc cref="F:Priorities.ViewModels.AddPlayersPageViewModel.image"/>
+        </member>
+        <member name="F:Priorities.ViewModels.AddPlayersPageViewModel.addPlayerCommand">
+            <summary>The backing field for <see cref="P:Priorities.ViewModels.AddPlayersPageViewModel.AddPlayerCommand"/>.</summary>
+        </member>
+        <member name="P:Priorities.ViewModels.AddPlayersPageViewModel.AddPlayerCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Priorities.ViewModels.AddPlayersPageViewModel.AddPlayer"/>.</summary>
         </member>
         <member name="T:Priorities.ViewModels.GamePageViewModel">
             <inheritdoc/>
@@ -54,9 +61,10 @@
             <summary>The backing field for <see cref="P:Priorities.ViewModels.PlayersPageViewModel.DeletePlayerCommand"/>.</summary>
         </member>
         <member name="P:Priorities.ViewModels.PlayersPageViewModel.DeletePlayerCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Priorities.ViewModels.PlayersPageViewModel.DeletePlayer(Priorities.ViewModels.PlayersPageViewModel.Player)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Priorities.ViewModels.PlayersPageViewModel.DeletePlayer(Priorities.Models.Player)"/>.</summary>
         </member>
         <member name="T:Priorities.ViewModels.RoundResultsPageViewModel">
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
@@ -77,6 +85,12 @@
         </member>
         <member name="P:Priorities.ViewModels.RoundResultsPageViewModel.NextCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Priorities.ViewModels.RoundResultsPageViewModel.Next"/>.</summary>
+        </member>
+        <member name="F:Priorities.ViewModels.RoundResultsPageViewModel.showRankingsCommand">
+            <summary>The backing field for <see cref="P:Priorities.ViewModels.RoundResultsPageViewModel.ShowRankingsCommand"/>.</summary>
+        </member>
+        <member name="P:Priorities.ViewModels.RoundResultsPageViewModel.ShowRankingsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Priorities.ViewModels.RoundResultsPageViewModel.ShowRankings"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>

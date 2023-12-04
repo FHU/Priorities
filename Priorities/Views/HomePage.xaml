@@ -7,61 +7,67 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <VerticalStackLayout Grid.Row="0">
-            <Label LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+            <Label LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="P" FontSize="60" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="R" FontSize="60" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="M" FontSize="60" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="O" FontSize="60" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="G" FontSize="60" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                         <Span Text="I" FontSize="60" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="O" FontSize="60" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="R" FontSize="60" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="I" FontSize="60" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="T" FontSize="60" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="I" FontSize="60" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="E" FontSize="60" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="S" FontSize="60" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
             <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
         </VerticalStackLayout>
 
-         <Label Grid.Row="1" LineBreakMode="NoWrap" Padding="15" BackgroundColor="{StaticResource PrimaryBlueGreen}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="1" LineBreakMode="NoWrap" Margin="30,45,30,30" Padding="0" BackgroundColor="{StaticResource PrimaryBlueGreen}" HeightRequest="165" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" >
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="▶" FontSize="80" TextColor="White" FontFamily="CoinyRegular"/>
-                            <Span Text="START!" FontSize="80" TextColor="White" FontFamily="CoinyRegular"/>
+                            <Span Text="▶" FontSize="60" TextColor="White" FontFamily="CoinyRegular"/>
+                            <Span Text="START!" FontSize="50" TextColor="White" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-         <Label Grid.Row="2" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="2" LineBreakMode="NoWrap" Margin="70,0,70,10" HorizontalOptions="FillAndExpand" Padding="-30" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="60" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="High Scores" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
+                            <Span Text="▶" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
+                            <Span Text="High Scores" FontSize="26" TextColor="White" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-         <Label Grid.Row="3" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="3" LineBreakMode="NoWrap" Margin="70,20,70,0" HorizontalOptions="FillAndExpand" Padding="-10" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Achievements" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
+                            <Span Text="Achievements" FontSize="26" TextColor="White" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-         <Label Grid.Row="4" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" Padding="4" BackgroundColor="{StaticResource SecondaryLightBlue}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+         <Label Grid.Row="4" LineBreakMode="NoWrap" Margin="70,30,70,0" HorizontalOptions="FillAndExpand" Padding="0" BackgroundColor="{StaticResource SecondaryLightBlue}" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="How to Play" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
+                            <Span Text="How to Play" FontSize="25" TextColor="White" FontFamily="CoinyRegular"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
+
+         <Image Source="shapes"
+                        Aspect="AspectFill"
+                        WidthRequest="400"
+                        HeightRequest="200"
+                        Grid.Row="5"
+                        VerticalOptions="End"
+                        ZIndex="-1"
+                        />
+
 
         </Grid>
 

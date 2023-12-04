@@ -1,25 +1,52 @@
 ﻿<Properties StartupConfiguration="{91192315-2352-4C23-B55C-625EA8592BCD}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_30" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Priorities/MainPage.xaml">
+  <MonoDevelop.Ide.ItemProperties.Priorities PreferredExecutionTarget="Android.pixel_5_-_api_30" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Priorities/Views/GamePage.xaml">
     <Files>
-      <File FileName="PlayersPage.xaml" />
-      <File FileName="Priorities/MainPage.xaml" Line="25" Column="61" />
+      <File FileName="PlayersPage.xaml" Line="92" Column="12" />
+      <File FileName="Priorities/MainPage.xaml" Line="35" Column="43" />
+      <File FileName="Priorities/Views/HomePage.xaml" Line="31" Column="222" />
+      <File FileName="Priorities/Resources/Splash/splash.svg" Line="1" Column="1" />
+      <File FileName="Priorities/Views/GamePage.xaml" Line="49" Column="30" />
+      <File FileName="Priorities/Views/GameResultsPage.xaml" Line="1" Column="1" />
+      <File FileName="Priorities/Views/GameResultsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Priorities/Views/AddPlayerPage.xaml" Line="108" Column="22" />
+      <File FileName="Priorities/Views/GameStatusBar.xaml" Line="1" Column="1" />
+      <File FileName="Priorities/Views/GetReadyPage.xaml" Line="197" Column="1" />
+      <File FileName="Priorities/Views/HighScorePage.xaml" Line="53" Column="30" />
+      <File FileName="Priorities/Views/RoundResultsPage.xaml" Line="48" Column="53" />
+      <File FileName="Priorities/ViewModels/HighScorePageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Priorities/ViewModels/RoundResultsPageViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Priorities" expanded="True">
-            <Node name="Priorities" expanded="True" />
+            <Node name="Priorities">
+              <Node name="Platforms" expanded="True" />
+              <Node name="Resources">
+                <Node name="Raw" expanded="True" />
+                <Node name="Splash" expanded="True" />
+                <Node name="Styles" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views">
+                <Node name="GamePage.xaml" selected="True" />
+                <Node name="GameResultsPage.xaml" expanded="True" />
+                <Node name="HomePage.xaml" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Priorities PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.95" />
 </Properties>

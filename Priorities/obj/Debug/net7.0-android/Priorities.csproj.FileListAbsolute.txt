@@ -141,32 +141,6 @@
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/res/values/colors.xml
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/uploadflags.txt
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resolvedassemblies.hash
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/mscorlib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Collections.Concurrent.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Data.Common.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Data.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Diagnostics.StackTrace.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Diagnostics.TraceSource.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Private.CoreLib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Private.Uri.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Runtime.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Runtime.Extensions.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Runtime.Serialization.Formatters.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/arm64-v8a/System.Xml.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/mscorlib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Collections.Concurrent.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Data.Common.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Data.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Diagnostics.StackTrace.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Diagnostics.TraceSource.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Private.CoreLib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Private.Uri.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Runtime.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Runtime.Extensions.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Runtime.Serialization.Formatters.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/armeabi-v7a/System.Xml.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/CommunityToolkit.Maui.Core.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/CommunityToolkit.Maui.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/CommunityToolkit.Mvvm.dll
@@ -356,32 +330,6 @@
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Xml.XPath.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Xml.XPath.XDocument.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/WindowsBase.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/mscorlib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Collections.Concurrent.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Data.Common.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Data.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Diagnostics.StackTrace.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Diagnostics.TraceSource.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Private.CoreLib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Private.Uri.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Runtime.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Runtime.Extensions.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Runtime.Serialization.Formatters.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86/System.Xml.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/mscorlib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Collections.Concurrent.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Data.Common.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Data.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Diagnostics.StackTrace.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Diagnostics.TraceSource.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Private.CoreLib.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Private.Uri.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Runtime.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Runtime.Extensions.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Runtime.Serialization.Formatters.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/x86_64/System.Xml.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/Xamarin.Android.Glide.Annotations.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/Xamarin.Android.Glide.DiskLruCache.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/Xamarin.Android.Glide.dll
@@ -531,9 +479,6 @@
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/Xamarin.Kotlin.StdLib.Jdk8.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/Xamarin.KotlinX.Coroutines.Android.dll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/Xamarin.KotlinX.Coroutines.Core.Jvm.dll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.armeabi-v7a.ll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.arm64-v8a.ll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.x86.ll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.x86_64.ll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/AndroidManifest.xml
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/AndroidManifest.xml
@@ -543,9 +488,6 @@
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/bin/mono.android.jar
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/static.flag
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/buildid.txt
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.armeabi-v7a.ll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.arm64-v8a.ll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.x86.ll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.x86_64.ll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/src/androidx/activity/ktx/R.java
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/src/androidx/activity/R.java
@@ -1031,29 +973,11 @@
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/src/mono/MonoPackageManager_Resources.java
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/bin/packaged_resources
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/src/com/companyname/priorities/R.java
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.armeabi-v7a.ll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.arm64-v8a.ll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.x86.ll
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.x86_64.ll
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.armeabi-v7a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.arm64-v8a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.x86.o
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/typemaps.x86_64.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.armeabi-v7a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.arm64-v8a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.x86.o
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/environment.x86_64.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.armeabi-v7a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.arm64-v8a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.x86.o
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/compressed_assemblies.x86_64.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/jni_remap.armeabi-v7a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/jni_remap.arm64-v8a.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/jni_remap.x86.o
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/jni_remap.x86_64.o
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/app_shared_libraries/armeabi-v7a/libxamarin-app.so
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/app_shared_libraries/arm64-v8a/libxamarin-app.so
-/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/app_shared_libraries/x86/libxamarin-app.so
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/app_shared_libraries/x86_64/libxamarin-app.so
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/bin/classes.dex
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/bin/classes2.dex
@@ -1065,3 +989,26 @@
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/avatar_pic 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/kenan 2.jpeg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/kenan 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/raccoon 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/rando1 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/rando2 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/rando3 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/rando4 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/shannon 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/resizetizer/r/drawable/tj 2.jpg
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/mscorlib.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Collections.Concurrent.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Data.Common.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Data.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Diagnostics.StackTrace.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Diagnostics.TraceSource.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Private.CoreLib.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Private.Uri.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Runtime.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Runtime.Extensions.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Runtime.Serialization.Formatters.dll
+/Users/allisonwalker/Documents/GitHub/Priorities/Priorities/obj/Debug/net7.0-android/android/assets/System.Xml.dll
