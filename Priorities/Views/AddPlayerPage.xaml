@@ -119,7 +119,7 @@
 
                 <!--Avatar Pic-->
                 
-                <Frame Grid.Row="1"
+                <!--<Frame Grid.Row="1"
                        HeightRequest="250"
                        WidthRequest="250"
                        CornerRadius="150"
@@ -136,7 +136,7 @@
                        WidthRequest="250"
                        />
 
-                </Frame>
+                </Frame>-->
 
                 
 
