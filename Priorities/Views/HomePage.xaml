@@ -28,36 +28,59 @@
             <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
         </VerticalStackLayout>
 
-         <Label Grid.Row="1" LineBreakMode="NoWrap" Margin="30,45,30,30" Padding="0" BackgroundColor="{StaticResource PrimaryBlueGreen}" HeightRequest="165" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" >
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="▶" FontSize="60" TextColor="White" FontFamily="CoinyRegular"/>
-                            <Span Text="START!" FontSize="50" TextColor="White" FontFamily="CoinyRegular"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-         <Label Grid.Row="2" LineBreakMode="NoWrap" Margin="70,0,70,10" HorizontalOptions="FillAndExpand" Padding="-30" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="60" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="▶" FontSize="40" TextColor="White" FontFamily="CoinyRegular"/>
-                            <Span Text="High Scores" FontSize="26" TextColor="White" FontFamily="CoinyRegular"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-         <Label Grid.Row="3" LineBreakMode="NoWrap" Margin="70,20,70,0" HorizontalOptions="FillAndExpand" Padding="-10" BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Achievements" FontSize="26" TextColor="White" FontFamily="CoinyRegular"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-         <Label Grid.Row="4" LineBreakMode="NoWrap" Margin="70,30,70,0" HorizontalOptions="FillAndExpand" Padding="0" BackgroundColor="{StaticResource SecondaryLightBlue}" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="How to Play" FontSize="25" TextColor="White" FontFamily="CoinyRegular"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+         <Button Grid.Row="1"
+                 LineBreakMode="NoWrap"
+                 Margin="30,45,30,30"
+                 Padding="0"
+                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
+                 HeightRequest="165"
+                 Text="▶START!"
+                 FontSize="50"
+                 TextColor="White"
+                 FontFamily="CoinyRegular"
+                 CornerRadius="20"
+                 >
+         </Button>
+
+         <Button Grid.Row="2"
+                 LineBreakMode="NoWrap"
+                 Margin="70,0,70,10"
+                 HorizontalOptions="FillAndExpand"
+                 Padding="-30"
+                 BackgroundColor="{StaticResource PrimaryRed}"
+                 HeightRequest="60"
+                 FontFamily="CoinyRegular"
+                 Text="High Scores"
+                 FontSize="26"
+                 TextColor="White"
+                 CornerRadius="20">
+                </Button>
+         <Button Grid.Row="3"
+                 LineBreakMode="NoWrap"
+                 Margin="70,20,70,0"
+                 HorizontalOptions="FillAndExpand"
+                 Padding="-10"
+                 BackgroundColor="{StaticResource PrimaryRed}"
+                 HeightRequest="50"
+                 Text="Achievements"
+                 FontSize="26"
+                 TextColor="White"
+                 FontFamily="CoinyRegular"
+                 CornerRadius="20">
+                </Button>
+         <Button Grid.Row="4"
+                LineBreakMode="NoWrap"
+                Margin="70,30,70,0"
+                HorizontalOptions="FillAndExpand"
+                Padding="0"
+                BackgroundColor="{StaticResource SecondaryLightBlue}"
+                HeightRequest="50"
+                Text="How to Play"
+                FontSize="25"
+                TextColor="White"
+                FontFamily="CoinyRegular"
+                CornerRadius="20">
+                </Button>
 
          <Image Source="shapes"
                         Aspect="AspectFill"
