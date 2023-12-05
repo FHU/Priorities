@@ -40,8 +40,6 @@ namespace Priorities.ViewModels
 
         private Priority itemBeingDragged;
 
-        private List<string> words; 
-
         public GamePageViewModel(IGameStateService gameStateService)
         {
 
@@ -78,9 +76,6 @@ namespace Priorities.ViewModels
             {
                 Priorities.Add(new Priority(item));
             }
-
-   
-                
 
             /*Gavin*/
 

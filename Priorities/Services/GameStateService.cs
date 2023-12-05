@@ -55,20 +55,16 @@ namespace Priorities.Services
 
         private async void readFromFile()
         {
-
+            string line;
 
             using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("words.txt");
             using StreamReader reader = new StreamReader(fileStream);
-            var lines = reader.ReadToEnd().Split();
-
-            foreach (var line in lines)
-            {
-                if (line != "")
-                {
-                    ItemList.Add(line);
-                }
-
+            
+            while((line  = reader.ReadLine()) != null) {
+                ItemList.Add(line);
             }
+
+            
 
         }
 
