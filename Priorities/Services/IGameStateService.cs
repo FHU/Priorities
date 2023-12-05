@@ -28,7 +28,7 @@ namespace Priorities.Services
 
         public GamePhase Phase { get; set; }
 
-        public List<string> GetRandomItems(int number);
+        public List<string> GetRandomItems();
     }
 }
 

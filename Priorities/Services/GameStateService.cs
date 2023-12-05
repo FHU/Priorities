@@ -10,6 +10,7 @@ namespace Priorities.Services
 
 			Players = new();
 			ItemList = new List<string>();
+            readFromFile();
 
         }
 
@@ -36,14 +37,13 @@ namespace Priorities.Services
 	
 
 
-        public List<string> GetRandomItems(int number)
+        public List<string> GetRandomItems()
         {
             List<string> randomItems = new List<string>();
-            readFromFile();
 
             Random random = new Random();
 
-            for (int i = 0; i < number; i++)
+            for (int i = 0; i < 5; i++)
             {
                 int randomIndex = random.Next(ItemList.Count);
                 randomItems.Add(ItemList[randomIndex]);
@@ -62,13 +62,9 @@ namespace Priorities.Services
             
             while((line  = reader.ReadLine()) != null) {
                 ItemList.Add(line);
-            }
-
-            
+            }    
 
         }
-
-
 
     }
 }

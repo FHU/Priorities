@@ -71,7 +71,7 @@ namespace Priorities.ViewModels
 
             Priorities = new ObservableCollection<Priority>();
 
-            var items = gameStateService.GetRandomItems(5);
+            var items = gameStateService.GetRandomItems();
             foreach ( var item in items )
             {
                 Priorities.Add(new Priority(item));
