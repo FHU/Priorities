@@ -1,13 +1,297 @@
-﻿table
-weights
-desks
-computers
-chairs
-shoes
-shirts
-phones
-bars
-doors
-alarms
-buttons
-ids
+﻿MCU
+Star Wars
+Harry Potter
+James Bond
+LOTR
+Batman
+Jurassic Pk
+Spider-Man
+Fast & Furious
+Indiana Jones
+X-Men
+Pirates
+Toy Story
+Terminator
+The Matrix
+Transformers
+Mission: Impos
+Shrek
+Hunger Games
+Rocky/Creed
+Twilight
+Godfather
+Star Trek
+MIB
+Conjuring
+Social Media
+Meal Prep
+Music
+Exercising
+TV Shows
+Reading
+Grocery Shop
+Chores
+Commuting
+Family Time
+Working
+Internet
+Hobbies
+Walking
+Pet Care
+Rest Breaks
+Finances
+Errands
+Coffee/Tea
+Event Plan
+Conversation
+Skincare
+Snack Breaks
+Drives/Rides
+Pastime
+G Washington
+T Jefferson
+A Lincoln
+T Roosevelt
+W Wilson
+F Roosevelt
+H Truman
+D Eisenhower
+J Kennedy
+L Johnson
+R Nixon
+G Ford
+J Carter
+R Reagan
+GHW Bush
+B Clinton
+GW Bush
+B Obama
+D Trump
+J Biden
+MLK Jr.
+S Anthony
+F Douglass
+E Roosevelt
+R Parks
+Mickey Mouse
+D Gale
+M Poppins
+L Skywalker
+I Jones
+E.T.
+H Potter
+F Gump
+Simba
+J Bond
+Shrek
+Woody
+Spider-Man
+Elsa
+Terminator
+W Wonka
+Rocky
+C Sparrow
+Batman
+Neo
+Iron Man
+Belle
+Gandalf
+Yoda
+H Granger
+Board Games
+Picnic
+Hiking
+Movie
+Cooking
+DIY Craft
+Museum
+Sports
+Road Trip
+Gardening
+Volunteering
+Concert
+Exploring
+Puzzle
+Camping
+Book Club
+Home Imp
+Beach
+Biking
+Dinner Night
+Video Games
+Amusement Pk
+Swimming
+Sports Event
+Photoshoot
+Gardening
+Walking
+Bird Watch
+Reading
+Yoga/Tai Chi
+Golfing
+Painting
+Cooking
+Volunteering
+Swimming
+Concerts
+Photography
+Traveling
+Genealogy
+Knitting
+Book Clubs
+Biking
+Dance
+Classic Mvs
+Puzzles
+Fishing
+New Language
+Museum
+Tea/Coffee
+Astronomy
+Video Games
+Movies/TV
+Friends
+Music
+Social Media
+Shopping
+Sports
+Concerts
+Skateboard
+Amusement Pk
+Gaming Tour
+YouTube/TikTok
+Books
+Nature
+Instrument
+DIY/Craft
+Cooking
+Volunteering
+Travel
+Sports Event
+Photography
+Clubs/Groups
+Fashion
+Beach/Pool
+Parties
+Campus Worship
+Bible Study
+Community
+Sports Event
+Park
+Intramural
+Student Clubs
+Seminars
+Church Vol
+Downtown
+Arts Event
+Study Group
+Social Event
+Road Trips
+State Park
+Music/Theater
+Outdoor Adv
+Historical
+Creative Arts
+Skills Wkshp
+Academic Soc
+Dorm Gather
+Cafe Hangout
+Fitness
+Career Net
+Pineapple Piz
+No Pineapple
+Summer Best
+Winter Best
+Coffee Pref
+Tea Pref
+Cats
+Dogs
+Early Bird
+Night Owl
+Books
+Movies
+Android
+iPhone
+Soc Med Good
+Soc Med Bad
+Gym
+Outdoors
+Trad Books
+E-Books
+Beach Vac
+Mtn Vac
+Streaming
+Cable TV
+Online Shop
+Store Shop
+Comedy
+Drama
+Home Cook
+Restaurants
+Public Trans
+Driving
+Pop Music
+Rock Music
+City Life
+Country Life
+Science
+Humanities
+DIY
+Prof Service
+Phys Books
+Audiobooks
+Thin Crust
+Deep Dish
+Office Work
+Remote Work
+Handwrite
+Typing
+Morning Shwr
+Evening Shwr
+Facebook
+YouTube
+WhatsApp
+Instagram
+WeChat
+TikTok
+Messenger
+Snapchat
+Telegram
+Pinterest
+Twitter
+LinkedIn
+Reddit
+Viber
+Discord
+Spotify
+Twitch
+Zoom
+Skype
+Spider-Man
+Last of Us 2
+Cyberpunk
+Animal Cross
+Ghost Tsush
+RE Village
+Hades
+Death Strand
+Sekiro
+Elden Ring
+Genshin
+Returnal
+It Takes Two
+Miles Morales
+RDR 2
+DOOM
+FF7 Remake
+AC Valhalla
+Deathloop
+Ratchet Clank
+Control
+Ori Wisps
+Disco Elysium
+Witcher 3
+Apex Legends
+Fortnite
+Call of Duty
+Smash Bros
