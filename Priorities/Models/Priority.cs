@@ -1,13 +1,22 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 namespace Priorities.Models
 {
-	public class Priority
+	public partial class Priority : ObservableObject
 	{
 		public string Thing { get; set; }
 
-		public Priority(string priority)
+        [ObservableProperty]
+        private bool isBeingDragged;
+
+        [ObservableProperty]
+        private bool isBeingDraggedOver;
+
+        public Priority(string priority)
 		{
 			Thing = priority;
+
+
 		}
 	}
 }
