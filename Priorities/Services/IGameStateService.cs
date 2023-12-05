@@ -27,6 +27,8 @@ namespace Priorities.Services
         public Player Guesser { get; set; }
 
         public GamePhase Phase { get; set; }
+
+        public List<string> GetRandomItems(int number);
     }
 }
 

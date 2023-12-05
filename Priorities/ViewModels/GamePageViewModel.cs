@@ -40,6 +40,8 @@ namespace Priorities.ViewModels
 
         private Priority itemBeingDragged;
 
+        private List<string> words; 
+
         public GamePageViewModel(IGameStateService gameStateService)
         {
 
@@ -68,16 +70,20 @@ namespace Priorities.ViewModels
             playerImage = gameStateService.Prioritizer.ImageName;
 
             /*Priscilla*/
+
             Priorities = new ObservableCollection<Priority>();
 
-            Priorities.Add(new Priority("Turtles"));
-            Priorities.Add(new Priority("Evan Kahan"));
-            Priorities.Add(new Priority("Microwave"));
-            Priorities.Add(new Priority("Musicals"));
-            Priorities.Add(new Priority("Calculus"));
+            var items = gameStateService.GetRandomItems(5);
+            foreach ( var item in items )
+            {
+                Priorities.Add(new Priority(item));
+            }
+
+   
+                
 
             /*Gavin*/
-            Round = gameStateService.Round;
+
             TotalRounds = gameStateService.TotalRounds;
 
             /*Priscilla*/
@@ -95,7 +101,7 @@ namespace Priorities.ViewModels
                 prioritizing = false;
                 guessing = true;
             }
-            
+
 
         }
 

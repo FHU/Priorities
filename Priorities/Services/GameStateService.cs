@@ -9,8 +9,9 @@ namespace Priorities.Services
 		{
 
 			Players = new();
+			ItemList = new List<string>();
 
-		}
+        }
 
 		public List<Player> Players { get; set; }
 
@@ -30,10 +31,48 @@ namespace Priorities.Services
 
 		public GamePhase Phase { get; set; }
 
-		public List<string> GetRandomItems(int number)
-		{
-			return new List<string>();
-		}
 
-	}
+        private List<string> ItemList { get; set; }
+	
+
+
+        public List<string> GetRandomItems(int number)
+        {
+            List<string> randomItems = new List<string>();
+            readFromFile();
+
+            Random random = new Random();
+
+            for (int i = 0; i < number; i++)
+            {
+                int randomIndex = random.Next(ItemList.Count);
+                randomItems.Add(ItemList[randomIndex]);
+                ItemList.Remove(ItemList[randomIndex]);
+            }
+
+            return randomItems;
+        }
+
+        private async void readFromFile()
+        {
+
+
+            using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("words.txt");
+            using StreamReader reader = new StreamReader(fileStream);
+            var lines = reader.ReadToEnd().Split();
+
+            foreach (var line in lines)
+            {
+                if (line != "")
+                {
+                    ItemList.Add(line);
+                }
+
+            }
+
+        }
+
+
+
+    }
 }

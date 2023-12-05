@@ -1,0 +1,13 @@
+﻿table
+weights
+desks
+computers
+chairs
+shoes
+shirts
+phones
+bars
+doors
+alarms
+buttons
+ids
