@@ -9,13 +9,10 @@ namespace Priorities.ViewModels
 {
     public partial class PlayersPageViewModel : ObservableObject
     {
-		private readonly IGameStateService gameStateService;
+        private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
-        string playerName;
-
-        [ObservableProperty]
-        string imagePath;
+        bool hasEnoughPlayers = false;
 
         public ObservableCollection<Player> Players { get; set; } = new();
 
@@ -44,6 +41,8 @@ namespace Priorities.ViewModels
             {
                 Players.Add(p);
             }
+
+            updateHasEnoughPlayers();
         }
 
 
@@ -63,9 +62,20 @@ namespace Priorities.ViewModels
         [RelayCommand]
         void DeletePlayer(Player player)
         {
-            if (Players.Contains(player))
+            Players.Remove(player);
+            gameStateService.Players.Remove(player);
+            updateHasEnoughPlayers();
+        }
+
+        private void updateHasEnoughPlayers()
+        {
+            if(Players.Count > 1 && gameStateService.Players.Count > 1)
             {
-                Players.Remove(player);
+                HasEnoughPlayers = true;
+            }
+            else
+            {
+                HasEnoughPlayers = false;
             }
         }
     }
