@@ -12,12 +12,6 @@ namespace Priorities.ViewModels
         private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
-        string playerName;
-
-        [ObservableProperty]
-        string imagePath;
-
-        [ObservableProperty]
         bool hasEnoughPlayers = false;
 
         public ObservableCollection<Player> Players { get; set; } = new();
