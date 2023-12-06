@@ -141,12 +141,27 @@
 
                 </Frame>
 
-                <Image Grid.Row="1"
-                           HeightRequest="300"
+                <Frame Grid.Row="1"
+                       HeightRequest="250"
+                       WidthRequest="250"
+                       CornerRadius="150"
+                       HorizontalOptions="Center"
+                       IsClippedToBounds="True"
+                       Padding="4"
+                       BorderColor="Transparent"
+                       BackgroundColor="Transparent"
+                       
+                       Margin="0,0,0,0"
+                       >
+
+                    <Image Grid.Row="1"
+                           HeightRequest="350"
                            WidthRequest="300"
                            Source="{Binding Image}"
                            
-                />
+                       />
+
+                </Frame>
 
                 
                 <!--<Frame Grid.Row="1"
