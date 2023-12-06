@@ -1,4 +1,4 @@
-﻿using Priorities.Services;
+using Priorities.Services;
 using Priorities.ViewModels;
 
 namespace Priorities.Views;
@@ -26,4 +26,10 @@ public partial class PlayersPage : ContentPage
 		viewModel.LoadData();
 	}
 
+    void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
+
 }
+
