@@ -104,7 +104,7 @@
                             HeightRequest="90"
                             Command="{Binding NavigateToAddPlayersPageCommand}"
                             FontFamily="ConcertOneRegular"
-                            ImageSource="plus.png">
+                            >
                         <Button.Shadow>
                             <Shadow Brush="Black"
                                     Offset="-10,20"
@@ -127,7 +127,7 @@
                             HeightRequest="90"
                             Command="{Binding NavigateToGamePageCommand}"
                             FontFamily="ConcertOneRegular"
-                            ImageSource="play.png"
+                            
                             IsEnabled="{Binding HasEnoughPlayers}">
 
                         <Button.Shadow>
