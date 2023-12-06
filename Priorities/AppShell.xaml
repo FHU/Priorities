@@ -7,11 +7,45 @@
     xmlns:models="clr-namespace:Priorities.Models"
     xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
     xmlns:views="clr-namespace:Priorities.Views"
-    Shell.FlyoutBehavior="Flyout">
+    Shell.FlyoutBehavior="Flyout"
+    
+    Shell.FlyoutBackdrop="{StaticResource OffWhite}">
 
-    <Shell.FlyoutHeader >
-        <Label Text="PRIORITIES" FontSize="Title"/>
-    </Shell.FlyoutHeader>
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <VerticalStackLayout BackgroundColor="{StaticResource DarkGray}">
+                <Grid BackgroundColor="{StaticResource DarkGray}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="1" BackgroundColor="{StaticResource DarkGray}" Padding="0, 0, 15" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="M" FontSize="40" TextColor="{StaticResource SecondaryLightBlue }" FontFamily="CoinyRegular"/>
+                                <Span Text="O" FontSize="40" TextColor="{StaticResource PrimaryRed }" FontFamily="CoinyRegular"/>
+                                <Span Text="G" FontSize="40" TextColor="{StaticResource SecondaryGreen }" FontFamily="CoinyRegular"/>
+                                <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Padding="5" BackgroundColor="{StaticResource DarkGray}">
+                    <Label Text="Matter" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular" FontSize="20"/>
+                    <Label Text=" " FontFamily="CoinyRegular" FontSize="20"/>
+                    <Label Text="Of" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular" FontSize="20"/>
+                    <Label Text=" " FontFamily="CoinyRegular" FontSize="20"/>
+                    <Label Text="Greatest" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular" FontSize="20"/>
+                    <Label Text=" " FontFamily="CoinyRegular" FontSize="20"/>
+                    <Label Text="Importance" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular" FontSize="20"/>
+                </HorizontalStackLayout>
+                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
+            </VerticalStackLayout>
+            
+
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
 
     <!--<FlyoutItem Title="Home">
         <ShellContent>
@@ -41,17 +75,9 @@
        
     </Shell.FlyoutContent>-->
 
-    <Shell.FlyoutFooter>
-        <VerticalStackLayout >
-
-            <Label Text="Copyright 2023 FHU" HorizontalTextAlignment="End"/>
-
-        </VerticalStackLayout>
-
-    </Shell.FlyoutFooter>
-
-     <ShellContent
+    <ShellContent
         Title="Home"
+        
         ContentTemplate="{DataTemplate views:HomePage}"
         Route="HomePage" />
 
@@ -84,6 +110,16 @@
         Title="RoundResultsPage"
         ContentTemplate="{DataTemplate views:RoundResultsPage}"
         Route="RoundResultsPage" />
+
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout >
+
+            <Label Text="Copyright 2023 FHU" HorizontalTextAlignment="End"/>
+
+        </VerticalStackLayout>
+
+    </Shell.FlyoutFooter>
 
 </Shell>
 
