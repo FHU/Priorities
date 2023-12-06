@@ -159,7 +159,8 @@ Concerts
 Skateboard
 Amusement Pk
 Gaming Tour
-YouTube/TikTok
+YouTube
+TikTok
 Books
 Nature
 Instrument
@@ -295,3 +296,165 @@ Apex Legends
 Fortnite
 Call of Duty
 Smash Bros
+Friends
+The Office (U.S.)
+Seinfeld
+How I Met Your Mother
+Brooklyn Nine-Nine
+Parks and Recreation
+The Big Bang Theory
+Cheers
+Scrubs
+The Fresh Prince of Bel-Air
+Friends
+The Golden Girls
+Everybody Loves Raymond
+Frosted Flakes
+Cheerios
+Lucky Charms
+Cinnamon Toast Crunch
+Froot Loops
+Rice Krispies
+Cap'n Crunch
+Honey Nut Cheerios
+Cocoa Puffs
+Corn Flakes
+Special K
+Raisin Bran
+Apple Jacks
+Trix
+Mini-Wheats
+Cookie Crisp
+Count Chocula
+Shredded Wheat
+Kix
+Frosted Mini-Wheats
+Pancakes
+Waffles
+PlayStation 5
+Xbox Series X
+Nintendo Switch
+PlayStation 4
+Xbox One
+Nintendo Wii U
+PlayStation 3
+Xbox 360
+Nintendo Wii
+PlayStation 2
+Xbox
+Nintendo GameCube
+PlayStation
+Sega Dreamcast
+Nintendo 64
+PSP
+Sega Saturn
+Super Nintendo
+Sega Genesis
+Nintendo
+Blue Cheese
+Anchovies
+Cilantro
+Licorice
+Brussels sprouts
+Marmite
+Vegemite
+Tofu
+Oysters
+Liver
+Pickles
+Cottage cheese
+Grapefruit
+Sushi
+Black coffee
+Beets
+Avocado
+Spam
+Candy corn
+Necco Wafers
+Circus Peanuts
+Saltwater taffy
+Hot Tamales
+Red Vines
+Bit-O-Honey
+Smarties
+Tootsie Rolls
+Swedish Fish
+Peeps
+Veganism
+Social Media
+GMOs
+School uniforms
+Vaccinations
+ChatGPT
+Homeschooling
+High School
+Napoleon Dynamite
+The Princess Bride
+Taylor Swift
+Ed Sheeran
+Billie Eilish
+Ariana Grande
+Beyoncé
+Luke Combs
+Twenty One Pilots
+Pop
+Rock
+Rap
+Country Music
+Electronic Music
+Jazz
+Blues
+Classical Music
+Reggae
+Gardening
+Playing Chess
+Knitting
+Crocheting
+Reading Newspapers
+Playing Bingo
+Classic Movies
+$20
+Jigsaw Puzzles
+Bus Tours
+Cruises
+Track and Field
+Gymnastics
+Basketball
+Soccer
+Football
+Tennis
+Volleyball
+Boxing
+Wrestling
+Archery
+Table Tennis
+Pickleball
+Skiing
+Curling
+Figure Skating
+Ice Hockey
+Math
+Reading
+Coding
+Emojis
+Selfies
+Memes
+VR
+Comicon
+E-sports
+Keto
+Baby Yoda
+Area 51
+Fortnite
+Crypocurrency
+Self-Care
+Plastic Straws
+Royal Family
+Zoom
+Charcuterie
+Wordle
+Flannel
+Sriracha
+Disneyworld
+Crossfit
+Pokemon
