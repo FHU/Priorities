@@ -1,15 +1,15 @@
-﻿MCU
+﻿Marvel
+DC
 Star Wars
 Harry Potter
 James Bond
 LOTR
 Batman
-Jurassic Pk
-Spider-Man
+Jurassic Park
 Fast & Furious
 Indiana Jones
 X-Men
-Pirates
+Pirates of the Caribbean
 Toy Story
 Terminator
 The Matrix
@@ -27,15 +27,15 @@ Rocky
 Twilight
 Godfather
 Star Trek
-MIB
-Conjuring
+Men in Black
+The Conjuring
 Social Media
 Meal Prep
 Music
 Exercising
 TV Shows
 Reading
-Grocery Shop
+Grocery Shopping
 Chores
 Commuting
 Family Time
@@ -55,18 +55,18 @@ Driving
 George Washington
 Thomas Jefferson
 Abraham Lincoln
-F Roosevelt
+Franklin Roosevelt
 John F Kennedy
 Nixon
 Jimmy Carter
-Reagan
+Ronald Reagan
 George W Bush
 Bill Clinton
 Hillary Clinton
-GW Bush
-Obama
-Trump
-Biden
+Barrack Obama
+Donald Trump
+Joe Biden
+Bernie Sanders
 MLK Jr.
 Mickey Mouse
 Dorothy Gale
@@ -74,31 +74,28 @@ Mary Poppins
 Luke Skywalker
 Indiana Jones
 E.T.
-H Potter
-F Gump
+Harry Potter
+Forest Gump
 Simba
-J Bond
+James Bond
 Shrek
 Woody
 Spider-Man
 Elsa
 Terminator
-W Wonka
+Willy Wonka
 Rocky
-C Sparrow
-Batman
+Captain Jack Sparrow
 Neo
 Iron Man
-Belle
 Gandalf
 Yoda
-H Granger
+Hermione Granger
 Board Games
 Picnic
 Hiking
 Movie
 Cooking
-DIY Craft
 Museum
 Sports
 Road Trip
@@ -106,15 +103,14 @@ Gardening
 Volunteering
 Concert
 Exploring
-Puzzle
 Camping
 Book Club
-Home Imp
+Home Improvement
 Beach
 Biking
 Dinner Night
 Video Games
-Amusement Pk
+Amusement Park
 Swimming
 Sports Event
 Photoshoot
@@ -122,7 +118,7 @@ Gardening
 Walking
 Bird Watch
 Reading
-Yoga/Tai Chi
+Yoga
 Golfing
 Painting
 Cooking
@@ -133,18 +129,16 @@ Photography
 Traveling
 Genealogy
 Knitting
+Crocheting
 Book Clubs
 Biking
 Dance
-Classic Mvs
-Puzzles
+Classic Movies
 Fishing
-New Language
 Museums
 Tea
 Coffee
 Astronomy
-Video Games
 Friends
 Music
 Social Media
@@ -152,54 +146,72 @@ Shopping
 Sports
 Concerts
 Skateboard
-Amusement Pk
 Gaming Tour
 YouTube
 TikTok
 Books
 Nature
 Instrument
-DIY/Craft
 Cooking
 Volunteering
 Travel
-Sports Event
 Photography
 Clubs/Groups
 Fashion
-Beach/Pool
+Beach
+Pool
+Chapel Skips
+Chick-Fil-A
+Chick-Filake
 Parties
 Campus Worship
 Bible Study
 Community
-Sports Event
 Park
 Intramural
 Student Clubs
 Seminars
-Church Vol
-Downtown
+Church Volunteering
 Arts Event
+Bessos
+Urban House
+Belle's Diner
+Matt Cook
+Kenan Casey
+FHU Football
+Dress Code
+Curfew
+Chow Wagon
 Study Group
 Social Event
 Road Trips
 State Park
 Music/Theater
-Outdoor Adv
-Historical
+Outdoor Adventures
 Creative Arts
-Skills Wkshp
-Academic Soc
-Dorm Gather
+Skills Workshop
+Academic Weapons
+Dorm Muster
+Fire Alarms
 Cafe Hangout
+Student Center
+ARC First Floor
 Fitness
-Career Net
-Pineapple Piz
-No Pineapple
+Boog Bustin
+Career Networking
+Pineapple Pizza
 Summer Best
 Winter Best
-Coffee Pref
-Tea Pref
+Iced Coffee
+Pumpkin Spice Latte
+White Chocolate Mocha
+Bridgerton
+Avatar: The Last Airbender
+Star Wars: Clone Wars
+Americano
+Green Tea
+London Fog Tea
+Tea
 Cats
 Dogs
 Early Bird
@@ -207,6 +219,7 @@ Night Owl
 Books
 Android
 iPhone
+Pixel
 Weightlifting
 Outdoors
 Books
@@ -214,7 +227,7 @@ E-Books
 Beaches
 Mountains
 Streaming
-Amazon.com
+Amazon
 Comedy
 Drama
 Home Cooking
@@ -224,6 +237,8 @@ Subways
 Airports
 Driving
 City Life
+Suburbs
+Rural Living
 Country Life
 Science
 Humanities
@@ -236,9 +251,12 @@ Office Work
 Remote Work
 Handwriting
 Typing
-Mornings
-Evenings
 Showers
+Baths
+Spas
+Manicures
+Pedicures
+Massages
 Facebook
 YouTube
 WhatsApp
@@ -248,6 +266,8 @@ TikTok
 Messenger
 Snapchat
 Pinterest
+BeReal
+YikYak
 Twitter
 LinkedIn
 Reddit
@@ -256,31 +276,11 @@ Spotify
 Twitch
 Zoom
 Skype
-Spider-Man
-Last of Us 2
-Cyberpunk
-Animal Cross
-Ghost Tsush
-RE Village
-Hades
-Death Strand
-Sekiro
-Elden Ring
-Genshin
-Returnal
-It Takes Two
-Miles Morales
-RDR 2
-DOOM
-FF7 Remake
-AC Valhalla
-Deathloop
-Ratchet Clank
-Control
-Ori Wisps
-Disco Elysium
-Witcher 3
-Apex Legends
+Spider-Man: PS4
+Animal Crossing
+Golden Eye
+Super Mario Bros.
+Wii Sports
 Fortnite
 Call of Duty
 Smash Bros
@@ -312,6 +312,7 @@ Raisin Bran
 Apple Jacks
 Trix
 Mini-Wheats
+Great Grains
 Cookie Crisp
 Count Chocula
 Shredded Wheat
@@ -360,7 +361,9 @@ Spam
 Candy corn
 Necco Wafers
 Circus Peanuts
-Saltwater taffy
+Gano
+Chili with Beans
+Saltwater Taffy
 Hot Tamales
 Red Vines
 Bit-O-Honey
@@ -371,8 +374,7 @@ Peeps
 Veganism
 Social Media
 GMOs
-School uniforms
-Vaccinations
+School Uniforms
 ChatGPT
 Homeschooling
 High School
@@ -380,11 +382,38 @@ Napoleon Dynamite
 The Princess Bride
 Taylor Swift
 Ed Sheeran
+Tom Cruise
 Billie Eilish
 Ariana Grande
 Beyoncé
 Luke Combs
 Twenty One Pilots
+Noah Kahan
+BTS
+EXO
+SEVENTEEN
+Morgan Wallen
+The Band Camino
+Kelsea Ballerini
+Tate McRae
+1975
+Blake Shelton
+Dolly Parton
+Elvis Presley
+The Beetles
+Michael Jackson
+Michael Buble
+Christmas Music
+Christmas
+Halloween
+Easter
+Fourth of July
+Thanksgiving
+Columbus Day
+Daft Punk
+Blink-182
+Post Malone
+Olivia Rodrigo
 Pop
 Rock
 Rap
@@ -427,22 +456,95 @@ Coding
 Emojis
 Selfies
 Memes
-VR
-Comicon
+Virtual Reality
 E-sports
 Keto
 Baby Yoda
+Loud Chewing
+Interupting
+Slow Walkers
+Littering
+Noisy Neighbors
+Movie Talkers
+Road Rage
+Boomers
+Karens
+Turn Signals
+Chads
+Barbie
 Area 51
-Fortnite
 Crypocurrency
 Self-Care
 Plastic Straws
 Royal Family
+Princess Diana
+Queen Elizabeth
 Zoom
 Charcuterie
 Wordle
+Thy Wordle
+Freed-Harmony
+Freedr
+Chapel
+Class Skipping
+David Shannon
+TJ Kirk
+Ben Clark
 Flannel
 Sriracha
+Sushi
+Dumplings
+Eggrolls
+Chicken Nuggies
+Hamburgers
+Big Macs
+Frosties
+Blizzards
+Baja Blast
+Tacos
+Crunch Wraps
+Burritos
+Sub Sandwiches
+Dr. Pepper
+Sprite
+Coke
+Coke Zero
+Diet Coke
+Pepsi
+Root Beer
+Powerade
+Gatorade
+Energy Drinks
+RedBull
+Celcius
+Alani
+Mountain Dew
+Jeans
+Sweatshirts
+Jorts
+Hoodies
+Jeans with Holes
+Crewnecks
+Turtle Necks
+Button Ups
+High Heels
+Pooping
+Farting
+Ear Wax
+Diarrhea
 Disneyworld
+Disneyland
+Universal
+SeaWorld
+LegoLand
+Six Flags
+Holiday World
+Dollywood
+Cedar Point
+Kings Island
+Roblox
 Crossfit
+Body Building
+Marathons
 Pokemon
+Heelies
