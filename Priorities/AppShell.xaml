@@ -62,26 +62,7 @@
        
     </Shell.FlyoutContent>-->
 
-
-    <Shell.MenuItemTemplate>
-        <DataTemplate>
-            <Grid ColumnDefinitions="0.2*,0.8*">
-                <Image Source="{Binding Icon}"
-                       Margin="5"
-                       HeightRequest="45" />
-                <Label Grid.Column="1"
-                       Text="{Binding Text}"
-                       FontFamily="ConcertOneRegular"
-                       VerticalTextAlignment="Center" />
-            </Grid>
-        </DataTemplate>
-    </Shell.MenuItemTemplate>
-
-    <MenuItem Text="Home"
-              />
-
-
-    <!--<ShellContent
+    <ShellContent
         Title="Home"
         
         ContentTemplate="{DataTemplate views:HomePage}"
@@ -115,7 +96,7 @@
     <ShellContent
         Title="RoundResultsPage"
         ContentTemplate="{DataTemplate views:RoundResultsPage}"
-        Route="RoundResultsPage" />-->
+        Route="RoundResultsPage" />
 
 
     <Shell.FlyoutFooter>
