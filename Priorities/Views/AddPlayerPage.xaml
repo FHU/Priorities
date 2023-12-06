@@ -93,6 +93,8 @@
                 />
                 <Label x:Name="charLimitLabel"
                        Grid.Row="2"
+                       IsVisible="True"
+                       Text="0/12"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        VerticalOptions="End"

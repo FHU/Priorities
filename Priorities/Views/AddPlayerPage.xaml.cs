@@ -9,7 +9,9 @@ public partial class AddPlayerPage : ContentPage
 	{
         InitializeComponent();
 
-		BindingContext = new AddPlayersPageViewModel( gameStateService);
+        charLimitLabel.IsVisible = true;
+
+        BindingContext = new AddPlayersPageViewModel( gameStateService);
     }
 
     void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
