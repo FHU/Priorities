@@ -1,21 +1,16 @@
 ﻿Marvel
 DC
 Star Wars
-Harry Potter
-James Bond
 LOTR
 Batman
 Jurassic Park
 Fast & Furious
-Indiana Jones
 X-Men
 Pirates of the Caribbean
 Toy Story
-Terminator
 The Matrix
 Transformers
 Mission: Impossible
-Shrek
 Hunger Games
 Rocky
 80s Movies
@@ -29,7 +24,6 @@ Godfather
 Star Trek
 Men in Black
 The Conjuring
-Social Media
 Meal Prep
 Music
 Exercising
@@ -42,7 +36,6 @@ Family Time
 Working
 Internet
 Hobbies
-Walking
 Pet Care
 Public Restrooms
 Finances
@@ -63,7 +56,7 @@ Ronald Reagan
 George W Bush
 Bill Clinton
 Hillary Clinton
-Barrack Obama
+Barack Obama
 Donald Trump
 Joe Biden
 Bernie Sanders
@@ -75,7 +68,7 @@ Luke Skywalker
 Indiana Jones
 E.T.
 Harry Potter
-Forest Gump
+Forrest Gump
 Simba
 James Bond
 Shrek
@@ -84,7 +77,7 @@ Spider-Man
 Elsa
 Terminator
 Willy Wonka
-Rocky
+Rocky II
 Captain Jack Sparrow
 Neo
 Iron Man
@@ -94,7 +87,7 @@ Hermione Granger
 Board Games
 Picnic
 Hiking
-Movie
+Movies
 Cooking
 Museum
 Sports
@@ -114,24 +107,18 @@ Amusement Park
 Swimming
 Sports Event
 Photoshoot
-Gardening
 Walking
 Bird Watch
 Reading
 Yoga
 Golfing
 Painting
-Cooking
-Volunteering
-Swimming
 Concerts
 Photography
 Traveling
 Genealogy
 Knitting
 Crocheting
-Book Clubs
-Biking
 Dance
 Classic Movies
 Fishing
@@ -141,24 +128,16 @@ Coffee
 Astronomy
 Friends
 Music
-Social Media
 Shopping
-Sports
-Concerts
 Skateboard
 Gaming Tour
-YouTube
+YouTubers
 TikTok
 Books
 Nature
 Instrument
-Cooking
-Volunteering
-Travel
-Photography
 Clubs/Groups
 Fashion
-Beach
 Pool
 Chapel Skips
 Chick-Fil-A
@@ -184,9 +163,8 @@ Curfew
 Chow Wagon
 Study Group
 Social Event
-Road Trips
 State Park
-Music/Theater
+Theater
 Outdoor Adventures
 Creative Arts
 Skills Workshop
@@ -216,13 +194,11 @@ Cats
 Dogs
 Early Bird
 Night Owl
-Books
 Android
 iPhone
 Pixel
 Weightlifting
 Outdoors
-Books
 E-Books
 Beaches
 Mountains
@@ -235,7 +211,6 @@ Restaurants
 Buses
 Subways
 Airports
-Driving
 City Life
 Suburbs
 Rural Living
@@ -243,7 +218,6 @@ Country Life
 Science
 Humanities
 DIY
-Physical Books
 Audiobooks
 Thin Crust
 Deep Dish
@@ -262,7 +236,7 @@ YouTube
 WhatsApp
 Instagram
 WeChat
-TikTok
+TikTok Dances
 Messenger
 Snapchat
 Pinterest
@@ -284,7 +258,6 @@ Wii Sports
 Fortnite
 Call of Duty
 Smash Bros
-Friends
 The Office (U.S.)
 Seinfeld
 How I Met Your Mother
@@ -294,7 +267,7 @@ The Big Bang Theory
 Cheers
 Scrubs
 The Fresh Prince of Bel-Air
-Friends
+Friends (Show)
 The Golden Girls
 Everybody Loves Raymond
 Frosted Flakes
@@ -378,6 +351,10 @@ School Uniforms
 ChatGPT
 Homeschooling
 High School
+Middle School
+Elementary School
+Naps
+Sleep
 Napoleon Dynamite
 The Princess Bride
 Taylor Swift
@@ -400,7 +377,7 @@ Tate McRae
 Blake Shelton
 Dolly Parton
 Elvis Presley
-The Beetles
+The Beatles
 Michael Jackson
 Michael Buble
 Christmas Music
@@ -423,13 +400,9 @@ Jazz
 Blues
 Classical Music
 Reggae
-Gardening
-Playing Chess
-Knitting
-Crocheting
+Chess
 Reading Newspapers
 Playing Bingo
-Classic Movies
 $20
 Jigsaw Puzzles
 Bus Tours
@@ -451,7 +424,6 @@ Curling
 Figure Skating
 Ice Hockey
 Math
-Reading
 Coding
 Emojis
 Selfies
@@ -461,7 +433,7 @@ E-sports
 Keto
 Baby Yoda
 Loud Chewing
-Interupting
+Interrupting
 Slow Walkers
 Littering
 Noisy Neighbors
@@ -473,13 +445,12 @@ Turn Signals
 Chads
 Barbie
 Area 51
-Crypocurrency
+Cryptocurrency
 Self-Care
 Plastic Straws
 Royal Family
 Princess Diana
 Queen Elizabeth
-Zoom
 Charcuterie
 Wordle
 Thy Wordle
@@ -492,7 +463,6 @@ TJ Kirk
 Ben Clark
 Flannel
 Sriracha
-Sushi
 Dumplings
 Eggrolls
 Chicken Nuggies
@@ -544,7 +514,7 @@ Cedar Point
 Kings Island
 Roblox
 Crossfit
-Body Building
+Bodybuilding
 Marathons
 Pokemon
-Heelies
+Heelys
