@@ -87,13 +87,18 @@ namespace Priorities.ViewModels
         [RelayCommand]
         void Next()
         {
-            Round++;
+            // update game state service
             gameStateService.Score = Score;
-            gameStateService.Round = Round;
             gameStateService.PrioritizerRankings.Clear();
             gameStateService.GuesserRankings.Clear();
+            if (Round == TotalRounds)
+            {
+                Shell.Current.GoToAsync($"{nameof(GameResultsPage)}");
+            }
             //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
-            Shell.Current.GoToAsync($"{nameof(GamePage)}");
+            else {
+                Shell.Current.GoToAsync($"{nameof(GetReadyPage)}");
+            }
         }
 
         [RelayCommand]
