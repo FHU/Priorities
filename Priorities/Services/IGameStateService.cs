@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using Priorities.Models;
 
 namespace Priorities.Services
@@ -13,6 +14,8 @@ namespace Priorities.Services
 	{
         public List<Player> Players { get; set; }
         public int Score { get; set; }
+
+        public List<Achievement> Achievements { get; set; }
 
         public int Round { get; set; }
         public int TotalRounds { get; set; }
