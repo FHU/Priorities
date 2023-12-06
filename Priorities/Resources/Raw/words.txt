@@ -14,10 +14,16 @@ Toy Story
 Terminator
 The Matrix
 Transformers
-Mission: Impos
+Mission: Impossible
 Shrek
 Hunger Games
-Rocky/Creed
+Rocky
+80s Movies
+90s Movies
+70s Music
+80s Music
+90s Music
+2000s Music
 Twilight
 Godfather
 Star Trek
@@ -38,46 +44,35 @@ Internet
 Hobbies
 Walking
 Pet Care
-Rest Breaks
+Public Restrooms
 Finances
 Errands
-Coffee/Tea
 Event Plan
 Conversation
 Skincare
 Snack Breaks
-Drives/Rides
-Pastime
-G Washington
-T Jefferson
-A Lincoln
-T Roosevelt
-W Wilson
+Driving
+George Washington
+Thomas Jefferson
+Abraham Lincoln
 F Roosevelt
-H Truman
-D Eisenhower
-J Kennedy
-L Johnson
-R Nixon
-G Ford
-J Carter
-R Reagan
-GHW Bush
-B Clinton
+John F Kennedy
+Nixon
+Jimmy Carter
+Reagan
+George W Bush
+Bill Clinton
+Hillary Clinton
 GW Bush
-B Obama
-D Trump
-J Biden
+Obama
+Trump
+Biden
 MLK Jr.
-S Anthony
-F Douglass
-E Roosevelt
-R Parks
 Mickey Mouse
-D Gale
-M Poppins
-L Skywalker
-I Jones
+Dorothy Gale
+Mary Poppins
+Luke Skywalker
+Indiana Jones
 E.T.
 H Potter
 F Gump
@@ -145,11 +140,11 @@ Classic Mvs
 Puzzles
 Fishing
 New Language
-Museum
-Tea/Coffee
+Museums
+Tea
+Coffee
 Astronomy
 Video Games
-Movies/TV
 Friends
 Music
 Social Media
@@ -210,45 +205,40 @@ Dogs
 Early Bird
 Night Owl
 Books
-Movies
 Android
 iPhone
-Soc Med Good
-Soc Med Bad
-Gym
+Weightlifting
 Outdoors
-Trad Books
+Books
 E-Books
-Beach Vac
-Mtn Vac
+Beaches
+Mountains
 Streaming
-Cable TV
-Online Shop
-Store Shop
+Amazon.com
 Comedy
 Drama
-Home Cook
+Home Cooking
 Restaurants
-Public Trans
+Buses
+Subways
+Airports
 Driving
-Pop Music
-Rock Music
 City Life
 Country Life
 Science
 Humanities
 DIY
-Prof Service
-Phys Books
+Physical Books
 Audiobooks
 Thin Crust
 Deep Dish
 Office Work
 Remote Work
-Handwrite
+Handwriting
 Typing
-Morning Shwr
-Evening Shwr
+Mornings
+Evenings
+Showers
 Facebook
 YouTube
 WhatsApp
@@ -257,12 +247,10 @@ WeChat
 TikTok
 Messenger
 Snapchat
-Telegram
 Pinterest
 Twitter
 LinkedIn
 Reddit
-Viber
 Discord
 Spotify
 Twitch
