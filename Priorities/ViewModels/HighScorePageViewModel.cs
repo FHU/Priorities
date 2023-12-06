@@ -121,7 +121,7 @@ namespace Priorities.ViewModels
                     Name = "EnglishMajors",
                     Players = new List<Player>
                 {
-                            new Player() { Name="Hannah", ImageName="raccoon.jpg" },
+                            new Player() { Name="Hannah", ImageName="kenan.jpg" },
                             new Player() { Name="Ashley", ImageName="kenan.jpeg" },
                 }
                 },
