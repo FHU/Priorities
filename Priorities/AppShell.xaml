@@ -20,7 +20,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="1" BackgroundColor="{StaticResource DarkGray}" Padding="0, 0, 15" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                    <Label Grid.Column="1" BackgroundColor="{StaticResource DarkGray}" Padding="0, 15" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="M" FontSize="40" TextColor="{StaticResource SecondaryLightBlue }" FontFamily="CoinyRegular"/>
@@ -74,13 +74,44 @@
         </StackLayout>
        
     </Shell.FlyoutContent>-->
-
-    <ShellContent
+    
+    
+    
+    <FlyoutItem
         Title="Home"
-        
-        ContentTemplate="{DataTemplate views:HomePage}"
-        Route="HomePage" />
+        Icon="house.svg"
+        >
+        <ShellContent ContentTemplate="{DataTemplate views:HomePage}" />
+    </FlyoutItem>
 
+    <FlyoutItem
+    Title="High Scores"
+    Icon="trophysolid.svg"
+    >
+        <ShellContent ContentTemplate="{DataTemplate views:HighScorePage}" />
+    </FlyoutItem>
+
+    <!--
+    
+    add back in when pages are made
+    
+    <FlyoutItem
+    Title="Achievements"
+    Icon="ribbon.svg"
+    >
+        <ShellContent ContentTemplate="{DataTemplate views:AchievementsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+    Title="How to Play"
+    Icon="question.svg"
+    >
+        <ShellContent ContentTemplate="{DataTemplate views:HowToPlayPage}" />
+    </FlyoutItem>-->
+    
+    
+    
+    <!--Comment Out for Demo-->
     <ShellContent
         Title="GamePage"
         ContentTemplate="{DataTemplate views:GamePage}"
