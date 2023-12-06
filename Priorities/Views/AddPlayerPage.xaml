@@ -102,7 +102,7 @@
             </Grid>
 
             <!--Input Avatar-->
-            <Grid Grid.Row="1" RowSpacing="10" VerticalOptions="Center" Margin="8">
+            <Grid Grid.Row="1" RowSpacing="10" VerticalOptions="Center" Margin="4">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -128,18 +128,26 @@
                        Padding="4"
                        BorderColor="Transparent"
                        BackgroundColor="{StaticResource SecondaryGreen}"
+                       
                        Margin="0,0,0,0"
                        >
 
                     <Image Grid.Row="1"
-                           x:Name="avatarPic"
-                           HeightRequest="350"
-                           WidthRequest="300"
-                           Source="{Binding Image}"
+                           HeightRequest="50"
+                           WidthRequest="50"
+                           Source="Resources/Images/camerawhite.png"
                            
                        />
 
                 </Frame>
+
+                <Image Grid.Row="1"
+                           HeightRequest="300"
+                           WidthRequest="300"
+                           Source="{Binding Image}"
+                           
+                />
+
                 
                 <!--<Frame Grid.Row="1"
                        HeightRequest="250"
