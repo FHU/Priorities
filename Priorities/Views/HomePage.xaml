@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.HomePage"
-             Title="HomePage">
+             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+             xmlns:models="clr-namespace:Priorities.Models"
+             xmlns:views="clr-namespace:Priorities.Views"
+             Title="HomePage"
+             x:DataType="viewmodels:HomePageViewModel">
+
 
     <Grid>
         <Grid.RowDefinitions>
@@ -29,6 +34,7 @@
         </VerticalStackLayout>
 
          <Button Grid.Row="1"
+                 Command="{Binding NavigateToPlayersPageCommand}"
                  LineBreakMode="NoWrap"
                  Margin="30,45,30,30"
                  Padding="0"
