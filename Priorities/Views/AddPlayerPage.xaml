@@ -135,7 +135,7 @@
                     <Image Grid.Row="1"
                            HeightRequest="50"
                            WidthRequest="50"
-                           Source="Resources/Images/camerawhite.png"
+                           Source="Resources/Images/camerawhite"
                            
                        />
 
@@ -163,65 +163,8 @@
 
                 </Frame>
 
-                
-                <!--<Frame Grid.Row="1"
-                       HeightRequest="250"
-                       WidthRequest="250"
-                       CornerRadius="150"
-                       HorizontalOptions="Center"
-                       IsClippedToBounds="True"
-                       Padding="4"
-                       BorderColor="Transparent"
-                       BackgroundColor="{StaticResource SecondaryGreen}"
-                       Margin="0,0,0,0">
 
-                    <Image Grid.Row="1"
-                       x:Name="avatarPic"
-                       HeightRequest="250"
-                       WidthRequest="250"
-                       Source="{Binding Image}"
-                       />
-
-                </Frame>-->
-
-                
-
-                <!--<Frame Grid.Row="1"
-                       HeightRequest="250"
-                       WidthRequest="250"
-                       CornerRadius="150"
-                       HorizontalOptions="Center"
-                       IsClippedToBounds="True"
-                       Padding="3"
-                       BorderColor="Transparent"
-                       BackgroundColor="Transparent"
-                       Margin="0,0,0,0">
-
-                    <cv:CameraView x:Name="cameraView" HeightRequest="250" WidthRequest="250"
-                               CamerasLoaded="cameraView_CamerasLoaded"/>
-
-                </Frame>-->
-
-
-                <!--<Frame Grid.Row="2"
-                       HeightRequest="300"
-                       WidthRequest="300"
-                       CornerRadius="150"
-                       HorizontalOptions="Center"
-                       IsClippedToBounds="True"
-                       Padding="3"
-                       BorderColor="Gray"
-                       Margin="0,0,0,0">
-
-                <cv:CameraView x:Name="cameraView" HeightRequest="200" WidthRequest="200"
-                               CamerasLoaded="cameraView_CamerasLoaded"/>
-
-                </Frame>-->
-
-                <!--Retake Button-->
-                
-
-                <!--Smile Button-->
+                <!--Take Photo! Button-->
                 
 
                 <Button Grid.Row="2"
@@ -280,12 +223,7 @@
                             
                     </Button>
 
-                    <!--<Image Source="shapes.png"
-                           Grid.Row="1"
-                           VerticalOptions="End"
-                           HeightRequest="180"
-                           WidthRequest="200"
-                           />-->
+                    
                             
                     
                 </Grid>
@@ -300,15 +238,6 @@
                    VerticalOptions="End"
                    ZIndex="-1"/>
 
-            <!--Bottom Style-->
-            <!--<StackLayout Grid.Row="3"
-                        VerticalOptions="End">
-
-                <Image Source="shapes.png"
-                       WidthRequest="360"
-                       HeightRequest=""/>
-
-            </StackLayout>-->
 
 
         </Grid>
