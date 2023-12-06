@@ -37,7 +37,10 @@ public static class MauiProgram
 
         builder.Services.AddTransient<RoundResultsPage>();
         builder.Services.AddTransient<RoundResultsPageViewModel>();
-		
+
+        builder.Services.AddTransient<GamePage>();
+        builder.Services.AddTransient<GamePageViewModel>();
+
 
 #if DEBUG
         builder.Logging.AddDebug();

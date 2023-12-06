@@ -13,7 +13,6 @@ public partial class App : Application
 
         MainPage = new AppShell();
 
-
         Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
         {
 #if ANDROID
