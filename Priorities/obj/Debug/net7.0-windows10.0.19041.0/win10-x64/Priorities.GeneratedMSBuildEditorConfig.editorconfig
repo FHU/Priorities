@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Priorities
+build_property.ProjectDir = C:\Users\kodom\Source\Repos\Priorities\Priorities\
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/AddPlayerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.AddPlayerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddPlayerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddPlayerPage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/GamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.GamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GamePage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/GameResultsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.GameResultsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GameResultsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GameResultsPage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/GameStatusBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.GameStatusBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GameStatusBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GameStatusBar.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/GetReadyPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.GetReadyPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GetReadyPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GetReadyPage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/HighScorePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.HighScorePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HighScorePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HighScorePage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/PlayersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.PlayersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PlayersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PlayersPage.xaml
+
+[C:/Users/kodom/Source/Repos/Priorities/Priorities/Views/RoundResultsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Priorities.Views.RoundResultsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RoundResultsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RoundResultsPage.xaml
