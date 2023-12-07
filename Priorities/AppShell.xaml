@@ -113,6 +113,11 @@
     
     <!--Comment Out for Demo-->
     <ShellContent
+        Title="AddPlayerPage"
+        ContentTemplate="{DataTemplate views:AddPlayerPage}"
+        Route="AddPlayerPage" />
+
+    <ShellContent
         Title="GamePage"
         ContentTemplate="{DataTemplate views:GamePage}"
         Route="GamePage" />
