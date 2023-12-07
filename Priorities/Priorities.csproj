@@ -87,6 +87,8 @@
 	</ItemGroup> -->
 
 	<ItemGroup>
+	  <None Remove="Resources\Raw\words.txt" />
+	  <None Remove="Resources\Images\fishhook.svg" />
 	  <None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
