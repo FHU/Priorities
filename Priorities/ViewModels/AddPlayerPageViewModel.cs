@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Priorities.ViewModels
 {
-    public partial class AddPlayersPageViewModel : ObservableObject
+    public partial class AddPlayerPageViewModel : ObservableObject
     {
 
         private readonly IGameStateService gameStateService;
@@ -24,7 +24,7 @@ namespace Priorities.ViewModels
         private string image;
 
 
-        public AddPlayersPageViewModel(IGameStateService gameStateService)
+        public AddPlayerPageViewModel(IGameStateService gameStateService)
         {
             this.gameStateService = gameStateService;
         }

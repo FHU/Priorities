@@ -11,7 +11,7 @@ public partial class AddPlayerPage : ContentPage
 
         charLimitLabel.IsVisible = true;
 
-        BindingContext = new AddPlayersPageViewModel( gameStateService);
+        BindingContext = new AddPlayerPageViewModel( gameStateService);
     }
 
     void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)

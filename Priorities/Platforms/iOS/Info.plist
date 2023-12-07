@@ -29,8 +29,6 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
 	<key>NSCameraUsageDescription</key>
-	<true/>
-	<key>Custom Property</key>
-	<string>Can PRIORITES use your camera?</string>
+	<string>Can MOGI use your camera?</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
              xmlns:views="clr-namespace:Priorities.Views"
-             x:DataType="viewmodels:AddPlayersPageViewModel"
+             x:DataType="viewmodels:AddPlayerPageViewModel"
              Title="AddPlayerPage"
              Shell.NavBarIsVisible="False"
              Shell.BackgroundColor="{StaticResource DarkGray}"
