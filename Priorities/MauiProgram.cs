@@ -14,7 +14,6 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			//.UseMauiCameraView()
 			.UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
