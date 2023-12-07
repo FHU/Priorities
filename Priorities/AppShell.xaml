@@ -34,39 +34,25 @@
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
-    <!--<FlyoutItem Title="Home">
-        <ShellContent>
-            <Label Text="Home Page" />
-        </ShellContent>
-    </FlyoutItem>
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout >
 
-    <FlyoutItem Title="High Scores">
-        <ShellContent>
-            <Label Text="High Scores Page" />
-        </ShellContent>
-    </FlyoutItem>
+            <Label Text="Copyright 2023 FHU" HorizontalTextAlignment="End"/>
 
-    <FlyoutItem Title="Achievements">
-        <ShellContent>
-            <Label Text="Achievements Page" />
-        </ShellContent>
-    </FlyoutItem>-->
+        </VerticalStackLayout>
 
-    <!--<Shell.FlyoutContent>
+    </Shell.FlyoutFooter>
 
-        <StackLayout Orientation="Vertical">
-
-            <Label Text="Flyout Content" />
-
-        </StackLayout>
-       
-    </Shell.FlyoutContent>-->
-
-    <ShellContent
+     <ShellContent
         Title="Home"
         
         ContentTemplate="{DataTemplate views:HomePage}"
         Route="HomePage" />
+
+    <ShellContent
+        Title="AddPlayerPage"
+        ContentTemplate="{DataTemplate views:AddPlayerPage}"
+        Route="AddPlayerPage" />
 
     <ShellContent
         Title="GamePage"
@@ -97,16 +83,6 @@
         Title="RoundResultsPage"
         ContentTemplate="{DataTemplate views:RoundResultsPage}"
         Route="RoundResultsPage" />
-
-
-    <Shell.FlyoutFooter>
-        <VerticalStackLayout >
-
-            <Label Text="Copyright 2023 FHU" HorizontalTextAlignment="End"/>
-
-        </VerticalStackLayout>
-
-    </Shell.FlyoutFooter>
 
 </Shell>
 
