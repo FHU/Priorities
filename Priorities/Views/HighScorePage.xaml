@@ -15,13 +15,13 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
-            
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <VerticalStackLayout Margin="0, -5, 0, 0"  BackgroundColor="{StaticResource DarkGray}">
+        <VerticalStackLayout Grid.Row="0"  Margin="0, -5, 0, 0"  BackgroundColor="{StaticResource DarkGray}">
             <HorizontalStackLayout>
                 <Button BackgroundColor="{StaticResource DarkGray}" Clicked="HamburgerMenuButton_Clicked" FontSize="40" Text="☰"  VerticalOptions="Center" />
-                <Label Grid.Row="0" LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                <Label LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="80" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="H" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -43,7 +43,7 @@
             <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
         </VerticalStackLayout>
 
-        <ScrollView  Margin="20" Grid.Row="2" BackgroundColor="{StaticResource OffWhite}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView  Margin="20, 20, 20, 0" Grid.Row="1" BackgroundColor="{StaticResource OffWhite}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <VerticalStackLayout VerticalOptions="FillAndExpand" Spacing="5">
                 <CollectionView ItemsSource="{Binding GameResults}" HeightRequest="1650">
                     <CollectionView.ItemsLayout>
@@ -147,11 +147,8 @@
                                                                    FontFamily="ConcertOneRegular"
                                                                    FontSize="20" 
                                                                    VerticalOptions="Center"/>
-                                                            <Ellipse Grid.Column="1"
-                                                                     Fill="{StaticResource PrimaryRed}"
-                                                                     WidthRequest="25"
-                                                                     HeightRequest="25"
-                                                                     HorizontalOptions="End"/>
+                                                            <Image HorizontalOptions="End" Margin="3"  ZIndex="1" HeightRequest="20" Source="{Binding Image}" Grid.Column="1"/>
+                                                            
                                                         </Grid>
                                                     </Border>
                                                 </DataTemplate>
@@ -215,10 +212,10 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
 
-                <Rectangle BackgroundColor="{StaticResource OffWhite}" MinimumHeightRequest="10"/>
             </VerticalStackLayout>
         </ScrollView>
 
+        <Rectangle MinimumHeightRequest="50" BackgroundColor="{StaticResource DarkGray}" Grid.Row="2"/>
     </Grid>
     
     
