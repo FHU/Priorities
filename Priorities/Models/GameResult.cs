@@ -14,7 +14,6 @@ namespace Priorities.Models
 		public ObservableCollection<Achievement> Achievements { get; set; }
 		public GameResult()
 		{
-
 		}
 	}
 }

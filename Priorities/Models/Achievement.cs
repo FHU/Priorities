@@ -13,7 +13,7 @@ namespace Priorities.Models
         public bool Unlocked { get; set; }
         public DateTime DateUnlocked { get; set; }
 
-        public string ImageLocation { get; set; }
+        public string Image { get; set; }
 
         public Achievement()
         {

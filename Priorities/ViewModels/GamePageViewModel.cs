@@ -68,16 +68,17 @@ namespace Priorities.ViewModels
             playerImage = gameStateService.Prioritizer.ImageName;
 
             /*Priscilla*/
+
             Priorities = new ObservableCollection<Priority>();
 
-            Priorities.Add(new Priority("Turtles"));
-            Priorities.Add(new Priority("Evan Kahan"));
-            Priorities.Add(new Priority("Microwave"));
-            Priorities.Add(new Priority("Musicals"));
-            Priorities.Add(new Priority("Calculus"));
+            var items = gameStateService.GetRandomItems();
+            foreach ( var item in items )
+            {
+                Priorities.Add(new Priority(item));
+            }
 
             /*Gavin*/
-            Round = gameStateService.Round;
+
             TotalRounds = gameStateService.TotalRounds;
 
             /*Priscilla*/
@@ -95,13 +96,13 @@ namespace Priorities.ViewModels
                 prioritizing = false;
                 guessing = true;
             }
-            
+
 
         }
 
 
         [RelayCommand]
-        async Task NavigateToRoundResultsPage()
+        async Task NavigateToNextPage()
         {
             var rankingList = new List<string>();
             foreach (var priority in Priorities)
@@ -111,12 +112,14 @@ namespace Priorities.ViewModels
             if (gameStateService.Phase.Equals(GamePhase.Prioritizing))
             {
                 gameStateService.PrioritizerRankings = rankingList;
+                await Shell.Current.GoToAsync(nameof(GetReadyPage));
+
             }
             else
             {
                 gameStateService.GuesserRankings = rankingList;
+                await Shell.Current.GoToAsync(nameof(RoundResultsPage));
             }
-            await Shell.Current.GoToAsync(nameof(RoundResultsPage));
         }
 
         // I got this off the internet
