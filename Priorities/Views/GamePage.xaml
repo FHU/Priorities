@@ -110,7 +110,7 @@
 
                     <VerticalStackLayout Grid.Column="1" VerticalOptions="End">
                         <Label
-                            Text="Guessing Priorities for"
+                            Text="Guessing Priorities for..."
                             TextColor="{StaticResource DarkGray}"
                             Opacity="0.7"
                             HorizontalOptions="Center"
@@ -119,7 +119,7 @@
                             FontFamily="ConcertOneRegular"
                             IsVisible="{Binding Guessing}"/>
                         <Label
-                            Text="Submitting Priorities for"
+                            Text="Submitting Priorities for..."
                             TextColor="{StaticResource DarkGray}"
                             Opacity="0.7"
                             HorizontalOptions="Center"
@@ -138,25 +138,6 @@
 
                 </HorizontalStackLayout>
 
-                <Button
-                    Grid.Column="2"
-                    Text="{Binding Timer}"
-                    TextColor="{StaticResource DarkGray}"
-                    BackgroundColor="{StaticResource White}"
-                    CornerRadius="16"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
-                    FontSize="24"
-                    IsEnabled="False"
-                    FontFamily="ConcertOneRegular">
-                    <Button.Shadow>
-                        <Shadow Brush="{StaticResource Black}"
-                            Offset="2,4"
-                            Radius="16"
-                            Opacity="0.5"/>
-                    </Button.Shadow>
-
-                </Button>
 
             </Grid>
 
@@ -189,7 +170,7 @@
                                     BackgroundColor="{StaticResource PrimaryBlueGreen}"
                                     Text="{Binding .}"
                                     TextColor="{StaticResource OffWhite2}"
-                                    FontSize="30"
+                                    FontSize="28"
                                     VerticalOptions="Center"
                                     Margin="0, 8"
                                     IsEnabled="False"
@@ -299,6 +280,7 @@
                             Command="{Binding NavigateToNextPageCommand}"
                             TextColor="{StaticResource OffWhite2}"
                             FontSize="32"
+                            BackgroundColor="Transparent"
                         
                             FontFamily="ConcertOneRegular"/>
                     </Grid>
