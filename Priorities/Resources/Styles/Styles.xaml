@@ -47,14 +47,6 @@
         </Setter>
     </Style>
 
-    <Style Class="FlyoutItemLabelStyle" TargetType="Label">
-        <Setter Property="FontFamily" Value="ConcertOneRegular"/>
-        <Setter Property="FontSize" Value="24"/>
-        <Setter Property="TextColor" Value="{StaticResource DarkGray}"/>
-
-    </Style>
-
-    
     <Style TargetType="CheckBox">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
         <Setter Property="MinimumHeightRequest" Value="44"/>

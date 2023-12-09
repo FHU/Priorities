@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Priorities.Models;
-using Priorities.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,7 +14,7 @@ namespace Priorities.ViewModels
         public ObservableCollection<GameResult> GameResults { get; set; }
 
 
-        public HighScorePageViewModel(IGameStateService gameStateService)
+        public HighScorePageViewModel()
         {
             GameResults = new ObservableCollection<GameResult>();
 
@@ -23,24 +22,25 @@ namespace Priorities.ViewModels
             var gameResult = new GameResult()
             {
                 Rank = 1,
-                Score = 5000,
+                Score = 4999,
                 Date = DateTime.Now,
                 Team = new Team()
                 {
-                    Name = "EnglishMajors",
+                    Name = "Skellingtons",
                     Players = new List<Player>
                 {
-                            new Player() { Name="Ashley", ImageName="kenan.jpeg" },
-                            new Player() { Name="Hannah", ImageName="kenan.jpeg" },
-                            new Player() { Name="Deb", ImageName="kenan.jpeg" },
+                            new Player() { Name="kenan", ImageName="kenan.jpeg" },
+                            new Player() { Name="kenan2", ImageName="kenan.jpeg" },
+                            new Player() { Name="kenan3", ImageName="kenan.jpeg" },
+                            new Player() { Name="kenan4", ImageName="kenan.jpeg" }
                 }
                 },
                 Achievements = new ObservableCollection<Achievement>
                 {
-                            new Achievement() { Title="Snail's Pace", Unlocked=true, DateUnlocked = DateTime.Now , Description = "Finish guessing with fewer than 5 seconds left in a round", Image = "snails.svg"},
-                            new Achievement() { Title="Open Books", Unlocked=true, DateUnlocked = DateTime.Now, Description="Finish a game with a perfect score", Image = "book.svg" }, 
-                            new Achievement() { Title="Perfectionist", Unlocked=true, DateUnlocked = DateTime.Now, Description="Get a perfect score in a round", Image = "trophy.svg" },
-                            new Achievement() { Title="Rockstar", Unlocked=true, DateUnlocked = DateTime.Now, Description="Get 3 achievements in a game", Image="stars.svg" }
+                            new Achievement() { Title="Title 1", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+                            new Achievement() { Title="Title 2", Unlocked=true, DateUnlocked = DateTime.Now, Description="no" }, 
+                            new Achievement() { Title="Title 3", Unlocked=true, DateUnlocked = DateTime.Now, Description="double no" },
+                            new Achievement() { Title="Title 4", Unlocked=true, DateUnlocked = DateTime.Now, Description="triple no" }
   },
             };
             GameResults.Add(gameResult);
@@ -48,22 +48,22 @@ namespace Priorities.ViewModels
             var gameResult1 = new GameResult()
             {
                 Rank = 2,
-                Score = 4095,
+                Score = 2998,
                 Date = DateTime.Now,
                 Team = new Team()
                 {
-                    Name = "Dream Team",
+                    Name = "Penguins",
                     Players = new List<Player>
                 {
-                            new Player() { Name="kenan", ImageName="kenan.jpeg" },
-                            new Player() { Name="kenan", ImageName="kenan.jpeg" },
-                            new Player() { Name="kenan", ImageName="kenan.jpeg" },
-                            new Player() { Name="kenan", ImageName="kenan.jpeg" }
+                            new Player() { Name="kelly", ImageName="kenan.jpeg" },
+                            new Player() { Name="kelly2", ImageName="kenan.jpeg" },
+                            new Player() { Name="kelly3", ImageName="kenan.jpeg" },
+                            new Player() { Name="kelly4", ImageName="kenan.jpeg" }
                 }
                 },
                 Achievements = new ObservableCollection<Achievement>
                 {
-                            new Achievement() { Title="Twinsies", Unlocked=true, DateUnlocked = DateTime.Now , Description = "Have 2 people with the same username in a game", Image="twins.svg"},
+                            new Achievement() { Title="Not-Title 1", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
   },
             };
             GameResults.Add(gameResult1);
@@ -71,24 +71,16 @@ namespace Priorities.ViewModels
             var gameResult2 = new GameResult()
             {
                 Rank = 3,
-                Score = 3450,
+                Score = 1,
                 Date = DateTime.Now,
                 Team = new Team()
                 {
-                    Name = "GhostCrew",
+                    Name = "testing",
                     Players = new List<Player>
                     {
-                        new Player() { Name = "Kanan", ImageName = "kenan.jpeg" },
-                        new Player() { Name = "Hera", ImageName = "kenan.jpeg" },
-                        new Player() { Name = "Chopper", ImageName = "kenan.jpeg" },
-                        new Player() { Name = "Zeb", ImageName = "kenan.jpeg" },
-                        new Player() { Name = "Ezra", ImageName = "kenan.jpeg" },
+                        new Player() { Name = "kelly", ImageName = "kenan.jpeg" },
                     }
                 },
-                Achievements = new ObservableCollection<Achievement>
-                {
-                    new Achievement() {Title="Hooked In", Unlocked=true , DateUnlocked = DateTime.Now , Description="Play 10 games", Image="fishhook.svg"}
-                }
   
             };
             GameResults.Add(gameResult2);
@@ -101,17 +93,20 @@ namespace Priorities.ViewModels
                 Date = DateTime.Now,
                 Team = new Team()
                 {
-                    Name = "The Suits",
+                    Name = "Chemistry",
                     Players = new List<Player>
                 {
-                            new Player() { Name="TJ", ImageName="kenan.jpeg" },
-                            new Player() { Name="President", ImageName="kenan.jpeg" },
-                            new Player() { Name="Lacy", ImageName="kenan.jpeg" },
+                            new Player() { Name="ella", ImageName="kenan.jpeg" },
+                            new Player() { Name="ella1", ImageName="kenan.jpeg" },
+                            new Player() { Name="ella2", ImageName="kenan.jpeg" },
+                            new Player() { Name="ella3", ImageName="kenan.jpeg" }
                 }
                 },
                 Achievements = new ObservableCollection<Achievement>
                 {
-                            new Achievement() { Title="Great Start", Unlocked=true, DateUnlocked = DateTime.Now , Description = "Finish 1 game", Image="thumbsup.svg"},
+                            new Achievement() { Title="Not-Title 1", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+                            new Achievement() { Title="Caffeine", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+                            new Achievement() { Title="Snail's Pace", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
   },
             };
             GameResults.Add(gameResult4);
@@ -119,21 +114,21 @@ namespace Priorities.ViewModels
             var gameResult5 = new GameResult()
             {
                 Rank = 5,
-                Score = 0,
+                Score = 2345,
                 Date = DateTime.Now,
                 Team = new Team()
                 {
-                    Name = "TeamRocket",
+                    Name = "EnglishMajors",
                     Players = new List<Player>
                 {
-                            new Player() { Name="Jesse", ImageName="kenan.jpg" },
-                            new Player() { Name="James", ImageName="kenan.jpeg" },
-                            new Player() { Name="Meowth", ImageName="kenan.jpeg" },
+                            new Player() { Name="Hannah", ImageName="raccoon.jpg" },
+                            new Player() { Name="Ashley", ImageName="kenan.jpeg" },
                 }
                 },
                 Achievements = new ObservableCollection<Achievement>
                 {
-                            new Achievement() { Title="Ragnarok", Unlocked=true, DateUnlocked = DateTime.Now , Description = "End the game with 0 points", Image="bombs.svg"},
+                            new Achievement() { Title="Jane Austen", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
+                            new Achievement() { Title="Book Club", Unlocked=true, DateUnlocked = DateTime.Now , Description = "blah"},
   },
             };
             GameResults.Add(gameResult5);

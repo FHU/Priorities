@@ -28,7 +28,5 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Can MOGI use your camera?</string>
 </dict>
 </plist>
