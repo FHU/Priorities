@@ -142,7 +142,7 @@
                 FontSize="20"
                 HorizontalOptions="Start"
                 Opacity="0.7"
-                Text="Revealing Results for"
+                Text="Revealing Results for..."
                 TextColor="{StaticResource DarkGray}"
                 VerticalOptions="Center" />
 
@@ -198,16 +198,8 @@
                             <!--  guess text bg  -->
                             <RoundRectangle
                                 Grid.Column="1"
-                                CornerRadius="24"
-                                Fill="{StaticResource PrimaryBlueGreen}">
-                                <RoundRectangle.Shadow>
-                                    <Shadow
-                                        Brush="Gray"
-                                        Opacity="0.9"
-                                        Radius="5"
-                                        Offset="5,5" />
-                                </RoundRectangle.Shadow>
-                            </RoundRectangle>
+                                CornerRadius="16"
+                                Fill="{StaticResource PrimaryBlueGreen}" />
 
                             <!--  guess number circle  -->
                             <Button
@@ -227,7 +219,7 @@
                             <Label
                                 Grid.Column="1"
                                 FontFamily="ConcertOneRegular"
-                                FontSize="32"
+                                FontSize="28"
                                 HorizontalOptions="Center"
                                 Text="{Binding Name}"
                                 TextColor="#EBEBE5"
@@ -252,16 +244,18 @@
 
         <!--  next button  -->
         <Button
+            x:Name="NextBtn"
             Grid.Row="4"
             Margin="20,10"
             BackgroundColor="{StaticResource PrimaryRed}"
+            Command="{Binding NextCommand}"
             CornerRadius="24"
             FontFamily="ConcertOneRegular"
             FontSize="32"
             HeightRequest="80"
+            IsEnabled="{Binding NextEnabled}"
             Text="NEXT"
-            TextColor="White"
-            Command="{Binding NextCommand}">
+            TextColor="White">
 
             <Button.Shadow>
                 <Shadow

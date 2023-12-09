@@ -17,6 +17,9 @@ namespace Priorities.ViewModels
         private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
+        private bool nextEnabled;
+
+        [ObservableProperty]
         private int round;
 
         [ObservableProperty]
@@ -36,16 +39,7 @@ namespace Priorities.ViewModels
 
         public RoundResultsPageViewModel(IGameStateService gameStateService)
         {
-            string i1 = "Giraffe";
-            string i2 = "Chocolate";
-            string i3 = "Fruit";
-            string i4 = "Sleep";
-            string i5 = "Casey";
-
             this.gameStateService = gameStateService; // MADISON DON'T DELETE THIS LINE
-
-            /* Delete these lines later */
-
 
             /* KEEP THESE LINES */
             this.Round = this.gameStateService.Round;
@@ -56,6 +50,7 @@ namespace Priorities.ViewModels
             this.GuesserRankings = this.gameStateService.GuesserRankings;
 
             Rankings = new ObservableCollection<Ranking>();
+            NextEnabled = false;
         }
 
         public void GetResult(int rank)
@@ -83,7 +78,7 @@ namespace Priorities.ViewModels
         {
             // update game state service
             gameStateService.Score = Score;
-            
+
             gameStateService.Round += 1;
             gameStateService.PrioritizerRankings.Clear();
             gameStateService.GuesserRankings.Clear();
@@ -91,8 +86,8 @@ namespace Priorities.ViewModels
             {
                 await Shell.Current.GoToAsync(nameof(GameResultsPage));
             }
-            //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
-            else {
+            else
+            {
                 await Shell.Current.Navigation.PushAsync(new GetReadyPage(gameStateService));
             }
         }
@@ -100,15 +95,14 @@ namespace Priorities.ViewModels
         [RelayCommand]
         async Task ShowRankings()
         {
-            
             for (int i = 5; i > 0; i--)
             {
                 await Task.Delay(1000);
                 GetResult(i);
             }
+
+            await Task.Delay(1000);
+            NextEnabled = true;
         }
-
     }
-
-
 }
