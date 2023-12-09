@@ -1,19 +1,14 @@
-﻿using Priorities.Services;
-using Priorities.ViewModels;
+﻿using Priorities.ViewModels;
 
 namespace Priorities.Views
 {
     public partial class HighScorePage : ContentPage
     {
-        public HighScorePage(IGameStateService gameStateService)
+        public HighScorePage()
         {
             InitializeComponent();
 
-            BindingContext = new HighScorePageViewModel(gameStateService);
-        }
-        void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
-        {
-            Shell.Current.FlyoutIsPresented = true;
+            BindingContext = new HighScorePageViewModel();
         }
     }
 }

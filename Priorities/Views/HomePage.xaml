@@ -2,109 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Priorities.Views.HomePage"
-             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
-             xmlns:models="clr-namespace:Priorities.Models"
-             xmlns:views="clr-namespace:Priorities.Views"
-             Title="HomePage"
-
->
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-
-        <VerticalStackLayout Grid.Row="0">
-            <Label LineBreakMode="NoWrap" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" HeightRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="M" FontSize="60" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="O" FontSize="60" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="G" FontSize="60" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="I" FontSize="60" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-            <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
-        </VerticalStackLayout>
-
-         <Button Grid.Row="1"
-                 Clicked="Start_Clicked"
-                 LineBreakMode="NoWrap"
-                 Margin="30,45,30,30"
-                 Padding="0"
-                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                 HeightRequest="165"
-                 Text="START!"
-                 FontSize="50"
-                 TextColor="White"
-                 FontFamily="CoinyRegular"
-                 CornerRadius="20"
-                 >
-         </Button>
-
-         <Button Grid.Row="2"
-                 LineBreakMode="NoWrap"
-                 Margin="70,0,70,10"
-                 HorizontalOptions="FillAndExpand"
-                 Padding="-30"
-                 BackgroundColor="{StaticResource PrimaryRed}"
-                 HeightRequest="60"
-                 FontFamily="CoinyRegular"
-                 Text="High Scores"
-                 FontSize="26"
-                 TextColor="White"
-                 CornerRadius="20"
-                 Clicked="High_Scores_Clicked"
-                 >
-                </Button>
-         <Button Grid.Row="3"
-                 LineBreakMode="NoWrap"
-                 Margin="70,20,70,0"
-                 HorizontalOptions="FillAndExpand"
-                 Padding="-10"
-                 BackgroundColor="{StaticResource PrimaryRed}"
-                 HeightRequest="50"
-                 Text="Achievements"
-                 FontSize="26"
-                 TextColor="White"
-                 FontFamily="CoinyRegular"
-                 CornerRadius="20"
-                 Clicked="Achievements_Clicked"
-                 >
-                </Button>
-         <Button Grid.Row="4"
-                LineBreakMode="NoWrap"
-                Margin="70,30,70,0"
-                HorizontalOptions="FillAndExpand"
-                Padding="0"
-                BackgroundColor="{StaticResource SecondaryLightBlue}"
-                HeightRequest="50"
-                Text="How to Play"
-                FontSize="25"
-                TextColor="White"
-                FontFamily="CoinyRegular"
-                CornerRadius="20"
-                Clicked="How_To_Play_Clicked"
-                >
-                </Button>
-
-         <Image Source="shapes"
-                        Aspect="AspectFill"
-                        WidthRequest="400"
-                        HeightRequest="200"
-                        Grid.Row="5"
-                        VerticalOptions="End"
-                        ZIndex="-1"
-                        />
-
-
-        </Grid>
-
-
-
+             Title="HomePage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
 </ContentPage>
