@@ -253,6 +253,7 @@
             FontFamily="ConcertOneRegular"
             FontSize="32"
             HeightRequest="80"
+            IsEnabled="{Binding NextEnabled}"
             Text="NEXT"
             TextColor="White">
 

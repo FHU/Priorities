@@ -17,7 +17,7 @@ namespace Priorities.ViewModels
         private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
-        private bool showNext;
+        private bool nextEnabled;
 
         [ObservableProperty]
         private int round;
@@ -50,7 +50,7 @@ namespace Priorities.ViewModels
             this.GuesserRankings = this.gameStateService.GuesserRankings;
 
             Rankings = new ObservableCollection<Ranking>();
-            ShowNext = false;
+            NextEnabled = false;
         }
 
         public void GetResult(int rank)
@@ -100,6 +100,9 @@ namespace Priorities.ViewModels
                 await Task.Delay(1000);
                 GetResult(i);
             }
+
+            await Task.Delay(1000);
+            NextEnabled = true;
         }
     }
 }
