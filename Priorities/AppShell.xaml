@@ -113,6 +113,22 @@
     </FlyoutItem>-->
 
 
+    <!--
+
+    add in if pages are not made
+
+    <FlyoutItem
+        Title="Achievements"
+        Icon="ribbon.svg"
+    >
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="How to Play"
+        Icon="question.svg">
+    </FlyoutItem>-->
+
+
 
 
     <!--Comment Out for Demo-->
