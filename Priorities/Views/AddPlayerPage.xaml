@@ -6,105 +6,79 @@
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
              xmlns:models="clr-namespace:Priorities.Models"
-             xmlns:views="clr-namespace:Priorities.Views"
-             x:DataType="viewmodels:AddPlayerPageViewModel"
-             Title="AddPlayerPage"
-             Shell.NavBarIsVisible="False"
-             Shell.BackgroundColor="{StaticResource DarkGray}"
-             BackgroundColor="{StaticResource OffWhite}"
+             x:DataType="viewmodels:AddPlayersPageViewModel"
              >
-
-    <ContentPage.Behaviors>
-        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}"/>
-    </ContentPage.Behaviors>
-
-    <Grid RowDefinitions="80, *">
-        <Grid Grid.Row="0" ColumnDefinitions="auto,auto,auto" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
-            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/>
-            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-20,0,0">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text=" " FontSize="40"/>
-                        <Span Text="P" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="L" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="A" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="Y" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="R" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-        </Grid>
+<!-- Added this to make changes to the top-->
+    <Shell.TitleView>
+        <HorizontalStackLayout>
+            <Label Text="ADD PLAYER"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   HeightRequest="50"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
 
 
-        <Grid Grid.Row="1" Padding="0" BackgroundColor="{StaticResource White}">
+    <ScrollView>
+        <Grid Padding="0" RowSpacing="6" BackgroundColor="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="160"/>
             </Grid.RowDefinitions>
+            <!--Header-->
+            <!--<Grid Grid.Row="1" ColumnSpacing="3" RowSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Hamburger" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="1"
+                       Text="Add Player" />
+
+                <Button Grid.Row="0"
+                        Grid.Column="2"
+                        Text="X" />
+            </Grid>-->
 
             <!--Main Section-->
 
             <!--Name Section-->
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" Padding="16">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
-                    <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <!--Label Name-->
-                
                 <Label Grid.Row="0"
-                       Padding="0"
                        Text="Name"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontFamily="CoinyRegular"
-                       TextColor="{StaticResource Primary}"                       
+                       TextColor="Black"
                        FontAttributes="Bold"/>
-
                 <!--Text box to input name-->
-                <Frame Grid.Row="1"
-                       HorizontalOptions="Center"
-                       BackgroundColor="{StaticResource Secondary}"
-                       WidthRequest="296"
-                       HeightRequest="63"
-                       CornerRadius="25"
-                       BorderColor="Transparent">
-                </Frame>
                 <Entry Grid.Row="1"
-                       HeightRequest="53"
-                       WidthRequest="260"
-                       MaxLength="12"
-                       FontSize="24"
+                       HeightRequest="70"
+                       WidthRequest="300"
+                       FontSize="28"
+                       TextColor="Black"
                        Text="{Binding Name}"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       FontFamily="CoinyRegular"
-                       FontAttributes="Bold"
-                       TextColor="{StaticResource OffWhite}"
-                       BackgroundColor="{StaticResource Secondary}"
-                       TextChanged="Entry_TextChanged"
+                       BackgroundColor="Teal"
                 />
-                <Label x:Name="charLimitLabel"
-                       Grid.Row="2"
-                       IsVisible="True"
-                       Text="0/12"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       VerticalOptions="End"
-                       FontSize="14"
-                       TextColor="{StaticResource Secondary}"/>
-                
             </Grid>
 
-            <!--Input Avatar-->
-            <Grid Grid.Row="1" RowSpacing="10" VerticalOptions="Center" Margin="4">
+            <!--Avatar-->
+            <Grid Grid.Row="1" RowSpacing="10" Padding="16">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
@@ -115,141 +89,71 @@
                        Text="Avatar Pic"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontFamily="CoinyRegular"
                        FontAttributes="Bold"
-                       TextColor="{StaticResource Primary}"/>
+                       TextColor="Black"/>
 
                 <!--Avatar Pic-->
-
-                <Frame Grid.Row="1"
-                       HeightRequest="250"
-                       WidthRequest="250"
-                       CornerRadius="125"
-                       HorizontalOptions="Center"
-                       IsClippedToBounds="True"
-                       Padding="4"
-                       BorderColor="Transparent"
-                       BackgroundColor="{StaticResource SecondaryGreen}"
-                       
-                       Margin="0,0,0,0"
-                       >
-
-                    <Image Grid.Row="1"
-                           HeightRequest="50"
-                           WidthRequest="50"
-                           Source="Resources/Images/camerawhite"
-                           
-                       />
-
-                </Frame>
-
-                <Frame Grid.Row="1"
-                       HeightRequest="250"
-                       WidthRequest="250"
-                       CornerRadius="125"
-                       HorizontalOptions="Center"
-                       IsClippedToBounds="True"
-                       Padding="4"
-                       BorderColor="Transparent"
-                       BackgroundColor="Transparent"
-                       
-                       Margin="0,0,0,0"
-                       >
-
-                    <Image Grid.Row="1"
-                           HeightRequest="350"
-                           WidthRequest="300"
-                           Source="{Binding Image}"
-                           
-                       />
-
-                </Frame>
+                <toolkit:AvatarView Grid.Row="1"
+                                    ImageSource="avatar_pic.jpg"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                                    CornerRadius="150"/>
 
 
-                <!--Take Photo! Button-->
+                <!--<Frame Grid.Row="1"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   CornerRadius="150"
+                   HorizontalOptions="Center"
+                   IsClippedToBounds="True"
+                   Padding="3"
+                   BorderColor="Gray"
+                   Margin="0,0,0,0">
+
+                <Image
+                    Aspect="AspectFit"
+                    Source="kenan.jpeg"
+                    SemanticProperties.Description="Kenan Casey Staring into your soul"
+                    HeightRequest="300"
+                    WidthRequest="300"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+                </Frame>-->
                 
 
                 <Button Grid.Row="2"
-                        Text="Take Photo!"
-                        x:Name="smile"
-                        Command="{Binding TakePhotoCommand}"
-                        FontSize="20"
+                        Text="RETAKE"
+                        FontSize="18"
                         FontAttributes="Bold"
-                        FontFamily="ConcertOneRegular"
-                        VerticalOptions="Center"
-                        BackgroundColor= "{StaticResource Tertiary}"
+                        FontFamily="Coiny"
+                        BackgroundColor= "#74C1DD"
                         CornerRadius="15"
-                        HeightRequest="47"
-                        WidthRequest="236"
-                        TextColor="White">
-                            <Button.Shadow>
-                                <Shadow Opacity="0.5"
-                                Radius="15"
-                                Offset="10,10"
-                                Brush="{StaticResource Gray400}"
-                        />
-                            </Button.Shadow>
-                </Button>
+                        WidthRequest="300"
 
-               
+                />
             </Grid>
 
-            <!--Add Player Button-->
-            <StackLayout Grid.Row="2" VerticalOptions="End">
+            <!--Submit-->
+            <StackLayout Grid.Row="2" VerticalOptions="Center" Padding="16">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
-                        <!--<RowDefinition Height="auto"/>-->
+                        <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
 
-                    <Button Text="ADD PLAYER"
-                            ImageSource="whiteadd.png"
-                            FontFamily="ConcertOneRegular"
+                    <Button Text="Add Player"
                             Grid.Row="0"
-                            FontSize="32"
-                            HeightRequest="70"
-                            WidthRequest="296"
+                            FontSize="20"
+                            HeightRequest="85"
                             CornerRadius="25"
-                            Margin="8"
-                            FontAttributes="Bold"
-                            BackgroundColor="{StaticResource Primary}"
-                            TextColor="{StaticResource White}"
-                            Command="{Binding AddPlayerCommand}">
-                                <Button.Shadow>
-                                    <Shadow Opacity="0.5"
-                                        Radius="15"
-                                        Offset="10,10"
-                                        Brush="{StaticResource Gray400}"
-                                    />
-                                </Button.Shadow>
-                            
-                    </Button>
-
-                    
-                            
-                    
+                            BackgroundColor="#EC6664"
+                            Command="{Binding AddPlayerCommand}"
+                    />
                 </Grid>
 
             </StackLayout>
 
-            <Image Source="shapes.png"
-                   Aspect="AspectFill"
-                   WidthRequest="400"
-                   HeightRequest="180"
-                   Grid.Row="3"
-                   VerticalOptions="End"
-                   ZIndex="-1"/>
-
-
 
         </Grid>
-
-
-    </Grid>
-    
-    
-    
-
-    
+    </ScrollView>
 
 </ContentPage>

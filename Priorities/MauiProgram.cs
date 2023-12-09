@@ -28,7 +28,7 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<IGameStateService, GameStateService>();
 
-		builder.Services.AddTransient<AddPlayerPageViewModel>();
+		builder.Services.AddTransient<AddPlayersPageViewModel>();
         builder.Services.AddTransient<AddPlayerPage>();
 
         builder.Services.AddTransient<PlayersPageViewModel>();
@@ -39,15 +39,6 @@ public static class MauiProgram
 
         builder.Services.AddTransient<GamePage>();
         builder.Services.AddTransient<GamePageViewModel>();
-
-        builder.Services.AddTransient<GetReadyPage>();
-        builder.Services.AddTransient<GetReadyPageViewModel>();
-
-        builder.Services.AddTransient<HighScorePage>();
-        builder.Services.AddTransient<HighScorePageViewModel>();
-
-        builder.Services.AddTransient<GameResultsPage>();
-        //builder.Services.AddTransient<GameResultsPageViewModel>();
 
 
 #if DEBUG
