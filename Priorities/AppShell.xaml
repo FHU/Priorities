@@ -4,48 +4,81 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Priorities"
-    xmlns:models="clr-namespace:Priorities.Models"
-    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
     xmlns:views="clr-namespace:Priorities.Views"
     Shell.FlyoutBehavior="Flyout"
-    
-    Shell.FlyoutBackdrop="{StaticResource OffWhite}">
+    Shell.FlyoutBackdrop="{StaticResource OffWhite}"
+    BackgroundColor="{StaticResource DarkGray}"
+    >
 
-    <Shell.FlyoutHeaderTemplate>
+    <!--<Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <VerticalStackLayout BackgroundColor="{StaticResource DarkGray}">
-                <Grid BackgroundColor="{StaticResource DarkGray}">
+            <VerticalStackLayout BackgroundColor="{StaticResource DarkGray}" >
+                <Grid BackgroundColor="{StaticResource DarkGray}" VerticalOptions="StartAndExpand" Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="1" BackgroundColor="{StaticResource DarkGray}" Padding="15, 0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                    <Label Grid.Column="1" BackgroundColor="{StaticResource DarkGray}" Padding="0, 0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="M" FontSize="40" TextColor="{StaticResource SecondaryLightBlue }" FontFamily="CoinyRegular"/>
-                                <Span Text="O" FontSize="40" TextColor="{StaticResource PrimaryRed }" FontFamily="CoinyRegular"/>
-                                <Span Text="G" FontSize="40" TextColor="{StaticResource SecondaryGreen }" FontFamily="CoinyRegular"/>
-                                <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                                <Span Text="M" FontSize="48" TextColor="{StaticResource PrimaryRed }" FontFamily="CoinyRegular"/>
+                                <Span Text="O" FontSize="48" TextColor="{StaticResource SecondaryLightBlue }" FontFamily="CoinyRegular"/>
+                                <Span Text="G" FontSize="48" TextColor="{StaticResource SecondaryGreen }" FontFamily="CoinyRegular"/>
+                                <Span Text="I" FontSize="48" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
                 </Grid>
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Padding="5" BackgroundColor="{StaticResource DarkGray}">
-                    <Label Text="Matter" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular" FontSize="20"/>
-                    <Label Text=" " FontFamily="CoinyRegular" FontSize="20"/>
-                    <Label Text="Of" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular" FontSize="20"/>
-                    <Label Text=" " FontFamily="CoinyRegular" FontSize="20"/>
-                    <Label Text="Greatest" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular" FontSize="20"/>
-                    <Label Text=" " FontFamily="CoinyRegular" FontSize="20"/>
-                    <Label Text="Importance" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular" FontSize="20"/>
+                    <Label Text="Matters" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular" FontSize="16"/>
+                    <Label Text=" " FontFamily="CoinyRegular" FontSize="16"/>
+                    <Label Text="Of" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular" FontSize="16"/>
+                    <Label Text=" " FontFamily="CoinyRegular" FontSize="16"/>
+                    <Label Text="Great" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular" FontSize="16"/>
+                    <Label Text=" " FontFamily="CoinyRegular" FontSize="16"/>
+                    <Label Text="Importance" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular" FontSize="16"/>
                 </HorizontalStackLayout>
-                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
+                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="8"/>
             </VerticalStackLayout>
             
 
         </DataTemplate>
-    </Shell.FlyoutHeaderTemplate>
+    </Shell.FlyoutHeaderTemplate>-->
+
+    <Shell.FlyoutHeader>
+
+        <VerticalStackLayout BackgroundColor="{StaticResource DarkGray}" Margin="0" Padding="{OnPlatform iOS='0,20,0,126', Default='0'}">
+            <Grid BackgroundColor="{StaticResource DarkGray}" VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="1" BackgroundColor="{StaticResource DarkGray}" Padding="0, 0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="M" FontSize="48" TextColor="{StaticResource PrimaryRed }" FontFamily="CoinyRegular"/>
+                            <Span Text="O" FontSize="48" TextColor="{StaticResource SecondaryLightBlue }" FontFamily="CoinyRegular"/>
+                            <Span Text="G" FontSize="48" TextColor="{StaticResource SecondaryGreen }" FontFamily="CoinyRegular"/>
+                            <Span Text="I" FontSize="48" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Padding="5" BackgroundColor="{StaticResource DarkGray}">
+                <Label Text="Matters" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular" FontSize="16"/>
+                <Label Text=" " FontFamily="CoinyRegular" FontSize="16"/>
+                <Label Text="Of" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular" FontSize="16"/>
+                <Label Text=" " FontFamily="CoinyRegular" FontSize="16"/>
+                <Label Text="Great" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular" FontSize="16"/>
+                <Label Text=" " FontFamily="CoinyRegular" FontSize="16"/>
+                <Label Text="Importance" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular" FontSize="16"/>
+            </HorizontalStackLayout>
+            <Rectangle BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="8"/>
+        </VerticalStackLayout>
+
+    </Shell.FlyoutHeader>
 
     <!--<FlyoutItem Title="Home">
         <ShellContent>
@@ -74,9 +107,9 @@
         </StackLayout>
        
     </Shell.FlyoutContent>-->
-    
-    
-    
+
+
+
     <FlyoutItem
         Title="Home"
         Icon="house.svg"
@@ -108,10 +141,15 @@
     >
         <ShellContent ContentTemplate="{DataTemplate views:HowToPlayPage}" />
     </FlyoutItem>-->
-    
-    
-    
+
+
+
     <!--Comment Out for Demo-->
+    <ShellContent
+        Title="AddPlayerPage"
+        ContentTemplate="{DataTemplate views:AddPlayerPage}"
+        Route="AddPlayerPage" />
+
     <ShellContent
         Title="GamePage"
         ContentTemplate="{DataTemplate views:GamePage}"
@@ -153,4 +191,3 @@
     </Shell.FlyoutFooter>
 
 </Shell>
-
