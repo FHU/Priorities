@@ -18,8 +18,4 @@ public partial class GamePage : ContentPage
         Shell.Current.FlyoutIsPresented = true;
     }
 
-    void Navig(System.Object sender, System.EventArgs e)
-    {
-        Shell.Current.GoToAsync(nameof(RoundResultsPage));
-    }
 }
