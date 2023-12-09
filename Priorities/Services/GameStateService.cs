@@ -15,11 +15,17 @@ namespace Priorities.Services
             Achievements = new();
             GenerateAchievements();
 
+			Players = new();
+			ItemList = new List<string>();
+            readFromFile();
+			Achievements = new();
+			GenerateAchievements();
+            
 
         }
 
-        public void GenerateAchievements()
-        {
+		public void GenerateAchievements()
+		{
             Achievements.Add(new Achievement() { Title = "Snail's Pace", Description = "Finish guessing with fewer than 5 seconds left in a round", Image = "snails.svg" });
             Achievements.Add(new Achievement() { Title = "Great Start", Description = "Finish 1 game", Image = "thumbup.svg" });
             Achievements.Add(new Achievement() { Title = "Twinsies", Description = "Have 2 people with the same username in a game", Image = "twins.svg" });
@@ -62,8 +68,9 @@ namespace Priorities.Services
         public int PrioritizerIndex { get; set; }
 		public GamePhase Phase { get; set; }
 
-        private List<string> ItemList { get; set; }
 
+        private List<string> ItemList { get; set; }
+	
 
 
         public List<string> GetRandomItems()
@@ -88,15 +95,12 @@ namespace Priorities.Services
 
             using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("words.txt");
             using StreamReader reader = new StreamReader(fileStream);
-
-            while ((line = reader.ReadLine()) != null)
-            {
+            
+            while((line  = reader.ReadLine()) != null) {
                 ItemList.Add(line);
-            }
+            }    
 
         }
 
     }
-
-}
 }
