@@ -47,7 +47,6 @@
     </Shell.FlyoutHeaderTemplate>-->
 
     <Shell.FlyoutHeader>
-
         <VerticalStackLayout BackgroundColor="{StaticResource DarkGray}" Margin="0" Padding="{OnPlatform iOS='0,20,0,126', Default='0'}">
             <Grid BackgroundColor="{StaticResource DarkGray}" VerticalOptions="StartAndExpand">
                 <Grid.ColumnDefinitions>
@@ -79,35 +78,6 @@
         </VerticalStackLayout>
 
     </Shell.FlyoutHeader>
-
-    <!--<FlyoutItem Title="Home">
-        <ShellContent>
-            <Label Text="Home Page" />
-        </ShellContent>
-    </FlyoutItem>
-
-    <FlyoutItem Title="High Scores">
-        <ShellContent>
-            <Label Text="High Scores Page" />
-        </ShellContent>
-    </FlyoutItem>
-
-    <FlyoutItem Title="Achievements">
-        <ShellContent>
-            <Label Text="Achievements Page" />
-        </ShellContent>
-    </FlyoutItem>-->
-
-    <!--<Shell.FlyoutContent>
-
-        <StackLayout Orientation="Vertical">
-
-            <Label Text="Flyout Content" />
-
-        </StackLayout>
-       
-    </Shell.FlyoutContent>-->
-
 
 
     <FlyoutItem
@@ -141,6 +111,7 @@
     >
         <ShellContent ContentTemplate="{DataTemplate views:HowToPlayPage}" />
     </FlyoutItem>-->
+
 
 
 
@@ -180,11 +151,10 @@
         ContentTemplate="{DataTemplate views:RoundResultsPage}"
         Route="RoundResultsPage" />
 
-
     <Shell.FlyoutFooter>
         <VerticalStackLayout >
 
-            <Label Text="Copyright 2023 FHU" HorizontalTextAlignment="End"/>
+            <Label Text="©2023 FHU" HorizontalTextAlignment="Center"/>
 
         </VerticalStackLayout>
 

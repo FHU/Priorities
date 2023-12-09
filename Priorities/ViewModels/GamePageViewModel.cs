@@ -4,6 +4,7 @@ using Priorities.Models;
 using System.Collections.ObjectModel;
 using Priorities.Services;
 using Priorities.Views;
+using System.Collections.Generic;
 
 namespace Priorities.ViewModels
 {
@@ -40,23 +41,12 @@ namespace Priorities.ViewModels
 
         private Priority itemBeingDragged;
 
+
         public GamePageViewModel(IGameStateService gameStateService)
         {
 
             this.gameStateService = gameStateService;
-
-            gameStateService.Phase = GamePhase.Prioritizing;
-
-            gameStateService.Prioritizer = new Player()
-            {
-                Name = "K-Dawg",
-                ImageName = "kenan.jpg"
-            };
-
-            gameStateService.Round = 1;
-            gameStateService.TotalRounds = 10;
-
-            gameStateService.Score = 0;
+            round = gameStateService.Round;
 
 
             var phase = gameStateService.Phase;
@@ -68,16 +58,31 @@ namespace Priorities.ViewModels
             playerImage = gameStateService.Prioritizer.ImageName;
 
             /*Priscilla*/
+
             Priorities = new ObservableCollection<Priority>();
 
-            Priorities.Add(new Priority("Turtles"));
-            Priorities.Add(new Priority("Evan Kahan"));
-            Priorities.Add(new Priority("Microwave"));
-            Priorities.Add(new Priority("Musicals"));
-            Priorities.Add(new Priority("Calculus"));
+            if (phase.Equals(GamePhase.Prioritizing))
+            {
+                var items = gameStateService.GetRandomItems();
+                foreach (var item in items)
+                {
+                    Priorities.Add(new Priority(item));
+                }
+            }
+            else
+            {
+                Random random = new Random();
+                // I found this line on the internet, but I deleted the link (sorry)
+                List<string> shuffledPriorities = gameStateService.PrioritizerRankings.OrderBy(i => random.Next()).ToList();
+                foreach (var priority in shuffledPriorities)
+                {
+                    Priorities.Add(new Priority(priority));
+                }
+
+            }
 
             /*Gavin*/
-            Round = gameStateService.Round;
+
             TotalRounds = gameStateService.TotalRounds;
 
             /*Priscilla*/
@@ -95,13 +100,13 @@ namespace Priorities.ViewModels
                 prioritizing = false;
                 guessing = true;
             }
-            
+
 
         }
 
 
         [RelayCommand]
-        async Task NavigateToRoundResultsPage()
+        async Task NavigateToNextPage()
         {
             var rankingList = new List<string>();
             foreach (var priority in Priorities)
@@ -111,12 +116,14 @@ namespace Priorities.ViewModels
             if (gameStateService.Phase.Equals(GamePhase.Prioritizing))
             {
                 gameStateService.PrioritizerRankings = rankingList;
+                await Shell.Current.Navigation.PushAsync(new GetReadyPage(gameStateService));
+
             }
             else
             {
                 gameStateService.GuesserRankings = rankingList;
+                await Shell.Current.GoToAsync(nameof(RoundResultsPage));
             }
-            await Shell.Current.GoToAsync(nameof(RoundResultsPage));
         }
 
         // I got this off the internet
