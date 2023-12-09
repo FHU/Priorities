@@ -46,17 +46,7 @@ namespace Priorities.ViewModels
         {
 
             this.gameStateService = gameStateService;
-
-            gameStateService.Prioritizer = new Player()
-            {
-                Name = "K-Dawg",
-                ImageName = "kenan.jpg"
-            };
-
-            gameStateService.Round = 1;
-            gameStateService.TotalRounds = 10;
-
-            gameStateService.Score = 0;
+            round = gameStateService.Round;
 
 
             var phase = gameStateService.Phase;
