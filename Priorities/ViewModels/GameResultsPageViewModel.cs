@@ -73,6 +73,9 @@ namespace Priorities.ViewModels
             NavigateToPlayersPageCommand = new Command(async () => await NavigateToPlayersPage());
             NavigateToHighScorePageCommand = new Command(async () => await NavigateToHighScorePage());
 
+            gameStateService.Score = 0;
+            gameStateService.Round = 1;
+
 
 
         }

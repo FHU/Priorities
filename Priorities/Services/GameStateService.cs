@@ -14,12 +14,6 @@ namespace Priorities.Services
             readFromFile();
             Achievements = new();
             GenerateAchievements();
-
-			Players = new();
-			ItemList = new List<string>();
-            readFromFile();
-			Achievements = new();
-			GenerateAchievements();
             
 
         }
