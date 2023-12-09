@@ -17,6 +17,9 @@ namespace Priorities.ViewModels
         private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
+        private bool showNext;
+
+        [ObservableProperty]
         private int round;
 
         [ObservableProperty]
@@ -56,6 +59,7 @@ namespace Priorities.ViewModels
             this.GuesserRankings = this.gameStateService.GuesserRankings;
 
             Rankings = new ObservableCollection<Ranking>();
+            ShowNext = false;
         }
 
         public void GetResult(int rank)
@@ -83,7 +87,7 @@ namespace Priorities.ViewModels
         {
             // update game state service
             gameStateService.Score = Score;
-            
+
             gameStateService.Round += 1;
             gameStateService.PrioritizerRankings.Clear();
             gameStateService.GuesserRankings.Clear();
@@ -92,7 +96,8 @@ namespace Priorities.ViewModels
                 await Shell.Current.GoToAsync(nameof(GameResultsPage));
             }
             //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
-            else {
+            else
+            {
                 await Shell.Current.Navigation.PushAsync(new GetReadyPage(gameStateService));
             }
         }
@@ -100,7 +105,7 @@ namespace Priorities.ViewModels
         [RelayCommand]
         async Task ShowRankings()
         {
-            
+
             for (int i = 5; i > 0; i--)
             {
                 await Task.Delay(1000);
