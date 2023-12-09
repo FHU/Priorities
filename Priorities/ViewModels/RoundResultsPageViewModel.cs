@@ -39,16 +39,7 @@ namespace Priorities.ViewModels
 
         public RoundResultsPageViewModel(IGameStateService gameStateService)
         {
-            string i1 = "Giraffe";
-            string i2 = "Chocolate";
-            string i3 = "Fruit";
-            string i4 = "Sleep";
-            string i5 = "Casey";
-
             this.gameStateService = gameStateService; // MADISON DON'T DELETE THIS LINE
-
-            /* Delete these lines later */
-
 
             /* KEEP THESE LINES */
             this.Round = this.gameStateService.Round;
@@ -95,7 +86,6 @@ namespace Priorities.ViewModels
             {
                 await Shell.Current.GoToAsync(nameof(GameResultsPage));
             }
-            //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
             else
             {
                 await Shell.Current.Navigation.PushAsync(new GetReadyPage(gameStateService));
@@ -105,15 +95,11 @@ namespace Priorities.ViewModels
         [RelayCommand]
         async Task ShowRankings()
         {
-
             for (int i = 5; i > 0; i--)
             {
                 await Task.Delay(1000);
                 GetResult(i);
             }
         }
-
     }
-
-
 }

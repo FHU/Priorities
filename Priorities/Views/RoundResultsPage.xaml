@@ -142,7 +142,7 @@
                 FontSize="20"
                 HorizontalOptions="Start"
                 Opacity="0.7"
-                Text="Revealing Results for"
+                Text="Revealing Results for..."
                 TextColor="{StaticResource DarkGray}"
                 VerticalOptions="Center" />
 
@@ -253,7 +253,6 @@
             FontFamily="ConcertOneRegular"
             FontSize="32"
             HeightRequest="80"
-            IsVisible="{Binding ShowNext}"
             Text="NEXT"
             TextColor="White">
 
