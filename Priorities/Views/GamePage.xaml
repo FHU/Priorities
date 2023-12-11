@@ -138,25 +138,7 @@
 
                 </HorizontalStackLayout>
 
-                <Button
-                    Grid.Column="2"
-                    Text="{Binding Timer}"
-                    TextColor="{StaticResource DarkGray}"
-                    BackgroundColor="{StaticResource White}"
-                    CornerRadius="16"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
-                    FontSize="24"
-                    IsEnabled="False"
-                    FontFamily="ConcertOneRegular">
-                    <Button.Shadow>
-                        <Shadow Brush="{StaticResource Black}"
-                            Offset="2,4"
-                            Radius="16"
-                            Opacity="0.5"/>
-                    </Button.Shadow>
-
-                </Button>
+                
 
             </Grid>
 
