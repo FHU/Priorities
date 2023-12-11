@@ -1,8 +1,7 @@
-namespace Priorities.Views;
 using Priorities.ViewModels;
-using Priorities.Models;
 using Priorities.Services;
 
+namespace Priorities.Views;
 public partial class RoundResultsPage : ContentPage
 {
     private RoundResultsPageViewModel vm;

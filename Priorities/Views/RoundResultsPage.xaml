@@ -23,7 +23,7 @@
         RowSpacing="0">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="80" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="60" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="5*" />
@@ -32,75 +32,23 @@
         </Grid.RowDefinitions>
 
         <!--  page title  -->
-        <Grid
-            Grid.Row="0"
-            Margin="0,-5,0,0"
-            BackgroundColor="{StaticResource DarkGray}">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="4*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-
-            <Button
-                Margin="0,-16,0,0"
-                BackgroundColor="Transparent"
-                Clicked="HamburgerMenuButton_Clicked"
-                FontSize="40"
-                Text="☰"
-                VerticalOptions="Center" />
-
-            <Label
-                Grid.Column="1"
-                HorizontalOptions="Center"
-                LineBreakMode="NoWrap"
-                VerticalOptions="Center">
+        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0" Padding="12">
+            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,0,0,0" Clicked="HamburgerMenuButton_Clicked"/>
+            <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="R"
-                            TextColor="{StaticResource PrimaryRed}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="E"
-                            TextColor="{StaticResource SecondaryGreen}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="S"
-                            TextColor="{StaticResource SecondaryLightBlue}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="U"
-                            TextColor="{StaticResource SecondaryBlue}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="L"
-                            TextColor="{StaticResource SecondaryGreen}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="T"
-                            TextColor="{StaticResource PrimaryRed}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="S"
-                            TextColor="{StaticResource SecondaryLightBlue}" />
-                        <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text=""
-                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span Text="R" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="U" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="L" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="T" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
         </Grid>
+
 
         <Grid Grid.Row="1">
             <views:GameStatusBar />
@@ -142,7 +90,7 @@
                 FontSize="20"
                 HorizontalOptions="Start"
                 Opacity="0.7"
-                Text="Revealing Results for"
+                Text="Revealing Results for..."
                 TextColor="{StaticResource DarkGray}"
                 VerticalOptions="Center" />
 
@@ -198,16 +146,8 @@
                             <!--  guess text bg  -->
                             <RoundRectangle
                                 Grid.Column="1"
-                                CornerRadius="24"
-                                Fill="{StaticResource PrimaryBlueGreen}">
-                                <RoundRectangle.Shadow>
-                                    <Shadow
-                                        Brush="Gray"
-                                        Opacity="0.9"
-                                        Radius="5"
-                                        Offset="5,5" />
-                                </RoundRectangle.Shadow>
-                            </RoundRectangle>
+                                CornerRadius="16"
+                                Fill="{StaticResource PrimaryBlueGreen}" />
 
                             <!--  guess number circle  -->
                             <Button
@@ -227,7 +167,7 @@
                             <Label
                                 Grid.Column="1"
                                 FontFamily="ConcertOneRegular"
-                                FontSize="32"
+                                FontSize="28"
                                 HorizontalOptions="Center"
                                 Text="{Binding Name}"
                                 TextColor="#EBEBE5"
@@ -252,16 +192,18 @@
 
         <!--  next button  -->
         <Button
+            x:Name="NextBtn"
             Grid.Row="4"
             Margin="20,10"
             BackgroundColor="{StaticResource PrimaryRed}"
+            Command="{Binding NextCommand}"
             CornerRadius="24"
             FontFamily="ConcertOneRegular"
             FontSize="32"
             HeightRequest="80"
+            IsEnabled="{Binding NextEnabled}"
             Text="NEXT"
-            TextColor="White"
-            Command="{Binding NextCommand}">
+            TextColor="White">
 
             <Button.Shadow>
                 <Shadow

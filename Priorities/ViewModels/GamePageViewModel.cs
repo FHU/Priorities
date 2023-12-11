@@ -4,6 +4,7 @@ using Priorities.Models;
 using System.Collections.ObjectModel;
 using Priorities.Services;
 using Priorities.Views;
+using System.Collections.Generic;
 
 namespace Priorities.ViewModels
 {
@@ -40,23 +41,12 @@ namespace Priorities.ViewModels
 
         private Priority itemBeingDragged;
 
+
         public GamePageViewModel(IGameStateService gameStateService)
         {
 
             this.gameStateService = gameStateService;
-
-            gameStateService.Phase = GamePhase.Prioritizing;
-
-            gameStateService.Prioritizer = new Player()
-            {
-                Name = "K-Dawg",
-                ImageName = "kenan.jpg"
-            };
-
-            gameStateService.Round = 1;
-            gameStateService.TotalRounds = 10;
-
-            gameStateService.Score = 0;
+            round = gameStateService.Round;
 
 
             var phase = gameStateService.Phase;
@@ -71,10 +61,24 @@ namespace Priorities.ViewModels
 
             Priorities = new ObservableCollection<Priority>();
 
-            var items = gameStateService.GetRandomItems();
-            foreach ( var item in items )
+            if (phase.Equals(GamePhase.Prioritizing))
             {
-                Priorities.Add(new Priority(item));
+                var items = gameStateService.GetRandomItems();
+                foreach (var item in items)
+                {
+                    Priorities.Add(new Priority(item));
+                }
+            }
+            else
+            {
+                Random random = new Random();
+                // I found this line on the internet, but I deleted the link (sorry)
+                List<string> shuffledPriorities = gameStateService.PrioritizerRankings.OrderBy(i => random.Next()).ToList();
+                foreach (var priority in shuffledPriorities)
+                {
+                    Priorities.Add(new Priority(priority));
+                }
+
             }
 
             /*Gavin*/
@@ -112,7 +116,7 @@ namespace Priorities.ViewModels
             if (gameStateService.Phase.Equals(GamePhase.Prioritizing))
             {
                 gameStateService.PrioritizerRankings = rankingList;
-                await Shell.Current.GoToAsync(nameof(GetReadyPage));
+                await Shell.Current.Navigation.PushAsync(new GetReadyPage(gameStateService));
 
             }
             else

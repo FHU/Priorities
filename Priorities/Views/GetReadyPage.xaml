@@ -3,6 +3,7 @@
              x:Class="Priorities.Views.GetReadyPage"
              BackgroundColor="#F1F1F1"
              xmlns:vm="clr-namespace:Priorities.ViewModels"
+             xmlns:views="clr-namespace:Priorities.Views"
            
              Shell.FlyoutBehavior="Flyout"
              xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
@@ -21,6 +22,9 @@
         </Grid.RowDefinitions>
 
         <!-- Top Bar with App Name -->
+
+        
+        
         <Label
                 Grid.Column="1"
                 HorizontalOptions="FillAndExpand"
@@ -35,120 +39,53 @@
                     <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
-                            Text="P"
+                            Text="M"
                             TextColor="{StaticResource PrimaryRed}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="R"
-                            TextColor="{StaticResource SecondaryGreen}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="I"
-                            TextColor="{StaticResource SecondaryLightBlue}" />
                     <Span
                             FontFamily="CoinyRegular"
                             FontSize="40"
                             Text="O"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="G"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                    <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="I"
                             TextColor="{StaticResource SecondaryBlue}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="R"
-                            TextColor="{StaticResource SecondaryGreen}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="I"
-                            TextColor="{StaticResource PrimaryRed}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="T"
-                            TextColor="{StaticResource SecondaryLightBlue}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="I"
-                            TextColor="{StaticResource SecondaryGreen}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="E"
-                            TextColor="{StaticResource SecondaryLightBlue}" />
-                    <Span
-                            FontFamily="CoinyRegular"
-                            FontSize="40"
-                            Text="S"
-                            TextColor="{StaticResource PrimaryRed}" />
+                    
                 </FormattedString>
             </Label.FormattedText>
         </Label>
 
         <!-- Score and Round Number -->
         <!-- Score and Round Number -->
-        <Grid Grid.Row="1"
-      HorizontalOptions="FillAndExpand"
-      VerticalOptions="Center"
-      BackgroundColor="#EC6664"
-      HeightRequest="60"
-      Margin="0"
-      Padding="5">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="30"/>
-                <!-- This column acts as the spacer -->
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
-           FontSize="36"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="End"
-           TranslationX="10"
-           TranslationY="12"
-           Text="200 points"
-           FontFamily="CoinyRegular"/>
+        <ContentView Grid.Row="1" >
+            <views:GameStatusBar />
+        </ContentView>
 
-
-            <!-- The empty column here serves as the space between the labels -->
-
-            <Label Grid.Column="2"
-           FontSize="20"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="End"
-           TranslationX="30"
-           TranslationY="5"
-           Text="Round 1/10"
-           FontFamily="CoinyRegular"/>
-        </Grid>
-
-        <!-- Pass the Phone Header -->
         <Label Text="Pass the Phone to...."
-               FontFamily="CoinyRegular"
+               FontFamily="ConcertOne-Regular"
                Grid.Row="2"
-               Margin="30"
+               Margin="30,60,30,15"
                HorizontalOptions="Center"
-               FontSize="28"
-               TextColor="#404040"
-               
-               TranslationY="30"/>
+               FontSize="35"
+               TextColor="#404040"/>
 
+        <Grid Grid.Row="3"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
+            <!-- User Profile and Name elements -->
 
-        <!--User Profile and Name-->
-        <VerticalStackLayout Grid.Row="3"
-                     HorizontalOptions="Center"
-                     Spacing="0"
-                     VerticalOptions="Center"
-                     >
-
-
-
-
-            <!--Circle Frame for Profile Picture Placeholder-->
-            <Frame WidthRequest="250"
+            <VerticalStackLayout Grid.Row="3"
+                HorizontalOptions="Center"
+                Spacing="0"
+                VerticalOptions="Center"
+                >
+                <Frame WidthRequest="250"
                    HeightRequest="250"
                    CornerRadius="125"
                    BackgroundColor="Transparent"
@@ -156,48 +93,54 @@
                    VerticalOptions="End"
                    IsClippedToBounds="True"
                    >
-                   
 
-                <Image Source="{Binding CurrentPlayer.ImageName}"
+
+                    <Image Source="{Binding CurrentPlayer.ImageName}"
                         Aspect="AspectFill"
                         WidthRequest="250"
                         HeightRequest="250"
                         />
 
-            </Frame>
+                </Frame>
 
-            <Label Text="{Binding CurrentPlayer.Name}" TextColor="Black" FontSize="40" FontFamily="CoinyRegular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End"/>
-
-        </VerticalStackLayout>
-
+                <Label Text="{Binding CurrentPlayer.Name}" TextColor="{StaticResource DarkGray}" FontSize="40" FontFamily="ConcertOne-Regular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End" Margin="0,15,0,0"/>
+            </VerticalStackLayout>
+        </Grid>
 
         <!-- Ready Button -->
         <Button Text="READY?"
                 Grid.Row="4"
-                Margin="5"
+                Margin="0,60,0,0"
                 VerticalOptions="Start"
                 TextColor="White"
                 BackgroundColor="#EC6664"
-                FontSize="30"
-                FontFamily="CoinyRegular"
+                FontSize="35"
+                FontFamily="ConcertOne-Regular"
                 CornerRadius="10"
-                HeightRequest="80"
-                WidthRequest="320"
-                
-                HorizontalOptions="FillAndExpand"/>
+                HeightRequest="75"
+                WidthRequest="335"
+                HorizontalOptions="FillAndExpand"
+                Command="{Binding NavigateToGamePageCommand}">
+            <Button.Shadow>
+                <Shadow Brush="Black"
+                        Offset="10,10"
+                        Opacity="0.4" />
+            </Button.Shadow>
+        </Button>
 
+        <!-- Additional elements, if any -->
         <Image Source="shapes"
-                        Aspect="AspectFill"
-                        WidthRequest="400"
-                        HeightRequest="200"
-                        Grid.Row="5"
-                        VerticalOptions="End"
-                        ZIndex="-1"
-                        />
-
-
-
+           Aspect="AspectFill"
+           WidthRequest="400"
+           HeightRequest="180"
+           Grid.Row="5"
+           Margin="0,0,0,20"
+           
+           
+           VerticalOptions="End"
+           ZIndex="-1" />
     </Grid>
+
 
 
 

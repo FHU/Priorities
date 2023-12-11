@@ -17,6 +17,9 @@ namespace Priorities.ViewModels
         private readonly IGameStateService gameStateService;
 
         [ObservableProperty]
+        private bool nextEnabled;
+
+        [ObservableProperty]
         private int round;
 
         [ObservableProperty]
@@ -28,30 +31,15 @@ namespace Priorities.ViewModels
         [ObservableProperty]
         private Player person;
 
-        private List<string> PrioritizerRankings { get; set; }
+        private List<string> PrioritizerRankings;
 
-        private List<string> GuesserRankings { get; set; }
+        private List<string> GuesserRankings;
 
         public ObservableCollection<Ranking> Rankings { get; set; }
 
         public RoundResultsPageViewModel(IGameStateService gameStateService)
         {
-            string i1 = "Giraffe";
-            string i2 = "Chocolate";
-            string i3 = "Fruit";
-            string i4 = "Sleep";
-            string i5 = "Casey";
-
             this.gameStateService = gameStateService; // MADISON DON'T DELETE THIS LINE
-
-            /* Delete these lines later */
-            this.gameStateService.Score = 0;
-            this.gameStateService.Round = 1;
-            this.gameStateService.TotalRounds = 10;
-            this.gameStateService.PrioritizerRankings = new List<string> { i1, i2, i3, i4, i5 };
-            this.gameStateService.GuesserRankings = new List<string> { i1, i2, i4, i3, i5 };
-            this.gameStateService.Prioritizer = new Player() { Name = "K-Dawg", ImageName = "kenan.jpeg" };
-
 
             /* KEEP THESE LINES */
             this.Round = this.gameStateService.Round;
@@ -62,6 +50,7 @@ namespace Priorities.ViewModels
             this.GuesserRankings = this.gameStateService.GuesserRankings;
 
             Rankings = new ObservableCollection<Ranking>();
+            NextEnabled = false;
         }
 
         public void GetResult(int rank)
@@ -85,19 +74,21 @@ namespace Priorities.ViewModels
         }
 
         [RelayCommand]
-        void Next()
+        async Task Next()
         {
             // update game state service
             gameStateService.Score = Score;
+
+            gameStateService.Round += 1;
             gameStateService.PrioritizerRankings.Clear();
             gameStateService.GuesserRankings.Clear();
             if (Round == TotalRounds)
             {
-                Shell.Current.GoToAsync($"{nameof(GameResultsPage)}");
+                await Shell.Current.GoToAsync(nameof(GameResultsPage));
             }
-            //this.gameStateService.CurrentPlayer = this.gameStateService.Players[this.gameStateService.Players.IndexOf(this.Person) + 1];
-            else {
-                Shell.Current.GoToAsync($"{nameof(GetReadyPage)}");
+            else
+            {
+                await Shell.Current.Navigation.PushAsync(new GetReadyPage(gameStateService));
             }
         }
 
@@ -109,9 +100,9 @@ namespace Priorities.ViewModels
                 await Task.Delay(1000);
                 GetResult(i);
             }
+
+            await Task.Delay(1000);
+            NextEnabled = true;
         }
-
     }
-
-
 }
