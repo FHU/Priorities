@@ -5,7 +5,8 @@ namespace Priorities;
 
 public partial class App : Application
 {
-	public App()
+
+    public App()
 	{
 		InitializeComponent();
 
@@ -20,5 +21,12 @@ public partial class App : Application
         });
     }
 
+
+    protected override void OnStart()
+    {
+        // Register routes programmatically
+        Routing.RegisterRoute(nameof(PlayersPage), typeof(PlayersPage));
+        Routing.RegisterRoute(nameof(AddPlayerPage), typeof(AddPlayerPage));
+    }
 }
 

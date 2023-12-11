@@ -1,12 +1,35 @@
-﻿namespace Priorities.Views;
+using Priorities.Services;
 using Priorities.ViewModels;
+
+namespace Priorities.Views;
 
 public partial class PlayersPage : ContentPage
 {
-    public PlayersPage()
+	private PlayersPageViewModel viewModel;
+
+	public PlayersPage(IGameStateService gameStateService)
+	{
+		InitializeComponent();
+
+		viewModel = new PlayersPageViewModel(gameStateService);
+		BindingContext = viewModel;
+		viewModel.LoadData();
+	}
+
+	void Button_Clicked(System.Object sender, System.EventArgs e)
+	{
+		Shell.Current.GoToAsync(nameof(AddPlayerPage));
+	}
+
+	protected override void OnAppearing()
+	{
+		viewModel.LoadData();
+	}
+
+    void HamburgerMenuButton_Clicked(System.Object sender, System.EventArgs e)
     {
-        InitializeComponent();
-        BindingContext = new PlayersPageViewModel();
+        Shell.Current.FlyoutIsPresented = true;
     }
 
 }
+
