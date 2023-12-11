@@ -1,11 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Priorities.Models;
+using Priorities.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Priorities.Services;
 
 namespace Priorities.ViewModels
 {
@@ -18,14 +20,35 @@ namespace Priorities.ViewModels
         [ObservableProperty]
         //public TimeSpan ElapsedTime { get; set; }
         TimeSpan elapsedTime;
+        private IGameStateService gameStateService;
 
-        
-        
+        public Command NavigateToPlayersPageCommand { get; }
+        public Command NavigateToHighScorePageCommand { get; }
+
+
         public ObservableCollection<Achievement> Achievements { get; set; }
 
-        public GameResultsPageViewModel() 
+        private async Task NavigateToPlayersPage()
         {
-            Score = 4999;
+            // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
+            await Shell.Current.GoToAsync($"{nameof(PlayersPage)}");
+        }
+
+        private async Task NavigateToHighScorePage()
+        {
+            // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
+            await Shell.Current.GoToAsync($"{nameof(HighScorePage)}");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public GameResultsPageViewModel(IGameStateService gameStateService) 
+        {
+
+            this.gameStateService = gameStateService;
+
+            Score = gameStateService.Score;
             ElapsedTime = new TimeSpan(0, 30, 25);
             Achievements = new ObservableCollection<Achievement>();
 
@@ -47,7 +70,14 @@ namespace Priorities.ViewModels
             Achievements.Add(achievement3);
 
 
+            NavigateToPlayersPageCommand = new Command(async () => await NavigateToPlayersPage());
+            NavigateToHighScorePageCommand = new Command(async () => await NavigateToHighScorePage());
+
+
+
         }
+
+
 
     }
 }

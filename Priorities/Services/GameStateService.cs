@@ -10,6 +10,8 @@ namespace Priorities.Services
 		{
 
 			Players = new();
+			ItemList = new List<string>();
+            readFromFile();
 			Achievements = new();
 			GenerateAchievements();
             
@@ -57,10 +59,39 @@ namespace Priorities.Services
 
 		public GamePhase Phase { get; set; }
 
-		public List<string> GetRandomItems(int number)
-		{
-			return new List<string>();
-		}
 
-	}
+        private List<string> ItemList { get; set; }
+	
+
+
+        public List<string> GetRandomItems()
+        {
+            List<string> randomItems = new List<string>();
+
+            Random random = new Random();
+
+            for (int i = 0; i < 5; i++)
+            {
+                int randomIndex = random.Next(ItemList.Count);
+                randomItems.Add(ItemList[randomIndex]);
+                ItemList.Remove(ItemList[randomIndex]);
+            }
+
+            return randomItems;
+        }
+
+        private async void readFromFile()
+        {
+            string line;
+
+            using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("words.txt");
+            using StreamReader reader = new StreamReader(fileStream);
+            
+            while((line  = reader.ReadLine()) != null) {
+                ItemList.Add(line);
+            }    
+
+        }
+
+    }
 }
