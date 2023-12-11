@@ -23,9 +23,9 @@
 
 
     <!-- Grid wrapper for the entire game page -->
-    <Grid RowDefinitions="80, *" >
-        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
-            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/>
+    <Grid RowDefinitions="auto, *" >
+        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0" Padding="12">
+            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Clicked="HamburgerMenuButton_Clicked"/>
             <Label Grid.Column="1" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
@@ -33,19 +33,12 @@
                         <Span Text="O" FontSize="36" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                         <Span Text="G" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                         <Span Text="I" FontSize="36" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="" FontSize="36" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
         </Grid>
+
+        
 
         <Grid Grid.Row="1" RowDefinitions="60,auto,*" ColumnDefinitions="*" RowSpacing="10">
 
@@ -110,7 +103,7 @@
 
                     <VerticalStackLayout Grid.Column="1" VerticalOptions="End">
                         <Label
-                            Text="Guessing Priorities for"
+                            Text="Guessing Priorities for..."
                             TextColor="{StaticResource DarkGray}"
                             Opacity="0.7"
                             HorizontalOptions="Center"
@@ -119,7 +112,7 @@
                             FontFamily="ConcertOneRegular"
                             IsVisible="{Binding Guessing}"/>
                         <Label
-                            Text="Submitting Priorities for"
+                            Text="Submitting Priorities for..."
                             TextColor="{StaticResource DarkGray}"
                             Opacity="0.7"
                             HorizontalOptions="Center"
@@ -138,25 +131,6 @@
 
                 </HorizontalStackLayout>
 
-                <Button
-                    Grid.Column="2"
-                    Text="{Binding Timer}"
-                    TextColor="{StaticResource DarkGray}"
-                    BackgroundColor="{StaticResource White}"
-                    CornerRadius="16"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
-                    FontSize="24"
-                    IsEnabled="False"
-                    FontFamily="ConcertOneRegular">
-                    <Button.Shadow>
-                        <Shadow Brush="{StaticResource Black}"
-                            Offset="2,4"
-                            Radius="16"
-                            Opacity="0.5"/>
-                    </Button.Shadow>
-
-                </Button>
 
             </Grid>
 
@@ -189,7 +163,7 @@
                                     BackgroundColor="{StaticResource PrimaryBlueGreen}"
                                     Text="{Binding .}"
                                     TextColor="{StaticResource OffWhite2}"
-                                    FontSize="30"
+                                    FontSize="28"
                                     VerticalOptions="Center"
                                     Margin="0, 8"
                                     IsEnabled="False"
@@ -299,6 +273,7 @@
                             Command="{Binding NavigateToNextPageCommand}"
                             TextColor="{StaticResource OffWhite2}"
                             FontSize="32"
+                            BackgroundColor="Transparent"
                         
                             FontFamily="ConcertOneRegular"/>
                     </Grid>

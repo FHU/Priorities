@@ -30,6 +30,10 @@ namespace Priorities.ViewModels
             NavigateToAddPlayersPageCommand = new Command(async () => await NavigateToAddPlayersPage());
             NavigateToGamePageCommand = new Command(async () => await NavigateToGamePage());
             DeleteButtonCommand = new Command<Player>(DeletePlayer);
+
+
+            gameStateService.PrioritizerIndex = 0;
+            gameStateService.GuesserIndex = gameStateService.PrioritizerIndex + 1;
         }
 
 
@@ -56,7 +60,8 @@ namespace Priorities.ViewModels
         private async Task NavigateToGamePage()
         {
             // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
-            await Shell.Current.GoToAsync($"{nameof(GamePage)}");
+            gameStateService.TotalRounds = gameStateService.Players.Count;
+            await Shell.Current.Navigation.PushAsync(new GetReadyPage(gameStateService));
         }
 
         [RelayCommand]
