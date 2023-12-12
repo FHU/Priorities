@@ -106,11 +106,11 @@
                 <VerticalStackLayout>
                     <Label
                     HorizontalOptions="Center"
-                    Text="Score"
+                    Text="SCORE"
                    TextColor="#EC6664"
                     Margin="5, 32, 5, 5"
                     FontSize="60"
-                    FontFamily="CoinyRegular"
+                    FontFamily="ConcertOne-Regular"
                     FontAttributes="Bold"
                      
                 />
@@ -161,15 +161,15 @@
 
 
         <VerticalStackLayout Grid.Row="3">
-            <Button Command="{Binding NavigateToPlayersPageCommand}" Text="Play Again" LineBreakMode="NoWrap"
-                Margin="70,10,70,0"
+            <Button Command="{Binding NavigateToPlayersPageCommand}" Text="PLAY AGAIN" LineBreakMode="NoWrap"
+                Margin="70,-60,70,0"
                 HorizontalOptions="FillAndExpand"
                 Padding="0"
                 BackgroundColor="{StaticResource PrimaryRed}"
-                HeightRequest="60"
-                FontSize="28"
+                HeightRequest="165"
+                FontSize="36"
                 TextColor="White"
-                FontFamily="CoinyRegular"
+                FontFamily="ConcertOne-Regular"
                 CornerRadius="20">
                 <Button.Shadow>
                     <Shadow Opacity="0.5"
@@ -180,7 +180,7 @@
                 </Button.Shadow>
             </Button>
 
-            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="High Score" LineBreakMode="NoWrap"
+            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="HIGH SCORES" LineBreakMode="NoWrap"
                 Margin="70,10,70,0"
                 HorizontalOptions="FillAndExpand"
                 Padding="0"
@@ -188,7 +188,7 @@
                 HeightRequest="60"
                 FontSize="28"
                 TextColor="White"
-                FontFamily="CoinyRegular"
+                FontFamily="ConcertOne-Regular"
                 CornerRadius="20">
                 <Button.Shadow>
                     <Shadow Opacity="0.5"
@@ -199,7 +199,7 @@
                 </Button.Shadow>
             </Button>
 
-            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="Achievements" LineBreakMode="NoWrap"
+            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="ACHIEVEMENTS" LineBreakMode="NoWrap"
                 Margin="70,10,70,0"
                 HorizontalOptions="FillAndExpand"
                 Padding="0"
@@ -208,7 +208,7 @@
                
                 FontSize="28"
                 TextColor="White"
-                FontFamily="CoinyRegular"
+                FontFamily="ConcertOne-Regular"
                 CornerRadius="20">
                 <Button.Shadow>
                     <Shadow Opacity="0.5"
@@ -222,7 +222,7 @@
 
             
 
-            <Button Command="{Binding NavigateToHomePageCommand}" Text="Home" LineBreakMode="NoWrap"
+            <Button Command="{Binding NavigateToHomePageCommand}" Text="HOME" LineBreakMode="NoWrap"
                 Margin="70,10,70,0"
                 HorizontalOptions="FillAndExpand"
                 Padding="0"
@@ -231,7 +231,7 @@
                
                 FontSize="28"
                 TextColor="White"
-                FontFamily="CoinyRegular"
+                FontFamily="ConcertOne-Regular"
                 CornerRadius="20">
                 <Button.Shadow>
                     <Shadow Opacity="0.5"

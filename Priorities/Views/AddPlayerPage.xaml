@@ -63,10 +63,10 @@
                 
                 <Label Grid.Row="0"
                        Padding="0"
-                       Text="Name"
+                       Text="NAME"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontFamily="CoinyRegular"
+                       FontFamily="ConcertOne-Regular"
                        TextColor="{StaticResource Primary}"                       
                        FontAttributes="Bold"/>
 
@@ -114,10 +114,10 @@
                 </Grid.RowDefinitions>
 
                 <Label Grid.Row="0"
-                       Text="Avatar Pic"
+                       Text="AVATAR PIC"
                        HorizontalOptions="Center"
                        FontSize="28"
-                       FontFamily="CoinyRegular"
+                       FontFamily="ConcertOne-Regular"
                        FontAttributes="Bold"
                        TextColor="{StaticResource Primary}"/>
 
