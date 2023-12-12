@@ -18,29 +18,31 @@
         <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}"/>
     </ContentPage.Behaviors>
 
-    <Grid RowDefinitions="80, *">
-        <Grid Grid.Row="0" ColumnDefinitions="auto,auto,auto" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0">
-            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,-16,0,0" Clicked="HamburgerMenuButton_Clicked"/>
-            <Label Grid.Column="1" LineBreakMode="NoWrap" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-20,0,0">
+    <Grid RowDefinitions="auto, 8, *">
+        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0" Padding="12">
+            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,0,0,0" Clicked="HamburgerMenuButton_Clicked"/>
+            <Label Grid.Column="1" Margin="{OnPlatform iOS='0,20,0,0', Default='0'}" LineBreakMode="NoWrap" HorizontalOptions="Center" VerticalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="A" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="D" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text=" " FontSize="40"/>
-                        <Span Text="P" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="L" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="A" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="Y" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="R" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="A" FontSize="35" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="D" FontSize="35" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="D" FontSize="35" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text=" " FontSize="35"/>
+                        <Span Text="P" FontSize="35" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="L" FontSize="35" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="A" FontSize="35" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                        <Span Text="Y" FontSize="35" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span Text="E" FontSize="35" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                        <Span Text="R" FontSize="35" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
         </Grid>
 
+        <Rectangle BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="8" Grid.Row="1"/>
 
-        <Grid Grid.Row="1" Padding="0" BackgroundColor="{StaticResource White}">
+
+        <Grid Grid.Row="2" Padding="0" BackgroundColor="{StaticResource OffWhite}" Margin="0,24,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
@@ -137,8 +139,7 @@
                     <Image Grid.Row="1"
                            HeightRequest="50"
                            WidthRequest="50"
-                           Source="Resources/Images/camerawhite"
-                           
+                           Source="camerawhite"                           
                        />
 
                 </Frame>
@@ -203,7 +204,6 @@
                     </Grid.RowDefinitions>
 
                     <Button Text="ADD PLAYER"
-                            ImageSource="whiteadd.png"
                             FontFamily="ConcertOneRegular"
                             Grid.Row="0"
                             FontSize="32"
@@ -232,10 +232,8 @@
 
             </StackLayout>
 
-            <Image Source="shapes.png"
+            <Image Source="shapes"
                    Aspect="AspectFill"
-                   WidthRequest="400"
-                   HeightRequest="180"
                    Grid.Row="3"
                    VerticalOptions="End"
                    ZIndex="-1"/>
