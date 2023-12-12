@@ -82,14 +82,14 @@
 
     <FlyoutItem
         Title="Home"
-        Icon="house.svg"
+        Icon="house"
         >
         <ShellContent ContentTemplate="{DataTemplate views:HomePage}" />
     </FlyoutItem>
 
     <!--<FlyoutItem
     Title="High Scores"
-    Icon="trophysolid.svg"
+    Icon="trophysolid"
     >
         <ShellContent ContentTemplate="{DataTemplate views:HighScorePage}" />
     </FlyoutItem>-->
@@ -100,14 +100,14 @@
     
     <FlyoutItem
     Title="Achievements"
-    Icon="ribbon.svg"
+    Icon="ribbon"
     >
         <ShellContent ContentTemplate="{DataTemplate views:AchievementsPage}" />
     </FlyoutItem>
 
     <FlyoutItem
     Title="How to Play"
-    Icon="question.svg"
+    Icon="question"
     >
         <ShellContent ContentTemplate="{DataTemplate views:HowToPlayPage}" />
     </FlyoutItem>-->
@@ -119,13 +119,13 @@
 
     <FlyoutItem
         Title="Achievements"
-        Icon="ribbon.svg"
+        Icon="ribbon"
     >
     </FlyoutItem>
 
     <FlyoutItem
         Title="How to Play"
-        Icon="question.svg">
+        Icon="question">
     </FlyoutItem>-->
 
 
