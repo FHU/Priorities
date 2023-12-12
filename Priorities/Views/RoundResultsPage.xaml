@@ -32,18 +32,65 @@
         </Grid.RowDefinitions>
 
         <!--  page title  -->
-        <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0" Padding="12">
-            <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Margin="0,0,0,0" Clicked="HamburgerMenuButton_Clicked"/>
-            <Label Grid.Column="1" Margin="{OnPlatform iOS='0,20,0,0', Default='0'}" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid
+            Grid.Row="0"
+            Margin="0,-5,0,0"
+            Padding="12"
+            BackgroundColor="{StaticResource DarkGray}"
+            ColumnDefinitions="*,4*,*"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Button
+                Margin="0,0,0,0"
+                BackgroundColor="Transparent"
+                Clicked="HamburgerMenuButton_Clicked"
+                FontSize="40"
+                Text="☰"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Column="1"
+                Margin="{OnPlatform iOS='0,20,0,0',
+                                    Default='0'}"
+                HorizontalOptions="Center"
+                LineBreakMode="NoWrap"
+                VerticalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="R" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                        <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="U" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                        <Span Text="L" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="T" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                        <Span Text="S" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="R"
+                            TextColor="{StaticResource PrimaryRed}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="E"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="S"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="U"
+                            TextColor="{StaticResource SecondaryBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="L"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="T"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="40"
+                            Text="S"
+                            TextColor="{StaticResource PrimaryRed}" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
@@ -198,7 +245,7 @@
             BackgroundColor="{StaticResource PrimaryRed}"
             Command="{Binding NextCommand}"
             CornerRadius="24"
-            FontFamily="CoinyRegular"
+            FontFamily="ConcertOneRegular"
             FontSize="32"
             HeightRequest="80"
             IsEnabled="{Binding NextEnabled}"
