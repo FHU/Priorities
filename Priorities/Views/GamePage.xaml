@@ -26,7 +26,7 @@
     <Grid RowDefinitions="auto, *" >
         <Grid Grid.Row="0" ColumnDefinitions="*,4*,*" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}" Margin="0,-5,0,0" Padding="12">
             <Button Text="☰"  BackgroundColor="Transparent" FontSize="40" VerticalOptions="Center" Clicked="HamburgerMenuButton_Clicked"/>
-            <Label Grid.Column="1" Margin="0,20,0,0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Grid.Column="1" Margin="{OnPlatform iOS='0,20,0,0'}" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="M" FontSize="52" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
@@ -275,7 +275,7 @@
                             FontSize="32"
                             BackgroundColor="Transparent"
                         
-                            FontFamily="ConcertOneRegular"/>
+                            FontFamily="CoinyRegular"/>
                     </Grid>
                 </Border>
             </Grid>

@@ -112,15 +112,15 @@
         <!-- Ready Button -->
         <Button Text="READY?"
                 Grid.Row="4"
-                Margin="0,10,0,0"
+                Margin="16,40,16,8"
                 VerticalOptions="Start"
                 TextColor="White"
                 BackgroundColor="#EC6664"
-                FontSize="35"
-                FontFamily="ConcertOne-Regular"
+                FontSize="36"
+                FontFamily="Coiny-Regular"
                 CornerRadius="10"
-                HeightRequest="75"
-                WidthRequest="335"
+                HeightRequest="80"
+                
                 HorizontalOptions="FillAndExpand"
                 Command="{Binding NavigateToGamePageCommand}">
             <Button.Shadow>

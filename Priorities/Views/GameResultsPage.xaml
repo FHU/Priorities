@@ -167,7 +167,7 @@
                 Padding="0"
                 BackgroundColor="{StaticResource PrimaryRed}"
                 HeightRequest="60"
-                FontSize="25"
+                FontSize="28"
                 TextColor="White"
                 FontFamily="CoinyRegular"
                 CornerRadius="20">
@@ -186,7 +186,7 @@
                 Padding="0"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
                 HeightRequest="60"
-                FontSize="25"
+                FontSize="28"
                 TextColor="White"
                 FontFamily="CoinyRegular"
                 CornerRadius="20">
@@ -206,7 +206,7 @@
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
                 HeightRequest="60"
                
-                FontSize="25"
+                FontSize="28"
                 TextColor="White"
                 FontFamily="CoinyRegular"
                 CornerRadius="20">
@@ -229,7 +229,7 @@
                 BackgroundColor="{StaticResource SecondaryBlue}"
                 HeightRequest="60"
                
-                FontSize="25"
+                FontSize="28"
                 TextColor="White"
                 FontFamily="CoinyRegular"
                 CornerRadius="20">
