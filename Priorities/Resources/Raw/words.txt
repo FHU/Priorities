@@ -1,16 +1,13 @@
 ﻿Marvel
 DC
 Star Wars
-LOTR
 Batman
 Jurassic Park
 Fast & Furious
 X-Men
-Pirates of the Caribbean
 Toy Story
 The Matrix
 Transformers
-Mission: Impossible
 Hunger Games
 Rocky
 80s Movies
@@ -29,7 +26,6 @@ Music
 Exercising
 TV Shows
 Reading
-Grocery Shopping
 Chores
 Commuting
 Family Time
@@ -48,7 +44,6 @@ Driving
 George Washington
 Thomas Jefferson
 Abraham Lincoln
-Franklin Roosevelt
 John F Kennedy
 Nixon
 Jimmy Carter
@@ -78,7 +73,6 @@ Elsa
 Terminator
 Willy Wonka
 Rocky II
-Captain Jack Sparrow
 Neo
 Iron Man
 Gandalf
@@ -98,7 +92,6 @@ Concert
 Exploring
 Camping
 Book Club
-Home Improvement
 Beach
 Biking
 Dinner Night
@@ -135,23 +128,22 @@ YouTubers
 TikTok
 Books
 Nature
-Instrument
+Instruments
 Clubs/Groups
 Fashion
-Pool
+Pools
 Chapel Skips
 Chick-Fil-A
 Chick-Filake
 Parties
-Campus Worship
-Bible Study
+Campus Worships
+Bible Studies
 Community
-Park
-Intramural
+Parks
+Intramurals
 Student Clubs
 Seminars
-Church Volunteering
-Arts Event
+Arts Events
 Bessos
 Urban House
 Belle's Diner
@@ -161,39 +153,29 @@ FHU Football
 Dress Code
 Curfew
 Chow Wagon
-Study Group
-Social Event
-State Park
+Study Groups
+Social Events
+State Parks
 Theater
-Outdoor Adventures
+Outdoors
 Creative Arts
 Skills Workshop
-Academic Weapons
-Dorm Muster
+Dorm Musters
 Fire Alarms
-Cafe Hangout
+Cafe Hangouts
 Student Center
 ARC First Floor
 Fitness
 Boog Bustin
-Career Networking
 Pineapple Pizza
-Summer Best
-Winter Best
 Iced Coffee
-Pumpkin Spice Latte
-White Chocolate Mocha
-Bridgerton
-Avatar: The Last Airbender
-Star Wars: Clone Wars
+Pumpkin Spice
 Americano
 Green Tea
-London Fog Tea
+London Fog
 Tea
 Cats
 Dogs
-Early Bird
-Night Owl
 Android
 iPhone
 Pixel
@@ -236,7 +218,6 @@ YouTube
 WhatsApp
 Instagram
 WeChat
-TikTok Dances
 Messenger
 Snapchat
 Pinterest
@@ -250,34 +231,25 @@ Spotify
 Twitch
 Zoom
 Skype
-Spider-Man: PS4
 Animal Crossing
 Golden Eye
-Super Mario Bros.
+Super Mario
 Wii Sports
 Fortnite
 Call of Duty
 Smash Bros
-The Office (U.S.)
 Seinfeld
-How I Met Your Mother
-Brooklyn Nine-Nine
-Parks and Recreation
-The Big Bang Theory
 Cheers
 Scrubs
-The Fresh Prince of Bel-Air
 Friends (Show)
-The Golden Girls
-Everybody Loves Raymond
+Golden Girls
 Frosted Flakes
 Cheerios
 Lucky Charms
-Cinnamon Toast Crunch
 Froot Loops
 Rice Krispies
 Cap'n Crunch
-Honey Nut Cheerios
+Cheerios
 Cocoa Puffs
 Corn Flakes
 Special K
@@ -288,9 +260,7 @@ Mini-Wheats
 Great Grains
 Cookie Crisp
 Count Chocula
-Shredded Wheat
 Kix
-Frosted Mini-Wheats
 Pancakes
 Waffles
 PlayStation 5
@@ -298,13 +268,11 @@ Xbox Series X
 Nintendo Switch
 PlayStation 4
 Xbox One
-Nintendo Wii U
 PlayStation 3
 Xbox 360
 Nintendo Wii
 PlayStation 2
 Xbox
-Nintendo GameCube
 PlayStation
 Sega Dreamcast
 Nintendo 64
@@ -329,14 +297,14 @@ Grapefruit
 Sushi
 Black coffee
 Beets
-Avocado
+Avocados
 Spam
 Candy corn
 Necco Wafers
 Circus Peanuts
 Gano
-Chili with Beans
-Saltwater Taffy
+Chili w/ Beans
+Taffy
 Hot Tamales
 Red Vines
 Bit-O-Honey
@@ -344,19 +312,14 @@ Smarties
 Tootsie Rolls
 Swedish Fish
 Peeps
-Veganism
 Social Media
 GMOs
-School Uniforms
 ChatGPT
 Homeschooling
 High School
-Middle School
-Elementary School
 Naps
 Sleep
 Napoleon Dynamite
-The Princess Bride
 Taylor Swift
 Ed Sheeran
 Tom Cruise
@@ -364,14 +327,10 @@ Billie Eilish
 Ariana Grande
 Beyoncé
 Luke Combs
-Twenty One Pilots
 Noah Kahan
 BTS
-EXO
-SEVENTEEN
 Morgan Wallen
 The Band Camino
-Kelsea Ballerini
 Tate McRae
 1975
 Blake Shelton
@@ -395,13 +354,12 @@ Pop
 Rock
 Rap
 Country Music
-Electronic Music
 Jazz
 Blues
 Classical Music
 Reggae
 Chess
-Reading Newspapers
+Newspapers
 Playing Bingo
 $20
 Jigsaw Puzzles
@@ -449,15 +407,12 @@ Cryptocurrency
 Self-Care
 Plastic Straws
 Royal Family
-Princess Diana
-Queen Elizabeth
 Charcuterie
 Wordle
 Thy Wordle
 Freed-Harmony
 Freedr
 Chapel
-Class Skipping
 David Shannon
 TJ Kirk
 Ben Clark
@@ -474,7 +429,6 @@ Baja Blast
 Tacos
 Crunch Wraps
 Burritos
-Sub Sandwiches
 Dr. Pepper
 Sprite
 Coke
@@ -487,13 +441,11 @@ Gatorade
 Energy Drinks
 RedBull
 Celcius
-Alani
 Mountain Dew
 Jeans
 Sweatshirts
 Jorts
 Hoodies
-Jeans with Holes
 Crewnecks
 Turtle Necks
 Button Ups
@@ -512,7 +464,6 @@ Holiday World
 Dollywood
 Cedar Point
 Kings Island
-Roblox
 Crossfit
 Bodybuilding
 Marathons
