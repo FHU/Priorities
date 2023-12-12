@@ -275,7 +275,7 @@
                             FontSize="32"
                             BackgroundColor="Transparent"
                         
-                            FontFamily="CoinyRegular"/>
+                            FontFamily="ConcertOne-Regular"/>
                     </Grid>
                 </Border>
             </Grid>
