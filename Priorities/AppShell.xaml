@@ -7,7 +7,7 @@
     xmlns:views="clr-namespace:Priorities.Views"
     Shell.FlyoutBehavior="Flyout"
     Shell.FlyoutBackdrop="{StaticResource OffWhite}"
-    BackgroundColor="{StaticResource DarkGray}"
+    BackgroundColor="{StaticResource White}"
     >
 
     <!--<Shell.FlyoutHeaderTemplate>
