@@ -87,12 +87,12 @@
         <ShellContent ContentTemplate="{DataTemplate views:HomePage}" />
     </FlyoutItem>
 
-    <FlyoutItem
+    <!--<FlyoutItem
     Title="High Scores"
     Icon="trophysolid.svg"
     >
         <ShellContent ContentTemplate="{DataTemplate views:HighScorePage}" />
-    </FlyoutItem>
+    </FlyoutItem>-->
 
     <!--
     
@@ -132,6 +132,11 @@
 
 
     <!--Comment Out for Demo-->
+    <ShellContent
+        Title="HomePage"
+        ContentTemplate="{DataTemplate views:HomePage}"
+        Route="HomePage"/>
+
     <ShellContent
         Title="AddPlayerPage"
         ContentTemplate="{DataTemplate views:AddPlayerPage}"
