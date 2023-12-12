@@ -18,7 +18,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="300"/>
-            <RowDefinition Height="270"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Top Bar with App Name -->
@@ -133,12 +133,8 @@
         <!-- Additional elements, if any -->
         <Image Source="shapes"
            Aspect="AspectFill"
-           WidthRequest="400"
-           HeightRequest="180"
            Grid.Row="5"
-           Margin="0,0,0,-24"
-           
-           
+           Margin= "{OnPlatform iOS='0,0,0,-48', Default= '0,0,0,0'}"
            VerticalOptions="End"
            ZIndex="-1" />
     </Grid>

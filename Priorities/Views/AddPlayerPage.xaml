@@ -139,8 +139,7 @@
                     <Image Grid.Row="1"
                            HeightRequest="50"
                            WidthRequest="50"
-                           Source="Resources/Images/camerawhite"
-                           
+                           Source="camerawhite"                           
                        />
 
                 </Frame>
@@ -205,7 +204,6 @@
                     </Grid.RowDefinitions>
 
                     <Button Text="ADD PLAYER"
-                            ImageSource="whiteadd.png"
                             FontFamily="ConcertOneRegular"
                             Grid.Row="0"
                             FontSize="32"
