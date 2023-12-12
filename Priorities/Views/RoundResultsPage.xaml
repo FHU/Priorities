@@ -198,7 +198,7 @@
             BackgroundColor="{StaticResource PrimaryRed}"
             Command="{Binding NextCommand}"
             CornerRadius="24"
-            FontFamily="ConcertOneRegular"
+            FontFamily="CoinyRegular"
             FontSize="32"
             HeightRequest="80"
             IsEnabled="{Binding NextEnabled}"
