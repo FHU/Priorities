@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Priorities</ApplicationTitle>
+		<ApplicationTitle>MOGI</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>edu.fhu.priorities</ApplicationId>
