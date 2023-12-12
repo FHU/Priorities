@@ -17,6 +17,8 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
@@ -37,7 +39,21 @@
                 </Label>
             </Grid>
 
-            <ScrollView Grid.Row="1" Margin="0,15,0,250" BackgroundColor="{StaticResource OffWhite}" Padding="12,0">
+            <Rectangle BackgroundColor="{StaticResource PrimaryRed}" HeightRequest="8" Grid.Row="1"/>
+
+            <Label Grid.Row="2" Text="At least 2 players are required."
+                   FontFamily="ConcertOneRegular"
+                   FontSize="16"
+                   TextColor="{StaticResource Primary}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="0,8,0,0"
+                   IsVisible="{Binding HasTooFewPlayers}"
+                   />
+
+
+
+            <ScrollView Grid.Row="3" Margin="0,8,0,250" BackgroundColor="{StaticResource OffWhite}" Padding="12,0">
                 <CollectionView ItemsSource="{Binding Players}" VerticalOptions="FillAndExpand">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -74,7 +90,7 @@
                 </CollectionView>
             </ScrollView>
 
-            <Grid Grid.Row="1" VerticalOptions="End" BackgroundColor="Transparent">
+            <Grid Grid.Row="3" VerticalOptions="End" BackgroundColor="Transparent">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
