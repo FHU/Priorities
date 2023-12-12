@@ -18,7 +18,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="300"/>
-            <RowDefinition Height="270"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Top Bar with App Name -->
@@ -26,34 +26,36 @@
         
         
         <Label
-                Grid.Column="1"
+                Grid.Column="0"
                 HorizontalOptions="FillAndExpand"
                 LineBreakMode="NoWrap"
                 VerticalOptions="Center"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
-                BackgroundColor="#404040"
-                HeightRequest="130">
+                BackgroundColor="{StaticResource DarkGray}"
+                Margin="0,-10,0,0"
+                Padding="0,20,0,12"
+                >
             <Label.FormattedText>
                 <FormattedString>
                     <Span
                             FontFamily="CoinyRegular"
-                            FontSize="40"
+                            FontSize="52"
                             Text="M"
                             TextColor="{StaticResource PrimaryRed}" />
                     <Span
                             FontFamily="CoinyRegular"
-                            FontSize="40"
+                            FontSize="52"
                             Text="O"
                             TextColor="{StaticResource SecondaryGreen}" />
                     <Span
                             FontFamily="CoinyRegular"
-                            FontSize="40"
+                            FontSize="52"
                             Text="G"
                             TextColor="{StaticResource SecondaryLightBlue}" />
                     <Span
                             FontFamily="CoinyRegular"
-                            FontSize="40"
+                            FontSize="52"
                             Text="I"
                             TextColor="{StaticResource SecondaryBlue}" />
                     
@@ -70,7 +72,7 @@
         <Label Text="Pass the Phone to...."
                FontFamily="ConcertOne-Regular"
                Grid.Row="2"
-               Margin="30,60,30,15"
+               Margin="15,20,30,15"
                HorizontalOptions="Center"
                FontSize="35"
                TextColor="#404040"/>
@@ -103,22 +105,22 @@
 
                 </Frame>
 
-                <Label Text="{Binding CurrentPlayer.Name}" TextColor="{StaticResource DarkGray}" FontSize="40" FontFamily="ConcertOne-Regular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End" Margin="0,15,0,0"/>
+                <Label Text="{Binding CurrentPlayer.Name}" TextColor="{StaticResource DarkGray}" FontSize="40" FontFamily="ConcertOne-Regular" HorizontalTextAlignment="Center" Padding="5" VerticalTextAlignment="End" Margin="0,0,0,0"/>
             </VerticalStackLayout>
         </Grid>
 
         <!-- Ready Button -->
         <Button Text="READY?"
                 Grid.Row="4"
-                Margin="0,60,0,0"
+                Margin="16,40,16,8"
                 VerticalOptions="Start"
                 TextColor="White"
                 BackgroundColor="#EC6664"
-                FontSize="35"
-                FontFamily="ConcertOne-Regular"
+                FontSize="36"
+                FontFamily="Coiny-Regular"
                 CornerRadius="10"
-                HeightRequest="75"
-                WidthRequest="335"
+                HeightRequest="80"
+                
                 HorizontalOptions="FillAndExpand"
                 Command="{Binding NavigateToGamePageCommand}">
             <Button.Shadow>
@@ -131,12 +133,8 @@
         <!-- Additional elements, if any -->
         <Image Source="shapes"
            Aspect="AspectFill"
-           WidthRequest="400"
-           HeightRequest="180"
            Grid.Row="5"
-           Margin="0,0,0,20"
-           
-           
+           Margin= "{OnPlatform iOS='0,0,0,-48', Default= '0,0,0,0'}"
            VerticalOptions="End"
            ZIndex="-1" />
     </Grid>

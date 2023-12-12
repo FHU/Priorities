@@ -24,6 +24,7 @@ namespace Priorities.ViewModels
 
         public Command NavigateToPlayersPageCommand { get; }
         public Command NavigateToHighScorePageCommand { get; }
+        public Command NavigateToHomePageCommand { get; }
 
 
         public ObservableCollection<Achievement> Achievements { get; set; }
@@ -38,6 +39,12 @@ namespace Priorities.ViewModels
         {
             // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
             await Shell.Current.GoToAsync($"{nameof(HighScorePage)}");
+        }
+
+        private async Task NavigateToHomePage()
+        {
+            // Use Shell.Current.GoToAsync() to navigate to the AddPlayersPage
+            await Shell.Current.GoToAsync($"{nameof(HomePage)}");
         }
 
         /// <summary>
@@ -72,6 +79,8 @@ namespace Priorities.ViewModels
 
             NavigateToPlayersPageCommand = new Command(async () => await NavigateToPlayersPage());
             NavigateToHighScorePageCommand = new Command(async () => await NavigateToHighScorePage());
+            NavigateToHomePageCommand = new Command(async () => await NavigateToHomePage());
+
 
             gameStateService.Score = 0;
             gameStateService.Round = 1;

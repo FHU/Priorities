@@ -14,6 +14,9 @@ namespace Priorities.ViewModels
         [ObservableProperty]
         bool hasEnoughPlayers = false;
 
+        [ObservableProperty]
+        bool hasTooFewPlayers = true;
+
         public ObservableCollection<Player> Players { get; set; } = new();
 
         public Command NavigateToAddPlayersPageCommand { get; }
@@ -77,10 +80,12 @@ namespace Priorities.ViewModels
             if(Players.Count > 1 && gameStateService.Players.Count > 1)
             {
                 HasEnoughPlayers = true;
+                HasTooFewPlayers = false;
             }
             else
             {
                 HasEnoughPlayers = false;
+                HasTooFewPlayers = true;
             }
         }
     }

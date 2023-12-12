@@ -33,20 +33,22 @@
         </Grid.ColumnDefinitions>
 
             <VerticalStackLayout>
-                <Label Grid.Row="0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-
+                
+                <Label Grid.Row="0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,16,0,8" Margin="0,-10,0,0">
+                
                 <Label.FormattedText>
+
                         <FormattedString>
-                            <Span Text="P" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                            <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                            <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                            <Span Text="O" FontSize="40" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                            <Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="M" FontSize="52" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
+                            <Span Text="O" FontSize="52" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                            <Span Text="G" FontSize="52" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="I" FontSize="52" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
+                            <!--<Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                             <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                             <Span Text="T" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                             <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                             <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                            <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
+                            <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>-->
                             
                         </FormattedString>
                     </Label.FormattedText>
@@ -60,8 +62,8 @@
                              
 
             <HorizontalStackLayout HorizontalOptions="Center" HeightRequest="85" Grid.Row="1">
-                <VerticalStackLayout Margin="0, 5, 0, 0" >
-                    <Label
+                <VerticalStackLayout Margin="0, 0, 0, 0" >
+                    <!--<Label
                
                     TextColor="#EC6664"
                     Margin="5, 5, 130, 0"
@@ -97,7 +99,7 @@
                     FontFamily="ConcertOneRegular"
                     FontAttributes="Bold"
                     Text="{Binding ElapsedTime.Seconds}"/>
-                    </HorizontalStackLayout>
+                    </HorizontalStackLayout>-->
 
                 </VerticalStackLayout>
             
@@ -106,17 +108,18 @@
                     HorizontalOptions="Center"
                     Text="Score"
                    TextColor="#EC6664"
-                    Margin="5, 10, 5, 5"
-                    FontSize="Medium"
+                    Margin="5, 32, 5, 5"
+                    FontSize="60"
                     FontFamily="CoinyRegular"
                     FontAttributes="Bold"
+                     
                 />
 
                     <Label
                     HorizontalOptions="Center"
                     TextColor="Black"
-                    Margin="0, -12, 0, 0"
-                    FontSize="Large"
+                    Margin="0, -16, 0, 0"
+                    FontSize="172"
                     FontAttributes="Bold"
                     FontFamily="ConcertOneRegular"
                     Text="{Binding Score}"/>
@@ -124,11 +127,11 @@
 
             </HorizontalStackLayout>
 
-            <VerticalStackLayout
+            <!--<VerticalStackLayout
                 Grid.Row="2"
                 HeightRequest="225">
                 <Label
-                Margin="0,-10,0,-5"
+                Margin="0,25,0,-5"
                 Text="Achievements"
                 HorizontalOptions="Center"
                 TextColor="#EC6664"
@@ -153,47 +156,100 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
 
-            </VerticalStackLayout>
+            </VerticalStackLayout>-->
 
 
 
         <VerticalStackLayout Grid.Row="3">
-            <Button Margin="16,8,16,8" Text="High Score" Command="{Binding NavigateToHighScorePageCommand}" FontSize="Medium" FontFamily="ConcertOneRegular" FontAttributes="Bold"  TextColor="White" BackgroundColor="#EC6664">
+            <Button Command="{Binding NavigateToPlayersPageCommand}" Text="Play Again" LineBreakMode="NoWrap"
+                Margin="70,10,70,0"
+                HorizontalOptions="FillAndExpand"
+                Padding="0"
+                BackgroundColor="{StaticResource PrimaryRed}"
+                HeightRequest="60"
+                FontSize="28"
+                TextColor="White"
+                FontFamily="CoinyRegular"
+                CornerRadius="20">
                 <Button.Shadow>
-                    <Shadow
-                                Opacity="0.2"
-                                Offset="10,30"
-                                Radius="20"
-                        
-                                />
-                </Button.Shadow>
-            </Button>
-            <Button Margin="16,0,16,10"  Text="Achievements" FontSize="Medium" FontFamily="ConcertOneRegular" FontAttributes="Bold" TextColor="White" BackgroundColor="#EC6664" >
-                <Button.Shadow>
-                    <Shadow
-                                Opacity="0.4"
-                                Offset="10,30"
-                                Radius="30"
-                         
-                                />
-                </Button.Shadow>
-            </Button>
-            <Button Margin="16,0,16,10" Command="{Binding NavigateToPlayersPageCommand}" Text="Play Again" HeightRequest="70" FontSize="Medium" FontFamily="ConcertOneRegular" FontAttributes="Bold"  TextColor="White" BackgroundColor="#EC6664">
-                <Button.Shadow>
-                    <Shadow
-                                Opacity="0.5"
-                                Offset="10,10"
-                                Radius="40"
-                        
-                                />
+                    <Shadow Opacity="0.5"
+                    Radius="15"
+                    Offset="10,10"
+                    Brush="{StaticResource Gray400}"
+                    />
                 </Button.Shadow>
             </Button>
 
+            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="High Score" LineBreakMode="NoWrap"
+                Margin="70,10,70,0"
+                HorizontalOptions="FillAndExpand"
+                Padding="0"
+                BackgroundColor="{StaticResource PrimaryBlueGreen}"
+                HeightRequest="60"
+                FontSize="28"
+                TextColor="White"
+                FontFamily="CoinyRegular"
+                CornerRadius="20">
+                <Button.Shadow>
+                    <Shadow Opacity="0.5"
+                    Radius="15"
+                    Offset="10,10"
+                    Brush="{StaticResource Gray400}"
+                    />
+                </Button.Shadow>
+            </Button>
+
+            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="Achievements" LineBreakMode="NoWrap"
+                Margin="70,10,70,0"
+                HorizontalOptions="FillAndExpand"
+                Padding="0"
+                BackgroundColor="{StaticResource PrimaryBlueGreen}"
+                HeightRequest="60"
+               
+                FontSize="28"
+                TextColor="White"
+                FontFamily="CoinyRegular"
+                CornerRadius="20">
+                <Button.Shadow>
+                    <Shadow Opacity="0.5"
+                    Radius="15"
+                    Offset="10,10"
+                    Brush="{StaticResource Gray400}"
+                    />
+                </Button.Shadow>
+            </Button>
+            
+
+            
+
+            <Button Command="{Binding NavigateToHomePageCommand}" Text="Home" LineBreakMode="NoWrap"
+                Margin="70,10,70,0"
+                HorizontalOptions="FillAndExpand"
+                Padding="0"
+                BackgroundColor="{StaticResource SecondaryBlue}"
+                HeightRequest="60"
+               
+                FontSize="28"
+                TextColor="White"
+                FontFamily="CoinyRegular"
+                CornerRadius="20">
+                <Button.Shadow>
+                    <Shadow Opacity="0.5"
+                    Radius="15"
+                    Offset="10,10"
+                    Brush="{StaticResource Gray400}"
+                    />
+                </Button.Shadow>
+            </Button>
+
+            
+
+           
 
         </VerticalStackLayout>
 
 
-        <Image Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="3" Source="shapes.jpg"  Margin="-10, 0, -10,-10" VerticalOptions="EndAndExpand" ZIndex="-1"  />
+        <!--<Image Grid.Row="1" Grid.RowSpan="1" Grid.ColumnSpan="3" Source="shapes.jpg"  Margin="-10, 0, -10,-10" VerticalOptions="EndAndExpand" ZIndex="5"  />-->
         
 
     </Grid>
