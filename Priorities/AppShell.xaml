@@ -94,45 +94,24 @@
         <ShellContent ContentTemplate="{DataTemplate views:HighScorePage}" />
     </FlyoutItem>
 
-    <!--
-    
-    add back in when pages are made
-    
-    <FlyoutItem
-    Title="Achievements"
-    Icon="ribbon.svg"
-    >
-        <ShellContent ContentTemplate="{DataTemplate views:AchievementsPage}" />
-    </FlyoutItem>
-
-    <FlyoutItem
-    Title="How to Play"
-    Icon="question.svg"
-    >
-        <ShellContent ContentTemplate="{DataTemplate views:HowToPlayPage}" />
-    </FlyoutItem>-->
-
-
-    <!--
-
-    add in if pages are not made
 
     <FlyoutItem
         Title="Achievements"
-        Icon="ribbon.svg"
-    >
+        Icon="ribbon.svg">
+        <ShellContent ContentTemplate="{DataTemplate views:HomePage}"/>
     </FlyoutItem>
 
     <FlyoutItem
         Title="How to Play"
         Icon="question.svg">
-    </FlyoutItem>-->
+        <ShellContent ContentTemplate="{DataTemplate views:HomePage}"/>
+    </FlyoutItem>
 
 
 
 
     <!--Comment Out for Demo-->
-    <ShellContent
+    <!--<ShellContent
         Title="AddPlayerPage"
         ContentTemplate="{DataTemplate views:AddPlayerPage}"
         Route="AddPlayerPage" />
@@ -165,7 +144,7 @@
     <ShellContent
         Title="RoundResultsPage"
         ContentTemplate="{DataTemplate views:RoundResultsPage}"
-        Route="RoundResultsPage" />
+        Route="RoundResultsPage" />-->
 
     <Shell.FlyoutFooter>
         <VerticalStackLayout >
