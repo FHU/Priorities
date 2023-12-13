@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Priorities</ApplicationTitle>
+		<ApplicationTitle>MOGI</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>edu.fhu.priorities</ApplicationId>
@@ -31,16 +31,19 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	  <CodesignProvision>Priorities+Kenan's iPhone13</CodesignProvision>
-	  <CodesignKey>iPhone Developer</CodesignKey>
-	  <MtouchDebug>true</MtouchDebug>
+		<CreatePackage>false</CreatePackage>
+		<CodesignProvision>Priorities+Kenan's iPhone13</CodesignProvision>
+		<CodesignKey>iPhone Developer</CodesignKey>
+		<MtouchDebug>true</MtouchDebug>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
+		<CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
+		<!-- for android; thanks Jörg Thomas -> https://learn.microsoft.com/en-us/answers/questions/1115353/app-icon-not-showing-in-the-correct-size-in-maui -->
+		<MauiIcon Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'" Include="Resources\AppIcon\appicon.svg" ForegroundScale="0.55" Color="#FFFFFF" />
+		<!-- for everything else -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" />
 
 		<!-- Splash Screen -->
@@ -87,20 +90,20 @@
 	</ItemGroup> -->
 
 	<ItemGroup>
-	  <None Remove="Resources\Raw\words.txt" />
-	  <None Remove="Resources\Images\fishhook.svg" />
-	  <None Remove="Resources\Raw\words.txt" />
-	  <None Remove="Services\" />
+		<None Remove="Resources\Raw\words.txt" />
+		<None Remove="Resources\Images\fishhook.svg" />
+		<None Remove="Resources\Raw\words.txt" />
+		<None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Services\" />
-	  <BundleResource Include="Resources\Images\kenan.jpg" />
-	  <BundleResource Include="Resources\Images\avatar_pic.jpg" />
-	  <BundleResource Include="Resources\Images\dotnet_bot.svg" />
-	  <BundleResource Include="Resources\Images\home.svg" />
-	  <BundleResource Include="Resources\Images\kenan.jpeg" />
-	  <BundleResource Include="Resources\Images\settings.svg" />
-	  <BundleResource Include="Resources\Images\shapes.svg" />
+		<Folder Include="Services\" />
+		<BundleResource Include="Resources\Images\kenan.jpg" />
+		<BundleResource Include="Resources\Images\avatar_pic.jpg" />
+		<BundleResource Include="Resources\Images\dotnet_bot.svg" />
+		<BundleResource Include="Resources\Images\home.svg" />
+		<BundleResource Include="Resources\Images\kenan.jpeg" />
+		<BundleResource Include="Resources\Images\settings.svg" />
+		<BundleResource Include="Resources\Images\shapes.svg" />
 	</ItemGroup>
 
 </Project>
