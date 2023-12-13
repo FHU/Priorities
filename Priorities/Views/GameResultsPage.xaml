@@ -1,70 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Priorities.Views.GameResultsPage"
-             Title="GameResultsPage"
-             BackgroundColor="{StaticResource OffWhite}"
-             xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
-             Shell.NavBarIsVisible="False"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-   
-             >
+<ContentPage
+    x:Class="Priorities.Views.GameResultsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:viewmodels="clr-namespace:Priorities.ViewModels"
+    Title="GameResultsPage"
+    BackgroundColor="{StaticResource OffWhite}"
+    Shell.NavBarIsVisible="False">
 
-            <ContentPage.Behaviors>
-                <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
-            </ContentPage.Behaviors>
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource DarkGray}" />
+    </ContentPage.Behaviors>
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="45"/>
-            <RowDefinition Height="300"/>
-            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="300" />
+            <RowDefinition Height="0.3*" />
 
 
 
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            
+            <ColumnDefinition Width="*" />
+
 
 
         </Grid.ColumnDefinitions>
 
-            <VerticalStackLayout>
-                
-                <Label Grid.Row="0" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource DarkGray}"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,16,0,8" Margin="0,-10,0,0">
-                
+        <VerticalStackLayout>
+
+            <Label
+                Grid.Row="0"
+                Margin="0,-10,0,0"
+                Padding="0,16,0,8"
+                BackgroundColor="{StaticResource DarkGray}"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                LineBreakMode="NoWrap"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center">
+
                 <Label.FormattedText>
 
-                        <FormattedString>
-                            <Span Text="M" FontSize="52" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
-                            <Span Text="O" FontSize="52" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
-                            <Span Text="G" FontSize="52" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
-                            <Span Text="I" FontSize="52" TextColor="{StaticResource SecondaryBlue}" FontFamily="CoinyRegular"/>
-                            <!--<Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
+                    <FormattedString>
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="52"
+                            Text="M"
+                            TextColor="{StaticResource PrimaryRed}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="52"
+                            Text="O"
+                            TextColor="{StaticResource SecondaryGreen}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="52"
+                            Text="G"
+                            TextColor="{StaticResource SecondaryLightBlue}" />
+                        <Span
+                            FontFamily="CoinyRegular"
+                            FontSize="52"
+                            Text="I"
+                            TextColor="{StaticResource SecondaryBlue}" />
+                        <!--<Span Text="R" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                             <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                             <Span Text="T" FontSize="40" TextColor="{StaticResource PrimaryRed}" FontFamily="CoinyRegular"/>
                             <Span Text="I" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>
                             <Span Text="E" FontSize="40" TextColor="{StaticResource SecondaryGreen}" FontFamily="CoinyRegular"/>
                             <Span Text="S" FontSize="40" TextColor="{StaticResource SecondaryLightBlue}" FontFamily="CoinyRegular"/>-->
-                            
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8"/>
-            </VerticalStackLayout>
 
-    
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Rectangle BackgroundColor="{StaticResource PrimaryRed}" MinimumHeightRequest="8" />
+        </VerticalStackLayout>
 
-        
-                             
 
-            <HorizontalStackLayout HorizontalOptions="Center" HeightRequest="85" Grid.Row="1">
-                <VerticalStackLayout Margin="0, 0, 0, 0" >
-                    <!--<Label
-               
+
+
+
+
+        <HorizontalStackLayout
+            Grid.Row="1"
+            HeightRequest="85"
+            HorizontalOptions="Center">
+            <VerticalStackLayout Margin="0,0,0,0">
+                <!--<Label
+
                     TextColor="#EC6664"
                     Margin="5, 5, 130, 0"
                     FontSize="Medium"
@@ -101,33 +128,31 @@
                     Text="{Binding ElapsedTime.Seconds}"/>
                     </HorizontalStackLayout>-->
 
-                </VerticalStackLayout>
-            
-                <VerticalStackLayout>
-                    <Label
-                    HorizontalOptions="Center"
-                    Text="Score"
-                   TextColor="#EC6664"
-                    Margin="5, 32, 5, 5"
-                    FontSize="60"
-                    FontFamily="CoinyRegular"
-                    FontAttributes="Bold"
-                     
-                />
+            </VerticalStackLayout>
 
-                    <Label
+            <VerticalStackLayout>
+                <Label
+                    Margin="5,32,5,5"
+                    FontAttributes="Bold"
+                    FontFamily="ConcertOne-Regular"
+                    FontSize="60"
                     HorizontalOptions="Center"
-                    TextColor="Black"
-                    Margin="0, -16, 0, 0"
-                    FontSize="172"
+                    Text="SCORE"
+                    TextColor="#EC6664" />
+
+                <Label
+                    Margin="0,-16,0,0"
                     FontAttributes="Bold"
                     FontFamily="ConcertOneRegular"
-                    Text="{Binding Score}"/>
-                </VerticalStackLayout>
+                    FontSize="172"
+                    HorizontalOptions="Center"
+                    Text="{Binding Score}"
+                    TextColor="Black" />
+            </VerticalStackLayout>
 
-            </HorizontalStackLayout>
+        </HorizontalStackLayout>
 
-            <!--<VerticalStackLayout
+        <!--<VerticalStackLayout
                 Grid.Row="2"
                 HeightRequest="225">
                 <Label
@@ -146,7 +171,7 @@
                                 <FlexLayout Direction="Row" BackgroundColor="#087E8B" JustifyContent="SpaceBetween" AlignItems="Center"  HeightRequest="60">
 
                                 <Button   Text="{Binding Title}" FontSize="25" FontFamily="ConcertOneRegular" TextColor="White" BackgroundColor="#087E8B"/>
-                                
+
 
 
 
@@ -161,97 +186,107 @@
 
 
         <VerticalStackLayout Grid.Row="3">
-            <Button Command="{Binding NavigateToPlayersPageCommand}" Text="Play Again" LineBreakMode="NoWrap"
-                Margin="70,10,70,0"
-                HorizontalOptions="FillAndExpand"
+            <Button
+                Margin="70,-60,70,0"
                 Padding="0"
                 BackgroundColor="{StaticResource PrimaryRed}"
-                HeightRequest="60"
-                FontSize="28"
-                TextColor="White"
-                FontFamily="CoinyRegular"
-                CornerRadius="20">
+                Command="{Binding NavigateToPlayersPageCommand}"
+                CornerRadius="20"
+                FontFamily="ConcertOne-Regular"
+                FontSize="36"
+                HeightRequest="165"
+                HorizontalOptions="FillAndExpand"
+                LineBreakMode="NoWrap"
+                Text="PLAY AGAIN"
+                TextColor="White">
                 <Button.Shadow>
-                    <Shadow Opacity="0.5"
-                    Radius="15"
-                    Offset="10,10"
-                    Brush="{StaticResource Gray400}"
-                    />
+                    <Shadow
+                        Brush="{StaticResource Gray400}"
+                        Opacity="0.5"
+                        Radius="15"
+                        Offset="10,10" />
                 </Button.Shadow>
             </Button>
 
-            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="High Score" LineBreakMode="NoWrap"
+            <Button
                 Margin="70,10,70,0"
-                HorizontalOptions="FillAndExpand"
                 Padding="0"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                HeightRequest="60"
+                Command="{Binding NavigateToHighScorePageCommand}"
+                CornerRadius="20"
+                FontFamily="ConcertOne-Regular"
                 FontSize="28"
-                TextColor="White"
-                FontFamily="CoinyRegular"
-                CornerRadius="20">
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                LineBreakMode="NoWrap"
+                Text="HIGH SCORES"
+                TextColor="White">
                 <Button.Shadow>
-                    <Shadow Opacity="0.5"
-                    Radius="15"
-                    Offset="10,10"
-                    Brush="{StaticResource Gray400}"
-                    />
+                    <Shadow
+                        Brush="{StaticResource Gray400}"
+                        Opacity="0.5"
+                        Radius="15"
+                        Offset="10,10" />
                 </Button.Shadow>
             </Button>
 
-            <Button Command="{Binding NavigateToHighScorePageCommand}" Text="Achievements" LineBreakMode="NoWrap"
+            <Button
                 Margin="70,10,70,0"
-                HorizontalOptions="FillAndExpand"
                 Padding="0"
                 BackgroundColor="{StaticResource PrimaryBlueGreen}"
-                HeightRequest="60"
-               
+                Command="{Binding NavigateToHighScorePageCommand}"
+                CornerRadius="20"
+                FontFamily="ConcertOne-Regular"
                 FontSize="28"
-                TextColor="White"
-                FontFamily="CoinyRegular"
-                CornerRadius="20">
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                LineBreakMode="NoWrap"
+                Text="ACHIEVEMENTS"
+                TextColor="White">
                 <Button.Shadow>
-                    <Shadow Opacity="0.5"
-                    Radius="15"
-                    Offset="10,10"
-                    Brush="{StaticResource Gray400}"
-                    />
+                    <Shadow
+                        Brush="{StaticResource Gray400}"
+                        Opacity="0.5"
+                        Radius="15"
+                        Offset="10,10" />
                 </Button.Shadow>
             </Button>
-            
 
-            
 
-            <Button Command="{Binding NavigateToHomePageCommand}" Text="Home" LineBreakMode="NoWrap"
+
+
+            <Button
                 Margin="70,10,70,0"
-                HorizontalOptions="FillAndExpand"
                 Padding="0"
                 BackgroundColor="{StaticResource SecondaryBlue}"
-                HeightRequest="60"
-               
+                Command="{Binding NavigateToHomePageCommand}"
+                CornerRadius="20"
+                FontFamily="ConcertOne-Regular"
                 FontSize="28"
-                TextColor="White"
-                FontFamily="CoinyRegular"
-                CornerRadius="20">
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                LineBreakMode="NoWrap"
+                Text="HOME"
+                TextColor="White">
                 <Button.Shadow>
-                    <Shadow Opacity="0.5"
-                    Radius="15"
-                    Offset="10,10"
-                    Brush="{StaticResource Gray400}"
-                    />
+                    <Shadow
+                        Brush="{StaticResource Gray400}"
+                        Opacity="0.5"
+                        Radius="15"
+                        Offset="10,10" />
                 </Button.Shadow>
             </Button>
 
-            
 
-           
+
+
 
         </VerticalStackLayout>
 
 
         <!--<Image Grid.Row="1" Grid.RowSpan="1" Grid.ColumnSpan="3" Source="shapes.jpg"  Margin="-10, 0, -10,-10" VerticalOptions="EndAndExpand" ZIndex="5"  />-->
-        
+
 
     </Grid>
-    
+
 </ContentPage>

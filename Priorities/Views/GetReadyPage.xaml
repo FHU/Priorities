@@ -117,7 +117,7 @@
                 TextColor="White"
                 BackgroundColor="#EC6664"
                 FontSize="36"
-                FontFamily="Coiny-Regular"
+                FontFamily="ConcertOne-Regular"
                 CornerRadius="10"
                 HeightRequest="80"
                 
